@@ -1,0 +1,1 @@
+{"name":"anna-setu-demo","private":true,"version":"0.0.0","type":"module","scripts":{"dev":"vite","build":"vite build","preview":"vite preview"},"dependencies":{"react":"latest","react-dom":"latest","vite":"latest"},"devDependencies":{"@tailwindcss/vite":"^4.3.3","@vitejs/plugin-react":"^6.1.1","tailwindcss":"^4.3.3"}}

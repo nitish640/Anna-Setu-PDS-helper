@@ -1,0 +1,50 @@
+{
+  "_mock_data_notice": "MOCK DATA — no real PDS, Aadhaar, or government system is accessed. All names, cards, shops, statuses, and tracking numbers are fictional demo data.",
+  "card": {
+    "number": "MH-12-0418-2675",
+    "name": "सुनीता देवी",
+    "nameEn": "Sunita Devi",
+    "phone": "98765 43210",
+    "members": 4,
+    "village": "आनंद नगर"
+  },
+  "reasons": {
+    "aadhaar": {
+      "icon": "✦",
+      "title": {"hi": "पहचान लिंक नहीं है", "en": "Identity not linked"},
+      "detail": {"hi": "राशन कार्ड में पहचान की जानकारी जुड़ी नहीं है।", "en": "Your identity details are not linked to this ration card."},
+      "action": {"hi": "अभी लिंक करें", "en": "Link it now"}
+    },
+    "stock": {
+      "icon": "◒",
+      "title": {"hi": "दुकान में अनाज नहीं है", "en": "Shop is out of stock"},
+      "detail": {"hi": "आज आपकी दुकान में गेहूँ उपलब्ध नहीं है।", "en": "Wheat is unavailable at your shop today."},
+      "action": {"hi": "पास की दुकान देखें", "en": "See nearby shops"}
+    },
+    "mismatch": {
+      "icon": "≠",
+      "title": {"hi": "नाम में अंतर है", "en": "Name does not match"},
+      "detail": {"hi": "कार्ड और पहचान दस्तावेज़ में नाम अलग है।", "en": "The name differs between your card and identity record."},
+      "action": {"hi": "नाम सुधारें", "en": "Correct name"}
+    },
+    "inactive": {
+      "icon": "!",
+      "title": {"hi": "कार्ड सक्रिय नहीं है", "en": "Card is marked inactive"},
+      "detail": {"hi": "आपका कार्ड जाँच के लिए रोका गया है।", "en": "Your card is paused for review."},
+      "action": {"hi": "कार्ड फिर चालू करें", "en": "Reactivate card"}
+    }
+  },
+  "shops": [
+    {"name": "सखी उचित मूल्य दुकान", "nameEn": "Sakhi Fair Price Shop", "distance": "0.6 km", "rice": true, "wheat": false, "open": true},
+    {"name": "जन सेवा राशन केंद्र", "nameEn": "Jan Seva Ration Centre", "distance": "1.4 km", "rice": true, "wheat": true, "open": true},
+    {"name": "नई रोशनी दुकान", "nameEn": "Nayi Roshni Shop", "distance": "2.1 km", "rice": false, "wheat": true, "open": false}
+  ],
+  "history": [
+    {"month": "अगस्त", "monthEn": "August", "state": "denied", "note": "नाम में अंतर", "noteEn": "Name mismatch"},
+    {"month": "जुलाई", "monthEn": "July", "state": "denied", "note": "पहचान लिंक नहीं", "noteEn": "Identity not linked"},
+    {"month": "जून", "monthEn": "June", "state": "partial", "note": "गेहूँ नहीं मिला", "noteEn": "Wheat unavailable"},
+    {"month": "मई", "monthEn": "May", "state": "received", "note": "पूरा राशन मिला", "noteEn": "Full ration received"},
+    {"month": "अप्रैल", "monthEn": "April", "state": "received", "note": "पूरा राशन मिला", "noteEn": "Full ration received"},
+    {"month": "मार्च", "monthEn": "March", "state": "received", "note": "पूरा राशन मिला", "noteEn": "Full ration received"}
+  ]
+}

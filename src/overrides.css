@@ -1,0 +1,18 @@
+/* Readability and interaction refinements. Metadata may be smaller; explanatory copy stays at least 18px. */
+.form-error{display:flex;align-items:flex-start;gap:7px;color:#a13d29;font-size:1rem;line-height:1.4;margin:10px 0 0;text-align:left}
+.helper-lookup{padding:16px;margin-top:8px;background:#f7ecd7;border:1px solid #e7d6b7;border-radius:16px;animation:enter .2s ease-out}
+.helper-lookup label{display:block;font-size:.9rem;font-weight:800;line-height:1.35;margin-bottom:7px;text-align:left}
+.helper-lookup .button{margin-top:11px}
+.text-button{border:0;background:transparent;color:#31664a;width:100%;padding:12px 0 1px;text-decoration:underline;font-weight:700;font-size:.9rem}
+.reason-card{align-items:flex-start}
+.reason-card p{font-size:1rem;line-height:1.45}
+.reason-action{margin-top:12px;border:0;border-radius:12px;background:#dfeede;color:#265e43;padding:10px 12px;display:flex;align-items:center;gap:5px;font-weight:800;font-size:.95rem}
+.lookup-tagline,.flow>p,.help-hero p,.success-page p{font-size:1rem}
+.page-heading p{font-size:.9rem;line-height:1.35}
+.call-note,.selection-note{display:flex;gap:8px;align-items:flex-start;text-align:left;margin:14px 0 0;padding:11px 12px;border-radius:13px;background:#fff8e9;color:#31694a;font-size:.94rem;line-height:1.4}
+.selection-note{border-top:1px solid #e7dbc4;margin-bottom:0}
+.review-list{display:grid;gap:11px;padding:16px;background:#fff8ed;border:1px solid #eadbc5;border-radius:16px;color:#416555;font-size:.94rem;line-height:1.4}
+.review-list span{display:flex;align-items:center;gap:9px}
+.review-list b{width:25px;height:25px;display:grid;place-items:center;border-radius:50%;background:#f1d59b;color:#91462e;font-size:.78rem}
+@media(max-width:370px){.reason-card p,.lookup-tagline,.flow>p,.help-hero p,.success-page p{font-size:.9rem}}
+
