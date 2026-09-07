@@ -45,7 +45,8 @@ const text = {
     tokenPassTitle: 'TNPDS முன்னுரிமை டோக்கன்', tokenNote: 'ரேஷன் கடையில் இந்த டோக்கனை காட்டி வரிசையின்றி பெற்றுக்கொள்ளலாம்', viewOnMap: 'கூகிள் மேப்',
     queueAhead: 'முன் உள்ளவர்கள்', estWait: 'காத்திருப்பு நேரம்', currentCardName: 'அட்டையில் உள்ள தவறான பெயர்', correctAadhaarName: 'ஆதார் படி சரியான பெயர்',
     docVerifyNote: 'ஆதார் e-KYC சரிபார்க்கப்பட்டு பதிவு செய்யப்படும்', fillFromAadhaar: 'ஆதார் பெயர் நிரப்பு', liveTracking: 'நேரலை நிலை கண்காணிப்பு',
-    officerReview: 'வட்ட வழங்கல் அலுவலர் ஆய்வு', stockDispatch: 'கடைக்கு கூடுதல் ஒதுக்கீடு', advanceProgress: 'அடுத்த நிலைக்கு நகர்த்து'
+    officerReview: 'வட்ட வழங்கல் அலுவலர் ஆய்வு', stockDispatch: 'கடைக்கு கூடுதல் ஒதுக்கீடு', advanceProgress: 'அடுத்த நிலைக்கு நகர்த்து',
+    changeCard: 'கார்டை மாற்றுக', cardEntered: 'தேர்ந்தெடுக்கப்பட்ட கார்டு', clearCard: 'கார்டை மாற்று'
   },
   hi: {
     app: 'अन्न सेतु', greeting: 'नमस्ते', tagline: 'राशन की सही जानकारी, सही समय पर', demo: 'डेमो मोड — कोई असली सरकारी सिस्टम नहीं जुड़ा है',
@@ -74,7 +75,8 @@ const text = {
     tokenPassTitle: 'PDS प्राथमिकता ई-टोकन', tokenNote: 'दुकान पर यह टोकन दिखाकर बिना कतार राशन प्राप्त करें', viewOnMap: 'गूगल मैप्स',
     queueAhead: 'कतार में आगे', estWait: 'अनुमानित समय', currentCardName: 'कार्ड पर दर्ज गलत नाम', correctAadhaarName: 'आधार अनुसार सही नाम',
     docVerifyNote: 'आधार e-KYC सत्यापन स्वतः संलग्न होगा', fillFromAadhaar: 'आधार नाम भरें', liveTracking: 'लाइव स्थिति ट्रैकिंग',
-    officerReview: 'आपूर्ति अधिकारी समीक्षा', stockDispatch: 'दुकान आवंटन प्रेषित', advanceProgress: 'अगला चरण देखें'
+    officerReview: 'आपूर्ति अधिकारी समीक्षा', stockDispatch: 'दुकान आवंटन प्रेषित', advanceProgress: 'अगला चरण देखें',
+    changeCard: 'कार्ड बदलें', cardEntered: 'चुना गया कार्ड', clearCard: 'कार्ड बदलें'
   },
   en: {
     app: 'Anna Setu', greeting: 'Hello', tagline: 'Clear ration support, right when you need it', demo: 'Demo mode — no real government system is connected',
@@ -103,7 +105,8 @@ const text = {
     tokenPassTitle: 'TNPDS Priority Pass', tokenNote: 'Show this digital token at the FPS counter to skip the queue', viewOnMap: 'Google Maps',
     queueAhead: 'People ahead', estWait: 'Estimated wait', currentCardName: 'Name as on Card (Typo)', correctAadhaarName: 'Correct Legal Name (Aadhaar)',
     docVerifyNote: 'Aadhaar e-KYC match verified for registered mobile', fillFromAadhaar: 'Fill from Aadhaar', liveTracking: 'Live Status Tracker',
-    officerReview: 'Taluk Supply Officer Review', stockDispatch: 'FPS Stock Dispatched', advanceProgress: 'Advance Status (Demo)'
+    officerReview: 'Taluk Supply Officer Review', stockDispatch: 'FPS Stock Dispatched', advanceProgress: 'Advance Status (Demo)',
+    changeCard: 'Change Card', cardEntered: 'Selected Card', clearCard: 'Switch Card'
   },
   te: {
     app: 'అన్న సేతు', greeting: 'నమస్కారం', tagline: 'సరైన రేషన్ సమాచారం, సరైన సమయంలో', demo: 'డెమో మోడ్ — ఏ ప్రభుత్వ వ్యవస్థ అనుసంధానించబడలేదు',
@@ -132,7 +135,8 @@ const text = {
     tokenPassTitle: 'PDS ప్రాధాన్యత ఇ-టోకెన్', tokenNote: 'క్యూ లేకుండా రేషన్ పొందడానికి ఈ టోకెన్ చూపించండి', viewOnMap: 'గూగుల్ మ్యాప్స్',
     queueAhead: 'ముందున్న వ్యక్తులు', estWait: 'వేచి ఉండే సమయం', currentCardName: 'కార్డులోని తప్పు పేరు', correctAadhaarName: 'ఆధార్ ప్రకారం సరైన పేరు',
     docVerifyNote: 'ఆధార్ e-KYC ధృవీకరణ పూర్తయింది', fillFromAadhaar: 'ఆధార్ పేరు నింపండి', liveTracking: 'లైవ్ ట్రాకింగ్',
-    officerReview: 'అధికారి సమీక్ష', stockDispatch: 'స్టాక్ కేటాయింపు పంపబడింది', advanceProgress: 'తదుపరి దశ చూడండి'
+    officerReview: 'అధికారి సమీక్ష', stockDispatch: 'స్టాక్ కేటాయింపు పంపబడింది', advanceProgress: 'తదుపరి దశ చూడండి',
+    changeCard: 'కార్డు మార్చండి', cardEntered: 'ఎంచుకున్న కార్డు', clearCard: 'కార్డు మార్చండి'
   },
   kn: {
     app: 'ಅನ್ನ ಸೇತು', greeting: 'ನಮಸ್ಕಾರ', tagline: 'ಸರಿಯಾದ ಪಡಿತರ ಮಾಹಿತಿ, ಸರಿಯಾದ ಸಮಯದಲ್ಲಿ', demo: 'ಡೆಮೊ ಮೋಡ್ — ಯಾವುದೇ ಸರ್ಕಾರಿ ವ್ಯವಸ್ಥೆ ಸಂಪರ್ಕ ಹೊಂದಿಲ್ಲ',
@@ -161,7 +165,8 @@ const text = {
     tokenPassTitle: 'PDS ಆದ್ಯತಾ ಇ-ಟೋಕನ್', tokenNote: 'ಸರತಿ ತಪ್ಪಿಸಲು ಅಂಗಡಿಯಲ್ಲಿ ಈ ಟೋಕನ್ ತೋರಿಸಿ', viewOnMap: 'ಗೂಗಲ್ ಮ್ಯಾಪ್ಸ್',
     queueAhead: 'ಮುಂದಿರುವ ಜನರು', estWait: 'ನಿರೀಕ್ಷಿತ ಕಾಯುವಿಕೆ', currentCardName: 'ಕಾರ್ಡ್‌ನಲ್ಲಿರುವ ತಪ್ಪು ಹೆಸರು', correctAadhaarName: 'ಆಧಾರ್ ಪ್ರಕಾರ ಸರಿಯಾದ ಹೆಸರು',
     docVerifyNote: 'ಆಧಾರ್ e-KYC ಪರಿಶೀಲಿಸಲಾಗಿದೆ', fillFromAadhaar: 'ಆಧಾರ್ ಹೆಸರು ತುಂಬಿ', liveTracking: 'ಲೈವ್ ಟ್ರ್ಯಾಕಿಂಗ್',
-    officerReview: 'ಅಧಿಕಾರಿ ಪರಿಶೀಲನೆ', stockDispatch: 'ದಾಸ್ತಾನು ರವಾನಿಸಲಾಗಿದೆ', advanceProgress: 'ಮುಂದಿನ ಹಂತ ನೋಡಿ'
+    officerReview: 'ಅಧಿಕಾರಿ ಪರಿಶೀಲನೆ', stockDispatch: 'ದಾಸ್ತಾನು ರವಾನಿಸಲಾಗಿದೆ', advanceProgress: 'ಮುಂದಿನ ಹಂತ ನೋಡಿ',
+    changeCard: 'ಕಾರ್ಡ್ ಬದಲಾಯಿಸಿ', cardEntered: 'ಆಯ್ಕೆಮಾಡಿದ ಕಾರ್ಡ್', clearCard: 'ಕಾರ್ಡ್ ಬದಲಾಯಿಸಿ'
   },
   ml: {
     app: 'അന്ന സേതു', greeting: 'നമസ്കാരം', tagline: 'കൃത്യമായ റേഷൻ വിവരങ്ങൾ, കൃത്യസമയത്ത്', demo: 'ഡെമോ മോഡ് — ഔദ്യോഗിക സംവിധാനങ്ങളുമായി ബന്ധിപ്പിച്ചിട്ടില്ല',
@@ -190,7 +195,8 @@ const text = {
     tokenPassTitle: 'PDS മുൻഗണനാ ഇ-ടോക്കൺ', tokenNote: 'വരി ഒഴിവാക്കാൻ കടയിൽ ഈ ടോക്കൺ കാണിക്കുക', viewOnMap: 'ഗൂഗിൾ മാപ്സ്',
     queueAhead: 'മുന്നിലുള്ള ആളുകൾ', estWait: 'പ്രതീക്ഷിക്കുന്ന സമയം', currentCardName: 'കാർഡിലെ തെറ്റായ പേര്', correctAadhaarName: 'ആധാർ പ്രകാരമുള്ള ശരിയായ പേര്',
     docVerifyNote: 'ആധാർ e-KYC പരിശോധന പൂർത്തിയായി', fillFromAadhaar: 'ആധാർ പേര് നൽകുക', liveTracking: 'തത്സമയ ട്രാക്കിംഗ്',
-    officerReview: 'ഉദ്യോഗസ്ഥ പരിശോധന', stockDispatch: 'സ്റ്റോക്ക് അനുവദിച്ചു', advanceProgress: 'അടുത്ത ഘട്ടം കാണുക'
+    officerReview: 'ഉദ്യോഗസ്ഥ പരിശോധന', stockDispatch: 'സ്റ്റോക്ക് അനുവദിച്ചു', advanceProgress: 'അടുത്ത ഘട്ടം കാണുക',
+    changeCard: 'കാർഡ് മാറ്റുക', cardEntered: 'തിരഞ്ഞെടുത്ത കാർഡ്', clearCard: 'കാർഡ് മാറ്റുക'
   },
   mr: {
     app: 'अन्न सेतु', greeting: 'नमस्ते', tagline: 'रेशनची अचूक माहिती, योग्य वेळी', demo: 'डेमो मोड — कोणतीही सरकारी यंत्रणा जोडलेली नाही',
@@ -219,7 +225,8 @@ const text = {
     tokenPassTitle: 'PDS प्राधान्य ई-टोकन', tokenNote: 'रांगेत उभे न राहता रेशन मिळवण्यासाठी हे टोकन दाखवा', viewOnMap: 'गुगल मॅप्स',
     queueAhead: 'रांगेत पुढे लोक', estWait: 'अपेक्षित प्रतीक्षा', currentCardName: 'कार्डवरील चुकीचे नाव', correctAadhaarName: 'आधारनुसार अचूक नाव',
     docVerifyNote: 'आधार e-KYC पडताळणी पूर्ण झाली', fillFromAadhaar: 'आधार नाव भरा', liveTracking: 'थेट ट्रॅकिंग',
-    officerReview: 'अधिकारी पुनरावलोकन', stockDispatch: 'साठा वाटप पाठवले', advanceProgress: 'पुढील टप्पा पहा'
+    officerReview: 'अधिकारी पुनरावलोकन', stockDispatch: 'साठा वाटप पाठवले', advanceProgress: 'पुढील टप्पा पहा',
+    changeCard: 'कार्ड बदला', cardEntered: 'निवडलेले कार्ड', clearCard: 'कार्ड बदला'
   }
 }
 
@@ -472,8 +479,14 @@ function App() {
   const [lang, setLang] = useState(() => localStorage.getItem('anna-language') || 'ta')
   const [tab, setTab] = useState('home')
   const [page, setPage] = useState('home')
-  const [savedCard, setSavedCard] = useState(() => localStorage.getItem('anna-card-number') || '')
-  const [verified, setVerified] = useState(false)
+  const [verified, setVerified] = useState(() => {
+    return localStorage.getItem('anna-verified') === 'true' && Boolean(localStorage.getItem('anna-card-number'))
+  })
+  const [savedCard, setSavedCard] = useState(() => {
+    const isVerified = localStorage.getItem('anna-verified') === 'true'
+    return isVerified ? (localStorage.getItem('anna-card-number') || '') : ''
+  })
+  const [pendingCard, setPendingCard] = useState('')
   const [status, setStatus] = useState('denied')
   const [reason, setReason] = useState('mismatch')
   const [isLoading, setIsLoading] = useState(false)
@@ -484,20 +497,24 @@ function App() {
   const [records, setRecords] = useState(initialHistory)
 
   const t = text[lang] || text.en || text.ta
-  const currentCard = resolveCard(savedCard)
+  const activeCardNumber = savedCard || pendingCard || 'TN-02-G-849201'
+  const currentCard = resolveCard(activeCardNumber)
 
   useEffect(() => {
     localStorage.setItem('anna-language', lang)
   }, [lang])
 
-  const lookup = (number) => {
+  const lookup = (number, isHelper = false) => {
     setIsLoading(true)
     window.setTimeout(() => {
       const v = number.trim().toUpperCase()
-      setSavedCard(v)
-      localStorage.setItem('anna-card-number', v)
+      if (isHelper) {
+        setSavedCard(v)
+      } else {
+        setPendingCard(v)
+      }
       setIsLoading(false)
-    }, 650)
+    }, 450)
   }
 
   const navigate = (next) => {
@@ -508,10 +525,14 @@ function App() {
 
   const clearCard = () => {
     localStorage.removeItem('anna-card-number')
+    localStorage.removeItem('anna-verified')
     setSavedCard('')
+    setPendingCard('')
     setHelper(false)
     setFastForwarded(false)
     setVerified(false)
+    setPage('home')
+    setTab('home')
   }
 
   const goFix = () => (reason === 'stock' ? navigate('shops') : setPage(reason))
@@ -540,10 +561,21 @@ function App() {
     setResolved(false)
   }
 
-  if (!savedCard) {
-    return <Lookup t={t} lang={lang} setLang={setLang} isLoading={isLoading} lookup={lookup} />
+  // 1. Initial screen: Always enter ration card number first if not verified and no card entered
+  if (!verified && !pendingCard) {
+    return (
+      <Lookup
+        t={t}
+        lang={lang}
+        setLang={setLang}
+        isLoading={isLoading}
+        lookup={lookup}
+        initialCard={savedCard || 'TN-02-G-849201'}
+      />
+    )
   }
 
+  // 2. Second screen: After entering ration card, verify phone/OTP
   if (!verified) {
     return (
       <PhoneVerify
@@ -551,7 +583,17 @@ function App() {
         lang={lang}
         setLang={setLang}
         card={currentCard}
-        onVerified={() => setVerified(true)}
+        pendingCard={pendingCard || savedCard}
+        onBack={() => setPendingCard('')}
+        onClear={clearCard}
+        onVerified={() => {
+          const cardToSave = pendingCard || savedCard || 'TN-02-G-849201'
+          setSavedCard(cardToSave)
+          setPendingCard('')
+          setVerified(true)
+          localStorage.setItem('anna-card-number', cardToSave)
+          localStorage.setItem('anna-verified', 'true')
+        }}
       />
     )
   }
@@ -654,9 +696,13 @@ function App() {
   )
 }
 
-function Lookup({ t, lang, setLang, isLoading, lookup }) {
-  const [number, setNumber] = useState('TN-02-G-849201')
+function Lookup({ t, lang, setLang, isLoading, lookup, initialCard = 'TN-02-G-849201' }) {
+  const [number, setNumber] = useState(initialCard)
   const [error, setError] = useState('')
+
+  useEffect(() => {
+    if (initialCard) setNumber(initialCard)
+  }, [initialCard])
 
   const submit = () => {
     if (number.trim().length < 6) {
@@ -721,7 +767,7 @@ function Lookup({ t, lang, setLang, isLoading, lookup }) {
   )
 }
 
-function PhoneVerify({ t, lang, setLang, card, onVerified }) {
+function PhoneVerify({ t, lang, setLang, card, pendingCard, onBack, onClear, onVerified }) {
   const [step, setStep] = useState(1)
   const [phone, setPhone] = useState(card.phone || '98765 43210')
   const [digits, setDigits] = useState(['', '', '', ''])
@@ -731,6 +777,10 @@ function PhoneVerify({ t, lang, setLang, card, onVerified }) {
   const [shake, setShake] = useState(false)
 
   const inputRefs = [useRef(null), useRef(null), useRef(null), useRef(null)]
+
+  useEffect(() => {
+    if (card.phone) setPhone(card.phone)
+  }, [card])
 
   useEffect(() => {
     if (step === 2) {
@@ -803,6 +853,23 @@ function PhoneVerify({ t, lang, setLang, card, onVerified }) {
   return (
     <main className="app-shell min-h-screen antialiased">
       <Brand t={t} lang={lang} setLang={setLang} />
+
+      <button type="button" className="back-button" onClick={onBack} title={t.changeCard}>
+        <Icon name="back" size={18} />
+        <span>{t.changeCard || 'Change Card'}</span>
+      </button>
+
+      {/* Selected Card Pill Banner with Clear/Change Button */}
+      <div className="verify-card-badge">
+        <div className="verify-card-info">
+          <small>{t.cardEntered || 'Ration Card'}</small>
+          <b>{pendingCard || card.number}</b>
+        </div>
+        <button type="button" className="verify-change-pill" onClick={onBack} title={t.changeCard}>
+          <Icon name="back" size={12} />
+          <span>{t.changeCard || 'Change'}</span>
+        </button>
+      </div>
 
       {step === 2 && showToast && (
         <aside className="sms-toast" role="status">
@@ -880,6 +947,10 @@ function PhoneVerify({ t, lang, setLang, card, onVerified }) {
           {isVerifying ? <span className="spinner" /> : step === 2 ? t.verify : t.continue}
           <Icon name="arrow" />
         </button>
+
+        <button type="button" className="change-card-link" onClick={onBack}>
+          ← {t.changeCard || 'Change ration card'}
+        </button>
       </section>
     </main>
   )
@@ -913,7 +984,7 @@ function HomePage({
       setHelperError(t.cardError)
       return
     }
-    lookup(helperNumber)
+    lookup(helperNumber, true)
   }
 
   const userName = helper
@@ -937,10 +1008,10 @@ function HomePage({
             </span>
           </div>
         </div>
-        <button className="saved-card" onClick={clearCard} title="Clear saved card">
-          <span>{t.cardSaved}</span>
-          {savedCard.slice(-4)}
-          <Icon name="arrow" size={14} />
+        <button className="saved-card" onClick={clearCard} title={t.clearCard || 'Sign out / Change Card'}>
+          <span className="saved-card-label">{t.clearCard || 'Switch Card'}</span>
+          <b className="saved-card-num">...{savedCard.slice(-6)}</b>
+          <Icon name="close" size={12} />
         </button>
       </div>
 
