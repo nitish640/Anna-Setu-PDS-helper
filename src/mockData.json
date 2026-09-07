@@ -1,0 +1,240 @@
+{
+  "_mock_data_notice": "MOCK DATA — no real PDS, Aadhaar, or government system is accessed. All names, cards, shops, statuses, and tracking numbers are fictional demo data.",
+  "cards": {
+    "tn": {
+      "number": "TN-02-G-849201",
+      "name": "காளியம்மாள்",
+      "nameEn": "Kaliammal",
+      "nameHi": "कालियम्माळ",
+      "phone": "98765 43210",
+      "members": 4,
+      "village": "திருவல்லிக்கேணி, சென்னை (Triplicane, Chennai)",
+      "state": "Tamil Nadu",
+      "fpsCode": "TN-CHE-02A"
+    },
+    "mh": {
+      "number": "MH-12-0418-2675",
+      "name": "सुनीता देवी",
+      "nameEn": "Sunita Devi",
+      "nameTa": "சுனிதா தேவி",
+      "phone": "98765 43210",
+      "members": 4,
+      "village": "आनंद नगर, पुणे (Anand Nagar, Pune)",
+      "state": "Maharashtra",
+      "fpsCode": "MH-PUN-05"
+    }
+  },
+  "card": {
+    "number": "TN-02-G-849201",
+    "name": "காளியம்மாள்",
+    "nameEn": "Kaliammal",
+    "nameHi": "कालियम्माळ",
+    "phone": "98765 43210",
+    "members": 4,
+    "village": "திருவல்லிக்கேணி, சென்னை (Triplicane, Chennai)",
+    "state": "Tamil Nadu",
+    "fpsCode": "TN-CHE-02A"
+  },
+  "reasons": {
+    "aadhaar": {
+      "icon": "✦",
+      "title": {
+        "ta": "ஆதார் அடையாளம் இணைக்கப்படவில்லை",
+        "hi": "पहचान लिंक नहीं है",
+        "en": "Identity not linked"
+      },
+      "detail": {
+        "ta": "ரேஷன் அட்டையுடன் ஆதார் அடையாள விவரங்கள் இணைக்கப்படவில்லை.",
+        "hi": "राशन कार्ड में पहचान की जानकारी जुड़ी नहीं है।",
+        "en": "Your identity details are not linked to this ration card."
+      },
+      "action": {
+        "ta": "இப்போதே இணைக்கவும்",
+        "hi": "अभी लिंक करें",
+        "en": "Link it now"
+      }
+    },
+    "stock": {
+      "icon": "◒",
+      "title": {
+        "ta": "ரேஷன் கடையில் இருப்பு இல்லை",
+        "hi": "दुकान में अनाज नहीं है",
+        "en": "Shop is out of stock"
+      },
+      "detail": {
+        "ta": "இன்று உங்கள் நியாய விலைக் கடையில் கோதுமை இருப்பு இல்லை.",
+        "hi": "आज आपकी दुकान में गेहूँ उपलब्ध नहीं है।",
+        "en": "Wheat is unavailable at your shop today."
+      },
+      "action": {
+        "ta": "அருகிலுள்ள கடையைப் பார்க்க",
+        "hi": "पास की दुकान देखें",
+        "en": "See nearby shops"
+      }
+    },
+    "mismatch": {
+      "icon": "≠",
+      "title": {
+        "ta": "பெயரில் முரண்பாடு உள்ளது",
+        "hi": "नाम में अंतर है",
+        "en": "Name does not match"
+      },
+      "detail": {
+        "ta": "ரேஷன் அட்டை மற்றும் ஆதார் ஆவணத்தில் பெயர் எழுத்துப்பிழை உள்ளது.",
+        "hi": "कार्ड और पहचान दस्तावेज़ में नाम अलग है।",
+        "en": "The name differs between your card and identity record."
+      },
+      "action": {
+        "ta": "பெயரைத் திருத்தவும்",
+        "hi": "नाम सुधारें",
+        "en": "Correct name"
+      }
+    },
+    "inactive": {
+      "icon": "!",
+      "title": {
+        "ta": "அட்டை தற்காலிகமாக முடக்கப்பட்டுள்ளது",
+        "hi": "कार्ड सक्रिय नहीं है",
+        "en": "Card is marked inactive"
+      },
+      "detail": {
+        "ta": "உங்கள் ரேஷன் அட்டை கள ஆய்விற்காக நிறுத்தி வைக்கப்பட்டுள்ளது.",
+        "hi": "आपका कार्ड जाँच के लिए रोका गया है।",
+        "en": "Your card is paused for review."
+      },
+      "action": {
+        "ta": "மறுஆய்வு கோரிக்கை அனுப்ப",
+        "hi": "कार्ड फिर चालू करें",
+        "en": "Reactivate card"
+      }
+    }
+  },
+  "shops": [
+    {
+      "name": "டி.யு.சி.எஸ் நியாய விலைக் கடை (திருவல்லிக்கேணி)",
+      "nameEn": "TUCS Fair Price Shop (Triplicane)",
+      "nameHi": "टीयूसीएस उचित मूल्य दुकान (ट्रिपलिकेन)",
+      "code": "TN-CHE-02A",
+      "distance": "0.4 km",
+      "district": "Chennai",
+      "rice": true,
+      "wheat": false,
+      "sugar": true,
+      "dal": true,
+      "open": true,
+      "hours": "8:30 AM - 12:30 PM, 3:00 PM - 7:00 PM"
+    },
+    {
+      "name": "அண்ணா நகர் தொடக்க கூட்டுறவு நியாய விலைக் கடை",
+      "nameEn": "Anna Nagar Co-op Fair Price Shop",
+      "nameHi": "अन्ना नगर सहकारी उचित मूल्य दुकान",
+      "code": "TN-CHE-14B",
+      "distance": "1.2 km",
+      "district": "Chennai",
+      "rice": true,
+      "wheat": true,
+      "sugar": true,
+      "dal": true,
+      "open": true,
+      "hours": "8:30 AM - 1:00 PM, 3:30 PM - 6:30 PM"
+    },
+    {
+      "name": "சிம்மக்கல் மகளிர் சுய உதவிக் குழு ரேஷன் கடை",
+      "nameEn": "Simmakkal Women SHG Ration Shop",
+      "nameHi": "सिम्मक्कल महिला स्वयं सहायता समूह राशन दुकान",
+      "code": "TN-MDU-08C",
+      "distance": "1.8 km",
+      "district": "Madurai",
+      "rice": true,
+      "wheat": false,
+      "sugar": false,
+      "dal": true,
+      "open": true,
+      "hours": "9:00 AM - 1:00 PM"
+    },
+    {
+      "name": "சிங்கநல்லூர் கூட்டுறவு நியாய விலைக் கடை",
+      "nameEn": "Singanallur Co-op Fair Price Shop",
+      "nameHi": "सिंगनल्लूर सहकारी उचित मूल्य दुकान",
+      "code": "TN-CBE-21D",
+      "distance": "2.4 km",
+      "district": "Coimbatore",
+      "rice": false,
+      "wheat": true,
+      "sugar": true,
+      "dal": false,
+      "open": false,
+      "hours": "மாலை 3 மணிக்கு திறக்கப்படும் (Opens 3 PM)"
+    },
+    {
+      "name": "சேலம் மத்திய கூட்டுறவு பண்டக சாலை",
+      "nameEn": "Salem Central Co-op Store Depot",
+      "nameHi": "सेलम सेंट्रल को-ऑप स्टोर डिपो",
+      "code": "TN-SLM-05E",
+      "distance": "3.1 km",
+      "district": "Salem",
+      "rice": true,
+      "wheat": true,
+      "sugar": true,
+      "dal": true,
+      "open": true,
+      "hours": "8:30 AM - 12:30 PM"
+    }
+  ],
+  "history": [
+    {
+      "month": "ஆகஸ்ட்",
+      "monthHi": "अगस्त",
+      "monthEn": "August",
+      "state": "denied",
+      "note": "பெயர் முரண்பாடு",
+      "noteHi": "नाम में अंतर",
+      "noteEn": "Name mismatch"
+    },
+    {
+      "month": "ஜூலை",
+      "monthHi": "जुलाई",
+      "monthEn": "July",
+      "state": "denied",
+      "note": "ஆதார் இணைக்கப்படவில்லை",
+      "noteHi": "पहचान लिंक नहीं",
+      "noteEn": "Identity not linked"
+    },
+    {
+      "month": "ஜூன்",
+      "monthHi": "जून",
+      "monthEn": "June",
+      "state": "partial",
+      "note": "கோதுமை கிடைக்கவில்லை",
+      "noteHi": "गेहूँ नहीं मिला",
+      "noteEn": "Wheat unavailable"
+    },
+    {
+      "month": "மே",
+      "monthHi": "मई",
+      "monthEn": "May",
+      "state": "received",
+      "note": "முழு ரேஷன் வழங்கப்பட்டது",
+      "noteHi": "पूरा राशन मिला",
+      "noteEn": "Full ration received"
+    },
+    {
+      "month": "ஏப்ரல்",
+      "monthHi": "अप्रैल",
+      "monthEn": "April",
+      "state": "received",
+      "note": "முழு ரேஷன் வழங்கப்பட்டது",
+      "noteHi": "पूरा राशन मिला",
+      "noteEn": "Full ration received"
+    },
+    {
+      "month": "மார்ச்",
+      "monthHi": "मार्च",
+      "monthEn": "March",
+      "state": "received",
+      "note": "முழு ரேஷன் வழங்கப்பட்டது",
+      "noteHi": "पूरा राशन मिला",
+      "noteEn": "Full ration received"
+    }
+  ]
+}
