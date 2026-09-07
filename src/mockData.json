@@ -6,22 +6,28 @@
       "name": "காளியம்மாள்",
       "nameEn": "Kaliammal",
       "nameHi": "कालियम्माळ",
+      "recordedName": "காளியம்மாள் கே (Kaliamal K)",
+      "aadhaarName": "காளியம்மாள் (Kaliammal)",
       "phone": "98765 43210",
       "members": 4,
       "village": "திருவல்லிக்கேணி, சென்னை (Triplicane, Chennai)",
       "state": "Tamil Nadu",
-      "fpsCode": "TN-CHE-02A"
+      "fpsCode": "TN-CHE-02A",
+      "avatarInitial": "கா"
     },
     "mh": {
       "number": "MH-12-0418-2675",
       "name": "सुनीता देवी",
       "nameEn": "Sunita Devi",
       "nameTa": "சுனிதா தேவி",
+      "recordedName": "सुनिता देवि (Sunita Devi)",
+      "aadhaarName": "सुनीता देवी (Sunita Devi)",
       "phone": "98765 43210",
       "members": 4,
       "village": "आनंद नगर, पुणे (Anand Nagar, Pune)",
       "state": "Maharashtra",
-      "fpsCode": "MH-PUN-05"
+      "fpsCode": "MH-PUN-05",
+      "avatarInitial": "सु"
     }
   },
   "card": {
@@ -29,11 +35,14 @@
     "name": "காளியம்மாள்",
     "nameEn": "Kaliammal",
     "nameHi": "कालियम्माळ",
+    "recordedName": "காளியம்மாள் கே (Kaliamal K)",
+    "aadhaarName": "காளியம்மாள் (Kaliammal)",
     "phone": "98765 43210",
     "members": 4,
     "village": "திருவல்லிக்கேணி, சென்னை (Triplicane, Chennai)",
     "state": "Tamil Nadu",
-    "fpsCode": "TN-CHE-02A"
+    "fpsCode": "TN-CHE-02A",
+    "avatarInitial": "கா"
   },
   "reasons": {
     "aadhaar": {
@@ -117,12 +126,28 @@
       "code": "TN-CHE-02A",
       "distance": "0.4 km",
       "district": "Chennai",
+      "transit": "🚶 4 mins walk",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=TUCS+Fair+Price+Shop+Triplicane+Chennai",
       "rice": true,
       "wheat": false,
       "sugar": true,
       "dal": true,
       "open": true,
-      "hours": "8:30 AM - 12:30 PM, 3:00 PM - 7:00 PM"
+      "hours": "8:30 AM - 12:30 PM, 3:00 PM - 7:00 PM",
+      "currentWait": "8 mins (3 in queue)",
+      "stockDetails": {
+        "rice": "480 kg",
+        "wheat": "0 kg (Out)",
+        "sugar": "140 kg",
+        "dal": "95 kg"
+      },
+      "slots": [
+        "08:30 AM - 09:30 AM",
+        "09:30 AM - 10:30 AM",
+        "11:00 AM - 12:00 PM",
+        "03:30 PM - 04:30 PM",
+        "05:00 PM - 06:00 PM"
+      ]
     },
     {
       "name": "அண்ணா நகர் தொடக்க கூட்டுறவு நியாய விலைக் கடை",
@@ -131,12 +156,28 @@
       "code": "TN-CHE-14B",
       "distance": "1.2 km",
       "district": "Chennai",
+      "transit": "🚌 8 mins (Bus 24C)",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Co-op+Fair+Price+Shop+Anna+Nagar+Chennai",
       "rice": true,
       "wheat": true,
       "sugar": true,
       "dal": true,
       "open": true,
-      "hours": "8:30 AM - 1:00 PM, 3:30 PM - 6:30 PM"
+      "hours": "8:30 AM - 1:00 PM, 3:30 PM - 6:30 PM",
+      "currentWait": "4 mins (1 in queue)",
+      "stockDetails": {
+        "rice": "620 kg",
+        "wheat": "240 kg",
+        "sugar": "190 kg",
+        "dal": "130 kg"
+      },
+      "slots": [
+        "08:30 AM - 09:30 AM",
+        "10:00 AM - 11:00 AM",
+        "11:30 AM - 12:30 PM",
+        "04:00 PM - 05:00 PM",
+        "05:30 PM - 06:30 PM"
+      ]
     },
     {
       "name": "சிம்மக்கல் மகளிர் சுய உதவிக் குழு ரேஷன் கடை",
@@ -145,12 +186,26 @@
       "code": "TN-MDU-08C",
       "distance": "1.8 km",
       "district": "Madurai",
+      "transit": "🚶 18 mins walk",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Simmakkal+Fair+Price+Ration+Shop+Madurai",
       "rice": true,
       "wheat": false,
       "sugar": false,
       "dal": true,
       "open": true,
-      "hours": "9:00 AM - 1:00 PM"
+      "hours": "9:00 AM - 1:00 PM",
+      "currentWait": "12 mins (6 in queue)",
+      "stockDetails": {
+        "rice": "310 kg",
+        "wheat": "0 kg (Out)",
+        "sugar": "0 kg (Out)",
+        "dal": "55 kg"
+      },
+      "slots": [
+        "09:00 AM - 10:00 AM",
+        "10:00 AM - 11:00 AM",
+        "11:30 AM - 12:30 PM"
+      ]
     },
     {
       "name": "சிங்கநல்லூர் கூட்டுறவு நியாய விலைக் கடை",
@@ -159,12 +214,26 @@
       "code": "TN-CBE-21D",
       "distance": "2.4 km",
       "district": "Coimbatore",
+      "transit": "🚌 12 mins (Bus 10)",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Co-op+Ration+Depot+Singanallur+Coimbatore",
       "rice": false,
       "wheat": true,
       "sugar": true,
       "dal": false,
       "open": false,
-      "hours": "மாலை 3 மணிக்கு திறக்கப்படும் (Opens 3 PM)"
+      "hours": "மாலை 3 மணிக்கு திறக்கப்படும் (Opens 3 PM)",
+      "currentWait": "Closed (Opens 3:00 PM)",
+      "stockDetails": {
+        "rice": "0 kg (Expected 3 PM)",
+        "wheat": "180 kg",
+        "sugar": "110 kg",
+        "dal": "0 kg (Out)"
+      },
+      "slots": [
+        "03:00 PM - 04:00 PM",
+        "04:00 PM - 05:00 PM",
+        "05:00 PM - 06:00 PM"
+      ]
     },
     {
       "name": "சேலம் மத்திய கூட்டுறவு பண்டக சாலை",
@@ -173,12 +242,26 @@
       "code": "TN-SLM-05E",
       "distance": "3.1 km",
       "district": "Salem",
+      "transit": "🚌 15 mins (Bus 7)",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Salem+Central+Cooperative+Store+Ration",
       "rice": true,
       "wheat": true,
       "sugar": true,
       "dal": true,
       "open": true,
-      "hours": "8:30 AM - 12:30 PM"
+      "hours": "8:30 AM - 12:30 PM",
+      "currentWait": "5 mins (2 in queue)",
+      "stockDetails": {
+        "rice": "540 kg",
+        "wheat": "210 kg",
+        "sugar": "165 kg",
+        "dal": "100 kg"
+      },
+      "slots": [
+        "08:30 AM - 09:30 AM",
+        "09:30 AM - 10:30 AM",
+        "11:00 AM - 12:00 PM"
+      ]
     }
   ],
   "history": [
