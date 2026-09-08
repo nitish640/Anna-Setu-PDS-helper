@@ -170,6 +170,12 @@ const text = {
     slaStatutory: 'Guaranteed 7-day resolution under NFSA Section 19',
     openLiveTracker: 'Open Live Tracker',
     shareTicketWa: 'Share WhatsApp Update',
+    cardIncompleteTn: 'Incomplete card number. Tamil Nadu cards must be in format TN-XX-X-XXXXXX (e.g. TN-02-G-849201).',
+    cardIncompleteMh: 'Incomplete card number. Maharashtra cards must be in format MH-XX-XXXX-XXXX (e.g. MH-12-0418-2675).',
+    cardNotFound: 'Card not found in State PDS Registry. Please check the number or select a demo card below.',
+    wrongStateTn: 'This is a Maharashtra card. Please switch state to Maharashtra.',
+    wrongStateMh: 'This is a Tamil Nadu card. Please switch state to Tamil Nadu.',
+    authenticatingPds: 'Authenticating with State PDS Registry…',
   },
   ta: {
     app: 'அன்ன சேது', greeting: 'வணக்கம்', tagline: 'சரியான ரேஷன் தகவல், சரியான நேரத்தில்',
@@ -314,6 +320,12 @@ const text = {
     slaStatutory: 'NFSA சட்டப்படி 7 நாட்களில் தீர்வு உத்தரவாதம்',
     openLiveTracker: 'நேரலை டிராக்கர்',
     shareTicketWa: 'வாட்ஸ்அப்பில் பகிரவும்',
+    cardIncompleteTn: 'முழுமையற்ற அட்டை எண். தமிழ்நாடு கார்டு வடிவம்: TN-XX-X-XXXXXX (எ.கா: TN-02-G-849201).',
+    cardIncompleteMh: 'முழுமையற்ற அட்டை எண். மகாராஷ்டிரா கார்டு வடிவம்: MH-XX-XXXX-XXXX (எ.கா: MH-12-0418-2675).',
+    cardNotFound: 'மாநில ரேஷன் பதிவேட்டில் இந்த கார்டு கிடைக்கவில்லை. எண்ணை சரிபார்க்கவும் அல்லது மாதிரி கார்டை தேர்ந்தெடுக்கவும்.',
+    wrongStateTn: 'இது மகாராஷ்டிரா கார்டு. தயவுசெய்து மாநிலத்தை மகாராஷ்டிராவிற்கு மாற்றவும்.',
+    wrongStateMh: 'இது தமிழ்நாடு கார்டு. தயவுசெய்து மாநிலத்தை தமிழ்நாட்டிற்கு மாற்றவும்.',
+    authenticatingPds: 'அரசு ரேஷன் பதிவேட்டில் சரிபார்க்கப்படுகிறது…',
   },
   hi: {
     app: 'अन्न सेतु', greeting: 'नमस्ते', tagline: 'राशन की सही जानकारी, सही समय पर',
@@ -458,6 +470,12 @@ const text = {
     slaStatutory: 'NFSA धारा 19 के तहत 7 दिनों में समाधान गारंटी',
     openLiveTracker: 'लाइव ट्रैकर खोलें',
     shareTicketWa: 'व्हाट्सएप पर साझा करें',
+    cardIncompleteTn: 'अपूर्ण राशन कार्ड नंबर। तमिलनाडु कार्ड प्रारूप: TN-XX-X-XXXXXX (उदा: TN-02-G-849201)।',
+    cardIncompleteMh: 'अपूर्ण राशन कार्ड नंबर। महाराष्ट्र कार्ड प्रारूप: MH-XX-XXXX-XXXX (उदा: MH-12-0418-2675)।',
+    cardNotFound: 'राज्य राशन डेटाबेस में यह कार्ड नहीं मिला। कृपया नंबर जांचें या नीचे दिया गया डेमो कार्ड चुनें।',
+    wrongStateTn: 'यह महाराष्ट्र का कार्ड है। कृपया राज्य बदलकर महाराष्ट्र चुनें।',
+    wrongStateMh: 'यह तमिलनाडु का कार्ड है। कृपया राज्य बदलकर तमिलनाडु चुनें।',
+    authenticatingPds: 'राज्य पीडीएस डेटाबेस के साथ प्रमाणीकरण किया जा रहा है…',
   },
   mr: {
     app: 'अन्न सेतु', greeting: 'नमस्ते', tagline: 'रेशनची अचूक माहिती, योग्य वेळी',
@@ -602,6 +620,12 @@ const text = {
     slaStatutory: 'NFSA कलम 19 अंतर्गत 7 दिवसांत निवारण हमी',
     openLiveTracker: 'लाइव्ह ट्रॅकर उघडा',
     shareTicketWa: 'व्हॉट्सॲपवर शेअर करा',
+    cardIncompleteTn: 'अपूर्ण रेशन कार्ड क्रमांक. तमिळनाडू कार्ड स्वरूप: TN-XX-X-XXXXXX (उदा: TN-02-G-849201).',
+    cardIncompleteMh: 'अपूर्ण रेशन कार्ड क्रमांक. महाराष्ट्र कार्ड स्वरूप: MH-XX-XXXX-XXXX (उदा: MH-12-0418-2675).',
+    cardNotFound: 'राज्य रेशन नोंदणीमध्ये हे कार्ड आढळले नाही. कृपया नंबर तपासा किंवा खालील डेमो कार्ड निवडा.',
+    wrongStateTn: 'हे महाराष्ट्राचे कार्ड आहे. कृपया राज्य महाराष्ट्रावर बदला.',
+    wrongStateMh: 'हे तमिळनाडूचे कार्ड आहे. कृपया राज्य तमिळनाडूवर बदला.',
+    authenticatingPds: 'राज्य पीडीएस नोंदणीसह पडताळणी करत आहे…',
   },
   te: {
     app: 'అన్న సేతు', greeting: 'నమస్కారం', tagline: 'సరైన రేషన్ సమాచారం, సరైన సమయంలో',
@@ -746,6 +770,12 @@ const text = {
     slaStatutory: 'NFSA సెక్షన్ 19 ప్రకారం 7 రోజుల్లో పరిష్కార హామీ',
     openLiveTracker: 'లైవ్ ట్రాకర్ తెరవండి',
     shareTicketWa: 'వాట్సాప్‌లో పంపండి',
+    cardIncompleteTn: 'అసంపూర్ణ రేషన్ కార్డు సంఖ్య. తమిళనాడు కార్డు ఫార్మాట్: TN-XX-X-XXXXXX (ఉదా: TN-02-G-849201).',
+    cardIncompleteMh: 'అసంపూర్ణ రేషన్ కార్డు సంఖ్య. మహారాష్ట్ర కార్డు ఫార్మాట్: MH-XX-XXXX-XXXX (ఉదా: MH-12-0418-2675).',
+    cardNotFound: 'రాష్ట్ర రేషన్ రిజిస్ట్రీలో ఈ కార్డు కనుగొనబడలేదు. దయచేసి సంఖ్యను తనిಖీ చేయండి లేదా డెమో కార్డును ఎంచుకోండి.',
+    wrongStateTn: 'ఇది మహారాష్ట్ర కార్డు. దయచేసి రాష్ట్రాన్ని మహారాష్ట్రకు మార్చండి.',
+    wrongStateMh: 'ఇది తమిళనాడు కార్డు. దయచేసి రాష్ట్రాన్ని తమిళనాడుకు మార్చండి.',
+    authenticatingPds: 'రాష్ట్ర పీడీఎస్ రిజిస్ట్రీతో ప్రామాణీకరిస్తోంది…',
   },
   kn: {
     app: 'ಅನ್ನ ಸೇತು', greeting: 'ನಮಸ್ಕಾರ', tagline: 'ಸರಿಯಾದ ಪಡಿತರ ಮಾಹಿತಿ, ಸರಿಯಾದ ಸಮಯದಲ್ಲಿ',
@@ -890,6 +920,12 @@ const text = {
     slaStatutory: 'NFSA ಕಲಂ 19 ರ ಅಡಿಯಲ್ಲಿ 7 ದಿನಗಳಲ್ಲಿ ಪರಿಹಾರ ಖಾತರಿ',
     openLiveTracker: 'ಲೈವ್ ಟ್ರ್ಯಾಕರ್ ತೆರೆಯಿರಿ',
     shareTicketWa: 'ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ',
+    cardIncompleteTn: 'ಅಪೂರ್ಣ ಪಡಿತರ ಚೀಟಿ ಸಂಖ್ಯೆ. ತಮಿಳುನಾಡು ಕಾರ್ಡ್ ಮಾದರಿ: TN-XX-X-XXXXXX (ಉದಾ: TN-02-G-849201).',
+    cardIncompleteMh: 'ಅಪೂರ್ಣ ಪಡಿತರ ಚೀಟಿ ಸಂಖ್ಯೆ. ಮಹಾರಾಷ್ಟ್ರ ಕಾರ್ಡ್ ಮಾದರಿ: MH-XX-XXXX-XXXX (ಉದಾ: MH-12-0418-2675).',
+    cardNotFound: 'ರಾಜ್ಯ ಪಡಿತರ ನೋಂದಣಿಯಲ್ಲಿ ಈ ಕಾರ್ಡ್ ಕಂಡುಬಂದಿಲ್ಲ. ದಯವಿಟ್ಟು ಸಂಖ್ಯೆಯನ್ನು ಪರಿಶೀಲಿಸಿ ಅಥವಾ ಡೆಮೊ ಕಾರ್ಡ್ ಆಯ್ಕೆಮಾಡಿ.',
+    wrongStateTn: 'ಇದು ಮಹಾರಾಷ್ಟ್ರದ ಕಾರ್ಡ್. ದಯವಿಟ್ಟು ರಾಜ್ಯವನ್ನು ಮಹಾರಾಷ್ಟ್ರಕ್ಕೆ ಬದಲಾಯಿಸಿ.',
+    wrongStateMh: 'ಇದು ತಮಿಳುನಾಡಿನ ಕಾರ್ಡ್. ದಯವಿಟ್ಟು ರಾಜ್ಯವನ್ನು ತಮಿಳುನಾಡಿಗೆ ಬದಲಾಯಿಸಿ.',
+    authenticatingPds: 'ರಾಜ್ಯ ಪಿಡಿಎಸ್ ನೋಂದಣಿಯೊಂದಿಗೆ ದೃಢೀಕರಿಸಲಾಗುತ್ತಿದೆ…',
   },
   ml: {
     app: 'അന്ന സേതു', greeting: 'നമസ്കാരം', tagline: 'കൃത്യമായ റേഷൻ വിവരങ്ങൾ, കൃത്യസമയത്ത്',
@@ -1034,6 +1070,12 @@ const text = {
     slaStatutory: 'NFSA സെക്ഷൻ 19 പ്രകാരം 7 ദിവസത്തിനകം പരിഹാര ഉറപ്പ്',
     openLiveTracker: 'ലൈവ് ട്രാക്കർ തുറക്കുക',
     shareTicketWa: 'വാട്‌സ്ആപ്പിൽ പങ്കിടുക',
+    cardIncompleteTn: 'പൂർണ്ണമല്ലാത്ത റേഷൻ കാർഡ് നമ്പർ. തമിഴ്നാട് കാർഡ് ഫോർമാറ്റ്: TN-XX-X-XXXXXX (ഉദാ: TN-02-G-849201).',
+    cardIncompleteMh: 'പൂർണ്ണമല്ലാത്ത റേഷൻ കാർഡ് നമ്പർ. മഹാരാഷ്ട്ര കാർഡ് ഫോർമാറ്റ്: MH-XX-XXXX-XXXX (ഉദാ: MH-12-0418-2675).',
+    cardNotFound: 'സംസ്ഥാന റേഷൻ രജിസ്ട്രിയിൽ ഈ കാർഡ് കണ്ടെത്തിയില്ല. ദയവായി നമ്പർ പരിശോധിക്കുക അല്ലെങ്കിൽ ഡെമോ കാർഡ് തിരഞ്ഞെടുക്കുക.',
+    wrongStateTn: 'ഇത് മഹാരാഷ്ട്ര കാർഡാണ്. ദയവായി സംസ്ഥാനം മഹാരാഷ്ട്രയിലേക്ക് മാറ്റുക.',
+    wrongStateMh: 'ഇത് തമിഴ്നാട് കാർഡാണ്. ദയവായി സംസ്ഥാനം തമിഴ്നാട്ടിലേക്ക് മാറ്റുക.',
+    authenticatingPds: 'സംസ്ഥാന പിഡിഎസ് രജിസ്ട്രിയുമായി പ്രാമാണീകരിക്കുന്നു…',
   }
 }
 
@@ -1700,11 +1742,27 @@ function Brand({ t, lang, setLang, selectedState, onChangeState, onOpenAssistant
 }
 
 function resolveCard(number, selectedState) {
-  if (!number) {
-    return selectedState === 'mh' ? (cards.mh || defaultCard) : (cards.tn || defaultCard)
+  const norm = (number || '').trim().toUpperCase().replace(/\s+/g, '')
+  const normAlpha = norm.replace(/[^0-9A-Z]/g, '')
+
+  const allCardsList = [
+    cards.tn,
+    cards.tnMadurai,
+    cards.mh,
+    cards.mhMumbai,
+    defaultCard
+  ].filter(Boolean)
+
+  if (norm) {
+    const exactMatch = allCardsList.find((c) => {
+      const cNum = (c.number || '').toUpperCase().replace(/\s+/g, '')
+      const cAlpha = cNum.replace(/[^0-9A-Z]/g, '')
+      return cNum === norm || cAlpha === normAlpha
+    })
+    if (exactMatch) return exactMatch
   }
-  const normalized = number.trim().toUpperCase()
-  if (normalized.startsWith('MH') || selectedState === 'mh') {
+
+  if (norm.startsWith('MH') || selectedState === 'mh') {
     return cards.mh || defaultCard
   }
   return cards.tn || defaultCard
@@ -2271,21 +2329,62 @@ function Lookup({ t, lang, setLang, selectedState, isLoading, lookup, initialCar
 
   const submit = () => {
     const clean = number.trim().toUpperCase()
+    setError('')
+
+    // 1. Basic length check
     if (clean.length < 6) {
       setError(t.cardError)
       return
     }
 
+    // 2. Cross-state detection
     if (selectedState === 'tn' && clean.startsWith('MH')) {
-      setError('This is a Maharashtra card. Please switch state to Maharashtra.')
+      setError(t.wrongStateTn || 'This is a Maharashtra card. Please switch state to Maharashtra.')
       return
     }
     if (selectedState === 'mh' && clean.startsWith('TN')) {
-      setError('This is a Tamil Nadu card. Please switch state to Tamil Nadu.')
+      setError(t.wrongStateMh || 'This is a Tamil Nadu card. Please switch state to Tamil Nadu.')
       return
     }
 
-    setError('')
+    // 3. State prefix format check
+    if (selectedState === 'tn' && !clean.startsWith('TN')) {
+      setError(t.cardIncompleteTn || 'Tamil Nadu cards must start with TN (e.g. TN-02-G-849201).')
+      return
+    }
+    if (selectedState === 'mh' && !clean.startsWith('MH')) {
+      setError(t.cardIncompleteMh || 'Maharashtra cards must start with MH (e.g. MH-12-0418-2675).')
+      return
+    }
+
+    // 4. Incomplete number check (e.g. TN-02-G-8492 missing digits)
+    const alphaOnly = clean.replace(/[^0-9A-Z]/g, '')
+    if (selectedState === 'tn' && alphaOnly.length < 10) {
+      setError(t.cardIncompleteTn || 'Incomplete card number. Tamil Nadu cards must be in format TN-XX-X-XXXXXX (e.g. TN-02-G-849201).')
+      return
+    }
+    if (selectedState === 'mh' && alphaOnly.length < 12) {
+      setError(t.cardIncompleteMh || 'Incomplete card number. Maharashtra cards must be in format MH-XX-XXXX-XXXX (e.g. MH-12-0418-2675).')
+      return
+    }
+
+    // 5. Authentic PDS Registry Check against registered cards
+    const isMh = selectedState === 'mh'
+    const allowedCards = isMh
+      ? ['MH-12-0418-2675', 'MH-01-9218-4410']
+      : ['TN-02-G-849201', 'TN-04-A-109284']
+
+    const isMatch = allowedCards.some((ac) => {
+      const acAlpha = ac.replace(/[^0-9A-Z]/g, '')
+      return clean === ac || alphaOnly === acAlpha
+    })
+
+    if (!isMatch) {
+      setError(t.cardNotFound || 'Card not found in State PDS Registry. Please check the number or select a demo card below.')
+      return
+    }
+
+    // 6. Valid & Authenticated in registry -> proceed to OTP verification
     lookup(clean)
   }
 
@@ -2644,11 +2743,40 @@ function HomePage({
   }, [])
 
   const checkHelper = () => {
-    if (helperNumber.trim().length < 6) {
+    const clean = helperNumber.trim().toUpperCase()
+    setHelperError('')
+
+    if (clean.length < 6) {
       setHelperError(t.cardError)
       return
     }
-    lookup(helperNumber, true)
+
+    const alphaOnly = clean.replace(/[^0-9A-Z]/g, '')
+    if (selectedState === 'tn' && alphaOnly.length < 10) {
+      setHelperError(t.cardIncompleteTn || 'Incomplete card number.')
+      return
+    }
+    if (selectedState === 'mh' && alphaOnly.length < 12) {
+      setHelperError(t.cardIncompleteMh || 'Incomplete card number.')
+      return
+    }
+
+    const isMh = selectedState === 'mh'
+    const allowedCards = isMh
+      ? ['MH-12-0418-2675', 'MH-01-9218-4410']
+      : ['TN-02-G-849201', 'TN-04-A-109284']
+
+    const isMatch = allowedCards.some((ac) => {
+      const acAlpha = ac.replace(/[^0-9A-Z]/g, '')
+      return clean === ac || alphaOnly === acAlpha
+    })
+
+    if (!isMatch) {
+      setHelperError(t.cardNotFound || 'Card not found in State PDS Registry.')
+      return
+    }
+
+    lookup(clean, true)
   }
 
   const helperNames = {
