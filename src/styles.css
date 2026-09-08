@@ -3227,3 +3227,398 @@ input:focus{border-color:var(--ink);box-shadow:0 0 0 3px var(--turmeric-tint)}
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
 }
+
+/* ===================================================================
+   Family Members Roster & e-KYC Modal Styles
+   =================================================================== */
+.family-roster-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--paper-card);
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-shadow: 0 1px 2px rgba(30,42,60,0.06);
+}
+.family-roster-chip:hover {
+  background: var(--turmeric-tint);
+  border-color: var(--turmeric);
+}
+.family-modal {
+  background: var(--paper-card);
+  border-radius: 18px;
+  max-width: 480px;
+  width: 92%;
+  max-height: 88vh;
+  overflow-y: auto;
+  padding: 22px;
+  border: 2px solid var(--turmeric);
+  box-shadow: 0 16px 36px rgba(30,42,60,0.22);
+}
+.family-modal-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.family-modal-title h2 {
+  font-size: 1.15rem;
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-display);
+}
+.family-formula-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: var(--turmeric-tint);
+  border: 1.5px dashed var(--turmeric);
+  padding: 12px 14px;
+  border-radius: 12px;
+  margin: 16px 0;
+  text-align: left;
+}
+.family-formula-banner b {
+  font-size: 0.95rem;
+  color: var(--turmeric-deep);
+  display: block;
+}
+.family-formula-banner p {
+  font-size: 0.78rem;
+  margin: 4px 0 0;
+  color: var(--ink-soft);
+}
+.family-roster-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.family-member-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: var(--paper);
+  border: 1.5px solid var(--rule-soft);
+  border-radius: 12px;
+  transition: transform 0.15s ease;
+  text-align: left;
+}
+.family-member-card.verified {
+  border-left: 4px solid var(--stamp-green);
+}
+.family-member-card.pending {
+  border-left: 4px solid var(--stamp-amber);
+  background: #FFFDF7;
+}
+.member-avatar {
+  font-size: 1.5rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--paper-card);
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--rule);
+  flex-shrink: 0;
+}
+.member-info {
+  flex: 1;
+}
+.member-name-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+.member-name-row b {
+  font-size: 0.96rem;
+  color: var(--ink);
+}
+.ekyc-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+.ekyc-badge.verified {
+  background: var(--stamp-green-tint);
+  color: var(--stamp-green);
+  border: 1px solid var(--stamp-green);
+}
+.ekyc-badge.pending {
+  background: var(--stamp-amber-tint);
+  color: var(--stamp-amber);
+  border: 1px solid var(--stamp-amber);
+}
+.member-meta-tags {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  margin-bottom: 4px;
+}
+.member-status-sub {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+}
+.member-quota-pill {
+  background: var(--paper-card);
+  border: 1px solid var(--rule);
+  padding: 1px 7px;
+  border-radius: 8px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.ekyc-notice-text {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+  margin-bottom: 14px;
+  line-height: 1.35;
+  text-align: left;
+}
+
+/* ===================================================================
+   Statutory Price & Zero-Overcharge Calculator Styles
+   =================================================================== */
+.statutory-bill-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--paper-card);
+  border: 1.5px solid var(--turmeric);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin: 14px 0;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 2px 8px rgba(30,42,60,0.06);
+  text-align: left;
+}
+.statutory-bill-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(216,154,30,0.2);
+}
+.bill-card-left {
+  flex: 1;
+}
+.bill-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.bill-title-row b {
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+.zero-grain-pill {
+  font-size: 0.68rem;
+  font-weight: 800;
+  background: var(--stamp-green-tint);
+  color: var(--stamp-green);
+  border: 1px solid var(--stamp-green);
+  padding: 1px 7px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+.bill-sub {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  margin: 0;
+  line-height: 1.35;
+}
+.bill-card-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 12px;
+}
+.bill-amount-badge {
+  text-align: right;
+}
+.bill-amount-badge small {
+  display: block;
+  font-size: 0.68rem;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.bill-amount-badge b {
+  font-size: 1.25rem;
+  color: var(--turmeric-deep);
+  font-family: var(--font-display);
+}
+
+.price-calc-modal {
+  background: var(--paper-card);
+  border-radius: 18px;
+  max-width: 500px;
+  width: 92%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 22px;
+  border: 2px solid var(--turmeric);
+  box-shadow: 0 16px 40px rgba(30,42,60,0.25);
+  text-align: left;
+}
+.price-modal-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.price-gov-icon {
+  font-size: 1.6rem;
+}
+.price-modal-title h2 {
+  font-size: 1.12rem;
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-display);
+}
+.price-modal-title small {
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+}
+.zero-grain-shield-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: var(--stamp-green-tint);
+  border: 1.5px solid var(--stamp-green);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin: 16px 0;
+  color: var(--ink);
+}
+.zero-grain-shield-banner b {
+  display: block;
+  font-size: 0.92rem;
+  color: var(--stamp-green);
+  margin-bottom: 3px;
+}
+.zero-grain-shield-banner p {
+  font-size: 0.76rem;
+  margin: 0;
+  line-height: 1.35;
+  color: var(--ink);
+}
+
+.price-grand-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--paper);
+  border: 1.5px solid var(--rule);
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+}
+.grand-hero-left small {
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.grand-price-amount {
+  font-size: 2.1rem;
+  margin: 2px 0 0;
+  color: var(--turmeric-deep);
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+.max-bill-note {
+  font-size: 0.7rem;
+  color: var(--stamp-green);
+  font-weight: 700;
+}
+.grand-hero-right {
+  text-align: right;
+}
+.subsidy-pill {
+  background: var(--turmeric-tint);
+  border: 1px solid var(--turmeric);
+  border-radius: 10px;
+  padding: 6px 10px;
+  margin-bottom: 6px;
+}
+.subsidy-pill span {
+  display: block;
+  font-size: 0.68rem;
+  color: var(--ink-soft);
+}
+.subsidy-pill b {
+  font-size: 1.05rem;
+  color: var(--turmeric-deep);
+}
+.market-compare {
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+}
+
+.statutory-table-wrapper {
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 18px;
+  background: var(--paper);
+}
+.statutory-price-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+.statutory-price-table th {
+  background: var(--paper-card);
+  padding: 9px 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+}
+.statutory-price-table td {
+  padding: 9px 10px;
+  border-bottom: 1px dashed var(--rule-soft);
+  color: var(--ink);
+}
+.statutory-price-table tr:last-child td {
+  border-bottom: none;
+}
+.free-tag {
+  display: block;
+  font-size: 0.68rem;
+  color: var(--stamp-green);
+  font-weight: 700;
+}
+.price-modal-actions {
+  display: flex;
+  gap: 10px;
+}
+.price-modal-actions .button {
+  flex: 1;
+  font-size: 0.86rem;
+  padding: 10px 14px;
+}
+.button.danger {
+  background: var(--stamp-red-tint);
+  color: var(--stamp-red);
+  border: 1.5px solid var(--stamp-red);
+  font-weight: 700;
+}
+.button.danger:hover {
+  background: var(--stamp-red);
+  color: #fff;
+}

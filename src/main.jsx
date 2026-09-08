@@ -132,7 +132,34 @@ const text = {
     shortfallBadge: 'Shortfall',
     kgUnit: 'kg',
     statusColumn: 'Status',
-    arrivalSlotLabel: 'Arrival Time Slot'
+    arrivalSlotLabel: 'Arrival Time Slot',
+    familyModalTitle: 'Registered Family Members & e-KYC',
+    familySubtitle: 'NFSA Statutory Norm: 5 kg grain quota per verified member',
+    familyMembersChip: 'Family Members',
+    ekycVerified: 'Biometric e-KYC Active',
+    ekycPending: 'e-KYC Update Required',
+    officialBillTitle: 'Statutory Price & Zero-Overcharge Bill',
+    subsidySavedSub: 'Official FPS Max Bill: ₹43.50 · ₹861.50 Govt Subsidy Saved',
+    totalPayable: 'Maximum Statutory Amount Payable at FPS',
+    totalPayableShort: 'Max to Pay',
+    zeroGrainGuarantee: '₹0 Rice & Wheat Legal Guarantee',
+    overchargeWarning: 'Under NFSA 2013 & PMGKAY, Rice and Wheat are strictly 100% FREE. It is illegal for the dealer to charge any packaging, handling, or transport fees. Never pay more than the official total.',
+    reportOverchargeBtn: 'Report Dealer Overcharging',
+    marketValue: 'Open Market Value',
+    govtSubsidySaved: 'Total Govt Subsidy Saved',
+    checkBill: 'Check Official Bill',
+    statutoryCommodity: 'Commodity',
+    statutoryRate: 'Govt Price',
+    marketRate: 'Market Price',
+    subsidyRate: 'Govt Subsidy',
+    freeGrain: 'FREE (100% Subsidy)',
+    headSelf: 'Head of Family (Self)',
+    spouse: 'Spouse',
+    daughter: 'Daughter',
+    son: 'Son',
+    ageYears: 'yrs',
+    verifiedPill: 'Verified',
+    actionRequiredPill: 'Action Required',
   },
   ta: {
     app: 'அன்ன சேது', greeting: 'வணக்கம்', tagline: 'சரியான ரேஷன் தகவல், சரியான நேரத்தில்',
@@ -239,7 +266,34 @@ const text = {
     shortfallBadge: 'பற்றாக்குறை',
     kgUnit: 'கிலோ',
     statusColumn: 'நிலை',
-    arrivalSlotLabel: 'வருகை நேரம்'
+    arrivalSlotLabel: 'வருகை நேரம்',
+    familyModalTitle: 'பதிவு செய்யப்பட்ட குடும்ப உறுப்பினர்கள் & இ-கேஒய்சி',
+    familySubtitle: 'NFSA சட்ட விதி: சரிபார்க்கப்பட்ட உறுப்பினருக்கு 5 கிலோ தானிய ஒதுக்கீடு',
+    familyMembersChip: 'குடும்ப உறுப்பினர்கள்',
+    ekycVerified: 'பயோமெட்ரிக் இ-கேஒய்சி சரிபார்க்கப்பட்டது',
+    ekycPending: 'இ-கேஒய்சி புதுப்பித்தல் தேவை',
+    officialBillTitle: 'சட்டப்பூர்வ விலை & கட்டண சரிபார்ப்பு',
+    subsidySavedSub: 'ரேஷன் கடை அதிகபட்ச கட்டணம்: ₹43.50 · ₹861.50 அரசு மானிய சேமிப்பு',
+    totalPayable: 'ரேஷன் கடையில் செலுத்த வேண்டிய அதிகபட்ச தொகை',
+    totalPayableShort: 'செலுத்த வேண்டியது',
+    zeroGrainGuarantee: '₹0 இலவச அரிசி & கோதுமை சட்ட உத்தரவாதம்',
+    overchargeWarning: 'NFSA 2013 மற்றும் PMGKAY சட்டப்படி, அரிசி மற்றும் கோதுமை 100% இலவசம். கையாளுதல் அல்லது பேக்கிங் கட்டணம் வசூலிப்பது சட்டப்படி குற்றம். அதிகாரப்பூர்வ தொகையை விட கூடுதலாக செலுத்த வேண்டாம்.',
+    reportOverchargeBtn: 'கூடுதல் கட்டணம் வசூலித்தால் புகார் செய்க',
+    marketValue: 'வெளிச்சந்தை மதிப்பு',
+    govtSubsidySaved: 'அரசு மானிய சேமிப்பு',
+    checkBill: 'அதிகாரப்பூர்வ ரசீது காண்க',
+    statutoryCommodity: 'பொருள்',
+    statutoryRate: 'அரசு விலை',
+    marketRate: 'சந்தை விலை',
+    subsidyRate: 'அரசு மானியம்',
+    freeGrain: 'இலவசம் (100% மானியம்)',
+    headSelf: 'குடும்பத் தலைவர்',
+    spouse: 'கணவர்/மனைவி',
+    daughter: 'மகள்',
+    son: 'மகன்',
+    ageYears: 'வயது',
+    verifiedPill: 'சரிபார்க்கப்பட்டது',
+    actionRequiredPill: 'நடவடிக்கை தேவை',
   },
   hi: {
     app: 'अन्न सेतु', greeting: 'नमस्ते', tagline: 'राशन की सही जानकारी, सही समय पर',
@@ -346,7 +400,34 @@ const text = {
     shortfallBadge: 'कमी',
     kgUnit: 'किग्रा',
     statusColumn: 'स्थिति',
-    arrivalSlotLabel: 'आगमन समय स्लॉट'
+    arrivalSlotLabel: 'आगमन समय स्लॉट',
+    familyModalTitle: 'पंजीकृत परिवार के सदस्य एवं ई-केवाईसी',
+    familySubtitle: 'NFSA वैधानिक नियम: प्रति सत्यापित सदस्य 5 किग्रा अनाज कोटा',
+    familyMembersChip: 'परिवार सदस्य',
+    ekycVerified: 'बायोमेट्रिक ई-केवाईसी सक्रिय',
+    ekycPending: 'ई-केवाईसी अपडेट आवश्यक',
+    officialBillTitle: 'वैधानिक मूल्य एवं शून्य-अतिप्रभार बिल',
+    subsidySavedSub: 'राशन दुकान अधिकतम बिल: ₹43.50 · ₹861.50 सरकारी सब्सिडी बचत',
+    totalPayable: 'राशन दुकान काउंटर पर देय अधिकतम राशि',
+    totalPayableShort: 'देय राशि',
+    zeroGrainGuarantee: '₹0 चावल एवं गेहूँ कानूनी गारंटी',
+    overchargeWarning: 'NFSA 2013 और PMGKAY के तहत, चावल और गेहूँ 100% मुफ़्त हैं। डीलर द्वारा हैंडलिंग या पैकिंग शुल्क लेना दंडनीय अपराध है। आधिकारिक बिल से अधिक भुगतान न करें।',
+    reportOverchargeBtn: 'अवैध वसूली की शिकायत करें',
+    marketValue: 'खुले बाजार का मूल्य',
+    govtSubsidySaved: 'सरकारी सब्सिडी की कुल बचत',
+    checkBill: 'सरकारी बिल देखें',
+    statutoryCommodity: 'खाद्यान्न',
+    statutoryRate: 'सरकारी मूल्य',
+    marketRate: 'बाजार मूल्य',
+    subsidyRate: 'सरकारी सब्सिडी',
+    freeGrain: 'मुफ़्त (100% सब्सिडी)',
+    headSelf: 'परिवार का मुखिया (स्वयं)',
+    spouse: 'पति/पत्नी',
+    daughter: 'पुत्री',
+    son: 'पुत्र',
+    ageYears: 'वर्ष',
+    verifiedPill: 'सत्यापित',
+    actionRequiredPill: 'कार्रवाई आवश्यक',
   },
   mr: {
     app: 'अन्न सेतु', greeting: 'नमस्ते', tagline: 'रेशनची अचूक माहिती, योग्य वेळी',
@@ -453,7 +534,34 @@ const text = {
     shortfallBadge: 'तुटवडा',
     kgUnit: 'किलो',
     statusColumn: 'स्थिती',
-    arrivalSlotLabel: 'येण्याची वेळ'
+    arrivalSlotLabel: 'येण्याची वेळ',
+    familyModalTitle: 'नोंदणीकृत कुटुंबातील सदस्य आणि ई-केवायसी',
+    familySubtitle: 'NFSA वैधानिक नियम: प्रति पडताळणी सदस्य 5 किलो धान्य कोटा',
+    familyMembersChip: 'कुटुंब सदस्य',
+    ekycVerified: 'बायोमेट्रिक ई-केवायसी सक्रिय',
+    ekycPending: 'ई-केवायसी अपडेट आवश्यक',
+    officialBillTitle: 'वैधानिक दर आणि शून्य-अतिप्रभार बिल',
+    subsidySavedSub: 'रास्त भाव दुकान कमाल बिल: ₹43.50 · ₹861.50 सरकारी अनुदान बचत',
+    totalPayable: 'रास्त भाव दुकानात द्यावयाची कमाल रक्कम',
+    totalPayableShort: 'देय रक्कम',
+    zeroGrainGuarantee: '₹0 मोफत तांदूळ व गहू कायदेशीर हमी',
+    overchargeWarning: 'NFSA 2013 व PMGKAY अंतर्गत तांदूळ आणि गहू 100% मोफत आहेत. हाताळणी किंवा पॅकिंग शुल्क आकारणे हा कायद्याने गुन्हा आहे. अधिकृत रकमेपेक्षा जास्त पैसे देऊ नका.',
+    reportOverchargeBtn: 'जादा पैसे आकारल्यास तक्रार करा',
+    marketValue: 'खुल्या बाजारातील मूल्य',
+    govtSubsidySaved: 'सरकारी अनुदानाची एकूण बचत',
+    checkBill: 'शासकीय बिल पहा',
+    statutoryCommodity: 'वस्तू',
+    statutoryRate: 'शासकीय दर',
+    marketRate: 'बाजार भाव',
+    subsidyRate: 'सरकारी अनुदान',
+    freeGrain: 'मोफत (100% अनुदान)',
+    headSelf: 'कुटुंब प्रमुख (स्वतः)',
+    spouse: 'पती/पत्नी',
+    daughter: 'मुलगी',
+    son: 'मुलगा',
+    ageYears: 'वर्षे',
+    verifiedPill: 'पडताळणी झाली',
+    actionRequiredPill: 'कार्रवाई आवश्यक',
   },
   te: {
     app: 'అన్న సేతు', greeting: 'నమస్కారం', tagline: 'సరైన రేషన్ సమాచారం, సరైన సమయంలో',
@@ -560,7 +668,34 @@ const text = {
     shortfallBadge: 'కొరత',
     kgUnit: 'కేజీలు',
     statusColumn: 'స్థితి',
-    arrivalSlotLabel: 'రాక సమయ స్లాట్'
+    arrivalSlotLabel: 'రాక సమయ స్లాట్',
+    familyModalTitle: 'నమోదైన కుటుంబ సభ్యులు మరియు ఈ-కేవైసీ',
+    familySubtitle: 'NFSA చట్టపరమైన నిబంధన: ధృవీకరించిన ప్రతి సభ్యునికి 5 కేజీల ధాన్యాల కోటా',
+    familyMembersChip: 'కుటుంబ సభ్యులు',
+    ekycVerified: 'బయోమెట్రిక్ ఈ-కేవైసీ యాక్టివ్',
+    ekycPending: 'ఈ-కేవైసీ అప్‌డేట్ అవసరం',
+    officialBillTitle: 'చట్టబద్ధ ధర & జీరో-ఓవర్‌ఛార్జ్ బిల్లు',
+    subsidySavedSub: 'రేషన్ దుకాణం గరిష్ట బిల్లు: ₹43.50 · ₹861.50 ప్రభుత్వ సబ్సిడీ ఆదా',
+    totalPayable: 'రేషన్ దుకాణం కౌంటర్‌లో చెల్లించాల్సిన గరిష్ట మొత్తం',
+    totalPayableShort: 'చెల్లించాల్సింది',
+    zeroGrainGuarantee: '₹0 ఉచిత బియ్యం & గోధుమలు చట్టపరమైన హామీ',
+    overchargeWarning: 'NFSA 2013 మరియు PMGKAY ప్రకారం, బియ్యం మరియు గోధుమలు 100% ఉచితం. డీలర్ హ్యాండ్లింగ్ లేదా ప్యాకింగ్ ఛార్జీలు వసూలు చేయడం చట్టరీత్యా నేరం. అధికారిక బిల్లు కంటే ఎక్కువ చెల్లించవద్దు.',
+    reportOverchargeBtn: 'అదనపు వసూళ్లపై ఫిర్యాదు చేయండి',
+    marketValue: 'బహిరంగ మార్కెట్ విలువ',
+    govtSubsidySaved: 'ప్రభుత్వ సబ్సిడీ మొత్తం ఆదా',
+    checkBill: 'అధికారిక బిల్లు చూడండి',
+    statutoryCommodity: 'సరుకులు',
+    statutoryRate: 'ప్రభుత్వ ధర',
+    marketRate: 'మార్కెట్ ధర',
+    subsidyRate: 'ప్రభుత్వ సబ్సిడీ',
+    freeGrain: 'ఉచితం (100% సబ్సిడీ)',
+    headSelf: 'కుటుంబ పెద్ద (స్వయం)',
+    spouse: 'జీవిత భాగస్వామి',
+    daughter: 'కుమార్తె',
+    son: 'కుమారుడు',
+    ageYears: 'సంవత్సరాలు',
+    verifiedPill: 'ధృవీకరించబడింది',
+    actionRequiredPill: 'చర్య అవసరం',
   },
   kn: {
     app: 'ಅನ್ನ ಸೇತು', greeting: 'ನಮಸ್ಕಾರ', tagline: 'ಸರಿಯಾದ ಪಡಿತರ ಮಾಹಿತಿ, ಸರಿಯಾದ ಸಮಯದಲ್ಲಿ',
@@ -667,7 +802,34 @@ const text = {
     shortfallBadge: 'ಕೊರತೆ',
     kgUnit: 'ಕೆಜಿ',
     statusColumn: 'ಸ್ಥಿತಿ',
-    arrivalSlotLabel: 'ಭೇಟಿ ಸಮಯ ಸ್ಲಾಟ್'
+    arrivalSlotLabel: 'ಭೇಟಿ ಸಮಯ ಸ್ಲಾಟ್',
+    familyModalTitle: 'ನೋಂದಾಯಿತ ಕುಟುಂಬ ಸದಸ್ಯರು ಮತ್ತು ಇ-ಕೆವೈಸಿ',
+    familySubtitle: 'NFSA ಶಾಸನಬದ್ಧ ನಿಯಮ: ಪ್ರತಿ ದೃಢೀಕರಿಸಿದ ಸದಸ್ಯರಿಗೆ 5 ಕೆಜಿ ಧಾನ್ಯ ಕೋಟಾ',
+    familyMembersChip: 'ಕುಟುಂಬ ಸದಸ್ಯರು',
+    ekycVerified: 'ಬಯೋಮೆಟ್ರಿಕ್ ಇ-ಕೆವೈಸಿ ಸಕ್ರಿಯ',
+    ekycPending: 'ಇ-ಕೆವೈಸಿ ಅಪ್‌ಡೇಟ್ ಅಗತ್ಯವಿದೆ',
+    officialBillTitle: 'ಶಾಸನಬದ್ಧ ಬೆಲೆ ಮತ್ತು ಅಧಿಕೃತ ಬಿಲ್',
+    subsidySavedSub: 'ನ್ಯಾಯಬೆಲೆ ಅಂಗಡಿ ಗರಿಷ್ಠ ಬಿಲ್: ₹43.50 · ₹861.50 ಸರ್ಕಾರಿ ಸಬ್ಸಿಡಿ ಉಳಿತಾಯ',
+    totalPayable: 'ನ್ಯಾಯಬೆಲೆ ಅಂಗಡಿಯಲ್ಲಿ ಪಾವತಿಸಬೇಕಾದ ಗರಿಷ್ಠ ಮೊತ್ತ',
+    totalPayableShort: 'ಪಾವತಿಸಬೇಕಾದ ಮೊತ್ತ',
+    zeroGrainGuarantee: '₹0 ಉಚಿತ ಅಕ್ಕಿ ಮತ್ತು ಗೋಧಿ ಕಾನೂನು ಖಾತರಿ',
+    overchargeWarning: 'NFSA 2013 ಮತ್ತು PMGKAY ಅಡಿಯಲ್ಲಿ ಅಕ್ಕಿ ಮತ್ತು ಗೋಧಿ 100% ಉಚಿತ. ಡೀಲರ್ ಹ್ಯಾಂಡ್ಲಿಂಗ್ ಅಥವಾ ಪ್ಯಾಕಿಂಗ್ ಶುಲ್ಕ ವಸೂಲಿ ಮಾಡುವುದು ಕಾನೂನುಬಾಹಿರ. ಅಧಿಕೃತ ಮೊತ್ತಕ್ಕಿಂತ ಹೆಚ್ಚು ಪಾವತಿಸಬೇಡಿ.',
+    reportOverchargeBtn: 'ಹೆಚ್ಚುವರಿ ವಸೂಲಿ ಬಗ್ಗೆ ದೂರು ನೀಡಿ',
+    marketValue: 'ಮುಕ್ತ ಮಾರುಕಟ್ಟೆ ಮೌಲ್ಯ',
+    govtSubsidySaved: 'ಸರ್ಕಾರಿ ಸಬ್ಸಿಡಿ ಉಳಿತಾಯ',
+    checkBill: 'ಅಧಿಕೃತ ಬಿಲ್ ನೋಡಿ',
+    statutoryCommodity: 'ದವಸ-ಧಾನ್ಯ',
+    statutoryRate: 'ಸರ್ಕಾರಿ ಬೆಲೆ',
+    marketRate: 'ಮಾರುಕಟ್ಟೆ ಬೆಲೆ',
+    subsidyRate: 'ಸರ್ಕಾರಿ ಸಬ್ಸಿಡಿ',
+    freeGrain: 'ಉಚಿತ (100% ಸಬ್ಸಿಡಿ)',
+    headSelf: 'ಕುಟುಂಬದ ಮುಖ್ಯಸ್ಥ (ಸ್ವಯಂ)',
+    spouse: 'ಪತಿ/ಪತ್ನಿ',
+    daughter: 'ಮಗಳು',
+    son: 'ಮಗ',
+    ageYears: 'ವರ್ಷ',
+    verifiedPill: 'ದೃಢೀಕರಿಸಲಾಗಿದೆ',
+    actionRequiredPill: 'ಕ್ರಮ ಅಗತ್ಯವಿದೆ',
   },
   ml: {
     app: 'അന്ന സേതു', greeting: 'നമസ്കാരം', tagline: 'കൃത്യമായ റേഷൻ വിവരങ്ങൾ, കൃത്യസമയത്ത്',
@@ -774,7 +936,34 @@ const text = {
     shortfallBadge: 'കുറവ്',
     kgUnit: 'കിലോഗ്രാം',
     statusColumn: 'നില',
-    arrivalSlotLabel: 'സന്ദർശന സമയ സ്ലോട്ട്'
+    arrivalSlotLabel: 'സന്ദർശന സമയ സ്ലോട്ട്',
+    familyModalTitle: 'രജിസ്റ്റർ ചെയ്ത കുടുംബാംഗങ്ങളും ഇ-കെവൈസിയും',
+    familySubtitle: 'NFSA നിയമപരമായ വ്യവസ്ഥ: പരിശോധിച്ച ഓരോ അംഗത്തിനും 5 കിലോഗ്രാം ധാന്യ വിഹിതം',
+    familyMembersChip: 'കുടുംബാംഗങ്ങൾ',
+    ekycVerified: 'ബയോമെട്രിക് ഇ-കെവൈസി സജീവം',
+    ekycPending: 'ഇ-കെവൈസി പുതുക്കൽ ആവശ്യമാണ്',
+    officialBillTitle: 'നിയമാനുസൃത വിലയും ഔദ്യോഗിക ബില്ലും',
+    subsidySavedSub: 'റേഷൻ കട പരമാവധി ബിൽ: ₹43.50 · ₹861.50 സർക്കാർ സബ്‌സിഡി ലാഭം',
+    totalPayable: 'റേഷൻ കടയിൽ അടയ്‌ക്കേണ്ട പരമാവധി തുക',
+    totalPayableShort: 'നൽകേണ്ട തുക',
+    zeroGrainGuarantee: '₹0 സൗജന്യ അരിയും ഗോതമ്പും നിയമപരമായ ഉറപ്പ്',
+    overchargeWarning: 'NFSA 2013, PMGKAY പ്രകാരം അരിയും ഗോതമ്പും 100% സൗജന്യമാണ്. ഡീലർമാർ അധിക ഫീസ് ഈടാക്കുന്നത് ശിക്ഷാർഹമായ കുറ്റമാണ്. ഔദ്യോഗിക തുകയിൽ കൂടുതൽ നൽകരുത്.',
+    reportOverchargeBtn: 'അധിക നിരക്ക് ഈടാക്കിയാൽ പരാതിപ്പെടുക',
+    marketValue: 'തുറന്ന വിപണി വില',
+    govtSubsidySaved: 'സർക്കാർ സബ്‌സിഡി ആകെ ലാഭം',
+    checkBill: 'ഔദ്യോഗിക ബിൽ കാണുക',
+    statutoryCommodity: 'ധാന്യം',
+    statutoryRate: 'സർക്കാർ വില',
+    marketRate: 'വിപണി വില',
+    subsidyRate: 'സർക്കാർ സബ്‌സിഡി',
+    freeGrain: 'സൗജന്യം (100% സബ്‌സിഡി)',
+    headSelf: 'കുടുംബനാഥ (സ്വയം)',
+    spouse: 'ഭർത്താവ്/ഭാര്യ',
+    daughter: 'മകൾ',
+    son: 'മകൻ',
+    ageYears: 'വയസ്സ്',
+    verifiedPill: 'പരിശോധിച്ചു',
+    actionRequiredPill: 'നടപടി ആവശ്യമാണ്',
   }
 }
 
@@ -1467,6 +1656,8 @@ function App() {
   const [showReceipt, setShowReceipt] = useState(false)
   const [selectedHistoryItem, setSelectedHistoryItem] = useState(null)
   const [showAssistant, setShowAssistant] = useState(false)
+  const [showFamilyModal, setShowFamilyModal] = useState(false)
+  const [showPriceModal, setShowPriceModal] = useState(false)
   const [offlineQueuedGrievances, setOfflineQueuedGrievances] = useState(() => {
     try {
       return JSON.parse(localStorage.getItem('anna_offline_queue') || '[]')
@@ -1801,6 +1992,33 @@ function App() {
           onClose={() => setSelectedHistoryItem(null)}
           onRaiseGrievance={() => {
             setSelectedHistoryItem(null)
+            setReason('stock')
+            setFastForwarded(true)
+            setPage('grievance')
+          }}
+        />
+      )}
+
+      {/* Family Members & e-KYC Modal */}
+      {showFamilyModal && (
+        <FamilyMembersModal
+          t={t}
+          lang={lang}
+          card={currentCard}
+          onClose={() => setShowFamilyModal(false)}
+        />
+      )}
+
+      {/* Official Price & Zero-Overcharge Calculator Modal */}
+      {showPriceModal && (
+        <PriceCalculatorModal
+          t={t}
+          lang={lang}
+          card={currentCard}
+          selectedState={selectedState}
+          onClose={() => setShowPriceModal(false)}
+          onReportOvercharge={() => {
+            setShowPriceModal(false)
             setReason('stock')
             setFastForwarded(true)
             setPage('grievance')
@@ -2301,6 +2519,15 @@ function HomePage({
   const [helperError, setHelperError] = useState('')
   const [isPlayingAudio, setIsPlayingAudio] = useState(false)
 
+  useEffect(() => {
+    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+      window.speechSynthesis.getVoices()
+      window.speechSynthesis.onvoiceschanged = () => {
+        window.speechSynthesis.getVoices()
+      }
+    }
+  }, [])
+
   const checkHelper = () => {
     if (helperNumber.trim().length < 6) {
       setHelperError(t.cardError)
@@ -2327,7 +2554,7 @@ function HomePage({
   const isEn = lang === 'en'
   const currentLangObj = languages.find((l) => l.code === lang) || languages[0]
 
-  // Web Speech API Voice synthesis
+  // Web Speech API Voice synthesis (Intelligent Native & Phonetic Fallback)
   const speakEntitlement = () => {
     if (!('speechSynthesis' in window)) {
       alert('Speech synthesis is not supported in this browser.')
@@ -2340,20 +2567,59 @@ function HomePage({
       return
     }
 
-    const speechMap = {
-      en: `Hello ${userName}. Status for August 2026: Full quota received. Your entitlement includes ${card.entitledWheat || 20} kilograms wheat, ${card.entitledRice || 15} kilograms rice, 1 kilogram sugar, and 1 kilogram toor dal.`,
-      ta: `வணக்கம் ${userName}. இந்த மாத ரேஷன் நிலை: முழு ரேஷன் கிடைத்தது. ஆகஸ்ட் 2026 ஒதுக்கீடு.`,
-      hi: `नमस्ते ${userName}। इस महीने का राशन प्राप्त हुआ। अगस्त 2026 का पूरा कोटा।`,
-      mr: `नमस्कार ${userName}। या महिन्याचे रेशन प्राप्त झाले. ऑगस्ट 2026 चा पूर्ण कोटा.`,
-      te: `నమస్కారం ${userName}. ఈ నెల రేషన్ స్థితి: పూర్తి రేషన్ అందింది. ఆగస్టు 2026 కోటా.`,
-      kn: `ನಮಸ್ಕಾರ ${userName}. ಈ ತಿಂಗಳ ಪಡಿತರ ಸ್ಥಿತಿ: ಪೂರ್ಣ ಪಡಿತರ ಲಭಿಸಿದೆ. ಆಗಸ್ಟ್ 2026 ಕೋಟಾ.`,
-      ml: `നമസ്കാരം ${userName}. ഈ മാസത്തെ റേഷൻ നില: മുഴുവൻ റേഷനും ലഭിച്ചു. ആഗസ്റ്റ് 2026 ക്വാട്ട.`
+    const nativeSpeechMap = {
+      en: `Hello ${userName}. Status for August 2026: Full quota received. Your entitlement includes ${card.entitledWheat || 20} kilograms wheat, ${card.entitledRice || 15} kilograms rice, 1 kilogram sugar, and 1 kilogram toor dal. Total official price at counter is 43 rupees 50 paise. Grains are 100 percent free. Thank you.`,
+      ta: `வணக்கம் ${userName}. ஆகஸ்ட் 2026 ரேஷன் நிலை: முழு ஒதுக்கீடு கிடைத்தது. உங்கள் ஒதுக்கீட்டில் ${card.entitledWheat || 20} கிலோ கோதுமை, ${card.entitledRice || 15} கிலோ அரிசி, 1 கிலோ சர்க்கரை மற்றும் 1 கிலோ துவரம் பருப்பு உள்ளது. ரேஷன் கடையில் செலுத்த வேண்டிய அதிகாரப்பூர்வ தொகை நாற்பத்து மூன்று ரூபாய் ஐம்பது காசுகள் மட்டுமே. அரிசி மற்றும் கோதுமை முற்றிலும் இலவசம். நன்றி.`,
+      hi: `नमस्ते ${userName}। अगस्त 2026 का राशन विवरण: पूरा कोटा प्राप्त हुआ। आपके कोटे में ${card.entitledWheat || 20} किग्रा गेहूँ, ${card.entitledRice || 15} किग्रा चावल, 1 किग्रा चीनी और 1 किग्रा दाल है। दुकान पर देय आधिकारिक मूल्य तिरालीस रुपये पचास पैसे है। खाद्यान्न पूरी तरह मुफ़्त है। धन्यवाद।`,
+      mr: `नमस्कार ${userName}। ऑगस्ट 2026 रेशन स्थिती: पूर्ण कोटा मिळाला. तुमच्या कोट्यात ${card.entitledWheat || 20} किलो गहू, ${card.entitledRice || 15} किलो तांदूळ, 1 किलो साखर आणि 1 किलो डाळ आहे. दुकानात द्यावयाची अधिकृत रक्कम त्रेचाळीस रुपये पन्नास पैसे आहे. धान्य पूर्णपणे मोफत आहे. धन्यवाद.`,
+      te: `నమస్కారం ${userName}. ఆగస్టు 2026 రేషన్ స్థితి: పూర్తి కోటా అందింది. మీ కోటాలో ${card.entitledWheat || 20} కేజీల గోధుమలు, ${card.entitledRice || 15} కేజీల బియ్యం, 1 కేజీ చక్కెర మరియు 1 కేజీ కందిపప్పు ఉన్నాయి. దుకాణంలో చెల్లించాల్సిన అధికారిక ధర నలభై మూడు రూపాయల యాభై పైసలు మాత్రమే. బియ్యం మరియు గోధుమలు పూర్తిగా ఉచితం. ధన్యవాదాలు.`,
+      kn: `ನಮಸ್ಕಾರ ${userName}. ಆಗಸ್ಟ್ 2026 ಪಡಿತರ ಸ್ಥಿತಿ: ಪೂರ್ಣ ಕೋಟಾ ಲಭಿಸಿದೆ. ನಿಮ್ಮ ಕೋಟಾದಲ್ಲಿ ${card.entitledWheat || 20} ಕೆಜಿ ಗೋಧಿ, ${card.entitledRice || 15} ಕೆಜಿ ಅಕ್ಕಿ, 1 ಕೆಜಿ ಸಕ್ಕರೆ ಮತ್ತು 1 ಕೆಜಿ ತೊಗರಿ ಬೇಳೆ ಇದೆ. ಅಂಗಡಿಯಲ್ಲಿ ಪಾವತಿಸಬೇಕಾದ ಅಧಿಕೃತ ಮೊತ್ತ ನಲವತ್ಮೂರು ರೂಪಾಯಿ ಐವತ್ತು ಪೈಸೆ ಮಾತ್ರ. ಅಕ್ಕಿ ಮತ್ತು ಗೋಧಿ ಸಂಪೂರ್ಣ ಉಚಿತ. ಧನ್ಯವಾದಗಳು.`,
+      ml: `നമസ്കാരം ${userName}. ആഗസ്റ്റ് 2026 റേഷൻ നില: മുഴുവൻ ക്വാട്ടയും ലഭിച്ചു. നിങ്ങളുടെ ക്വാട്ടയിൽ ${card.entitledWheat || 20} കിലോഗ്രാം ഗോതമ്പ്, ${card.entitledRice || 15} കിലോഗ്രാം അരി, 1 കിലോഗ്രാം പഞ്ചസാര, 1 കിലോഗ്രാം തുവരപ്പരിപ്പ് എന്നിവ ലഭിക്കും. റേഷൻ കടയിൽ നൽകേണ്ട തുക 43 രൂപ 50 പൈസ മാത്രമാണ്. അരിയും ഗോതമ്പും പൂർണ്ണമായും സൗജന്യമാണ്. നന്ദി.`
     }
-    const speechText = speechMap[lang] || speechMap.en
 
-    const utterance = new SpeechSynthesisUtterance(speechText)
-    utterance.lang = currentLangObj.speechLang || 'en-IN'
-    utterance.rate = 0.9
+    const phoneticSpeechMap = {
+      en: `Hello ${userName}. Status for August 2026: Full quota received. Your entitlement includes ${card.entitledWheat || 20} kilograms wheat, ${card.entitledRice || 15} kilograms rice, 1 kilogram sugar, and 1 kilogram toor dal. Total official price at counter is 43 rupees 50 paise. Grains are 100 percent free. Thank you.`,
+      ta: `Vanakkam ${userName}. August 2026 ration nilai: Muzhu othukkeedu kidaithadhu. Ungalukku ${card.entitledWheat || 20} kilograms godhumai, ${card.entitledRice || 15} kilograms arisi, 1 kilogram sarkarai matrum 1 kilogram paruppu ulladhu. Ration kadaiyil selutha vendiya official kattanam naarpai moondru roobai aimbadhu paisa mattume. Arisi matrum godhumai muttrilum ilavasam. Nandri.`,
+      hi: `Namaste ${userName}. August 2026 ration sthiti: Poora quota praapt hua. Aapko ${card.entitledWheat || 20} kilogram gehun, ${card.entitledRice || 15} kilogram chaawal, 1 kilogram cheeni aur 1 kilogram dal mila hai. Ration dukaan par official bill tiralees rupaye pachaas paise hai. Anaaj poori tarah muft hai. Dhanyavaad.`,
+      mr: `Namaskar ${userName}. August 2026 ration sthiti: Purna quota praapt zhaala. Tumhaala ${card.entitledWheat || 20} kilograms gahu, ${card.entitledRice || 15} kilograms tandul, 1 kilogram saakhar aani 1 kilogram daal praapt zhaali. Dukaanaat official rakkam trechaalis rupaye pannaas paise dyaavi. Gahu aani tandul purnapane mofat aahe. Dhanyavaad.`,
+      te: `Namaskaram ${userName}. August 2026 ration status: Poorthi quota andindi. Meeku ${card.entitledWheat || 20} kilograms godhumalu, ${card.entitledRice || 15} kilograms biyyam, 1 kilogram chakkera mariyu 1 kilogram kandipappu andinvi. Ration dukaanamlo official price naalabhai moodu roopaayalu yaabhai paisalu maatrame. Biyyam mariyu godhumalu poorthigaa uchitham. Dhanyavaadalu.`,
+      kn: `Namaskara ${userName}. August 2026 ration status: Poorna quota labhiside. Nimage ${card.entitledWheat || 20} kilograms godhi, ${card.entitledRice || 15} kilograms akki, 1 kilogram sakkare matthu 1 kilogram togari bele labhiside. Angadiyalli official price nalavathmooru roopaayi aivatthu paise maathra. Akki matthu godhi sampoorna uchitha. Dhanyavaadagalu.`,
+      ml: `Namaskaram ${userName}. August 2026 ration status: Muzhuvan quota labhichu. Ningalkku ${card.entitledWheat || 20} kilograms gothambu, ${card.entitledRice || 15} kilograms ari, 1 kilogram panchasarayum 1 kilogram parippum labhichu. Ration kadayil nalkenda official price nalpathimoonnu roopa ambathu paisa maathramaanu. Ariyum gothambum poornnamaayum soujanyamaanu. Nanni.`
+    }
+
+    const voices = window.speechSynthesis.getVoices() || []
+    const langCode = lang.toLowerCase()
+    const targetSpeechLang = (currentLangObj.speechLang || 'en-IN').toLowerCase()
+
+    // Detect if the browser has a native voice for this language
+    const nativeVoice = voices.find((v) => {
+      const vLang = (v.lang || '').toLowerCase()
+      return vLang.startsWith(langCode) || vLang.replace('_', '-').startsWith(targetSpeechLang)
+    })
+
+    // Find Indian English voice or general English voice for phonetic pronunciation
+    const indianVoice = voices.find((v) => {
+      const vLang = (v.lang || '').toLowerCase()
+      const vName = (v.name || '').toLowerCase()
+      return vLang === 'en-in' || vLang.startsWith('en-in') || vName.includes('india') || vName.includes('ravi') || vName.includes('heera')
+    }) || voices.find((v) => (v.lang || '').toLowerCase().startsWith('en'))
+
+    const utterance = new SpeechSynthesisUtterance()
+
+    if (nativeVoice && lang !== 'en') {
+      utterance.voice = nativeVoice
+      utterance.lang = nativeVoice.lang
+      utterance.text = nativeSpeechMap[lang] || nativeSpeechMap.en
+    } else {
+      // Fallback for Windows/browsers lacking native Indic TTS packages:
+      // Uses natural phonetic Romanized Indic script on Indian English voice so the full announcement is spoken clearly!
+      if (indianVoice) utterance.voice = indianVoice
+      utterance.lang = 'en-IN'
+      utterance.text = phoneticSpeechMap[lang] || nativeSpeechMap.en
+    }
+
+    utterance.rate = 0.88
+    utterance.pitch = 1.0
 
     utterance.onend = () => setIsPlayingAudio(false)
     utterance.onerror = () => setIsPlayingAudio(false)
@@ -2392,6 +2658,11 @@ function HomePage({
               <span className="meta-category-pill">
                 <b>{card.category}</b> · {card.category === 'AAY' ? t.quota35kg : t.quota20kg}
               </span>
+              <button type="button" className="family-roster-chip" onClick={onOpenFamily} title="View Family Members">
+                <Icon name="users" size={12} />
+                <span>{(card.familyMembers?.length || 4)} {t.familyMembersChip} · e-KYC</span>
+                <Icon name="arrow" size={11} />
+              </button>
             </div>
             <p className="citizen-location-text">
               <Icon name="pin" size={12} />
@@ -2523,6 +2794,25 @@ function HomePage({
           </button>
         </div>
       )}
+
+      {/* Statutory Price & Zero-Overcharge Calculator Card */}
+      <div className="statutory-bill-card page-transition" onClick={onOpenPriceCalc} role="button" tabIndex={0}>
+        <div className="bill-card-left">
+          <div className="bill-title-row">
+            <span className="bill-scale-icon">⚖️</span>
+            <b>{t.officialBillTitle}</b>
+            <span className="zero-grain-pill">₹0 Grains</span>
+          </div>
+          <p className="bill-sub">{t.subsidySavedSub}</p>
+        </div>
+        <div className="bill-card-right">
+          <div className="bill-amount-badge">
+            <small>{t.totalPayableShort}</small>
+            <b>₹43.50</b>
+          </div>
+          <Icon name="arrow" size={16} />
+        </div>
+      </div>
 
       {/* Reason Card (if paused or partial) */}
       {status !== 'received' && (
@@ -3213,6 +3503,242 @@ function ReceiptModal({ t, lang, card, selectedState, onClose }) {
 /* ===================================================================
    Scoped AI App Guide Assistant Modal
    =================================================================== */
+
+/* ===================================================================
+   Family Members & e-KYC Verification Roster Modal
+   =================================================================== */
+function FamilyMembersModal({ t, lang, card, onClose }) {
+  const members = card.familyMembers || [
+    {
+      id: 'M1',
+      nameEn: card.nameEn || 'Kaliammal',
+      name: card.name || 'காளியம்மாள்',
+      relationKey: 'headSelf',
+      genderKey: 'female',
+      age: 48,
+      aadhaarLast4: '7812',
+      ekycStatus: 'verified',
+      quotaKg: 5
+    }
+  ]
+
+  const getMemberName = (m) => {
+    if (lang === 'te') return m.nameTe || m.nameEn
+    if (lang === 'kn') return m.nameKn || m.nameEn
+    if (lang === 'ml') return m.nameMl || m.nameEn
+    if (lang === 'hi') return m.nameHi || m.nameEn
+    if (lang === 'mr') return m.nameMr || m.nameEn
+    if (lang === 'ta') return m.nameTa || m.name || m.nameEn
+    return m.nameEn || m.name
+  }
+
+  const getRelation = (key) => t[key] || (key === 'headSelf' ? 'Head of Family' : key === 'spouse' ? 'Spouse' : key === 'daughter' ? 'Daughter' : 'Son')
+
+  return (
+    <div className="modal-backdrop" onClick={onClose}>
+      <div className="family-modal page-transition" onClick={(e) => e.stopPropagation()}>
+        <div className="modal-top">
+          <div className="family-modal-title">
+            <Icon name="users" size={22} />
+            <div>
+              <h2>{t.familyModalTitle}</h2>
+              <small>{card.number} · {card.category} {t.cardSaved}</small>
+            </div>
+          </div>
+          <button className="modal-close-btn" onClick={onClose}>
+            <Icon name="close" size={18} />
+          </button>
+        </div>
+
+        {/* Statutory Formula Card */}
+        <div className="family-formula-banner">
+          <Icon name="shield" size={18} />
+          <div>
+            <b>{members.length} {t.familyMembersChip} × 5 {t.kgUnit || 'kg'} = {members.length * 5} {t.kgUnit || 'kg'} {t.entitlement}</b>
+            <p>{t.familySubtitle}</p>
+          </div>
+        </div>
+
+        {/* Member Roster Grid */}
+        <div className="family-roster-list">
+          {members.map((m, idx) => {
+            const isVerified = m.ekycStatus === 'verified'
+            return (
+              <div key={m.id || idx} className={"family-member-card " + (isVerified ? 'verified' : 'pending')}>
+                <div className="member-avatar">
+                  <span>{m.genderKey === 'female' ? '👩' : '👨'}</span>
+                </div>
+                <div className="member-info">
+                  <div className="member-name-row">
+                    <b>{getMemberName(m)}</b>
+                    <span className={"ekyc-badge " + (isVerified ? 'verified' : 'pending')}>
+                      {isVerified ? `✓ ${t.verifiedPill}` : `⚠ ${t.actionRequiredPill}`}
+                    </span>
+                  </div>
+                  <div className="member-meta-tags">
+                    <span>{getRelation(m.relationKey)}</span> · 
+                    <span>{m.age} {t.ageYears}</span> · 
+                    <span>Aadhaar: <code>•••• {m.aadhaarLast4}</code></span>
+                  </div>
+                  <div className="member-status-sub">
+                    <small>{isVerified ? t.ekycVerified : t.ekycPending}</small>
+                    <span className="member-quota-pill">{m.quotaKg || 5} {t.kgUnit || 'kg'}</span>
+                  </div>
+                </div>
+              </div>
+            )
+          })}
+        </div>
+
+        <div className="family-modal-footer">
+          <p className="ekyc-notice-text">
+            <Icon name="info" size={15} />
+            <span>To update biometric fingerprint or add a newborn, visit your nearest e-Seva / Aadhaar CSC center or Taluk Supply Office.</span>
+          </p>
+          <button className="button primary" onClick={onClose}>
+            {t.close || 'Close'}
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+/* ===================================================================
+   Official Statutory Price & Zero-Overcharge Calculator Modal
+   =================================================================== */
+function PriceCalculatorModal({ t, lang, card, selectedState, onClose, onReportOvercharge }) {
+  const isMh = selectedState === 'mh'
+  const stateTitle = isMh ? 'Government of Maharashtra' : 'Government of Tamil Nadu'
+  const deptTitle = isMh ? 'Dept of Food, Civil Supplies & Consumer Protection' : 'Civil Supplies & Consumer Protection Dept'
+
+  const items = [
+    {
+      name: t.rice || 'Boiled / Raw Rice',
+      qty: card.entitledRice || 15,
+      unit: t.kgUnit || 'kg',
+      statutoryPrice: 0.0,
+      marketRate: 36.0,
+      subsidyPct: '100%'
+    },
+    {
+      name: t.wheat || 'Whole Wheat',
+      qty: card.entitledWheat || 5,
+      unit: t.kgUnit || 'kg',
+      statutoryPrice: 0.0,
+      marketRate: 32.0,
+      subsidyPct: '100%'
+    },
+    {
+      name: t.sugar || 'Refined Sugar',
+      qty: card.entitledSugar || 1,
+      unit: t.kgUnit || 'kg',
+      statutoryPrice: 13.5,
+      marketRate: 45.0,
+      subsidyPct: '70%'
+    },
+    {
+      name: t.dal || 'Fortified Toor Dal',
+      qty: card.entitledDal || 1,
+      unit: t.kgUnit || 'kg',
+      statutoryPrice: 30.0,
+      marketRate: 160.0,
+      subsidyPct: '81%'
+    }
+  ]
+
+  const totalStatutory = items.reduce((acc, it) => acc + it.qty * it.statutoryPrice, 0)
+  const totalMarket = items.reduce((acc, it) => acc + it.qty * it.marketRate, 0)
+  const totalSubsidy = totalMarket - totalStatutory
+
+  return (
+    <div className="modal-backdrop" onClick={onClose}>
+      <div className="price-calc-modal page-transition" onClick={(e) => e.stopPropagation()}>
+        <div className="modal-top">
+          <div className="price-modal-title">
+            <span className="price-gov-icon">🏛️</span>
+            <div>
+              <h2>{t.officialBillTitle}</h2>
+              <small>{stateTitle} · {deptTitle}</small>
+            </div>
+          </div>
+          <button className="modal-close-btn" onClick={onClose}>
+            <Icon name="close" size={18} />
+          </button>
+        </div>
+
+        {/* Legal Shield Banner */}
+        <div className="zero-grain-shield-banner">
+          <Icon name="shield" size={20} />
+          <div>
+            <b>{t.zeroGrainGuarantee}</b>
+            <p>{t.overchargeWarning}</p>
+          </div>
+        </div>
+
+        {/* Grand Total Hero Display */}
+        <div className="price-grand-hero">
+          <div className="grand-hero-left">
+            <small>{t.totalPayable}</small>
+            <h1 className="grand-price-amount">₹{totalStatutory.toFixed(2)}</h1>
+            <span className="max-bill-note">Strictly Statutory · Never Pay Extra</span>
+          </div>
+          <div className="grand-hero-right">
+            <div className="subsidy-pill">
+              <span>{t.govtSubsidySaved}:</span>
+              <b>₹{totalSubsidy.toFixed(2)}</b>
+            </div>
+            <small className="market-compare">Market Value: ₹{totalMarket.toFixed(2)}</small>
+          </div>
+        </div>
+
+        {/* Itemized Statutory Price Table */}
+        <div className="statutory-table-wrapper">
+          <table className="statutory-price-table">
+            <thead>
+              <tr>
+                <th>{t.statutoryCommodity}</th>
+                <th>Qty</th>
+                <th>{t.statutoryRate}</th>
+                <th>{t.marketRate}</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              {items.map((it, idx) => (
+                <tr key={idx}>
+                  <td>
+                    <b>{it.name}</b>
+                    {it.statutoryPrice === 0 && <span className="free-tag">₹0 {t.freeGrain}</span>}
+                  </td>
+                  <td>{it.qty} {it.unit}</td>
+                  <td>{it.statutoryPrice === 0 ? '₹0.00' : `₹${it.statutoryPrice.toFixed(2)}`}</td>
+                  <td><del>₹{it.marketRate.toFixed(2)}</del></td>
+                  <td>
+                    <b>{it.statutoryPrice === 0 ? '₹0.00' : `₹${(it.qty * it.statutoryPrice).toFixed(2)}`}</b>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Action Row */}
+        <div className="price-modal-actions">
+          <button className="button danger overcharge-report-btn" onClick={onReportOvercharge}>
+            <Icon name="info" size={17} />
+            <span>{t.reportOverchargeBtn}</span>
+          </button>
+          <button className="button secondary" onClick={() => window.print()}>
+            <Icon name="printer" size={16} />
+            <span>Print / Save</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function AppGuideModal({ t, lang, onClose }) {
   const [messages, setMessages] = useState([
     {
