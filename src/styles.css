@@ -1982,34 +1982,582 @@ input:focus{border-color:var(--ink);box-shadow:0 0 0 3px var(--turmeric-tint)}
   50%{ transform: scale(1.05); }
 }
 
-/* Post-login CTAs on Home */
-.post-login-ctas{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 16px;
+/* ===================================================================
+   Elevated Home Page & Citizen Identity Design
+   =================================================================== */
+.home-dashboard{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  text-align:left;
+}
+
+/* 1. Official Citizen Identity Pass */
+.citizen-id-pass{
+  background:var(--paper-card);
+  border:2px solid var(--rule);
+  border-radius:16px;
+  padding:16px;
+  position:relative;
+  box-shadow:0 4px 18px rgba(30,42,60,.08);
+  background-image:linear-gradient(135deg, #FFFDF8 0%, var(--paper-card) 100%);
+  overflow:hidden;
+}
+.citizen-id-pass::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:4px;
+  background:linear-gradient(90deg, var(--turmeric) 0%, #FFB82E 50%, var(--turmeric-deep) 100%);
+}
+.citizen-pass-top-bar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding-bottom:12px;
+  margin-bottom:14px;
+  border-bottom:1px dashed var(--rule-soft);
+}
+.citizen-portal-tag{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:.73rem;
+  font-weight:700;
+  color:var(--ink);
+  background:var(--turmeric-tint);
+  border:1px solid var(--turmeric);
+  padding:3px 9px;
+  border-radius:12px;
+  letter-spacing:.2px;
+}
+.citizen-verified-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--stamp-green);
+  background:var(--stamp-green-tint);
+  border:1px solid var(--stamp-green);
+  padding:3px 8px;
+  border-radius:12px;
+}
+.citizen-pass-main{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+.citizen-pass-details{
+  flex:1;
+  min-width:0;
+}
+.citizen-welcome-label{
+  display:block;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--ink-soft);
+  text-transform:uppercase;
+  letter-spacing:.5px;
+}
+.citizen-name-title{
+  font-family:var(--font-display);
+  font-size:1.28rem;
+  line-height:1.25;
+  color:var(--ink);
+  margin:2px 0 6px;
+  font-weight:700;
+  word-break:break-word;
+}
+.citizen-meta-pills{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px;
+  margin-bottom:8px;
+}
+.meta-card-chip{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  background:var(--paper);
+  border:1px solid var(--rule);
+  padding:2px 8px;
+  border-radius:8px;
+  font-size:.72rem;
+}
+.meta-card-chip code{
+  font-family:monospace;
+  font-weight:700;
+  color:var(--ink);
+  letter-spacing:.5px;
+}
+.mini-switch-btn{
+  border:none;
+  background:var(--ink);
+  color:#FFFFFF;
+  font-size:.6rem;
+  font-weight:700;
+  padding:1px 6px;
+  border-radius:4px;
+  cursor:pointer;
+  transition:opacity .15s;
+}
+.mini-switch-btn:hover{
+  opacity:.85;
+}
+.meta-category-pill{
+  display:inline-flex;
+  align-items:center;
+  font-size:.7rem;
+  color:var(--ink);
+  background:rgba(30,42,60,.05);
+  border:1px solid var(--rule-soft);
+  padding:2px 8px;
+  border-radius:8px;
+}
+.meta-category-pill b{
+  color:var(--turmeric-deep);
+  font-weight:800;
+}
+.citizen-location-text{
+  display:flex;
+  align-items:center;
+  gap:5px;
+  font-size:.72rem;
+  color:var(--ink-soft);
+  margin:0;
+}
+.citizen-location-text code{
+  font-family:monospace;
+  font-weight:700;
+  color:var(--ink);
+}
+
+/* Helper Toggle Button & Drawer */
+.helper-toggle-btn{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:var(--paper-card);
+  border:1.5px solid var(--rule);
+  border-radius:12px;
+  padding:10px 14px;
+  cursor:pointer;
+  text-align:left;
+  transition:all .2s ease;
+  width:100%;
+  color:var(--ink);
+}
+.helper-toggle-btn:hover{
+  border-color:var(--turmeric);
+  background:#FFFDF8;
+}
+.helper-btn-text{
+  flex:1;
+}
+.helper-btn-text b{
+  display:block;
+  font-size:.8rem;
+  color:var(--ink);
+}
+.helper-btn-text small{
+  display:block;
+  font-size:.68rem;
+  color:var(--ink-soft);
+}
+.helper-switch-indicator{
+  width:32px;
+  height:18px;
+  border-radius:10px;
+  background:var(--rule);
+  position:relative;
+  transition:background .2s ease;
+}
+.helper-switch-indicator::after{
+  content:"";
+  position:absolute;
+  top:2px;
+  left:2px;
+  width:14px;
+  height:14px;
+  border-radius:50%;
+  background:#FFFFFF;
+  transition:transform .2s ease;
+}
+.helper-switch-indicator.on{
+  background:var(--stamp-green);
+}
+.helper-switch-indicator.on::after{
+  transform:translateX(14px);
+}
+.helper-lookup-drawer{
+  background:#FFFDF8;
+  border:1.5px solid var(--rule);
+  border-radius:12px;
+  padding:14px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  text-align:left;
+}
+.helper-lookup-drawer label{
+  font-size:.74rem;
+  font-weight:700;
+  color:var(--ink);
+}
+.helper-lookup-drawer input{
+  padding:9px 12px;
+  border:1.5px solid var(--rule);
+  border-radius:8px;
+  font-size:.85rem;
+  background:#FFFFFF;
+}
+.helper-actions-row{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+/* 2. Interactive Entitlement Showcase Ledger */
+.entitlement-ledger-card{
+  background:var(--paper-card);
+  border:2px solid var(--rule);
+  border-radius:16px;
+  padding:18px 16px;
+  box-shadow:0 4px 18px rgba(30,42,60,.08);
+  position:relative;
+  overflow:hidden;
+}
+.entitlement-ledger-card.ok{
+  border-left:6px solid var(--stamp-green);
+}
+.entitlement-ledger-card.paused{
+  border-left:6px solid var(--stamp-red);
+}
+.entitlement-ledger-card.partial{
+  border-left:6px solid var(--stamp-amber);
+}
+
+.ledger-card-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  margin-bottom:12px;
+}
+.ledger-period-label{
+  display:block;
+  font-size:.65rem;
+  font-weight:800;
+  letter-spacing:.8px;
+  color:var(--ink-soft);
+  text-transform:uppercase;
+}
+.ledger-status-title{
+  font-family:var(--font-display);
+  font-size:1.25rem;
+  color:var(--ink);
+  margin:3px 0 0;
+  line-height:1.2;
+}
+.ledger-status-stamp{
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  font-weight:800;
+  font-size:1.1rem;
+}
+.entitlement-ledger-card.ok .ledger-status-stamp{
+  background:var(--stamp-green-tint);
+  color:var(--stamp-green);
+  border:2px solid var(--stamp-green);
+}
+.entitlement-ledger-card.paused .ledger-status-stamp{
+  background:var(--stamp-red-tint);
+  color:var(--stamp-red);
+  border:2px solid var(--stamp-red);
+}
+.entitlement-ledger-card.partial .ledger-status-stamp{
+  background:var(--stamp-amber-tint);
+  color:var(--stamp-amber);
+  border:2px solid var(--stamp-amber);
+}
+
+/* Voice Audio Bar */
+.voice-audio-bar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  background:var(--paper);
+  border:1px solid var(--rule-soft);
+  border-radius:12px;
+  padding:8px 12px;
+  margin-bottom:16px;
+}
+.voice-listen-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  background:var(--turmeric);
+  color:var(--ink);
+  border:none;
+  font-size:.75rem;
+  font-weight:700;
+  padding:6px 13px;
+  border-radius:20px;
+  cursor:pointer;
+  box-shadow:0 2px 6px rgba(216,154,30,.3);
+  transition:all .2s ease;
+}
+.voice-listen-pill:hover{
+  background:#FFB82E;
+  transform:translateY(-1px);
+}
+.voice-listen-pill.playing{
+  background:var(--stamp-red);
+  color:#FFFFFF;
+  animation:pulse-audio 1.2s infinite;
+}
+.voice-lang-hint{
+  font-size:.68rem;
+  color:var(--ink-soft);
+  font-weight:600;
+}
+
+/* 4-Item Commodity Allocation Grid */
+.home-commodity-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:10px;
+}
+.commodity-tile{
+  background:#FFFFFF;
+  border:1.5px solid var(--rule-soft);
+  border-radius:12px;
+  padding:12px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  position:relative;
+  transition:all .2s ease;
+  box-shadow:0 2px 5px rgba(30,42,60,.03);
+}
+.commodity-tile:hover{
+  border-color:var(--turmeric);
+  transform:translateY(-2px);
+  box-shadow:0 4px 10px rgba(30,42,60,.06);
+}
+.commodity-icon{
+  font-size:1.55rem;
+  line-height:1;
+}
+.commodity-info{
+  flex:1;
+  min-width:0;
+}
+.commodity-info b{
+  display:block;
+  font-size:.92rem;
+  color:var(--ink);
+  font-weight:800;
+  line-height:1.2;
+}
+.commodity-info small{
+  display:block;
+  font-size:.68rem;
+  color:var(--ink-soft);
+  margin-top:2px;
+  font-weight:500;
+}
+.commodity-check-dot{
+  width:18px;
+  height:18px;
+  border-radius:50%;
+  background:var(--stamp-green-tint);
+  color:var(--stamp-green);
+  border:1px solid var(--stamp-green);
+  font-size:.65rem;
+  font-weight:800;
+  display:grid;
+  place-items:center;
+}
+
+/* 3. Primary Action Buttons */
+.home-primary-actions{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.cta-pickup-btn, .cta-receipt-btn{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-align:left;
+  border-radius:14px;
+  transition:all .2s cubic-bezier(.2,.8,.2,1);
+  padding:13px 16px;
+  cursor:pointer;
+  width:100%;
+}
+.cta-btn-text{
+  flex:1;
+  min-width:0;
+}
+.cta-btn-text b{
+  display:block;
+  font-size:.92rem;
+  font-weight:700;
+  line-height:1.2;
+}
+.cta-btn-text small{
+  display:block;
+  font-size:.7rem;
+  opacity:.85;
+  margin-top:3px;
+  font-weight:400;
 }
 .cta-pickup-btn{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  font-weight: 700;
-  font-size: .95rem;
-  padding: 13px 18px;
-  border-radius: 12px;
+  background:var(--ink);
+  color:var(--turmeric);
+  border:2px solid var(--ink);
+  box-shadow:0 4px 14px rgba(30,42,60,.2);
+}
+.cta-pickup-btn:hover{
+  background:#28374E;
+  transform:translateY(-2px);
+  box-shadow:0 6px 18px rgba(30,42,60,.25);
 }
 .cta-receipt-btn{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  font-weight: 600;
-  font-size: .86rem;
-  padding: 11px 16px;
-  border-radius: 12px;
+  background:var(--paper-card);
+  color:var(--ink);
+  border:1.5px solid var(--rule);
+  box-shadow:0 2px 6px rgba(30,42,60,.05);
+}
+.cta-receipt-btn:hover{
+  border-color:var(--turmeric);
+  background:#FFFDF8;
+  transform:translateY(-1px);
+}
+
+/* 4. PDS Citizen Services Hub Grid */
+.services-hub-section{
+  margin-top:8px;
+}
+.services-hub-heading{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:.76rem;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.6px;
+  color:var(--ink-soft);
+  margin:0 0 12px;
+}
+.services-hub-heading span{
+  color:var(--turmeric);
+  font-size:.8rem;
+}
+.home-services-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:12px;
+}
+.service-tile-card{
+  background:var(--paper-card);
+  border:1.5px solid var(--rule);
+  border-radius:14px;
+  padding:16px 14px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  text-align:left;
+  cursor:pointer;
+  transition:all .2s cubic-bezier(.2,.8,.2,1);
+  box-shadow:0 2px 6px rgba(30,42,60,.04);
+}
+.service-tile-card:hover{
+  border-color:var(--turmeric);
+  background:#FFFDF8;
+  transform:translateY(-3px);
+  box-shadow:0 8px 20px rgba(216,154,30,.15);
+}
+.service-tile-icon{
+  width:40px;
+  height:40px;
+  border-radius:10px;
+  display:grid;
+  place-items:center;
+  margin-bottom:12px;
+}
+.service-tile-icon.gold{
+  background:var(--turmeric-tint);
+  color:var(--turmeric-deep);
+  border:1px solid var(--turmeric);
+}
+.service-tile-icon.amber{
+  background:var(--stamp-amber-tint);
+  color:var(--stamp-amber);
+  border:1px solid var(--stamp-amber);
+}
+.service-tile-icon.blue{
+  background:#E2E8F0;
+  color:var(--ink);
+  border:1px solid #CBD5E1;
+}
+.service-tile-icon.green{
+  background:var(--stamp-green-tint);
+  color:var(--stamp-green);
+  border:1px solid var(--stamp-green);
+}
+.service-tile-card b{
+  display:block;
+  font-size:.85rem;
+  color:var(--ink);
+  font-weight:700;
+  line-height:1.25;
+  margin-bottom:4px;
+}
+.service-tile-card small{
+  display:block;
+  font-size:.68rem;
+  color:var(--ink-soft);
+  line-height:1.35;
+}
+
+/* 5. Statutory Guarantee Banner */
+.home-nfsa-banner{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  background:#FFFDF7;
+  border:1.5px solid var(--stamp-green);
+  border-left:5px solid var(--stamp-green);
+  border-radius:12px;
+  padding:12px 14px;
+  box-shadow:0 2px 6px rgba(62,122,82,.08);
+}
+.home-nfsa-banner svg{
+  color:var(--stamp-green);
+  flex-shrink:0;
+  margin-top:1px;
+}
+.home-nfsa-banner b{
+  display:block;
+  font-size:.78rem;
+  color:var(--stamp-green);
+  font-weight:700;
+}
+.home-nfsa-banner p{
+  font-size:.7rem;
+  color:var(--ink-soft);
+  margin:3px 0 0;
+  line-height:1.35;
 }
 
 /* Collapsible Demo Controls */

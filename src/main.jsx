@@ -22,11 +22,100 @@ const languages = [
   { code: 'en', label: 'English', enLabel: 'English', mark: 'A', speechLang: 'en-IN' },
   { code: 'te', label: 'తెలుగు', enLabel: 'Telugu', mark: 'అ', speechLang: 'te-IN' },
   { code: 'kn', label: 'ಕನ್ನಡ', enLabel: 'Kannada', mark: 'ಅ', speechLang: 'kn-IN' },
-  { code: 'ml', label: 'മലയാളം', enLabel: 'Malayalam', mark: 'അ', speechLang: 'ml-IN' },
+  { code: 'ml', label: 'മലയാളം', enLabel: 'Malayalam', mark: 'அ', speechLang: 'ml-IN' },
   { code: 'mr', label: 'मराठी', enLabel: 'Marathi', mark: 'अ', speechLang: 'mr-IN' }
 ]
 
 const text = {
+  en: {
+    app: 'Anna Setu', greeting: 'Hello', tagline: 'Clear ration support, right when you need it',
+    demo: 'Demo mode — no real government system is connected',
+    home: 'Home', shops: 'Shops', history: 'History', help: 'Help',
+    helper: 'Help someone else', helperSub: 'Check a family member or neighbour’s card',
+    helperCard: 'Ration card number for the person you’re helping', checkPerson: 'Check status', ownCard: 'Return to my card',
+    cardNo: 'Ration card number', cardSaved: 'Ration card', continue: 'Continue', loading: 'Checking your status…',
+    cardError: 'Enter at least 6 characters for a valid ration card number.',
+    offline: 'Your details are saved on this phone and will update when connected.',
+    entitlement: 'This month’s ration', denied: 'Ration is paused', partial: 'Some ration received', received: 'Full Quota Received', issue: 'What happened?',
+    nearby: 'Fair Price Shops', today: 'Today’s stock', rice: 'Rice', wheat: 'Wheat', sugar: 'Sugar', dal: 'Toor Dal',
+    available: 'Available', out: 'Not today', open: 'Open', closed: 'Closed now',
+    timeline: 'Last 6 months', pattern: 'There were ration issues in 2 of the last 3 months', fast: 'Fast-forward 3 days', fastSub: 'See the grievance generated automatically',
+    back: 'Back', grievance: 'Grievance is ready', autoCreated: 'Automatically registered after 3 days', tracking: 'Tracking number', expected: 'Expected response: 48 hours',
+    link: 'Link identity', enterOtp: 'Enter the 4-digit code sent to your phone', verify: 'Verify', request: 'Request correction',
+    correctName: 'Correct name', sendRequest: 'Send request', nameError: 'Please enter the correct name.', success: 'All set!', successText: 'Your request is recorded. We’ll keep you informed.',
+    support: 'Need help?', call: 'Show helpline number', callShown: '1967 — helpline number shown', network: 'Network status', noNetwork: 'No network found',
+    helpCard: 'We are with you', helpBody: 'If you are unsure, call 1967. This demo does not place calls.',
+    inactiveTitle: 'Reactivate card', inactiveBody: 'We will prepare a review request for your card.',
+    activate: 'Send review request', otpStep1: 'Check mobile number', otpStep3: 'Identity linked', resolution: 'Resolved', resolveDemo: 'See resolved demo',
+    days: 'Unresolved for 3 days', check: 'Choose this shop', selectedShop: 'This shop can provide both grains today.', august: 'August', quantity: 'quota',
+    demoStatus: 'Change status', demoIssue: 'Change reason', invalidOtp: 'Enter all four digits',
+    phoneGate: 'Phone verification', phoneGateSub: 'So only you can see your ration details, please verify your mobile number first.',
+    phoneLabel: 'Mobile number', phoneOtpLabel: 'Enter the code sent to your phone', phoneOtpHint: 'Demo OTP: 1234 (for testing)', wrongOtp: 'Incorrect code. Use 1234 for this demo.',
+    smsSimTitle: 'New Message · PDS OTP', smsSimBody: 'Your Anna Setu verification code is 1234. Valid for 10 minutes.', tapToFill: 'Tap to auto-fill 1234',
+    allShops: 'All Shops', openOnly: 'Open Now', riceOnly: 'Rice in Stock', wheatOnly: 'Wheat in Stock',
+    switchCard: 'Demo Card', tnPreset: 'Tamil Nadu (TN)', mhPreset: 'Maharashtra (MH)',
+    selectLanguage: 'Select Language', bookSlot: 'Book Time Slot', selectSlot: 'Select Arrival Time', confirmBooking: 'Confirm & Get E-Token',
+    tokenPassTitle: 'PDS Priority Pass', tokenNote: 'Show this digital token at the FPS counter to skip the queue', viewOnMap: 'Google Maps',
+    queueAhead: 'People ahead', estWait: 'Estimated wait', currentCardName: 'Name as on Card (Typo)', correctAadhaarName: 'Correct Legal Name (Aadhaar)',
+    docVerifyNote: 'Aadhaar e-KYC match verified for registered mobile', fillFromAadhaar: 'Fill from Aadhaar', liveTracking: 'Live Status Tracker',
+    officerReview: 'Taluk Supply Officer Review', stockDispatch: 'FPS Stock Dispatched', advanceProgress: 'Advance Status (Demo)',
+    changeCard: 'Change Card', cardEntered: 'Selected Card', clearCard: 'Switch Card',
+    selectState: 'Select your State',
+    selectStateSub: 'Choose your state Public Distribution System (PDS) portal',
+    activeStates: 'Active State Portals',
+    comingSoon: 'Coming Soon',
+    changeState: 'Change State',
+    privacyNote: '🔒 Privacy Assurance: Your ration card number and data remain strictly on your device.',
+    listen: 'Listen',
+    stopListening: 'Stop',
+    pickupRation: 'Pick Up Ration at FPS',
+    viewReceipt: 'View Digital Receipt',
+    digitalReceipt: 'Digital Ration Receipt',
+    receiptTxn: 'Transaction ID',
+    receiptShop: 'Fair Price Shop',
+    receiptCommodity: 'Commodity',
+    receiptEntitled: 'Entitled',
+    receiptIssued: 'Issued',
+    receiptRate: 'Rate',
+    receiptTotal: 'Total',
+    freeNfsa: 'Free (NFSA)',
+    downloadReceipt: 'Save / Print Voucher',
+    close: 'Close',
+    entitlementBreakdown: 'Monthly Quota vs Received',
+    categoryNorms: 'Card Category Norms',
+    shortfallAlert: 'Stock Shortfall Detected',
+    raiseMonthGrievance: 'Raise Grievance for this Shortfall',
+    grievanceSLA: 'Under NFSA Section 19, grievances must be redressed within 7 working days.',
+    confirmGrievance: 'Review & Submit Grievance',
+    myGrievances: 'My Grievance Tickets',
+    grievanceLogTitle: 'Official Action Log',
+    shareTicket: 'Share via WhatsApp',
+    offlineQueued: 'Offline mode active. Grievance stored locally and will sync when reconnected.',
+    askAssistant: 'App Guide',
+    assistantTitle: 'Anna Setu App Guide',
+    assistantScopeNotice: 'ℹ️ This assistant helps you navigate this application only. For legal or card entitlement rulings, call 1967.',
+    askPlaceholder: 'Ask how to use Anna Setu…',
+    waOptInTitle: 'Receive WhatsApp Ration Alerts',
+    waOptInSub: 'Get notified when grains arrive at your ration shop',
+    waOptInBtn: 'Connect WhatsApp',
+    registryDisclaimer: 'Official Government Registry Data: Shop names and allocations are displayed as registered in the state portal.',
+    issuedStamp: '✓ ISSUED',
+    verifiedBeneficiary: 'NFSA Verified Beneficiary',
+    servicesHub: 'PDS Citizen Services',
+    shopsService: 'Fair Price Shops',
+    shopsServiceSub: 'Check live stock & store hours',
+    tokenService: 'Book Priority Pass',
+    tokenServiceSub: 'Skip counter line with e-token',
+    historyService: 'Quota History',
+    historyServiceSub: '6-month ledger & shortfalls',
+    grievanceService: 'Grievance Desk',
+    grievanceServiceSub: '7-day statutory resolution guarantee',
+    nfsaBanner: 'National Food Security Act (NFSA 2013): Subsidized food grain is your statutory right. For queries, dial 1967 (Toll-Free).',
+    monthlyQuotaTitle: 'AUGUST 2026 ENTITLEMENT',
+    quotaReceivedDesc: 'Full monthly ration disbursed successfully',
+    allocatedReceived: 'Allocated & Received',
+    listenToEntitlement: 'Listen to Entitlement'
+  },
   ta: {
     app: 'அன்ன சேது', greeting: 'வணக்கம்', tagline: 'சரியான ரேஷன் தகவல், சரியான நேரத்தில்',
     demo: 'டெமோ முறை — எந்த அரசு அமைப்பும் இணைக்கப்படவில்லை',
@@ -47,7 +136,7 @@ const text = {
     helpCard: 'நாங்கள் உங்களுடன் இருக்கிறோம்', helpBody: 'சந்தேகம் இருந்தால் 1967 என்ற எண்ணை அழைக்கவும். இது டெமோ முறை.',
     inactiveTitle: 'கார்டை மீண்டும் செயல்படுத்த', inactiveBody: 'உங்கள் கார்டுக்கான மறுஆய்வு கோரிக்கையை நாங்கள் தயார் செய்கிறோம்.',
     activate: 'மறுஆய்வு கோரிக்கை அனுப்ப', otpStep1: 'மொபைல் எண்ணை சரிபார்க்கவும்', otpStep3: 'அடையாளம் இணைக்கப்பட்டது', resolution: 'சிக்கல் தீர்க்கப்பட்டது', resolveDemo: 'தீர்வு காணப்பட்ட டெமோவை பார்க்க',
-    days: '3 நாட்களாக தீர்வு இல்லை', check: 'இந்த கடையைத் தேர்வுசெய்', selectedShop: 'இந்த கடையில் இன்று தேவையான தானியங்கள் உள்ளன.', august: 'ஆகஸ்ட்', quantity: '20 கிலோ',
+    days: '3 நாட்களாக தீர்வு இல்லை', check: 'இந்த கடையைத் தேர்வுசெய்', selectedShop: 'இந்த கடையில் இன்று தேவையான தானியங்கள் உள்ளன.', august: 'ஆகஸ்ட்', quantity: 'ஒதுக்கீடு',
     demoStatus: 'நிலை மாற்ற', demoIssue: 'காரணம் மாற்ற', invalidOtp: '4 இலக்கங்களையும் உள்ளிடவும்',
     phoneGate: 'மொபைல் சரிபார்ப்பு', phoneGateSub: 'உங்கள் ரேஷன் விவரங்களை நீங்கள் மட்டுமே காண, பதிவு செய்யப்பட்ட மொபைல் எண்ணை சரிபார்க்கவும்.',
     phoneLabel: 'பதிவு செய்யப்பட்ட மொபைல் எண்', phoneOtpLabel: 'மொபைலுக்கு அனுப்பப்பட்ட 4 இலக்க OTP', phoneOtpHint: 'டெமோ OTP: 1234 (சோதனைக்காக)', wrongOtp: 'தவறான குறியீடு. இந்த டெமோவிற்கு 1234 ஐப் பயன்படுத்தவும்.',
@@ -60,7 +149,6 @@ const text = {
     docVerifyNote: 'ஆதார் e-KYC சரிபார்க்கப்பட்டு பதிவு செய்யப்படும்', fillFromAadhaar: 'ஆதார் பெயர் நிரப்பு', liveTracking: 'நேரலை நிலை கண்காணிப்பு',
     officerReview: 'வட்ட வழங்கல் அலுவலர் ஆய்வு', stockDispatch: 'கடைக்கு கூடுதல் ஒதுக்கீடு', advanceProgress: 'அடுத்த நிலைக்கு நகர்த்து',
     changeCard: 'கார்டை மாற்றுக', cardEntered: 'தேர்ந்தெடுக்கப்பட்ட கார்டு', clearCard: 'கார்டை மாற்று',
-    // New Feature Keys
     selectState: 'மாநிலத்தைத் தேர்ந்தெடுக்கவும்',
     selectStateSub: 'உங்கள் பொது விநியோகத் திட்ட போர்ட்டலை தேர்ந்தெடுக்கவும்',
     activeStates: 'செயல்பாட்டில் உள்ள மாநிலங்கள்',
@@ -99,7 +187,23 @@ const text = {
     waOptInTitle: 'வாட்ஸ்அப் மாதாந்திர தகவல் பெற',
     waOptInSub: 'ரேஷன் கடைக்கு தானியங்கள் வந்தவுடன் தகவல் பெறுக',
     waOptInBtn: 'வாட்ஸ்அப் இணைக்க',
-    registryDisclaimer: 'அதிகாரப்பூர்வ அரசு பதிவு தகவல்: கடை பெயர்கள் மற்றும் தானிய இருப்பு பதிவு செய்யப்பட்ட மொழியிலேயே காட்டப்படுகின்றன.'
+    registryDisclaimer: 'அதிகாரப்பூர்வ அரசு பதிவு தகவல்: கடை பெயர்கள் மற்றும் தானிய இருப்பு பதிவு செய்யப்பட்ட மொழியிலேயே காட்டப்படுகின்றன.',
+    issuedStamp: '✓ வழங்கப்பட்டது',
+    verifiedBeneficiary: 'NFSA சரிபார்க்கப்பட்ட பயனாளி',
+    servicesHub: 'PDS மக்கள் சேவைகள்',
+    shopsService: 'நியாய விலைக் கடைகள்',
+    shopsServiceSub: 'இருப்பு நிலை மற்றும் நேரம்',
+    tokenService: 'முன்னுரிமை டோக்கன்',
+    tokenServiceSub: 'வரிசை தவிர்க்க நேரம் ஒதுக்கு',
+    historyService: 'ஒதுக்கீடு வரலாறு',
+    historyServiceSub: '6 மாத பதிவுகள் மற்றும் குறைபாடுகள்',
+    grievanceService: 'புகார் மையம்',
+    grievanceServiceSub: '7 நாள் தீர்வு உத்தரவாதம்',
+    nfsaBanner: 'தேசிய உணவு பாதுகாப்பு சட்டம் (NFSA 2013): மானிய தானியம் உங்கள் சட்டப்பூர்வ உரிமை. உதவிக்கு 1967 அழைக்கவும்.',
+    monthlyQuotaTitle: 'ஆகஸ்ட் 2026 ஒதுக்கீடு',
+    quotaReceivedDesc: 'மாத ஒதுக்கீடு வெற்றிகரமாக வழங்கப்பட்டது',
+    allocatedReceived: 'ஒதுக்கப்பட்டு பெறப்பட்டது',
+    listenToEntitlement: 'ஒதுக்கீட்டை கேட்கவும்'
   },
   hi: {
     app: 'अन्न सेतु', greeting: 'नमस्ते', tagline: 'राशन की सही जानकारी, सही समय पर',
@@ -110,21 +214,21 @@ const text = {
     cardNo: 'राशन कार्ड नंबर', cardSaved: 'राशन कार्ड', continue: 'आगे बढ़ें', loading: 'स्थिति जाँची जा रही है…',
     cardError: 'कृपया कम से कम 6 अंकों का सही कार्ड नंबर डालें।',
     offline: 'आपकी जानकारी फोन में सुरक्षित है। नेटवर्क आते ही अपडेट होगी।',
-    entitlement: 'इस महीने का राशन', denied: 'राशन रुका है', partial: 'कुछ राशन मिला', received: 'राशन मिल गया', issue: 'क्या हुआ?',
-    nearby: 'पास की उचित दर दुकानें', today: 'आज का स्टॉक', rice: 'चावल', wheat: 'गेहूँ', sugar: 'चीनी', dal: 'दाल',
+    entitlement: 'इस महीने का राशन', denied: 'राशन रुका है', partial: 'कुछ राशन मिला', received: 'पूर्ण कोटा प्राप्त हुआ', issue: 'क्या हुआ?',
+    nearby: 'उचित दर दुकानें', today: 'आज का स्टॉक', rice: 'चावल', wheat: 'गेहूँ', sugar: 'चीनी', dal: 'दाल',
     available: 'मिल रहा है', out: 'आज नहीं है', open: 'खुली है', closed: 'अभी बंद है',
     timeline: 'पिछले 6 महीने', pattern: 'पिछले 3 महीनों में 2 बार राशन में समस्या हुई', fast: '3 दिन आगे बढ़ाएँ', fastSub: 'शिकायत अपने-आप बनने का डेमो देखें',
     back: 'वापस', grievance: 'शिकायत तैयार है', autoCreated: '3 दिन बाद अपने-आप दर्ज की गई', tracking: 'ट्रैकिंग नंबर', expected: 'जवाब मिलने का समय: 48 घंटे',
     link: 'पहचान जोड़ें', enterOtp: 'मोबाइल पर आया 4 अंकों का कोड डालें', verify: 'सत्यापित करें', request: 'सुधार का अनुरोध',
     correctName: 'सही नाम', sendRequest: 'अनुरोध भेजें', nameError: 'कृपया अपना सही नाम भरें।', success: 'हो गया!', successText: 'आपका अनुरोध दर्ज हो गया है। हम आपको बताएँगे।',
     support: 'मदद चाहिए?', call: 'हेल्पलाइन नंबर देखें', callShown: '1967 — हेल्पलाइन नंबर दिखा दिया गया है', network: 'नेटवर्क स्थिति', noNetwork: 'नेटवर्क नहीं मिला',
-    helpCard: 'हम आपके साथ हैं', helpBody: 'समझ न आए तो 1967 पर कॉल करें। यह डेमो कॉल नहीं करता।',
+    helpCard: 'हम आपके साथ हैं', helpBody: 'समझ न आए तो 1967 पर कॉल करें।',
     inactiveTitle: 'कार्ड फिर चालू करें', inactiveBody: 'हम जाँच के लिए आपका अनुरोध तैयार कर देंगे।',
     activate: 'जाँच का अनुरोध भेजें', otpStep1: 'मोबाइल नंबर जाँचें', otpStep3: 'पहचान जुड़ गई', resolution: 'समाधान पूरा हुआ', resolveDemo: 'समाधान होने का डेमो देखें',
-    days: '3 दिन से समाधान नहीं हुआ', check: 'सही दुकान चुनें', selectedShop: 'यह दुकान आज दोनों अनाज दे सकती है।', august: 'अगस्त', quantity: '20 किलो',
+    days: '3 दिन से समाधान नहीं हुआ', check: 'सही दुकान चुनें', selectedShop: 'यह दुकान आज दोनों अनाज दे सकती है।', august: 'अगस्त', quantity: 'कोटा',
     demoStatus: 'स्थिति बदलें', demoIssue: 'कारण बदलें', invalidOtp: 'चार अंक डालें',
     phoneGate: 'मोबाइल सत्यापन', phoneGateSub: 'आपका राशन विवरण सिर्फ आपको दिखे, इसलिए पहले मोबाइल नंबर जाँचें।',
-    phoneLabel: 'मोबाइल नंबर', phoneOtpLabel: 'मोबाइल पर आया कोड डालें', phoneOtpHint: 'डेमो OTP: 1234 (जाँचने के लिए)', wrongOtp: 'गलत कोड। डेमो के लिए 1234 डालें।',
+    phoneLabel: 'मोबाइल नंबर', phoneOtpLabel: 'मोबाइल पर आया कोड डालें', phoneOtpHint: 'डेमो OTP: 1234', wrongOtp: 'गलत कोड। 1234 डालें।',
     smsSimTitle: 'नया संदेश · PDS OTP', smsSimBody: 'अन्न सेतु सत्यापन कोड 1234 है। वैधता: 10 मिनट।', tapToFill: '1234 ऑटो-फिल करें',
     allShops: 'सभी दुकानें', openOnly: 'खुली दुकानें', riceOnly: 'चावल उपलब्ध', wheatOnly: 'गेहूँ उपलब्ध',
     switchCard: 'डेमो कार्ड', tnPreset: 'तमिलनाडु (TN)', mhPreset: 'महाराष्ट्र (MH)',
@@ -139,7 +243,7 @@ const text = {
     activeStates: 'सक्रिय राज्य',
     comingSoon: 'शीघ्र उपलब्ध',
     changeState: 'राज्य बदलें',
-    privacyNote: '🔒 गोपनीयता गारंटी: आपका राशन कार्ड नंबर और विवरण केवल आपके फोन पर सुरक्षित रहता है।',
+    privacyNote: '🔒 गोपनीयता गारंटी: आपका राशन विवरण केवल आपके फोन पर सुरक्षित रहता है।',
     listen: 'सुनें',
     stopListening: 'रोकें',
     pickupRation: 'राशन लेने जाएँ',
@@ -167,85 +271,117 @@ const text = {
     offlineQueued: 'इंटरनेट नहीं है। शिकायत फोन में सहेजी गई है।',
     askAssistant: 'सहायता गाइड',
     assistantTitle: 'अन्न सेतु सहायता सहायक',
-    assistantScopeNotice: 'ℹ️ यह सहायक केवल इस ऐप के संचालन में मदद करता है। कानूनी व पात्रता सहायता हेतु 1967 पर कॉल करें।',
+    assistantScopeNotice: 'ℹ️ यह सहायक केवल इस ऐप के संचालन में मदद करता है। कानूनी सहायता हेतु 1967 पर कॉल करें।',
     askPlaceholder: 'ऐप के उपयोग संबंधी प्रश्न पूछें…',
     waOptInTitle: 'व्हाट्सएप पर मासिक अलर्ट प्राप्त करें',
     waOptInSub: 'राशन दुकान में खाद्यान्न आते ही सूचना पाएँ',
     waOptInBtn: 'व्हाट्सएप जोड़ें',
-    registryDisclaimer: 'आधिकारिक सरकारी रजिस्ट्री डेटा: दुकान का नाम और स्टॉक राज्य पोर्टल के अनुसार मूल भाषा में प्रदर्शित है।'
+    registryDisclaimer: 'आधिकारिक सरकारी रजिस्ट्री डेटा: दुकान का विवरण राज्य पोर्टल के अनुसार प्रदर्शित है।',
+    issuedStamp: '✓ जारी किया गया',
+    verifiedBeneficiary: 'NFSA सत्यापित लाभार्थी',
+    servicesHub: 'नागरिक सेवा केंद्र',
+    shopsService: 'उचित दर दुकानें',
+    shopsServiceSub: 'स्टॉक व दुकान का समय देखें',
+    tokenService: 'प्राथमिकता टोकन',
+    tokenServiceSub: 'कतार से बचने हेतु समय चुनें',
+    historyService: 'आवंटन इतिहास',
+    historyServiceSub: '6 माह का रिकॉर्ड व कमी विवरण',
+    grievanceService: 'शिकायत निवारण',
+    grievanceServiceSub: '7 दिवसीय वैधानिक समाधान गारंटी',
+    nfsaBanner: 'राष्ट्रीय खाद्य सुरक्षा अधिनियम (NFSA 2013): रियायती अनाज आपका कानूनी अधिकार है। सहायता: 1967 (टोल-फ्री)।',
+    monthlyQuotaTitle: 'अगस्त 2026 आवंटन',
+    quotaReceivedDesc: 'मासिक राशन सफलतापूर्वक प्राप्त हुआ',
+    allocatedReceived: 'आवंटित व प्राप्त',
+    listenToEntitlement: 'आवंटन सुनें'
   },
-  en: {
-    app: 'Anna Setu', greeting: 'Hello', tagline: 'Clear ration support, right when you need it',
-    demo: 'Demo mode — no real government system is connected',
-    home: 'Home', shops: 'Shops', history: 'History', help: 'Help',
-    helper: 'Help someone else', helperSub: 'Check a family member or neighbour’s card',
-    helperCard: 'Ration card number for the person you’re helping', checkPerson: 'Check status', ownCard: 'Return to my card',
-    cardNo: 'Ration card number', cardSaved: 'Ration card', continue: 'Continue', loading: 'Checking your status…',
-    cardError: 'Enter at least 6 characters for a valid ration card number.',
-    offline: 'Your details are saved on this phone and will update when connected.',
-    entitlement: 'This month’s ration', denied: 'Ration is paused', partial: 'Some ration received', received: 'Ration received', issue: 'What happened?',
-    nearby: 'Fair Price Shops', today: 'Today’s stock', rice: 'Rice', wheat: 'Wheat', sugar: 'Sugar', dal: 'Toor Dal',
-    available: 'Available', out: 'Not today', open: 'Open', closed: 'Closed now',
-    timeline: 'Last 6 months', pattern: 'There were ration issues in 2 of the last 3 months', fast: 'Fast-forward 3 days', fastSub: 'See the grievance generated automatically',
-    back: 'Back', grievance: 'Grievance is ready', autoCreated: 'Automatically registered after 3 days', tracking: 'Tracking number', expected: 'Expected response: 48 hours',
-    link: 'Link identity', enterOtp: 'Enter the 4-digit code sent to your phone', verify: 'Verify', request: 'Request correction',
-    correctName: 'Correct name', sendRequest: 'Send request', nameError: 'Please enter the correct name.', success: 'All set!', successText: 'Your request is recorded. We’ll keep you informed.',
-    support: 'Need help?', call: 'Show helpline number', callShown: '1967 — helpline number shown', network: 'Network status', noNetwork: 'No network found',
-    helpCard: 'We are with you', helpBody: 'If you are unsure, call 1967. This demo does not place calls.',
-    inactiveTitle: 'Reactivate card', inactiveBody: 'We will prepare a review request for your card.',
-    activate: 'Send review request', otpStep1: 'Check mobile number', otpStep3: 'Identity linked', resolution: 'Resolved', resolveDemo: 'See resolved demo',
-    days: 'Unresolved for 3 days', check: 'Choose this shop', selectedShop: 'This shop can provide both grains today.', august: 'August', quantity: '20 kg',
-    demoStatus: 'Change status', demoIssue: 'Change reason', invalidOtp: 'Enter all four digits',
-    phoneGate: 'Phone verification', phoneGateSub: 'So only you can see your ration details, please verify your mobile number first.',
-    phoneLabel: 'Mobile number', phoneOtpLabel: 'Enter the code sent to your phone', phoneOtpHint: 'Demo OTP: 1234 (for testing)', wrongOtp: 'Incorrect code. Use 1234 for this demo.',
-    smsSimTitle: 'New Message · PDS OTP', smsSimBody: 'Your Anna Setu verification code is 1234. Valid for 10 minutes.', tapToFill: 'Tap to auto-fill 1234',
-    allShops: 'All Shops', openOnly: 'Open Now', riceOnly: 'Rice in Stock', wheatOnly: 'Wheat in Stock',
-    switchCard: 'Demo Card', tnPreset: 'Tamil Nadu (TN)', mhPreset: 'Maharashtra (MH)',
-    selectLanguage: 'Select Language', bookSlot: 'Book Time Slot', selectSlot: 'Select Arrival Time', confirmBooking: 'Confirm & Get E-Token',
-    tokenPassTitle: 'PDS Priority Pass', tokenNote: 'Show this digital token at the FPS counter to skip the queue', viewOnMap: 'Google Maps',
-    queueAhead: 'People ahead', estWait: 'Estimated wait', currentCardName: 'Name as on Card (Typo)', correctAadhaarName: 'Correct Legal Name (Aadhaar)',
-    docVerifyNote: 'Aadhaar e-KYC match verified for registered mobile', fillFromAadhaar: 'Fill from Aadhaar', liveTracking: 'Live Status Tracker',
-    officerReview: 'Taluk Supply Officer Review', stockDispatch: 'FPS Stock Dispatched', advanceProgress: 'Advance Status (Demo)',
-    changeCard: 'Change Card', cardEntered: 'Selected Card', clearCard: 'Switch Card',
-    selectState: 'Select your State',
-    selectStateSub: 'Choose your state Public Distribution System (PDS) portal',
-    activeStates: 'Active State Portals',
-    comingSoon: 'Coming Soon',
-    changeState: 'Change State',
-    privacyNote: '🔒 Privacy Assurance: Your ration card number and data remain strictly on your device.',
-    listen: 'Listen',
-    stopListening: 'Stop',
-    pickupRation: 'Pick Up Ration',
-    viewReceipt: 'View Receipt',
-    digitalReceipt: 'Digital Ration Receipt',
-    receiptTxn: 'Transaction ID',
-    receiptShop: 'Fair Price Shop',
-    receiptCommodity: 'Commodity',
-    receiptEntitled: 'Entitled',
-    receiptIssued: 'Issued',
-    receiptRate: 'Rate',
-    receiptTotal: 'Total',
-    freeNfsa: 'Free (NFSA)',
-    downloadReceipt: 'Save / Print Voucher',
-    close: 'Close',
-    entitlementBreakdown: 'Monthly Quota vs Received',
-    categoryNorms: 'Card Category Norms',
-    shortfallAlert: 'Stock Shortfall Detected',
-    raiseMonthGrievance: 'Raise Grievance for this Shortfall',
-    grievanceSLA: 'Under NFSA Section 19, grievances must be redressed within 7 working days.',
-    confirmGrievance: 'Review & Submit Grievance',
-    myGrievances: 'My Grievance Tickets',
-    grievanceLogTitle: 'Official Action Log',
-    shareTicket: 'Share via WhatsApp',
-    offlineQueued: 'Offline mode active. Grievance stored locally and will sync when reconnected.',
-    askAssistant: 'App Guide',
-    assistantTitle: 'Anna Setu App Guide',
-    assistantScopeNotice: 'ℹ️ This assistant helps you navigate this application only. For legal or card entitlement rulings, call 1967.',
-    askPlaceholder: 'Ask how to use Anna Setu…',
-    waOptInTitle: 'Receive WhatsApp Ration Alerts',
-    waOptInSub: 'Get notified when grains arrive at your ration shop',
-    waOptInBtn: 'Connect WhatsApp',
-    registryDisclaimer: 'Official Government Registry Data: Shop names and allocations are displayed as registered in the source state portal.'
+  mr: {
+    app: 'अन्न सेतु', greeting: 'नमस्ते', tagline: 'रेशनची अचूक माहिती, योग्य वेळी',
+    demo: 'डेमो मोड — कोणतीही सरकारी यंत्रणा जोडलेली नाही',
+    home: 'मुख्यपृष्ठ', shops: 'दुकाने', history: 'इतिहास', help: 'मदत',
+    helper: 'इतरांना मदत करा', helperSub: 'कुटुंब किंवा शेजाऱ्यांचे कार्ड तपासा',
+    helperCard: 'रेशन कार्ड नंबर', checkPerson: 'स्थिती पहा', ownCard: 'माझ्या कार्डवर परत जा',
+    cardNo: 'रेशन कार्ड नंबर', cardSaved: 'रेशन कार्ड', continue: 'पुढे जा', loading: 'स्थिती तपासली जात आहे…',
+    cardError: 'कृपया किमान 6 अंकी योग्य कार्ड नंबर टाका.',
+    offline: 'माहिती फोनमध्ये सुरक्षित आहे.',
+    entitlement: 'या महिन्याचे रेशन', denied: 'रेशन थांबवले आहे', partial: 'काही रेशन मिळाले', received: 'पूर्ण कोटा प्राप्त झाला', issue: 'काय झाले?',
+    nearby: 'जवळची रास्त भाव दुकाने', today: 'आजचा साठा', rice: 'तांदूळ', wheat: 'गहू', sugar: 'साखर', dal: 'डाळ',
+    available: 'उपलब्ध आहे', out: 'आज नाही', open: 'उघडे आहे', closed: 'बंद आहे',
+    timeline: 'मागील 6 महिने', pattern: 'मागील 3 महिन्यांत 2 वेळा रेशनमध्ये अडचण आली', fast: '3 दिवस पुढे करा', fastSub: 'तक्रार आपोआप नोंदवली जाणे पहा',
+    back: 'मागे', grievance: 'तक्रार तयार आहे', autoCreated: '3 दिवसांनंतर आपोआप नोंदवली गेली', tracking: 'ट्रॅकिंग नंबर', expected: 'अपेक्षित वेळ: 48 तास',
+    link: 'ओळख लिंक करा', enterOtp: '4 अंकी कोड टाका', verify: 'पडताळणी करा', request: 'दुरुस्ती विनंती',
+    correctName: 'योग्य नाव', sendRequest: 'विनंती पाठवा', nameError: 'कृपया योग्य नाव भरा.', success: 'यशस्वी झाले!', successText: 'आपली विनंती नोंदवली गेली आहे.',
+    support: 'मदत हवी आहे?', call: 'हेल्पलाइन नंबर', callShown: '1967 — हेल्पलाइन दाखवली', network: 'नेटवर्क स्थिती', noNetwork: 'नेटवर्क नाही',
+    helpCard: 'आम्ही सोबत आहोत', helpBody: 'शंका असल्यास 1967 वर कॉल करा.',
+    inactiveTitle: 'कार्ड पुन्हा सुरू करा', inactiveBody: 'आम्ही पुनरावलोकन विनंती तयार करू.',
+    activate: 'विनंती पाठवा', otpStep1: 'मोबाईल तपासा', otpStep3: 'ओळख लिंक झाली', resolution: 'निवारण झाले', resolveDemo: 'निवारण डेमो',
+    days: '3 दिवसांपासून निवारण नाही', check: 'हे दुकान निवडा', selectedShop: 'या दुकानात साठा उपलब्ध आहे.', august: 'ऑगस्ट', quantity: 'कोटा',
+    demoStatus: 'स्थिती बदला', demoIssue: 'कारण बदला', invalidOtp: '4 अंक टाका',
+    phoneGate: 'मोबाईल पडताळणी', phoneGateSub: 'आपली माहिती सुरक्षित राहण्यासाठी मोबाईल तपासा.',
+    phoneLabel: 'मोबाईल नंबर', phoneOtpLabel: 'OTP कोड टाका', phoneOtpHint: 'डेमो OTP: 1234', wrongOtp: 'चुकीचा कोड. 1234 वापरा.',
+    smsSimTitle: 'नवीन संदेश · PDS OTP', smsSimBody: 'अन्न सेतु पडताळणी कोड 1234 आहे.', tapToFill: '1234 भरा',
+    allShops: 'सर्व दुकाने', openOnly: 'उघडी दुकाने', riceOnly: 'तांदूळ साठा', wheatOnly: 'गहू साठा',
+    switchCard: 'डेमो कार्ड', tnPreset: 'तमिळनाडू (TN)', mhPreset: 'महाराष्ट्र (MH)',
+    selectLanguage: 'भाषा निवडा', bookSlot: 'वेळ स्लॉट बुक करा', selectSlot: 'येण्याची वेळ निवडा', confirmBooking: 'पुष्टी करा',
+    tokenPassTitle: 'PDS प्राधान्य ई-टोकन', tokenNote: 'रांगेत उभे न राहता रेशन मिळवण्यासाठी हे टोकन दाखवा', viewOnMap: 'गुगल मॅप्स',
+    queueAhead: 'रांगेत पुढे लोक', estWait: 'अपेक्षित प्रतीक्षा', currentCardName: 'कार्डवरील चुकीचे नाव', correctAadhaarName: 'आधारनुसार अचूक नाव',
+    docVerifyNote: 'आधार e-KYC पडताळणी पूर्ण झाली', fillFromAadhaar: 'आधार नाव भरा', liveTracking: 'थेट ट्रॅकिंग',
+    officerReview: 'अधिकारी पुनरावलोकन', stockDispatch: 'साठा वाटप पाठवले', advanceProgress: 'पुढील टप्पा पहा',
+    changeCard: 'कार्ड बदला', cardEntered: 'निवडलेले कार्ड', clearCard: 'कार्ड बदला',
+    selectState: 'आपले राज्य निवडा',
+    selectStateSub: 'आपले सार्वजनिक वितरण प्रणाली (PDS) पोर्टल निवडा',
+    activeStates: 'सक्रिय राज्ये',
+    comingSoon: 'लवकरच येत आहे',
+    changeState: 'राज्य बदला',
+    privacyNote: '🔒 गोपनीयता हमी: आपली रेशन माहिती आपल्या फोनवर सुरक्षित आहे.',
+    listen: 'ऐका',
+    stopListening: 'थांबवा',
+    pickupRation: 'रेशन आणण्यासाठी जा',
+    viewReceipt: 'डिजिटल पावती',
+    digitalReceipt: 'डिजिटल रेशन पावती',
+    receiptTxn: 'व्यवहार क्रमांक',
+    receiptShop: 'रास्त भाव दुकान',
+    receiptCommodity: 'धान्य',
+    receiptEntitled: 'पात्रता',
+    receiptIssued: 'प्राप्त',
+    receiptRate: 'दर',
+    receiptTotal: 'एकूण',
+    freeNfsa: 'मोफत (NFSA)',
+    downloadReceipt: 'पावती सेव्ह करा / प्रिंट करा',
+    close: 'बंद करा',
+    entitlementBreakdown: 'मासिक वाटप विरुद्ध मिळालेले',
+    categoryNorms: 'कार्ड श्रेणी मर्यादा',
+    shortfallAlert: 'तुटवडा आढळला',
+    raiseMonthGrievance: 'या तुटवड्याची तक्रार नोंदवा',
+    grievanceSLA: 'NFSA कलम 19 नुसार 7 दिवसांत तक्रार निवारण आवश्यक आहे.',
+    confirmGrievance: 'तक्रार निश्चित करा',
+    myGrievances: 'माझ्या तक्रारी',
+    grievanceLogTitle: 'अधिकारी कारवाई नोंद',
+    shareTicket: 'व्हॉट्सॲपवर पाठवा',
+    offlineQueued: 'ऑफलाइन मोड. इंटरनेट आल्यावर तक्रार आपोआप पाठवली जाईल.',
+    askAssistant: 'मार्गदर्शक',
+    assistantTitle: 'अन्न सेतु ॲप मार्गदर्शक',
+    assistantScopeNotice: 'ℹ️ हा सहाय्यक फक्त हे ॲप वापरण्यासाठी मदत करतो. कायदेशीर मार्गदर्शनासाठी 1967 वर कॉल करा.',
+    askPlaceholder: 'ॲप वापरण्याबद्दल विचारा…',
+    waOptInTitle: 'व्हॉट्सॲपवर रेशन सूचना मिळवा',
+    waOptInSub: 'दुकानात धान्य पोहोचताच सूचना मिळवा',
+    waOptInBtn: 'व्हॉट्सॲप जोडा',
+    registryDisclaimer: 'अधिकृत सरकारी नोंद डेटा: दुकानांची माहिती राज्य पोर्टलनुसार प्रदर्शित केली आहे.',
+    issuedStamp: '✓ जारी केले',
+    verifiedBeneficiary: 'NFSA सत्यापित लाभार्थी',
+    servicesHub: 'नागरिक सेवा केंद्र',
+    shopsService: 'रास्त भाव दुकाने',
+    shopsServiceSub: 'साठा व दुकानाची वेळ तपासा',
+    tokenService: 'प्राधान्य टोकन',
+    tokenServiceSub: 'रांगेत उभे न राहता टोकन मिळवा',
+    historyService: 'वाटप इतिहास',
+    historyServiceSub: '6 महिन्यांचा रेशन नोंदींचा आढावा',
+    grievanceService: 'तक्रार निवारण',
+    grievanceServiceSub: '7 दिवसांची वैधानिक निराकरण हमी',
+    nfsaBanner: 'राष्ट्रीय अन्न सुरक्षा कायदा (NFSA 2013): सवलतीचे धान्य हा आपला कायदेशीर हक्क आहे. मदत: 1967 (टोल-फ्री).',
+    monthlyQuotaTitle: 'ऑगस्ट 2026 वाटप',
+    quotaReceivedDesc: 'मासिक रेशन यशस्वीरित्या प्राप्त झाले',
+    allocatedReceived: 'वाटप व प्राप्त',
+    listenToEntitlement: 'वाटप ऐका'
   },
   te: {
     app: 'అన్న సేతు', greeting: 'నమస్కారం', tagline: 'సరైన రేషన్ సమాచారం, సరైన సమయంలో',
@@ -256,7 +392,7 @@ const text = {
     cardNo: 'రేషన్ కార్డు నంబర్', cardSaved: 'రేషన్ కార్డు', continue: 'కొనసాగించండి', loading: 'వివరాలు తనిఖీ చేయబడుతున్నాయి…',
     cardError: 'కనీసం 6 అక్షరాల సరైన కార్డు నంబర్ నమోదు చేయండి.',
     offline: 'మీ వివరాలు ఫోన్‌లో సురక్షితంగా ఉన్నాయి.',
-    entitlement: 'ఈ నెల రేషన్ కోటా', denied: 'రేషన్ నిలిపివేయబడింది', partial: 'కొంత రేషన్ అందింది', received: 'పూర్తి రేషన్ అందింది', issue: 'ఏమి జరిగింది?',
+    entitlement: 'ఈ నెల రేషన్ కోటా', denied: 'రేషన్ నిలిపివేయబడింది', partial: 'కొంత రేషన్ అందింది', received: 'పూర్తి కోటా అందింది', issue: 'ఏమి జరిగింది?',
     nearby: 'సమీప చౌకధరల దుకాణాలు', today: 'నేటి నిల్వ', rice: 'బియ్యం', wheat: 'గోధుమలు', sugar: 'చక్కెర', dal: 'కందిపప్పు',
     available: 'అందుబాటులో ఉంది', out: 'నేడు లేదు', open: 'తెరిచి ఉంది', closed: 'మూసివేయబడింది',
     timeline: 'గత 6 నెలలు', pattern: 'గత 3 నెలల్లో 2 సార్లు రేషన్ సమస్య వచ్చింది', fast: '3 రోజులు ముందుకు జరపండి', fastSub: 'ఫిర్యాదు ఆటోమేటిక్‌గా నమోదు కావడాన్ని చూడండి',
@@ -267,7 +403,7 @@ const text = {
     helpCard: 'మేము మీకు తోడుగా ఉన్నాము', helpBody: 'సందేహం ఉంటే 1967కు కాల్ చేయండి.',
     inactiveTitle: 'కార్డు పునరుద్ధరణ', inactiveBody: 'మేము సమీక్ష అభ్యర్థనను సిద్ధం చేస్తాము.',
     activate: 'అభ్యర్థన పంపండి', otpStep1: 'మొబైల్ తనిఖీ', otpStep3: 'గుర్తింపు లింక్ అయింది', resolution: 'పరిష్కరించబడింది', resolveDemo: 'పరిష్కార డెమో',
-    days: '3 రోజులుగా పరిష్కారం కాలేదు', check: 'ఈ షాపును ఎంచుకోండి', selectedShop: 'ఈ షాపులో ధాన్యాలు అందుబాటులో ఉన్నాయి.', august: 'ఆగస్టు', quantity: '20 కిలోలు',
+    days: '3 రోజులుగా పరిష్కారం కాలేదు', check: 'ఈ షాపును ఎంచుకోండి', selectedShop: 'ఈ షాపులో ధాన్యాలు అందుబాటులో ఉన్నాయి.', august: 'ఆగస్టు', quantity: 'కోటా',
     demoStatus: 'స్థితి మార్చు', demoIssue: 'కారణం మార్చు', invalidOtp: '4 అంకెలు నమోదు చేయండి',
     phoneGate: 'మొబైల్ ధృవీకరణ', phoneGateSub: 'మీ రేషన్ వివరాలు మీరు మాత్రమే చూడటానికి మొబైల్ ధృవీకరించండి.',
     phoneLabel: 'మొబైల్ నంబర్', phoneOtpLabel: 'OTP కోడ్ నమోదు చేయండి', phoneOtpHint: 'డెమో OTP: 1234', wrongOtp: 'తప్పు కోడ్. 1234 ఉపయోగించండి.',
@@ -318,7 +454,23 @@ const text = {
     waOptInTitle: 'వాట్సాప్ అలర్ట్స్ పొందండి',
     waOptInSub: 'రేషన్ రాగానే సమాచారం తెలుసుకోండి',
     waOptInBtn: 'వాట్సాప్ కనెక్ట్ చేయండి',
-    registryDisclaimer: 'అధికారిక ప్రభుత్వ రిజిస్ట్రీ డేటా: దుకాణం పేర్లు మరియు కేటాయింపులు అసలు పోర్టల్ భాషలోనే చూపబడ్డాయి.'
+    registryDisclaimer: 'అధికారిక ప్రభుత్వ రిజిస్ట్రీ డేటా: దుకాణం పేర్లు అసలు పోర్టల్ ప్రకారం చూపబడ్డాయి.',
+    issuedStamp: '✓ జారీ చేయబడింది',
+    verifiedBeneficiary: 'NFSA ధృవీకరించబడిన లబ్ధిదారు',
+    servicesHub: 'పౌర సేవల కేంద్రం',
+    shopsService: 'చౌకధరల దుకాణాలు',
+    shopsServiceSub: 'స్టాక్ వివరాలు & వేళలు',
+    tokenService: 'ప్రాధాన్యతా టోకెన్',
+    tokenServiceSub: 'క్యూ లేకుండా రేషన్ తీసుకోండి',
+    historyService: 'కోటా చరిత్ర',
+    historyServiceSub: '6 నెలల రికార్డులు & వివరాలు',
+    grievanceService: 'ఫిర్యాదుల విభాగం',
+    grievanceServiceSub: '7 రోజుల పరిష్కార హామీ',
+    nfsaBanner: 'జాతీయ ఆహార భద్రతా చట్టం (NFSA 2013): సబ్సిడీ ధాన్యం మీ చట్టపరమైన హక్కు. సహాయం: 1967 (టోల్-ఫ్రీ).',
+    monthlyQuotaTitle: 'ఆగస్టు 2026 కోటా',
+    quotaReceivedDesc: 'నెలవారీ కోటా విజయవంతంగా అందింది',
+    allocatedReceived: 'కేటాయించి పొందినవి',
+    listenToEntitlement: 'కోటా వివరాలు వినండి'
   },
   kn: {
     app: 'ಅನ್ನ ಸೇತು', greeting: 'ನಮಸ್ಕಾರ', tagline: 'ಸರಿಯಾದ ಪಡಿತರ ಮಾಹಿತಿ, ಸರಿಯಾದ ಸಮಯದಲ್ಲಿ',
@@ -329,8 +481,8 @@ const text = {
     cardNo: 'ಪಡಿತರ ಕಾರ್ಡ್ ಸಂಖ್ಯೆ', cardSaved: 'ಪಡಿತರ ಕಾರ್ಡ್', continue: 'ಮುಂದುವರಿಯಿರಿ', loading: 'ವಿವರಗಳನ್ನು ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ…',
     cardError: 'ಕನಿಷ್ಠ 6 ಅಕ್ಷರಗಳ ಸರಿಯಾದ ಕಾರ್ಡ್ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ.',
     offline: 'ನಿಮ್ಮ ವಿವರಗಳು ಫೋನ್‌ನಲ್ಲಿ ಸುರಕ್ಷಿತವಾಗಿವೆ.',
-    entitlement: 'ಈ ತಿಂಗಳ ಪಡಿತರ ಕೋಟಾ', denied: 'ಪಡಿತರ ಸ್ಥಗಿತಗೊಂಡಿದೆ', partial: 'ಸ್ವಲ್ಪ ಪಡಿತರ ಸಿಕ್ಕಿದೆ', received: 'ಪೂರ್ಣ ಪಡಿತರ ಸಿಕ್ಕಿದೆ', issue: 'ಏನಾಯಿತು?',
-    nearby: 'ಹತ್ತಿರದ ನ್ಯಾಯಬೆಲೆ ಅಂಗಡಿಗಳು', today: 'ಇಂದಿನ ದಾಸ್ತಾನು', rice: 'ಅಕ್ಕಿ', wheat: 'ಗೋಧಿ', sugar: 'ಸಕ್ಕರೆ', dal: 'ತೊಗರಿ ಬೇಳೆ',
+    entitlement: 'ಈ ತಿಂಗಳ ಪಡಿತರ ಕೋಟಾ', denied: 'ಪಡಿತರ ಸ್ಥಗಿತಗೊಂಡಿದೆ', partial: 'ಸ್ವಲ್ಪ ಪಡಿತರ ಸಿಕ್ಕಿದೆ', received: 'ಪೂರ್ಣ ಕೋಟಾ ಸಿಕ್ಕಿದೆ', issue: 'ಏನಾಯಿತು?',
+    nearby: 'ನ್ಯಾಯಬೆಲೆ ಅಂಗಡಿಗಳು', today: 'ಇಂದಿನ ದಾಸ್ತಾನು', rice: 'ಅಕ್ಕಿ', wheat: 'ಗೋಧಿ', sugar: 'ಸಕ್ಕರೆ', dal: 'ತೊಗರಿ ಬೇಳೆ',
     available: 'ಲಭ್ಯವಿದೆ', out: 'ಇಂದು ಇಲ್ಲ', open: 'ತೆರೆದಿದೆ', closed: 'ಮುಚ್ಚಲಾಗಿದೆ',
     timeline: 'ಕಳೆದ 6 ತಿಂಗಳು', pattern: 'ಕಳೆದ 3 ತಿಂಗಳಲ್ಲಿ 2 ಬಾರಿ ಸಮಸ್ಯೆ ಕಂಡುಬಂದಿದೆ', fast: '3 ದಿನ ಮುಂದೆ ಸರಿಸಿ', fastSub: 'ದೂರು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ದಾಖಲಾಗುವುದನ್ನು ನೋಡಿ',
     back: 'ಹಿಂದೆ', grievance: 'ದೂರು ಸಿದ್ಧವಾಗಿದೆ', autoCreated: '3 ದಿನಗಳ ನಂತರ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ದಾಖಲಾಗಿದೆ', tracking: 'ಟ್ರ್ಯಾಕಿಂಗ್ ಸಂಖ್ಯೆ', expected: 'ಪ್ರತಿಕ್ರಿಯೆ ಸಮಯ: 48 ಗಂಟೆ',
@@ -340,7 +492,7 @@ const text = {
     helpCard: 'ನಾವು ನಿಮ್ಮೊಂದಿಗಿದ್ದೇವೆ', helpBody: 'ಅನುಮಾನವಿದ್ದರೆ 1967 ಗೆ ಕರೆ ಮಾಡಿ.',
     inactiveTitle: 'ಕಾರ್ಡ್ ಮರುಸಕ್ರಿಯಗೊಳಿಸಿ', inactiveBody: 'ನಾವು ಪರಿಶೀಲನಾ ವಿನಂತಿಯನ್ನು ಸಿದ್ಧಪಡಿಸುತ್ತೇವೆ.',
     activate: 'ವಿನಂತಿ ಕಳುಹಿಸಿ', otpStep1: 'ಮೊಬೈಲ್ ಪರಿಶೀಲನೆ', otpStep3: 'ಗುರುತು ಲಿಂಕ್ ಆಗಿದೆ', resolution: 'ಪರಿಹರಿಸಲಾಗಿದೆ', resolveDemo: 'ಪರಿಹಾರದ ಡೆಮೊ',
-    days: '3 ದಿನಗಳಿಂದ ಪರಿಹಾರವಾಗಿಲ್ಲ', check: 'ಈ ಅಂಗಡಿ ಆಯ್ಕೆಮಾಡಿ', selectedShop: 'ಈ ಅಂಗಡಿಯಲ್ಲಿ ದಾಸ್ತಾನು ಲಭ್ಯವಿದೆ.', august: 'ಆಗಸ್ಟ್', quantity: '20 ಕೆಜಿ',
+    days: '3 ದಿನಗಳಿಂದ ಪರಿಹಾರವಾಗಿಲ್ಲ', check: 'ಈ ಅಂಗಡಿ ಆಯ್ಕೆಮಾಡಿ', selectedShop: 'ಈ ಅಂಗಡಿಯಲ್ಲಿ ದಾಸ್ತಾನು ಲಭ್ಯವಿದೆ.', august: 'ಆಗಸ್ಟ್', quantity: 'ಕೋಟಾ',
     demoStatus: 'ಸ್ಥಿತಿ ಬದಲಿಸಿ', demoIssue: 'ಕಾರಣ ಬದಲಿಸಿ', invalidOtp: '4 ಅಂಕಿಗಳನ್ನು ನಮೂದಿಸಿ',
     phoneGate: 'ಮೊಬೈಲ್ ಪರಿಶೀಲನೆ', phoneGateSub: 'ನಿಮ್ಮ ಪಡಿತರ ವಿವರಗಳನ್ನು ನೀವು ಮಾತ್ರ ನೋಡಲು ಮೊಬೈಲ್ ಪರಿಶೀಲಿಸಿ.',
     phoneLabel: 'ಮೊಬೈಲ್ ಸಂಖ್ಯೆ', phoneOtpLabel: 'OTP ಕೋಡ್ ನಮೂದಿಸಿ', phoneOtpHint: 'ಡೆಮೊ OTP: 1234', wrongOtp: 'ತಪ್ಪು ಕೋಡ್. 1234 ಬಳಸಿ.',
@@ -386,12 +538,28 @@ const text = {
     offlineQueued: 'ಆಫ್‌ಲೈನ್ ಮೋಡ್. ನೆಟ್‌ವರ್ಕ್ ಬಂದ ನಂತರ ದೂರು ಸಲ್ಲಿಸಲಾಗುವುದು.',
     askAssistant: 'ಆ್ಯಪ್ ಗೈಡ್',
     assistantTitle: 'ಅನ್ನ ಸೇತು ಸಹಾಯ ಸಹಾಯಕ',
-    assistantScopeNotice: 'ℹ️ ಈ ಸಹಾಯಕ ಆ್ಯಪ್ ಬಳಕೆಗೆ ಮಾತ್ರ. ಕಾನೂನು ಅಥವಾ ಹಕ್ಕಿನ ವಿವರಗಳಿಗೆ 1967 ಗೆ ಕರೆ ಮಾಡಿ.',
+    assistantScopeNotice: 'ℹ️ ಈ ಸಹಾಯಕ ಆ್ಯಪ್ ಬಳಕೆಗೆ ಮಾತ್ರ. ಹಕ್ಕಿನ ವಿವರಗಳಿಗೆ 1967 ಗೆ ಕರೆ ಮಾಡಿ.',
     askPlaceholder: 'ಆ್ಯಪ್ ಬಳಕೆಯ ಬಗ್ಗೆ ಪ್ರಶ್ನಿಸಿ…',
     waOptInTitle: 'ವಾಟ್ಸಾಪ್ ಎಚ್ಚರಿಕೆಗಳನ್ನು ಪಡೆಯಿರಿ',
     waOptInSub: 'ಪಡಿತರ ಬಂದ ತಕ್ಷಣ ಮಾಹಿತಿ ಪಡೆಯಿರಿ',
     waOptInBtn: 'ವಾಟ್ಸಾಪ್ ಸಂಪರ್ಕಿಸಿ',
-    registryDisclaimer: 'ಅಧಿಕೃತ ಸರ್ಕಾರಿ ದಾಖಲೆ: ಅಂಗಡಿ ಹೆಸರುಗಳು ಮತ್ತು ದಾಸ್ತಾನು ವಿವರಗಳು ಮೂಲ ಪೋರ್ಟಲ್ ಪ್ರಕಾರ ಪ್ರದರ್ಶಿತವಾಗಿದೆ.'
+    registryDisclaimer: 'ಅಧಿಕೃತ ಸರ್ಕಾರಿ ದಾಖಲೆ: ಅಂಗಡಿ ವಿವರಗಳು ಪೋರ್ಟಲ್ ಪ್ರಕಾರ ಪ್ರದರ್ಶಿತವಾಗಿದೆ.',
+    issuedStamp: '✓ ನೀಡಲಾಗಿದೆ',
+    verifiedBeneficiary: 'NFSA ಪರಿಶೀಲಿಸಿದ ಫಲಾನುಭವಿ',
+    servicesHub: 'ನಾಗರಿಕ ಸೇವಾ ಕೇಂದ್ರ',
+    shopsService: 'ನ್ಯಾಯಬೆಲೆ ಅಂಗಡಿಗಳು',
+    shopsServiceSub: 'ದಾಸ್ತಾನು ಮತ್ತು ಸಮಯ ಪರಿಶೀಲಿಸಿ',
+    tokenService: 'ಆದ್ಯತಾ ಟೋಕನ್',
+    tokenServiceSub: 'ಸರತಿ ತಪ್ಪಿಸಿ ಸಮಯ ನಿಗದಿಪಡಿಸಿ',
+    historyService: 'ಕೋಟಾ ಇತಿಹಾಸ',
+    historyServiceSub: '6 ತಿಂಗಳ ವಿವರ ಮತ್ತು ದಾಖಲೆಗಳು',
+    grievanceService: 'ದೂರು ಪರಿಹಾರ',
+    grievanceServiceSub: '7 ದಿನಗಳ ಶಾಸನಬದ್ಧ ಪರಿಹಾರ ಭರವಸೆ',
+    nfsaBanner: 'ರಾಷ್ಟ್ರೀಯ ಆಹಾರ ಭದ್ರತಾ ಕಾಯಿದೆ (NFSA 2013): ರಿಯಾಯಿತಿ ಪಡಿತರ ನಿಮ್ಮ ಹಕ್ಕು. ಸಹಾಯವಾಣಿ: 1967 (ಉಚಿತ).',
+    monthlyQuotaTitle: 'ಆಗಸ್ಟ್ 2026 ಕೋಟಾ',
+    quotaReceivedDesc: 'ಮಾಸಿಕ ಪಡಿತರ ಯಶಸ್ವಿಯಾಗಿ ಸಿಕ್ಕಿದೆ',
+    allocatedReceived: 'ಹಂಚಿಕೆ ಮತ್ತು ಪಡೆಯಲಾಗಿದೆ',
+    listenToEntitlement: 'ಕೋಟಾ ವಿವರ ಆಲಿಸಿ'
   },
   ml: {
     app: 'അന്ന സേതു', greeting: 'നമസ്കാരം', tagline: 'കൃത്യമായ റേഷൻ വിവരങ്ങൾ, കൃത്യസമയത്ത്',
@@ -402,8 +570,8 @@ const text = {
     cardNo: 'റേഷൻ കാർഡ് നമ്പർ', cardSaved: 'റേഷൻ കാർഡ്', continue: 'തുടരുക', loading: 'വിവരങ്ങൾ പരിശോധിക്കുന്നു…',
     cardError: 'കുറഞ്ഞത് 6 അക്കമുള്ള ശരിയായ കാർഡ് നമ്പർ നൽകുക.',
     offline: 'വിവരങ്ങൾ ഫോണിൽ സുരക്ഷിതമാണ്.',
-    entitlement: 'ഈ മാസത്തെ റേഷൻ വിഹിതം', denied: 'റേഷൻ തടസ്സപ്പെട്ടു', partial: 'റേഷൻ ഭാഗികമായി ലഭിച്ചു', received: 'പൂർണ്ണ റേഷൻ ലഭിച്ചു', issue: 'എന്താണ് സംഭവിച്ചത്?',
-    nearby: 'സമീപത്തെ റേഷൻ കടകൾ', today: 'ഇന്നത്തെ സ്റ്റോക്ക്', rice: 'അരി', wheat: 'ഗോതമ്പ്', sugar: 'പഞ്ചസാര', dal: 'പരിപ്പ്',
+    entitlement: 'ഈ മാസത്തെ റേഷൻ വിഹിതം', denied: 'റേഷൻ തടസ്സപ്പെട്ടു', partial: 'റേഷൻ ഭാഗികമായി ലഭിച്ചു', received: 'പൂർണ്ണ വിഹിതം ലഭിച്ചു', issue: 'എന്താണ് സംഭവിച്ചത്?',
+    nearby: 'റേഷൻ കടകൾ', today: 'ഇന്നത്തെ സ്റ്റോക്ക്', rice: 'അരി', wheat: 'ഗോതമ്പ്', sugar: 'പഞ്ചസാര', dal: 'പരിപ്പ്',
     available: 'ലഭ്യമാണ്', out: 'ഇന്ന് ലഭ്യമല്ല', open: 'തുറന്നിരിക്കുന്നു', closed: 'അടച്ചിരിക്കുന്നു',
     timeline: 'കഴിഞ്ഞ 6 മാസം', pattern: 'കഴിഞ്ഞ 3 മാസത്തിൽ 2 തവണ പ്രശ്നം ഉണ്ടായി', fast: '3 ദിവസം മുന്നോട്ട് നീക്കുക', fastSub: 'പരാതി തനിയെ രജിസ്റ്റർ ആകുന്നത് കാണുക',
     back: 'തിരികെ', grievance: 'പരാതി തയ്യാറാണ്', autoCreated: '3 ദിവസത്തിന് ശേഷം സ്വയമേവ രജിസ്റ്റർ ചെയ്തു', tracking: 'ട്രാക്കിംഗ് നമ്പർ', expected: 'മറുപടി സമയം: 48 മണിക്കൂർ',
@@ -413,7 +581,7 @@ const text = {
     helpCard: 'ഞങ്ങൾ നിങ്ങൾക്കൊപ്പമുണ്ട്', helpBody: 'സംശയമുണ്ടെങ്കിൽ 1967 ൽ വിളിക്കുക.',
     inactiveTitle: 'കാർഡ് പുനഃസ്ഥാപിക്കുക', inactiveBody: 'പരിശോധന അപേക്ഷ ഞങ്ങൾ തയ്യാറാക്കാം.',
     activate: 'അപേക്ഷ അയക്കുക', otpStep1: 'മൊബൈൽ പരിശോധിക്കുക', otpStep3: 'തിരിച്ചറിയൽ രേഖ ലിങ്ക് ചെയ്തു', resolution: 'പരിഹരിച്ചു', resolveDemo: 'പരിഹാര ഡെമോ',
-    days: '3 ദിവസമായി പരിഹാരമില്ല', check: 'ഈ കട തിരഞ്ഞെടുക്കുക', selectedShop: 'ഈ കടയിൽ സ്റ്റോക്ക് ലഭ്യമാണ്.', august: 'ഓഗസ്റ്റ്', quantity: '20 കിലോ',
+    days: '3 ദിവസമായി പരിഹാരമില്ല', check: 'ഈ കട തിരഞ്ഞെടുക്കുക', selectedShop: 'ഈ കടയിൽ സ്റ്റോക്ക് ലഭ്യമാണ്.', august: 'ഓഗസ്റ്റ്', quantity: 'വിഹിതം',
     demoStatus: 'നില മാറ്റുക', demoIssue: 'കാരണം മാറ്റുക', invalidOtp: '4 അക്കങ്ങൾ നൽകുക',
     phoneGate: 'മൊബൈൽ പരിശോധന', phoneGateSub: 'റേഷൻ വിവരങ്ങൾ സുരക്ഷിതമായി കാണാൻ മൊബൈൽ പരിശോധിക്കുക.',
     phoneLabel: 'മൊബൈൽ നമ്പർ', phoneOtpLabel: 'OTP കോഡ് നൽകുക', phoneOtpHint: 'ഡെമോ OTP: 1234', wrongOtp: 'തെറ്റായ കോഡ്. 1234 ഉപയോഗിക്കുക.',
@@ -464,80 +632,23 @@ const text = {
     waOptInTitle: 'വാട്ട്‌സ്ആപ്പ് അറിയിപ്പുകൾ നേടുക',
     waOptInSub: 'റേഷൻ എത്തുമ്പോൾ തന്നെ അറിയാം',
     waOptInBtn: 'വാട്ട്‌സ്ആപ്പ് ബന്ധിപ്പിക്കുക',
-    registryDisclaimer: 'ഔദ്യോഗിക സർക്കാർ രജിസ്ട്രി വിവരം: കടകളുടെ വിവരങ്ങൾ അതാത് സംസ്ഥാന പോർട്ടൽ ഭാഷയിൽ നൽകിയിരിക്കുന്നു.'
-  },
-  mr: {
-    app: 'अन्न सेतु', greeting: 'नमस्ते', tagline: 'रेशनची अचूक माहिती, योग्य वेळी',
-    demo: 'डेमो मोड — कोणतीही सरकारी यंत्रणा जोडलेली नाही',
-    home: 'मुख्यपृष्ठ', shops: 'दुकाने', history: 'इतिहास', help: 'मदत',
-    helper: 'इतरांना मदत करा', helperSub: 'कुटुंब किंवा शेजाऱ्यांचे कार्ड तपासा',
-    helperCard: 'रेशन कार्ड नंबर', checkPerson: 'स्थिती पहा', ownCard: 'माझ्या कार्डवर परत जा',
-    cardNo: 'रेशन कार्ड नंबर', cardSaved: 'रेशन कार्ड', continue: 'पुढे जा', loading: 'स्थिती तपासली जात आहे…',
-    cardError: 'कृपया किमान 6 अंकी योग्य कार्ड नंबर टाका.',
-    offline: 'माहिती फोनमध्ये सुरक्षित आहे.',
-    entitlement: 'या महिन्याचे रेशन', denied: 'रेशन थांबवले आहे', partial: 'काही रेशन मिळाले', received: 'पूर्ण रेशन मिळाले', issue: 'काय झाले?',
-    nearby: 'जवळची रास्त भाव दुकाने', today: 'आजचा साठा', rice: 'तांदूळ', wheat: 'गहू', sugar: 'साखर', dal: 'डाळ',
-    available: 'उपलब्ध आहे', out: 'आज नाही', open: 'उघडे आहे', closed: 'बंद आहे',
-    timeline: 'मागील 6 महिने', pattern: 'मागील 3 महिन्यांत 2 वेळा रेशनमध्ये अडचण आली', fast: '3 दिवस पुढे करा', fastSub: 'तक्रार आपोआप नोंदवली जाणे पहा',
-    back: 'मागे', grievance: 'तक्रार तयार आहे', autoCreated: '3 दिवसांनंतर आपोआप नोंदवली गेली', tracking: 'ट्रॅकिंग नंबर', expected: 'अपेक्षित वेळ: 48 तास',
-    link: 'ओळख लिंक करा', enterOtp: '4 अंकी कोड टाका', verify: 'पडताळणी करा', request: 'दुरुस्ती विनंती',
-    correctName: 'योग्य नाव', sendRequest: 'विनंती पाठवा', nameError: 'कृपया योग्य नाव भरा.', success: 'यशस्वी झाले!', successText: 'आपली विनंती नोंदवली गेली आहे.',
-    support: 'मदत हवी आहे?', call: 'हेल्पलाइन नंबर', callShown: '1967 — हेल्पलाइन दाखवली', network: 'नेटवर्क स्थिती', noNetwork: 'नेटवर्क नाही',
-    helpCard: 'आम्ही सोबत आहोत', helpBody: 'शंका असल्यास 1967 वर कॉल करा.',
-    inactiveTitle: 'कार्ड पुन्हा सुरू करा', inactiveBody: 'आम्ही पुनरावलोकन विनंती तयार करू.',
-    activate: 'विनंती पाठवा', otpStep1: 'मोबाईल तपासा', otpStep3: 'ओळख लिंक झाली', resolution: 'निवारण झाले', resolveDemo: 'निवारण डेमो',
-    days: '3 दिवसांपासून निवारण नाही', check: 'हे दुकान निवडा', selectedShop: 'या दुकानात साठा उपलब्ध आहे.', august: 'ऑगस्ट', quantity: '20 किलो',
-    demoStatus: 'स्थिती बदला', demoIssue: 'कारण बदला', invalidOtp: '4 अंक टाका',
-    phoneGate: 'मोबाईल पडताळणी', phoneGateSub: 'आपली माहिती सुरक्षित राहण्यासाठी मोबाईल तपासा.',
-    phoneLabel: 'मोबाईल नंबर', phoneOtpLabel: 'OTP कोड टाका', phoneOtpHint: 'डेमो OTP: 1234', wrongOtp: 'चुकीचा कोड. 1234 वापरा.',
-    smsSimTitle: 'नवीन संदेश · PDS OTP', smsSimBody: 'अन्न सेतु पडताळणी कोड 1234 आहे.', tapToFill: '1234 भरा',
-    allShops: 'सर्व दुकाने', openOnly: 'उघडी दुकाने', riceOnly: 'तांदूळ साठा', wheatOnly: 'गहू साठा',
-    switchCard: 'डेमो कार्ड', tnPreset: 'तमिळनाडू (TN)', mhPreset: 'महाराष्ट्र (MH)',
-    selectLanguage: 'भाषा निवडा', bookSlot: 'वेळ स्लॉट बुक करा', selectSlot: 'येण्याची वेळ निवडा', confirmBooking: 'पुष्टी करा',
-    tokenPassTitle: 'PDS प्राधान्य ई-टोकन', tokenNote: 'रांगेत उभे न राहता रेशन मिळवण्यासाठी हे टोकन दाखवा', viewOnMap: 'गुगल मॅप्स',
-    queueAhead: 'रांगेत पुढे लोक', estWait: 'अपेक्षित प्रतीक्षा', currentCardName: 'कार्डवरील चुकीचे नाव', correctAadhaarName: 'आधारनुसार अचूक नाव',
-    docVerifyNote: 'आधार e-KYC पडताळणी पूर्ण झाली', fillFromAadhaar: 'आधार नाव भरा', liveTracking: 'थेट ट्रॅकिंग',
-    officerReview: 'अधिकारी पुनरावलोकन', stockDispatch: 'साठा वाटप पाठवले', advanceProgress: 'पुढील टप्पा पहा',
-    changeCard: 'कार्ड बदला', cardEntered: 'निवडलेले कार्ड', clearCard: 'कार्ड बदला',
-    selectState: 'आपले राज्य निवडा',
-    selectStateSub: 'आपले सार्वजनिक वितरण प्रणाली (PDS) पोर्टल निवडा',
-    activeStates: 'सक्रिय राज्ये',
-    comingSoon: 'लवकरच येत आहे',
-    changeState: 'राज्य बदला',
-    privacyNote: '🔒 गोपनीयता हमी: आपली रेशन माहिती आपल्या फोनवर सुरक्षित आहे.',
-    listen: 'ऐका',
-    stopListening: 'थांबवा',
-    pickupRation: 'रेशन आणण्यासाठी जा',
-    viewReceipt: 'डिजिटल पावती',
-    digitalReceipt: 'डिजिटल रेशन पावती',
-    receiptTxn: 'व्यवहार क्रमांक',
-    receiptShop: 'रास्त भाव दुकान',
-    receiptCommodity: 'धान्य',
-    receiptEntitled: 'पात्रता',
-    receiptIssued: 'प्राप्त',
-    receiptRate: 'दर',
-    receiptTotal: 'एकूण',
-    freeNfsa: 'मोफत (NFSA)',
-    downloadReceipt: 'पावती सेव्ह करा / प्रिंट करा',
-    close: 'बंद करा',
-    entitlementBreakdown: 'मासिक वाटप विरुद्ध मिळालेले',
-    categoryNorms: 'कार्ड श्रेणी मर्यादा',
-    shortfallAlert: 'तुटवडा आढळला',
-    raiseMonthGrievance: 'या तुटवड्याची तक्रार नोंदवा',
-    grievanceSLA: 'NFSA कलम 19 नुसार 7 दिवसांत तक्रार निवारण आवश्यक आहे.',
-    confirmGrievance: 'तक्रार निश्चित करा',
-    myGrievances: 'माझ्या तक्रारी',
-    grievanceLogTitle: 'अधिकारी कारवाई नोंद',
-    shareTicket: 'व्हॉट्सॲपवर पाठवा',
-    offlineQueued: 'ऑफलाइन मोड. इंटरनेट आल्यावर तक्रार आपोआप पाठवली जाईल.',
-    askAssistant: 'मार्गदर्शक',
-    assistantTitle: 'अन्न सेतु ॲप मार्गदर्शक',
-    assistantScopeNotice: 'ℹ️ हा सहाय्यक फक्त हे ॲप वापरण्यासाठी मदत करतो. कायदेशीर किंवा हक्काच्या मार्गदर्शनासाठी 1967 वर कॉल करा.',
-    askPlaceholder: 'ॲप वापरण्याबद्दल विचारा…',
-    waOptInTitle: 'व्हॉट्सॲपवर रेशन सूचना मिळवा',
-    waOptInSub: 'दुकानात धान्य पोहोचताच सूचना मिळवा',
-    waOptInBtn: 'व्हॉટ્સॲप जोडा',
-    registryDisclaimer: 'अधिकृत सरकारी नोंद डेटा: दुकानांची नावे व माहिती मूळ सरकारी पोर्टलनुसार प्रदर्शित केली आहे.'
+    registryDisclaimer: 'ഔദ്യോഗിക സർക്കാർ രജിസ്ട്രി വിവരം: കടകളുടെ വിവരങ്ങൾ പോർട്ടൽ ഭാഷയിൽ നൽകിയിരിക്കുന്നു.',
+    issuedStamp: '✓ വിതരണം ചെയ്തു',
+    verifiedBeneficiary: 'NFSA പരിശോധിച്ച ഗുണഭോക്താവ്',
+    servicesHub: 'പൗര സേവന കേന്ദ്രം',
+    shopsService: 'റേഷൻ കടകൾ',
+    shopsServiceSub: 'സ്റ്റോക്കും സമയവും അറിയുക',
+    tokenService: 'മുൻഗണനാ ടോക്കൺ',
+    tokenServiceSub: 'വരി ഒഴിവാക്കി സമയം കണ്ടെത്തുക',
+    historyService: 'വിഹിത ചരിത്രം',
+    historyServiceSub: '6 മാസ വിവരങ്ങൾ പരിശോധിക്കുക',
+    grievanceService: 'പരാതി പരിഹാരം',
+    grievanceServiceSub: '7 ദിവസത്തെ നിയമപരമായ പരിഹാരം',
+    nfsaBanner: 'ദേശീയ ഭക്ഷ്യ സുരക്ഷാ നിയമം (NFSA 2013): റേഷൻ ധാന്യങ്ങൾ നിങ്ങളുടെ അവകാശമാണ്. സഹായത്തിന് 1967 ൽ വിളിക്കുക.',
+    monthlyQuotaTitle: 'ഓഗസ്റ്റ് 2026 വിഹിതം',
+    quotaReceivedDesc: 'പ്രതിമാസ വിഹിതം വിജയകരമായി ലഭിച്ചു',
+    allocatedReceived: 'അനുവദിച്ചതും ലഭിച്ചതും',
+    listenToEntitlement: 'വിഹിത വിവരങ്ങൾ കേൾക്കുക'
   }
 }
 
@@ -549,6 +660,67 @@ const statusMeta = {
 
 const nextStatus = { denied: 'partial', partial: 'received', received: 'denied' }
 const nextReason = { mismatch: 'aadhaar', aadhaar: 'stock', stock: 'inactive', inactive: 'mismatch' }
+
+/* Helper Localization Utilities */
+function getLocalizedName(card, lang) {
+  if (!card) return ''
+  if (lang === 'en') return card.nameEn || card.name
+  if (lang === 'hi') return card.nameHi || card.name
+  if (lang === 'mr') return card.nameMr || card.nameHi || card.name
+  return card.name || card.nameEn
+}
+
+function getLocalizedVillage(card, lang) {
+  if (!card) return ''
+  if (lang === 'en') return card.villageEn || card.village
+  return card.village || card.villageEn
+}
+
+function getLocalizedCategory(card, lang) {
+  if (!card) return ''
+  if (lang === 'en') {
+    return card.categoryDesc || (card.category === 'AAY' ? 'Antyodaya Anna Yojana (AAY)' : 'Priority Household (PHH)')
+  }
+  if (lang === 'mr') return card.categoryDescMr || card.categoryDesc
+  if (lang === 'hi') return card.categoryDescHi || card.categoryDesc
+  if (lang === 'ta') return card.categoryDescTa || card.categoryDesc
+  return card.categoryDesc || card.category
+}
+
+function getLocalizedMonth(item, lang) {
+  if (!item) return ''
+  if (lang === 'en') return item.monthEn || item.month
+  if (lang === 'hi') return item.monthHi || item.month
+  if (lang === 'mr') return item.monthMr || item.monthHi || item.month
+  return item.month
+}
+
+function getLocalizedNote(item, lang) {
+  if (!item) return ''
+  if (lang === 'en') return item.noteEn || item.note
+  if (lang === 'hi') return item.noteHi || item.note
+  if (lang === 'mr') return item.noteMr || item.noteHi || item.note
+  return item.note
+}
+
+function getShopHeading(shop, lang) {
+  if (lang === 'en') {
+    return {
+      primary: shop.nameEn || shop.name,
+      secondary: null
+    }
+  }
+  if (lang === 'hi') {
+    return {
+      primary: shop.nameHi || shop.name,
+      secondary: shop.nameEn || null
+    }
+  }
+  return {
+    primary: shop.name,
+    secondary: shop.nameEn || null
+  }
+}
 
 function Icon({ name, size = 22 }) {
   const c = {
@@ -725,8 +897,8 @@ function Icon({ name, size = 22 }) {
   return <svg {...c}>{p[name] || p.help}</svg>
 }
 
-/* Beautiful Citizen Profile Avatar with original stamp border */
-function CitizenAvatar({ card, isHelper, size = 56 }) {
+/* Beautiful Citizen Profile Avatar */
+function CitizenAvatar({ card, isHelper, size = 62 }) {
   const [imgError, setImgError] = useState(false)
   const initial = isHelper ? 'ரா' : card.avatarInitial || 'கா'
 
@@ -867,7 +1039,7 @@ function resolveCard(number, selectedState) {
 }
 
 function App() {
-  const [lang, setLang] = useState(() => localStorage.getItem('anna-language') || 'ta')
+  const [lang, setLang] = useState(() => localStorage.getItem('anna-language') || 'en')
   const [selectedState, setSelectedState] = useState(() => localStorage.getItem('anna-state') || '')
   const [isChangingState, setIsChangingState] = useState(false)
   const [tab, setTab] = useState('home')
@@ -880,7 +1052,7 @@ function App() {
     return isVerified ? (localStorage.getItem('anna-card-number') || '') : ''
   })
   const [pendingCard, setPendingCard] = useState('')
-  const [status, setStatus] = useState('received') // Clean calm post-login status
+  const [status, setStatus] = useState('received')
   const [reason, setReason] = useState('stock')
   const [isLoading, setIsLoading] = useState(false)
   const [helper, setHelper] = useState(false)
@@ -914,7 +1086,6 @@ function App() {
     }
   }, [selectedState])
 
-  // Sync offline grievances when online
   useEffect(() => {
     const handleOnline = () => {
       setOffline(false)
@@ -944,7 +1115,6 @@ function App() {
     setSelectedState(stateId)
     localStorage.setItem('anna-state', stateId)
     setIsChangingState(false)
-    // If previous card was from a different state, reset card
     if (savedCard) {
       const isMh = stateId === 'mh'
       const cardIsMh = savedCard.startsWith('MH')
@@ -1004,7 +1174,6 @@ function App() {
     )
     setResolved(true)
 
-    // Trigger browser notification if supported and granted
     if ('Notification' in window && Notification.permission === 'granted') {
       try {
         new Notification('Anna Setu PDS Update', {
@@ -1052,7 +1221,7 @@ function App() {
     )
   }
 
-  // 3. Second screen: After entering ration card, verify phone/OTP
+  // 3. Second screen: Phone / OTP verification
   if (!verified) {
     return (
       <PhoneVerify
@@ -1098,7 +1267,7 @@ function App() {
       {queuedBanner && (
         <div className="offline-synced-banner page-transition">
           <Icon name="check" size={16} />
-          <span>Offline grievances synchronized successfully! / புகார்கள் சமர்ப்பிக்கப்பட்டன.</span>
+          <span>{lang === 'en' ? 'Offline grievances synchronized successfully!' : 'புகார்கள் சமர்ப்பிக்கப்பட்டன / Offline grievances synced'}</span>
         </div>
       )}
 
@@ -1257,11 +1426,12 @@ function App() {
 }
 
 /* ===================================================================
-   State Selection Screen (Tamil Nadu & Maharashtra Active)
+   State Selection Screen (Language Aware)
    =================================================================== */
 function StateSelect({ t, lang, setLang, states, currentState, onSelect, onCancel }) {
   const activeStatesList = states.filter((s) => s.active)
   const comingSoonStates = states.filter((s) => !s.active)
+  const isEn = lang === 'en'
 
   return (
     <main className="app-shell lookup min-h-screen antialiased">
@@ -1291,28 +1461,32 @@ function StateSelect({ t, lang, setLang, states, currentState, onSelect, onCance
           {t.activeStates}
         </h3>
         <div className="state-card-grid">
-          {activeStatesList.map((st) => (
-            <button
-              key={st.id}
-              type="button"
-              className={'state-select-card active-state-card ' + (currentState === st.id ? 'current-selected' : '')}
-              onClick={() => onSelect(st.id)}
-            >
-              <div className="state-card-top">
-                <span className="state-flag-badge">{st.id.toUpperCase()}</span>
-                <span className="state-status-pill">● Active</span>
-              </div>
-              <b className="state-native-name">{st.name}</b>
-              <span className="state-en-name">{st.nameEn}</span>
-              <small className="state-portal-name">{st.portal}</small>
-              <div className="state-card-footer">
-                <span className="state-shop-count">
-                  <Icon name="pin" size={13} /> {st.shopCount} Fair Price Shops
-                </span>
-                <Icon name="arrow" size={16} />
-              </div>
-            </button>
-          ))}
+          {activeStatesList.map((st) => {
+            const mainName = isEn ? st.nameEn : st.name
+            const subName = isEn ? null : st.nameEn
+            return (
+              <button
+                key={st.id}
+                type="button"
+                className={'state-select-card active-state-card ' + (currentState === st.id ? 'current-selected' : '')}
+                onClick={() => onSelect(st.id)}
+              >
+                <div className="state-card-top">
+                  <span className="state-flag-badge">{st.id.toUpperCase()}</span>
+                  <span className="state-status-pill">● Active</span>
+                </div>
+                <b className="state-native-name">{mainName}</b>
+                {subName && <span className="state-en-name">{subName}</span>}
+                <small className="state-portal-name">{st.portal}</small>
+                <div className="state-card-footer">
+                  <span className="state-shop-count">
+                    <Icon name="pin" size={13} /> {st.shopCount} Fair Price Shops
+                  </span>
+                  <Icon name="arrow" size={16} />
+                </div>
+              </button>
+            )
+          })}
         </div>
       </div>
 
@@ -1323,17 +1497,21 @@ function StateSelect({ t, lang, setLang, states, currentState, onSelect, onCance
           {t.comingSoon}
         </h3>
         <div className="state-card-grid coming-soon-grid">
-          {comingSoonStates.map((st) => (
-            <div key={st.id} className="state-select-card disabled-state-card">
-              <div className="state-card-top">
-                <span className="state-flag-badge muted-flag">{st.id.toUpperCase()}</span>
-                <span className="state-status-pill muted-pill">{st.status || 'Soon'}</span>
+          {comingSoonStates.map((st) => {
+            const mainName = isEn ? st.nameEn : st.name
+            const subName = isEn ? null : st.nameEn
+            return (
+              <div key={st.id} className="state-select-card disabled-state-card">
+                <div className="state-card-top">
+                  <span className="state-flag-badge muted-flag">{st.id.toUpperCase()}</span>
+                  <span className="state-status-pill muted-pill">{isEn ? 'Coming Soon' : st.status || 'Soon'}</span>
+                </div>
+                <b className="state-native-name">{mainName}</b>
+                {subName && <span className="state-en-name">{subName}</span>}
+                <small className="state-portal-name">{st.portal}</small>
               </div>
-              <b className="state-native-name">{st.name}</b>
-              <span className="state-en-name">{st.nameEn}</span>
-              <small className="state-portal-name">{st.portal}</small>
-            </div>
-          ))}
+            )
+          })}
         </div>
       </div>
 
@@ -1353,6 +1531,8 @@ function Lookup({ t, lang, setLang, selectedState, isLoading, lookup, initialCar
   const [error, setError] = useState('')
 
   const stateObj = states.find((s) => s.id === selectedState) || states[0]
+  const isEn = lang === 'en'
+  const statePortalTitle = isEn ? `${stateObj.nameEn} PDS Portal` : `${stateObj.name} (${stateObj.nameEn})`
 
   useEffect(() => {
     if (initialCard) setNumber(initialCard)
@@ -1365,7 +1545,6 @@ function Lookup({ t, lang, setLang, selectedState, isLoading, lookup, initialCar
       return
     }
 
-    // Scoped state validation check
     if (selectedState === 'tn' && clean.startsWith('MH')) {
       setError('This is a Maharashtra card. Please switch state to Maharashtra.')
       return
@@ -1401,7 +1580,7 @@ function Lookup({ t, lang, setLang, selectedState, isLoading, lookup, initialCar
       <div className="state-active-strip">
         <div className="state-strip-info">
           <small>State Portal:</small>
-          <b>{stateObj.name} ({stateObj.nameEn})</b>
+          <b>{statePortalTitle}</b>
         </div>
         <button type="button" className="state-switch-link" onClick={onChangeState}>
           {t.changeState}
@@ -1686,7 +1865,7 @@ function PhoneVerify({ t, lang, setLang, selectedState, card, pendingCard, onBac
 }
 
 /* ===================================================================
-   Clean Citizen Home Landing Screen with Audio & Direct CTAs
+   Beautiful Redesigned Citizen Home Landing Screen
    =================================================================== */
 function HomePage({
   t,
@@ -1723,12 +1902,13 @@ function HomePage({
   }
 
   const userName = helper
-    ? lang === 'ta' ? 'ராதா அம்மா' : lang === 'hi' ? 'राधा जी' : 'Radha ji'
-    : lang === 'ta'
-    ? card.name || 'காளியம்மாள்'
-    : lang === 'hi'
-    ? card.nameHi || card.name || 'सुनीता देवी'
-    : card.nameEn || card.name || 'Kaliammal'
+    ? (lang === 'en' ? 'Radha Devi (Neighbor)' : lang === 'ta' ? 'ராதா அம்மா' : 'राधा जी')
+    : getLocalizedName(card, lang)
+
+  const userLocation = getLocalizedVillage(card, lang)
+  const userCategory = getLocalizedCategory(card, lang)
+  const isEn = lang === 'en'
+  const currentLangObj = languages.find((l) => l.code === lang) || languages[0]
 
   // Web Speech API Voice synthesis
   const speakEntitlement = () => {
@@ -1743,13 +1923,12 @@ function HomePage({
       return
     }
 
-    const currentLangObj = languages.find((l) => l.code === lang) || languages[0]
     const speechText =
-      lang === 'ta'
-        ? `${t.greeting} ${userName}. ${t.entitlement}: ${status === 'received' ? t.received : status === 'partial' ? t.partial : t.denied}. ${t.august} 2026. ${card.category || 'PHH'} ${t.quantity}.`
-        : lang === 'hi'
-        ? `${t.greeting} ${userName}. ${t.entitlement}: ${status === 'received' ? t.received : status === 'partial' ? t.partial : t.denied}. ${t.august} 2026. ${card.category || 'PHH'} ${t.quantity}.`
-        : `${t.greeting} ${userName}. ${t.entitlement}: ${status === 'received' ? t.received : status === 'partial' ? t.partial : t.denied}. August 2026. ${card.category || 'PHH'} ${t.quantity}.`
+      lang === 'en'
+        ? `Hello ${userName}. Status for August 2026: Full quota received. Your entitlement includes ${card.entitledWheat || 20} kilograms wheat, ${card.entitledRice || 15} kilograms rice, 1 kilogram sugar, and 1 kilogram toor dal.`
+        : lang === 'ta'
+        ? `வணக்கம் ${userName}. இந்த மாத ரேஷன் நிலை: முழு ரேஷன் கிடைத்தது. ஆகஸ்ட் 2026 ஒதுக்கீடு.`
+        : `नमस्ते ${userName}। इस महीने का राशन प्राप्त हुआ। अगस्त 2026 का पूरा कोटा।`
 
     const utterance = new SpeechSynthesisUtterance(speechText)
     utterance.lang = currentLangObj.speechLang || 'en-IN'
@@ -1763,38 +1942,56 @@ function HomePage({
   }
 
   return (
-    <section className="page-transition">
-      {/* Citizen Welcome Card */}
-      <div className="welcome-row">
-        <div className="welcome-avatar-group">
-          <CitizenAvatar card={card} isHelper={helper} size={58} />
-          <div>
-            <p>{t.greeting}, {userName}</p>
-            <h1>{t.entitlement}</h1>
-            <span className="card-location-tag">
-              <Icon name="pin" size={13} /> {card.village || 'Tamil Nadu'}
-            </span>
+    <section className="page-transition home-dashboard">
+      {/* 1. Official Citizen Identity Pass Card */}
+      <div className="citizen-id-pass">
+        <div className="citizen-pass-top-bar">
+          <span className="citizen-portal-tag">
+            <Icon name="building" size={13} />
+            <b>{selectedState === 'mh' ? (isEn ? 'Maharashtra AePDS' : 'महाराष्ट्र AePDS') : (isEn ? 'Tamil Nadu TNPDS' : 'தமிழ்நாடு TNPDS')}</b>
+          </span>
+          <span className="citizen-verified-badge">
+            <Icon name="shield" size={12} />
+            {t.verifiedBeneficiary || 'NFSA Verified'}
+          </span>
+        </div>
+
+        <div className="citizen-pass-main">
+          <CitizenAvatar card={card} isHelper={helper} size={64} />
+          <div className="citizen-pass-details">
+            <span className="citizen-welcome-label">{t.greeting},</span>
+            <h2 className="citizen-name-title">{userName}</h2>
+            <div className="citizen-meta-pills">
+              <span className="meta-card-chip">
+                <code>{savedCard || card.number}</code>
+                <button type="button" className="mini-switch-btn" onClick={clearCard} title={t.clearCard}>
+                  {t.clearCard || 'Switch'}
+                </button>
+              </span>
+              <span className="meta-category-pill">
+                <b>{card.category}</b> · {card.category === 'AAY' ? (isEn ? '35 kg Quota' : '35 கிலோ') : (isEn ? '20 kg Quota' : '20 கிலோ')}
+              </span>
+            </div>
+            <p className="citizen-location-text">
+              <Icon name="pin" size={12} />
+              <span>{userLocation} · FPS: <code>{card.fpsCode || (selectedState === 'mh' ? 'MH-PUN-05' : 'TN-CHE-02A')}</code></span>
+            </p>
           </div>
         </div>
-        <button className="saved-card" onClick={clearCard} title={t.clearCard || 'Switch Card'}>
-          <span className="saved-card-label">{t.clearCard || 'Switch Card'}</span>
-          <b className="saved-card-num">...{savedCard.slice(-6)}</b>
-          <Icon name="close" size={12} />
-        </button>
       </div>
 
-      {/* Helper Toggle */}
-      <button className="helper-toggle" onClick={() => setHelper(!helper)}>
-        <Icon name="users" />
-        <span>
+      {/* Helper Lookup Drawer */}
+      <button className="helper-toggle-btn" onClick={() => setHelper(!helper)}>
+        <Icon name="users" size={17} />
+        <div className="helper-btn-text">
           <b>{t.helper}</b>
           <small>{t.helperSub}</small>
-        </span>
-        <i className={helper ? 'on' : ''} />
+        </div>
+        <i className={'helper-switch-indicator ' + (helper ? 'on' : '')} />
       </button>
 
       {helper && (
-        <div className="helper-lookup">
+        <div className="helper-lookup-drawer page-transition">
           <label>{t.helperCard}</label>
           <input
             value={helperNumber}
@@ -1807,56 +2004,106 @@ function HomePage({
               {helperError}
             </p>
           )}
-          <button className="button secondary" onClick={checkHelper}>
-            {t.checkPerson}
-            <Icon name="arrow" />
-          </button>
-          <button className="text-button" onClick={() => setHelper(false)}>
-            {t.ownCard}
-          </button>
+          <div className="helper-actions-row">
+            <button className="button secondary" onClick={checkHelper}>
+              {t.checkPerson}
+              <Icon name="arrow" size={15} />
+            </button>
+            <button className="text-button" onClick={() => setHelper(false)}>
+              {t.ownCard}
+            </button>
+          </div>
         </div>
       )}
 
-      {/* Primary Calm Status Card */}
-      <div className={'status-card ' + meta.cls}>
-        <div className="status-symbol" key={status + reason}>
-          {meta.glyph}
+      {/* 2. Interactive Entitlement Showcase Ledger */}
+      <div className={'entitlement-ledger-card ' + meta.cls}>
+        <div className="ledger-card-header">
+          <div>
+            <span className="ledger-period-label">{t.monthlyQuotaTitle || 'AUGUST 2026 ENTITLEMENT'}</span>
+            <h3 className="ledger-status-title">
+              {status === 'denied' ? t.denied : status === 'partial' ? t.partial : (t.quotaIssued || 'Full Quota Received')}
+            </h3>
+          </div>
+          <span className="ledger-status-stamp">
+            <span className="stamp-icon">{meta.glyph}</span>
+          </span>
         </div>
-        <div className="status-card-info">
-          <h2>
-            {status === 'denied' ? t.denied : status === 'partial' ? t.partial : t.received}
-          </h2>
-          <p>{t.august} 2026 · {card.category || 'PHH'} {t.quantity}</p>
+
+        {/* Audio Listen Bar */}
+        <div className="voice-audio-bar">
+          <button
+            type="button"
+            className={'voice-listen-pill ' + (isPlayingAudio ? 'playing' : '')}
+            onClick={speakEntitlement}
+            aria-label={isPlayingAudio ? t.stopListening : t.listen}
+          >
+            <Icon name={isPlayingAudio ? 'volumeX' : 'volume'} size={17} />
+            <span>{isPlayingAudio ? (t.stopListening || 'Stop Listening') : (t.listenToEntitlement || 'Listen to Entitlement')}</span>
+          </button>
+          <small className="voice-lang-hint">Audio: {currentLangObj?.enLabel || 'Native'}</small>
         </div>
-        <button
-          type="button"
-          className={'audio-listen-btn ' + (isPlayingAudio ? 'playing' : '')}
-          onClick={speakEntitlement}
-          title={isPlayingAudio ? t.stopListening : t.listen}
-          aria-label={isPlayingAudio ? t.stopListening : t.listen}
-        >
-          <Icon name={isPlayingAudio ? 'volumeX' : 'volume'} size={18} />
-          <span>{isPlayingAudio ? t.stopListening : t.listen}</span>
-        </button>
+
+        {/* 4-Item Commodity Allocation Grid */}
+        <div className="home-commodity-grid">
+          <div className="commodity-tile">
+            <span className="commodity-icon">🌾</span>
+            <div className="commodity-info">
+              <b>{card.entitledWheat || (selectedState === 'mh' ? 20 : 5)} kg</b>
+              <small>{t.wheat}</small>
+            </div>
+            <span className="commodity-check-dot">✓</span>
+          </div>
+          <div className="commodity-tile">
+            <span className="commodity-icon">🍚</span>
+            <div className="commodity-info">
+              <b>{card.entitledRice || 15} kg</b>
+              <small>{t.rice}</small>
+            </div>
+            <span className="commodity-check-dot">✓</span>
+          </div>
+          <div className="commodity-tile">
+            <span className="commodity-icon">🧂</span>
+            <div className="commodity-info">
+              <b>{card.entitledSugar || 1} kg</b>
+              <small>{t.sugar}</small>
+            </div>
+            <span className="commodity-check-dot">✓</span>
+          </div>
+          <div className="commodity-tile">
+            <span className="commodity-icon">🥣</span>
+            <div className="commodity-info">
+              <b>{card.entitledDal || 1} kg</b>
+              <small>{t.dal}</small>
+            </div>
+            <span className="commodity-check-dot">✓</span>
+          </div>
+        </div>
       </div>
 
-      {/* Direct Citizen Action CTAs */}
+      {/* 3. Primary Action Buttons */}
       {status === 'received' && (
-        <div className="post-login-ctas">
+        <div className="home-primary-actions">
           <button className="button primary cta-pickup-btn" onClick={() => navigate('shops')}>
-            <Icon name="shoppingBag" size={18} />
-            <span>{t.pickupRation}</span>
+            <Icon name="shoppingBag" size={19} />
+            <div className="cta-btn-text">
+              <b>{t.pickupRation || 'Pick Up Ration at FPS'}</b>
+              <small>{selectedState === 'mh' ? 'Pune Central Co-op · 0.5 km · Open Now' : 'TUCS Triplicane · 0.4 km · Open Now'}</small>
+            </div>
             <Icon name="arrow" size={17} />
           </button>
 
           <button className="button secondary cta-receipt-btn" onClick={onOpenReceipt}>
             <Icon name="receipt" size={18} />
-            <span>{t.viewReceipt}</span>
+            <div className="cta-btn-text">
+              <b>{t.viewReceipt || 'View Digital Receipt'}</b>
+              <small>{isEn ? 'AePDS Authenticated Voucher #TXN-2026' : 'அங்கீகரிக்கப்பட்ட டிஜிட்டல் ரசீது'}</small>
+            </div>
           </button>
         </div>
       )}
 
-      {/* Reason Card (if not received) */}
+      {/* Reason Card (if paused or partial) */}
       {status !== 'received' && (
         <article className="reason-card" key={reason}>
           <div className="reason-symbol">{why.icon}</div>
@@ -1871,46 +2118,72 @@ function HomePage({
         </article>
       )}
 
-      {/* Quick Action Navigation Buttons */}
-      <div className="quick-actions">
-        <button onClick={() => navigate('shops')}>
-          <Icon name="pin" />
-          <span>{t.nearby}</span>
-        </button>
-        <button onClick={() => navigate('history')}>
-          <Icon name="clock" />
-          <span>{t.timeline}</span>
-        </button>
+      {/* 4. PDS Citizen Services Hub Grid (2x2) */}
+      <div className="services-hub-section">
+        <h4 className="services-hub-heading">
+          <span>❖</span>
+          {t.servicesHub || 'PDS Citizen Services'}
+        </h4>
+
+        <div className="home-services-grid">
+          <button type="button" className="service-tile-card" onClick={() => navigate('shops')}>
+            <div className="service-tile-icon gold">
+              <Icon name="pin" size={20} />
+            </div>
+            <b>{t.shopsService || 'Fair Price Shops'}</b>
+            <small>{t.shopsServiceSub || 'Check live stock & store hours'}</small>
+          </button>
+
+          <button type="button" className="service-tile-card" onClick={() => navigate('shops')}>
+            <div className="service-tile-icon amber">
+              <Icon name="ticket" size={20} />
+            </div>
+            <b>{t.tokenService || 'Book Priority Pass'}</b>
+            <small>{t.tokenServiceSub || 'Skip counter line with e-token'}</small>
+          </button>
+
+          <button type="button" className="service-tile-card" onClick={() => navigate('history')}>
+            <div className="service-tile-icon blue">
+              <Icon name="clock" size={20} />
+            </div>
+            <b>{t.historyService || 'Quota History'}</b>
+            <small>{t.historyServiceSub || '6-month ledger & shortfalls'}</small>
+          </button>
+
+          <button type="button" className="service-tile-card" onClick={() => fastForward()}>
+            <div className="service-tile-icon green">
+              <Icon name="shield" size={20} />
+            </div>
+            <b>{t.grievanceService || 'Grievance Desk'}</b>
+            <small>{t.grievanceServiceSub || '7-day statutory resolution guarantee'}</small>
+          </button>
+        </div>
       </div>
 
-      {status !== 'received' && (
-        <button
-          className={'escalate-card ' + (fastForwarded ? 'ready' : '')}
-          onClick={fastForward}
-        >
-          <span>
-            <b>{fastForwarded ? t.grievance : t.fast}</b>
-            <small>{fastForwarded ? t.autoCreated : t.fastSub}</small>
-          </span>
-          <strong>→</strong>
-        </button>
-      )}
+      {/* 5. Statutory Guarantee Banner */}
+      <div className="home-nfsa-banner">
+        <Icon name="shield" size={18} />
+        <div>
+          <b>NFSA Section 3 Statutory Guarantee</b>
+          <p>{t.nfsaBanner || 'Subsidized grain is your legal right under the National Food Security Act, 2013. Helpline: 1967.'}</p>
+        </div>
+      </div>
 
-      {/* Collapsible Demo Controls (Keeps main interface clean) */}
+      {/* 6. Clean Collapsible Demo Controls (Tucked Away) */}
       <details className="demo-controls-drawer">
         <summary className="demo-controls-summary">
-          <span>⚙ Demo Controls (Status & Issue Simulator)</span>
+          <span>⚙ Demo Simulator (Change Status / Reasons)</span>
           <Icon name="chevronDown" size={14} />
         </summary>
         <div className="demo-controls-body">
           <div className="demo-chip-row">
-            <small>Current Status:</small>
+            <small>Simulated Status:</small>
             <button className="demo-toggle-chip" onClick={() => setStatus(nextStatus[status])}>
               {t.demoStatus}: {status}
             </button>
           </div>
           <div className="demo-chip-row">
-            <small>Simulated Issue:</small>
+            <small>Simulated Reason:</small>
             <button className="demo-toggle-chip" onClick={() => setReason(nextReason[reason])}>
               {t.demoIssue}: {why.icon} {reason}
             </button>
@@ -1922,7 +2195,7 @@ function HomePage({
 }
 
 /* ===================================================================
-   Scoped Fair Price Shops List (State Scoped + Authentic Data)
+   Scoped Fair Price Shops List (English-Friendly Headings)
    =================================================================== */
 function ShopList({ t, lang, shops, card, selectedState }) {
   const [filter, setFilter] = useState('all')
@@ -1930,7 +2203,7 @@ function ShopList({ t, lang, shops, card, selectedState }) {
   const [selectedSlot, setSelectedSlot] = useState('')
   const [tokenPass, setTokenPass] = useState(null)
 
-  // CRITICAL: Filter shops strictly by selectedState
+  const isEn = lang === 'en'
   const stateShops = shops.filter((s) => s.state_id === selectedState)
 
   const filteredShops = stateShops.filter((shop) => {
@@ -1950,13 +2223,15 @@ function ShopList({ t, lang, shops, card, selectedState }) {
   const confirmSlot = () => {
     if (!bookingShop || !selectedSlot) return
     const randomToken = (selectedState === 'mh' ? 'MH-TOK-' : 'TN-TOK-') + Math.floor(100 + Math.random() * 900)
+    const headings = getShopHeading(bookingShop, lang)
+
     setTokenPass({
       id: randomToken,
-      shopName: bookingShop.name,
-      shopNameEn: bookingShop.nameEn,
+      shopName: headings.primary,
+      shopNameEn: headings.secondary,
       shopCode: bookingShop.code,
       slot: selectedSlot,
-      date: 'Today / இன்று',
+      date: isEn ? 'Today' : lang === 'ta' ? 'இன்று' : 'आज',
       queueAhead: Math.floor(2 + Math.random() * 4),
       cardNo: card.number
     })
@@ -1971,7 +2246,7 @@ function ShopList({ t, lang, shops, card, selectedState }) {
         </span>
         <div>
           <h1>{t.nearby}</h1>
-          <p>{t.today} · {currentStateObj.nameEn}</p>
+          <p>{t.today} · {isEn ? currentStateObj.nameEn : currentStateObj.name}</p>
         </div>
       </div>
 
@@ -2031,13 +2306,13 @@ function ShopList({ t, lang, shops, card, selectedState }) {
             </div>
             <div className="token-meta-grid">
               <div>
-                <small>Fair Price Shop</small>
+                <small>{isEn ? 'Fair Price Shop' : 'கடை / दुकान'}</small>
                 <b>{tokenPass.shopName}</b>
                 {tokenPass.shopNameEn && <span className="token-en-sub">{tokenPass.shopNameEn}</span>}
                 <code className="token-fps-code">{tokenPass.shopCode}</code>
               </div>
               <div>
-                <small>Time Slot / நேரம்</small>
+                <small>{isEn ? 'Arrival Time Slot' : 'நேரம் / वेळ'}</small>
                 <b className="token-time">{tokenPass.slot}</b>
               </div>
             </div>
@@ -2059,105 +2334,108 @@ function ShopList({ t, lang, shops, card, selectedState }) {
 
       {/* Shop Cards */}
       <div className="shops-container">
-        {filteredShops.map((shop) => (
-          <article className="shop-card" key={shop.code || shop.name}>
-            <div className="shop-head">
-              <div>
-                <div className="shop-title-row">
-                  {/* Shop name in official native registered language */}
-                  <h2>{shop.name}</h2>
-                  {shop.code && <span className="shop-code-badge">{shop.code}</span>}
+        {filteredShops.map((shop) => {
+          const headings = getShopHeading(shop, lang)
+          return (
+            <article className="shop-card" key={shop.code || shop.name}>
+              <div className="shop-head">
+                <div>
+                  <div className="shop-title-row">
+                    {/* Primary title: in English when in English mode! */}
+                    <h2>{headings.primary}</h2>
+                    {shop.code && <span className="shop-code-badge">{shop.code}</span>}
+                  </div>
+                  {/* Secondary subtitle in lighter font */}
+                  {headings.secondary && <span className="shop-name-en-sub">{headings.secondary}</span>}
+                  <p>
+                    <Icon name="pin" size={14} />
+                    {shop.distance} · {shop.district ? `${shop.district} · ` : ''}
+                    <span className={shop.open ? 'status-open-text' : 'status-closed-text'}>
+                      {shop.open ? t.open : t.closed}
+                    </span>
+                  </p>
+                  {shop.transit && (
+                    <span className="shop-transit-tag">{shop.transit}</span>
+                  )}
+                  {shop.hours && <small className="shop-hours">{shop.hours}</small>}
                 </div>
-                {/* English subtitle for transliteration / clarity */}
-                {shop.nameEn && <span className="shop-name-en-sub">{shop.nameEn}</span>}
-                <p>
-                  <Icon name="pin" size={14} />
-                  {shop.distance} · {shop.district ? `${shop.district} · ` : ''}
-                  <span className={shop.open ? 'status-open-text' : 'status-closed-text'}>
-                    {shop.open ? t.open : t.closed}
+                <i
+                  className={'open-dot ' + (shop.open ? 'live' : 'closed')}
+                  title={shop.open ? t.open : t.closed}
+                />
+              </div>
+
+              {/* Detailed Stock Quantities */}
+              <div className="stock-breakdown">
+                <div className="stock-row">
+                  <span className="stock-name">
+                    <i className={shop.rice ? 'available' : 'unavailable'}>{shop.rice ? '✓' : '×'}</i>
+                    {t.rice}
                   </span>
-                </p>
-                {shop.transit && (
-                  <span className="shop-transit-tag">{shop.transit}</span>
+                  <b className={shop.rice ? 'stock-qty green' : 'stock-qty red'}>
+                    {shop.stockDetails?.rice || (shop.rice ? t.available : t.out)}
+                  </b>
+                </div>
+                <div className="stock-row">
+                  <span className="stock-name">
+                    <i className={shop.wheat ? 'available' : 'unavailable'}>{shop.wheat ? '✓' : '×'}</i>
+                    {t.wheat}
+                  </span>
+                  <b className={shop.wheat ? 'stock-qty green' : 'stock-qty red'}>
+                    {shop.stockDetails?.wheat || (shop.wheat ? t.available : t.out)}
+                  </b>
+                </div>
+                {shop.sugar !== undefined && (
+                  <div className="stock-row">
+                    <span className="stock-name">
+                      <i className={shop.sugar ? 'available' : 'unavailable'}>{shop.sugar ? '✓' : '×'}</i>
+                      {t.sugar}
+                    </span>
+                    <b className={shop.sugar ? 'stock-qty green' : 'stock-qty red'}>
+                      {shop.stockDetails?.sugar || (shop.sugar ? t.available : t.out)}
+                    </b>
+                  </div>
                 )}
-                {shop.hours && <small className="shop-hours">{shop.hours}</small>}
+                {shop.dal !== undefined && (
+                  <div className="stock-row">
+                    <span className="stock-name">
+                      <i className={shop.dal ? 'available' : 'unavailable'}>{shop.dal ? '✓' : '×'}</i>
+                      {t.dal}
+                    </span>
+                    <b className={shop.dal ? 'stock-qty green' : 'stock-qty red'}>
+                      {shop.stockDetails?.dal || (shop.dal ? t.available : t.out)}
+                    </b>
+                  </div>
+                )}
               </div>
-              <i
-                className={'open-dot ' + (shop.open ? 'live' : 'closed')}
-                title={shop.open ? t.open : t.closed}
-              />
-            </div>
 
-            {/* Detailed Stock Quantities */}
-            <div className="stock-breakdown">
-              <div className="stock-row">
-                <span className="stock-name">
-                  <i className={shop.rice ? 'available' : 'unavailable'}>{shop.rice ? '✓' : '×'}</i>
-                  {t.rice}
-                </span>
-                <b className={shop.rice ? 'stock-qty green' : 'stock-qty red'}>
-                  {shop.stockDetails?.rice || (shop.rice ? t.available : t.out)}
-                </b>
-              </div>
-              <div className="stock-row">
-                <span className="stock-name">
-                  <i className={shop.wheat ? 'available' : 'unavailable'}>{shop.wheat ? '✓' : '×'}</i>
-                  {t.wheat}
-                </span>
-                <b className={shop.wheat ? 'stock-qty green' : 'stock-qty red'}>
-                  {shop.stockDetails?.wheat || (shop.wheat ? t.available : t.out)}
-                </b>
-              </div>
-              {shop.sugar !== undefined && (
-                <div className="stock-row">
-                  <span className="stock-name">
-                    <i className={shop.sugar ? 'available' : 'unavailable'}>{shop.sugar ? '✓' : '×'}</i>
-                    {t.sugar}
-                  </span>
-                  <b className={shop.sugar ? 'stock-qty green' : 'stock-qty red'}>
-                    {shop.stockDetails?.sugar || (shop.sugar ? t.available : t.out)}
-                  </b>
-                </div>
-              )}
-              {shop.dal !== undefined && (
-                <div className="stock-row">
-                  <span className="stock-name">
-                    <i className={shop.dal ? 'available' : 'unavailable'}>{shop.dal ? '✓' : '×'}</i>
-                    {t.dal}
-                  </span>
-                  <b className={shop.dal ? 'stock-qty green' : 'stock-qty red'}>
-                    {shop.stockDetails?.dal || (shop.dal ? t.available : t.out)}
-                  </b>
-                </div>
-              )}
-            </div>
-
-            {/* Action Bar: Google Maps & Book Slot */}
-            <div className="shop-actions">
-              <a
-                href={shop.mapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="maps-button"
-                title="Open in Google Maps"
-              >
-                <Icon name="map" size={16} />
-                <span>{t.viewOnMap}</span>
-              </a>
-
-              {shop.open && (
-                <button
-                  type="button"
-                  className="book-slot-button"
-                  onClick={() => openBooking(shop)}
+              {/* Action Bar: Google Maps & Book Slot */}
+              <div className="shop-actions">
+                <a
+                  href={shop.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="maps-button"
+                  title="Open in Google Maps"
                 >
-                  <Icon name="calendar" size={15} />
-                  <span>{t.bookSlot}</span>
-                </button>
-              )}
-            </div>
-          </article>
-        ))}
+                  <Icon name="map" size={16} />
+                  <span>{t.viewOnMap}</span>
+                </a>
+
+                {shop.open && (
+                  <button
+                    type="button"
+                    className="book-slot-button"
+                    onClick={() => openBooking(shop)}
+                  >
+                    <Icon name="calendar" size={15} />
+                    <span>{t.bookSlot}</span>
+                  </button>
+                )}
+              </div>
+            </article>
+          )
+        })}
       </div>
 
       {/* Time Slot Booking Modal */}
@@ -2167,7 +2445,7 @@ function ShopList({ t, lang, shops, card, selectedState }) {
             <div className="modal-top">
               <div>
                 <h2>{t.bookSlot}</h2>
-                <p>{bookingShop.name} ({bookingShop.code})</p>
+                <p>{getShopHeading(bookingShop, lang).primary} ({bookingShop.code})</p>
               </div>
               <button className="modal-close-btn" onClick={() => setBookingShop(null)}>
                 <Icon name="close" size={18} />
@@ -2212,18 +2490,6 @@ function ShopList({ t, lang, shops, card, selectedState }) {
    History Screen with Interactive Entitlement Gap Detail
    =================================================================== */
 function History({ t, lang, records, card, onSelectRecord }) {
-  const getMonthName = (item) => {
-    if (lang === 'en' && item.monthEn) return item.monthEn
-    if (lang === 'hi' && item.monthHi) return item.monthHi
-    return item.month
-  }
-
-  const getNote = (item) => {
-    if (lang === 'en' && item.noteEn) return item.noteEn
-    if (lang === 'hi' && item.noteHi) return item.noteHi
-    return item.note
-  }
-
   return (
     <section className="page-transition">
       <div className="page-heading">
@@ -2252,14 +2518,14 @@ function History({ t, lang, records, card, onSelectRecord }) {
               <span className={'history-symbol ' + meta.cls}>{meta.glyph}</span>
               <div className="history-row-content">
                 <div className="history-row-head">
-                  <b>{getMonthName(item)} 2026</b>
+                  <b>{getLocalizedMonth(item, lang)} 2026</b>
                   {hasShortfall && (
                     <span className="shortfall-badge">
                       {item.shortfall ? `${item.shortfall} kg Shortfall` : 'Issue'}
                     </span>
                   )}
                 </div>
-                <p>{getNote(item)}</p>
+                <p>{getLocalizedNote(item, lang)}</p>
                 {item.entitledKg && (
                   <small className="history-kg-sub">
                     Entitled: {item.entitledKg} kg · Received: {item.receivedKg} kg
@@ -2281,18 +2547,19 @@ function History({ t, lang, records, card, onSelectRecord }) {
 }
 
 /* ===================================================================
-   History Shortfall Comparison Detail Modal
+   History Shortfall Comparison Detail Modal (Clean Localized English)
    =================================================================== */
 function HistoryDetailModal({ t, lang, item, card, onClose, onRaiseGrievance }) {
   const meta = statusMeta[item.state] || statusMeta.received
   const hasShortfall = (item.shortfall && item.shortfall > 0) || item.state !== 'received'
+  const isEn = lang === 'en'
 
   return (
     <div className="modal-backdrop" onClick={onClose}>
       <div className="history-detail-modal page-transition" onClick={(e) => e.stopPropagation()}>
         <div className="modal-top">
           <div>
-            <h2>{item.month} 2026 · {t.entitlementBreakdown}</h2>
+            <h2>{getLocalizedMonth(item, lang)} 2026 · {t.entitlementBreakdown}</h2>
             <p>Ration Card: {card.number} · {card.category}</p>
           </div>
           <button className="modal-close-btn" onClick={onClose}>
@@ -2305,7 +2572,7 @@ function HistoryDetailModal({ t, lang, item, card, onClose, onRaiseGrievance }) 
           <Icon name="shield" size={16} />
           <div>
             <b>{t.categoryNorms}: {card.category}</b>
-            <p>{card.entitlementNorm || '5 kg / member quota'}</p>
+            <p>{card.entitlementNorm || (isEn ? '5 kg / member statutory quota' : '5 கிலோ / உறுப்பினர் கோட்டா')}</p>
           </div>
         </div>
 
@@ -2355,7 +2622,7 @@ function HistoryDetailModal({ t, lang, item, card, onClose, onRaiseGrievance }) 
             <span className="alert-icon">⚠️</span>
             <div>
               <b>{t.shortfallAlert}</b>
-              <p>{item.note || 'Grain dispatch delayed at Fair Price Shop'}</p>
+              <p>{getLocalizedNote(item, lang) || (isEn ? 'Grain dispatch delayed at Fair Price Shop' : item.note)}</p>
             </div>
           </div>
         )}
@@ -2378,7 +2645,7 @@ function HistoryDetailModal({ t, lang, item, card, onClose, onRaiseGrievance }) 
 }
 
 /* ===================================================================
-   Digital Ration Receipt Voucher Modal
+   Digital Ration Receipt Voucher Modal (Clean English / Localized)
    =================================================================== */
 function ReceiptModal({ t, lang, card, selectedState, onClose }) {
   const handlePrint = () => {
@@ -2386,6 +2653,19 @@ function ReceiptModal({ t, lang, card, selectedState, onClose }) {
   }
 
   const isMh = selectedState === 'mh'
+  const isEn = lang === 'en'
+
+  const deptState = isMh
+    ? (isEn ? 'Govt of Maharashtra' : 'महाराष्ट्र शासन')
+    : (isEn ? 'Govt of Tamil Nadu' : 'தமிழ்நாடு அரசு')
+
+  const deptName = isMh
+    ? (isEn ? 'Dept of Food, Civil Supplies & Consumer Protection' : 'अन्न, नागरी पुरवठा व ग्राहक संरक्षण विभाग')
+    : (isEn ? 'Civil Supplies and Consumer Protection Dept' : 'உணவு மற்றும் நுகர்வோர் பாதுகாப்புத் துறை')
+
+  const stampLabel = isEn ? '✓ ISSUED' : (t.issuedStamp || '✓ ISSUED')
+  const beneficiaryName = getLocalizedName(card, lang)
+  const categoryLabel = getLocalizedCategory(card, lang)
 
   return (
     <div className="modal-backdrop" onClick={onClose}>
@@ -2394,8 +2674,8 @@ function ReceiptModal({ t, lang, card, selectedState, onClose }) {
           <div className="receipt-gov-seal">
             <span>🏛️</span>
             <div>
-              <b>{isMh ? 'Govt of Maharashtra' : 'Govt of Tamil Nadu'}</b>
-              <small>{isMh ? 'Dept of Food, Civil Supplies & Consumer Protection' : 'Civil Supplies and Consumer Protection Dept'}</small>
+              <b>{deptState}</b>
+              <small>{deptName}</small>
             </div>
           </div>
           <button className="modal-close-btn" onClick={onClose}>
@@ -2407,7 +2687,7 @@ function ReceiptModal({ t, lang, card, selectedState, onClose }) {
         <div className="receipt-voucher-body">
           <div className="receipt-title-strip">
             <h3>{t.digitalReceipt}</h3>
-            <span className="receipt-status-stamp">✓ ISSUED / வழங்கப்பட்டது</span>
+            <span className="receipt-status-stamp">{stampLabel}</span>
           </div>
 
           <div className="receipt-meta-grid">
@@ -2421,7 +2701,7 @@ function ReceiptModal({ t, lang, card, selectedState, onClose }) {
             </div>
             <div>
               <small>Beneficiary Name:</small>
-              <b>{card.name} ({card.nameEn})</b>
+              <b>{beneficiaryName}</b>
             </div>
             <div>
               <small>Ration Card No:</small>
@@ -2429,7 +2709,7 @@ function ReceiptModal({ t, lang, card, selectedState, onClose }) {
             </div>
             <div>
               <small>Category:</small>
-              <b>{card.category} ({card.categoryDesc})</b>
+              <b>{card.category} ({categoryLabel})</b>
             </div>
             <div>
               <small>{t.receiptShop}:</small>
@@ -2457,8 +2737,8 @@ function ReceiptModal({ t, lang, card, selectedState, onClose }) {
               </tr>
               <tr>
                 <td>{t.wheat}</td>
-                <td>{card.entitledWheat || 5} kg</td>
-                <td>{card.entitledWheat || 5} kg</td>
+                <td>{card.entitledWheat || (isMh ? 20 : 5)} kg</td>
+                <td>{card.entitledWheat || (isMh ? 20 : 5)} kg</td>
                 <td>₹0.00</td>
                 <td>{t.freeNfsa}</td>
               </tr>
@@ -2518,39 +2798,39 @@ function AppGuideModal({ t, lang, onClose }) {
   const [messages, setMessages] = useState([
     {
       sender: 'assistant',
-      text: lang === 'ta'
+      text: lang === 'en'
+        ? 'Hello! I am your Anna Setu app assistant. I can guide you on how to check your quota, book time slots, and track grievance resolutions in this app. How can I help?'
+        : lang === 'ta'
         ? 'வணக்கம்! நான் அன்ன சேது செயலி உதவி வழிகாட்டி. இந்த செயலியை நீங்கள் எப்படி பயன்படுத்துவது என்று விளக்க முடியும். என்ன தகவல் தேவை?'
-        : lang === 'hi'
-        ? 'नमस्ते! मैं अन्न सेतु ऐप गाइड हूँ। मैं इस ऐप को उपयोग करने की जानकारी दे सकता हूँ। आप क्या जानना चाहते हैं?'
-        : 'Hello! I am your Anna Setu app assistant. I can guide you on how to use features in this app. How can I help?'
+        : 'नमस्ते! मैं अन्न सेतु ऐप गाइड हूँ। मैं इस ऐप को उपयोग करने की जानकारी दे सकता हूँ। आप क्या जानना चाहते हैं?'
     }
   ])
   const [query, setQuery] = useState('')
 
   const suggestedQuestions = [
     {
-      q: lang === 'ta' ? 'டோக்கன் எப்படி முன்பதிவு செய்வது?' : 'How to book a time slot token?',
-      a: lang === 'ta'
-        ? 'நியாய கடைகள் (Shops) பகுதிக்கு சென்று, உங்கள் கடையின் கீழ் உள்ள "நேரம் முன்பதிவு" (Book Slot) பட்டனை தட்டி விரும்பிய நேரத்தை தேர்வுசெய்து முன்னுரிமை பாஸ் பெறலாம்.'
-        : 'Go to the Shops tab, select your Fair Price Shop, tap "Book Time Slot", pick your preferred hour, and confirm to get a digital priority token pass to skip the line.'
+      q: lang === 'en' ? 'How to book a time slot token?' : 'டோக்கன் எப்படி முன்பதிவு செய்வது?',
+      a: lang === 'en'
+        ? 'Go to the Shops tab, select your Fair Price Shop, tap "Book Time Slot", pick your arrival hour, and confirm to get a digital priority token pass to skip the counter line.'
+        : 'நியாய கடைகள் (Shops) பகுதிக்கு சென்று, உங்கள் கடையின் கீழ் உள்ள "நேரம் முன்பதிவு" பட்டனை தட்டி விரும்பிய நேரத்தை தேர்வுசெய்து டோக்கன் பெறலாம்.'
     },
     {
-      q: lang === 'ta' ? 'ரேஷன் கிடைக்கவில்லை என்றால் என்ன செய்வது?' : 'What to do if grain is out of stock?',
-      a: lang === 'ta'
-        ? 'முகப்பில் அல்லது வரலாற்றில் "புகார் தயாராக உள்ளது" என்பதை தட்டி புகார் பதிவு செய்யலாம். NFSA சட்டப்படி 7 நாட்களில் அதிகாரிகள் தீர்வு காண்பார்கள்.'
-        : 'You can raise a grievance from Home or History. Under NFSA Section 19, supply officers are required to investigate and resolve FPS stock deficits within 7 working days.'
+      q: lang === 'en' ? 'What to do if grain is out of stock?' : 'ரேஷன் கிடைக்கவில்லை என்றால் என்ன செய்வது?',
+      a: lang === 'en'
+        ? 'You can raise a grievance from Home or History. Under Section 19 of NFSA 2013, supply officers are legally required to resolve FPS stock deficits within 7 working days.'
+        : 'முகப்பில் அல்லது வரலாற்றில் "புகார் தயாராக உள்ளது" என்பதை தட்டி புகார் பதிவு செய்யலாம். NFSA சட்டப்படி 7 நாட்களில் அதிகாரிகள் தீர்வு காண்பார்கள்.'
     },
     {
-      q: lang === 'ta' ? 'இணையம் இல்லாமல் இந்த செயலியை பயன்படுத்த முடியுமா?' : 'Does offline mode work?',
-      a: lang === 'ta'
-        ? 'ஆம்! உங்கள் அட்டை விவரங்கள் மற்றும் கடை இருப்பு உங்கள் போனில் பாதுகாப்பாக இருக்கும். இணையம் இல்லாவிட்டாலும் புகார் பதியலாம்; இணையம் வந்ததும் தானாக சமர்ப்பிக்கப்படும்.'
-        : 'Yes! Your ration card data is saved locally on your device. You can even submit grievances offline; they are queued and will automatically send once internet is restored.'
+      q: lang === 'en' ? 'Does offline mode work?' : 'இணையம் இல்லாமல் பயன்படுத்த முடியுமா?',
+      a: lang === 'en'
+        ? 'Yes! Your ration card records and shop data are safely cached on your phone. If you file a grievance offline, it is stored locally and will automatically submit once internet is restored.'
+        : 'ஆம்! உங்கள் அட்டை விவரங்கள் உங்கள் போனில் பாதுகாப்பாக இருக்கும். இணையம் வந்ததும் தானாக சமர்ப்பிக்கப்படும்.'
     },
     {
-      q: lang === 'ta' ? 'என் கார்டு ரத்து செய்யப்பட்டுவிட்டது, தீர்வு என்ன?' : 'My ration card was cancelled, can you fix it?',
-      a: lang === 'ta'
-        ? 'அன்ன சேது ஒரு உதவி செயலி மட்டுமே; அரசாங்க சட்ட முடிவுகளை மாற்ற முடியாது. அட்டை ரத்து அல்லது சட்ட தகராறுகளுக்கு 1967 என்ற தேசிய உதவி எண்ணை அழைக்கவும் அல்லது வட்டாட்சியர் அலுவலகத்தை அணுகவும்.'
-        : 'Anna Setu is an informational support tool only and cannot make legal or official administrative decisions. For card cancellations or appeals, please dial the National Food Security Helpline at 1967 (Toll-free) or visit your Taluk Supply Office.'
+      q: lang === 'en' ? 'My card was cancelled, can you fix it?' : 'என் கார்டு ரத்து செய்யப்பட்டுவிட்டது, தீர்வு என்ன?',
+      a: lang === 'en'
+        ? 'Anna Setu is an informational citizen assistant only and cannot make legal or official administrative rulings. For card cancellations or appeals, please call the National Food Security Helpline at 1967 (Toll-free) or visit your Taluk Supply Office.'
+        : 'அன்ன சேது ஒரு உதவி செயலி மட்டுமே. அட்டை ரத்து அல்லது சட்ட தகராறுகளுக்கு 1967 என்ற இலவச உதவி எண்ணை அழைக்கவும்.'
     }
   ]
 
@@ -2562,7 +2842,6 @@ function AppGuideModal({ t, lang, onClose }) {
     setMessages(newMsgs)
     setQuery('')
 
-    // Guardrail Check
     const lower = qText.toLowerCase()
     const isLegalOrPersonal =
       lower.includes('cancel') || lower.includes('dispute') || lower.includes('court') ||
@@ -2571,16 +2850,16 @@ function AppGuideModal({ t, lang, onClose }) {
     setTimeout(() => {
       let reply = ''
       if (isLegalOrPersonal) {
-        reply = lang === 'ta'
-          ? 'அன்ன சேது செயலி அட்டை ரத்து அல்லது சட்ட விவகாரங்களை நேரடியாக தீர்க்க முடியாது. அதிகாரப்பூர்வ விசாரணைக்கு தயவுசெய்து 1967 என்ற இலவச உதவி எண்ணை அழைக்கவும்.'
-          : 'Anna Setu cannot provide legal advice or alter official administrative card decisions. For official appeals, please contact the National Food Security Helpline at 1967.'
+        reply = lang === 'en'
+          ? 'Anna Setu cannot provide legal advice or alter official administrative card decisions. For official appeals, please contact the National Food Security Helpline at 1967.'
+          : 'அன்ன சேது செயலி அட்டை ரத்து அல்லது சட்ட விவகாரங்களை நேரடியாக தீர்க்க முடியாது. அதிகாரப்பூர்வ விசாரணைக்கு தயவுசெய்து 1967 என்ற இலவச உதவி எண்ணை அழைக்கவும்.'
       } else {
         const found = suggestedQuestions.find((s) => s.q.toLowerCase().includes(qText.toLowerCase().slice(0, 10)))
         reply = found
           ? found.a
-          : lang === 'ta'
-          ? 'இந்த செயலியில் நீங்கள் ரேஷன் இருப்பு பார்க்கலாம், டோக்கன் முன்பதிவு செய்யலாம், மேலும் குறைபாடுகளை கண்காணிக்கலாம். சந்தேகம் இருந்தால் 1967 எண்ணை அழைக்கலாம்.'
-          : 'Anna Setu helps you check daily grain stock, reserve queue-free tokens, and track grievance resolution. For unresolved personal issues, call 1967.'
+          : lang === 'en'
+          ? 'Anna Setu helps you check daily grain stock, reserve queue-free tokens, and track grievance resolution. For unresolved personal issues, call 1967.'
+          : 'இந்த செயலியில் நீங்கள் ரேஷன் இருப்பு பார்க்கலாம், டோக்கன் முன்பதிவு செய்யலாம். சந்தேகம் இருந்தால் 1967 எண்ணை அழைக்கலாம்.'
       }
 
       setMessages([...newMsgs, { sender: 'assistant', text: reply }])
@@ -2716,7 +2995,11 @@ function Help({ t, offline, setOffline }) {
    Correction Flow
    =================================================================== */
 function Correction({ t, lang, card, finishResolution, resolved, goHome }) {
-  const [name, setName] = useState(card.aadhaarName || 'காளியம்மாள் (Kaliammal)')
+  const isEn = lang === 'en'
+  const legalName = isEn ? (card.aadhaarNameEn || card.nameEn || 'Kaliammal') : (card.aadhaarName || 'காளியம்மாள்')
+  const recordedTypo = isEn ? (card.recordedNameEn || 'Kaliamal K') : (card.recordedName || 'காளியம்மாள் கே')
+
+  const [name, setName] = useState(legalName)
   const [error, setError] = useState('')
 
   const submit = () => {
@@ -2738,13 +3021,13 @@ function Correction({ t, lang, card, finishResolution, resolved, goHome }) {
       <div className="correction-ledger-card">
         <div className="ledger-header">
           <Icon name="shield" size={17} />
-          <b>Ration Ledger Rectification / பெயர் திருத்தம்</b>
+          <b>{isEn ? 'Ration Ledger Rectification' : 'ரேஷன் பதிவேடு பெயர் திருத்தம்'}</b>
         </div>
 
         <div className="ledger-entry error-entry">
           <span className="entry-tag error-tag">{t.currentCardName}</span>
           <div className="entry-val-row">
-            <del>{card.recordedName || 'காளியம்மாள் கே (Kaliamal K)'}</del>
+            <del>{recordedTypo}</del>
             <span className="error-pill">Typo detected</span>
           </div>
           <small className="entry-sub">Ration Card: {card.number}</small>
@@ -2760,7 +3043,7 @@ function Correction({ t, lang, card, finishResolution, resolved, goHome }) {
             <button
               type="button"
               className="autofill-btn"
-              onClick={() => setName(card.aadhaarName || 'காளியம்மாள் (Kaliammal)')}
+              onClick={() => setName(legalName)}
             >
               <Icon name="bolt" size={12} />
               <span>{t.fillFromAadhaar}</span>
@@ -2875,8 +3158,8 @@ function InactiveFlow({ t, card, finishResolution, resolved, goHome }) {
    =================================================================== */
 function Grievance({ t, lang, card, reason, fastForwarded, finishResolution, resolved, goHome, offline, statusLogs = [] }) {
   const [stage, setStage] = useState(fastForwarded ? 2 : 1)
-  const [showReviewModal, setShowReviewModal] = useState(false)
   const [queuedOffline, setQueuedOffline] = useState(false)
+  const isEn = lang === 'en'
 
   const ticketNumber =
     'AS-2026-' +
@@ -2885,7 +3168,6 @@ function Grievance({ t, lang, card, reason, fastForwarded, finishResolution, res
 
   const advance = () => {
     if (offline) {
-      // Save grievance to offline queue
       const existing = JSON.parse(localStorage.getItem('anna_offline_queue') || '[]')
       existing.push({ ticketNumber, reason, date: new Date().toISOString() })
       localStorage.setItem('anna_offline_queue', JSON.stringify(existing))
@@ -2902,7 +3184,7 @@ function Grievance({ t, lang, card, reason, fastForwarded, finishResolution, res
 
   const shareStatusWhatsApp = () => {
     const textToShare = encodeURIComponent(
-      `Anna Setu PDS Grievance Update: Ticket #${ticketNumber} for Ration Card ${card.number} is currently active. Expected resolution within 7 days under NFSA 2013.`
+      `Anna Setu PDS Grievance Update: Ticket #${ticketNumber} for Ration Card ${card.number} is active. Resolution guaranteed under NFSA Section 19 within 7 days.`
     )
     window.open(`https://wa.me/?text=${textToShare}`, '_blank')
   }
@@ -2910,10 +3192,10 @@ function Grievance({ t, lang, card, reason, fastForwarded, finishResolution, res
   if (resolved) return <Success t={t} goHome={goHome} />
 
   const stages = [
-    { title: lang === 'ta' ? 'புகார் பதிவு செய்யப்பட்டது' : 'Grievance Registered', time: '10:42 AM · System', done: stage >= 1 },
-    { title: t.officerReview || 'Taluk Supply Officer Review', time: stage >= 2 ? 'In Review · TSO Mylapore' : 'Pending', done: stage >= 2, active: stage === 2 },
-    { title: t.stockDispatch || 'FPS Stock Dispatched', time: stage >= 3 ? 'Dispatched · Depot 4' : 'Queued', done: stage >= 3, active: stage === 3 },
-    { title: t.resolution || 'Resolved & Supplementary Released', time: 'Final Step', done: stage >= 4 }
+    { title: isEn ? 'Grievance Registered' : 'புகார் பதிவு செய்யப்பட்டது', time: '10:42 AM · System', done: stage >= 1 },
+    { title: t.officerReview || (isEn ? 'Taluk Supply Officer Review' : 'வட்ட வழங்கல் அலுவலர் ஆய்வு'), time: stage >= 2 ? (isEn ? 'In Review · TSO Mylapore' : 'ஆய்வில் உள்ளது') : 'Pending', done: stage >= 2, active: stage === 2 },
+    { title: t.stockDispatch || (isEn ? 'FPS Stock Dispatched' : 'கடைக்கு கூடுதல் ஒதுக்கீடு'), time: stage >= 3 ? (isEn ? 'Dispatched · Buffer Depot' : 'அனுப்பப்பட்டது') : 'Queued', done: stage >= 3, active: stage === 3 },
+    { title: t.resolution || (isEn ? 'Resolved & Quota Released' : 'தீர்வு காணப்பட்டது'), time: 'Final Step', done: stage >= 4 }
   ]
 
   return (
@@ -2981,7 +3263,7 @@ function Grievance({ t, lang, card, reason, fastForwarded, finishResolution, res
             <div className="log-item-row" key={idx}>
               <small>{log.timestamp}</small>
               <b>{log.officer}</b>
-              <p>{log.note}</p>
+              <p>{isEn ? log.noteEn || log.note : log.note}</p>
             </div>
           ))}
         </div>
