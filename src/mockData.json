@@ -86,15 +86,30 @@
       "name": "காளியம்மாள்",
       "nameEn": "Kaliammal",
       "nameHi": "कालियम्माळ",
+      "nameMr": "कालियम्माळ",
+      "nameTe": "కాళియమ్మాల్",
+      "nameKn": "ಕಾಳಿಯಮ್ಮಾಳ್",
+      "nameMl": "കാളിയമ്മാൾ",
       "recordedName": "காளியம்மாள் கே",
       "recordedNameEn": "Kaliamal K",
+      "recordedNameTe": "కాళియమల్ కె",
+      "recordedNameKn": "ಕಾಳಿಯಮಲ್ ಕೆ",
+      "recordedNameMl": "കാളിയമൽ കെ",
       "aadhaarName": "காளியம்மாள்",
       "aadhaarNameEn": "Kaliammal",
+      "aadhaarNameTe": "కాళియమ్మాల్",
+      "aadhaarNameKn": "ಕಾಳಿಯಮ್ಮಾಳ್",
+      "aadhaarNameMl": "കാളിയമ്മാൾ",
       "phone": "98765 43210",
       "members": 4,
       "category": "PHH",
       "categoryDesc": "Priority Household (PHH)",
       "categoryDescTa": "முன்னுரிமை குடும்ப அட்டை (PHH)",
+      "categoryDescTe": "ప్రాధాన్యతా కుటుంబం (PHH)",
+      "categoryDescKn": "ಆದ್ಯತಾ ಕುಟುಂಬ (PHH)",
+      "categoryDescMl": "മുൻഗണനാ കുടുംബം (PHH)",
+      "categoryDescHi": "प्राथमिकता परिवार (PHH)",
+      "categoryDescMr": "प्राधान्य कुटुंब (PHH)",
       "entitlementNorm": "5 kg/member (20 kg quota: 15 kg Rice, 5 kg Wheat)",
       "entitledRice": 15,
       "entitledWheat": 5,
@@ -102,6 +117,10 @@
       "entitledDal": 1,
       "village": "திருவல்லிக்கேணி, சென்னை",
       "villageEn": "Triplicane, Chennai",
+      "villageTe": "ట్రిప్లికేన్, చెన్నై",
+      "villageKn": "ಟ್ರಿಪ್ಲಿಕೇನ್, ಚೆನ್ನೈ",
+      "villageMl": "ട്രിപ്ലിക്കേൻ, ചെന്നൈ",
+      "villageHi": "ट्रिप्लिकेन, चेन्नई",
       "state": "Tamil Nadu",
       "fpsCode": "TN-CHE-02A",
       "avatarInitial": "கா"
@@ -112,16 +131,31 @@
       "name": "सुनीता देवी",
       "nameEn": "Sunita Devi",
       "nameTa": "சுனிதா தேவி",
+      "nameHi": "सुनीता देवी",
+      "nameMr": "सुनीता देवी",
+      "nameTe": "సునీతా దేవి",
+      "nameKn": "ಸುನೀತಾ ದೇವಿ",
+      "nameMl": "സുനിതാ ദേവി",
       "recordedName": "सुनिता देवि",
       "recordedNameEn": "Suneeta Devy",
+      "recordedNameTe": "సునీతా దేవి (తప్పు)",
+      "recordedNameKn": "ಸುನೀತಾ ದೇವಿ (ತಪ್ಪು)",
+      "recordedNameMl": "സുനിതാ ദേവി (തെറ്റ്)",
       "aadhaarName": "सुनीता देवी",
       "aadhaarNameEn": "Sunita Devi",
+      "aadhaarNameTe": "సునీతా దేవి",
+      "aadhaarNameKn": "ಸುನೀತಾ ದೇವಿ",
+      "aadhaarNameMl": "സുനിതാ ദേവി",
       "phone": "98765 43210",
       "members": 4,
       "category": "AAY",
       "categoryDesc": "Antyodaya Anna Yojana (AAY)",
       "categoryDescMr": "अंत्योदय अन्न योजना (AAY)",
       "categoryDescHi": "अंत्योदय अन्न योजना (AAY)",
+      "categoryDescTa": "அந்தியோதயா அன்ன யோஜனா (AAY)",
+      "categoryDescTe": "అంత్యోదయ అన్న యోజన (AAY)",
+      "categoryDescKn": "ಅಂತ್ಯೋದಯ ಅನ್ನ ಯೋಜನೆ (AAY)",
+      "categoryDescMl": "അന്ത്യോദയ അന്ന യോജന (AAY)",
       "entitlementNorm": "Flat 35 kg/family (20 kg Wheat, 15 kg Rice, 1 kg Sugar)",
       "entitledRice": 15,
       "entitledWheat": 20,
@@ -129,6 +163,10 @@
       "entitledDal": 1,
       "village": "आनंद नगर, पुणे",
       "villageEn": "Anand Nagar, Pune",
+      "villageTe": "ఆనంద్ నగర్, పూణే",
+      "villageKn": "ಆನಂದ್ ನಗರ, ಪುಣೆ",
+      "villageMl": "ആനന്ദ് നഗർ, പൂനെ",
+      "villageTa": "ஆனந்த் நகர், புனே",
       "state": "Maharashtra",
       "fpsCode": "MH-PUN-05",
       "avatarInitial": "सु"
@@ -140,15 +178,30 @@
     "name": "காளியம்மாள்",
     "nameEn": "Kaliammal",
     "nameHi": "कालियम्माळ",
+    "nameMr": "कालियम्माळ",
+    "nameTe": "కాళియమ్మాల్",
+    "nameKn": "ಕಾಳಿಯಮ್ಮಾಳ್",
+    "nameMl": "കാളിയമ്മാൾ",
     "recordedName": "காளியம்மாள் கே",
     "recordedNameEn": "Kaliamal K",
+    "recordedNameTe": "కాళియమల్ కె",
+    "recordedNameKn": "ಕಾಳಿಯಮಲ್ ಕೆ",
+    "recordedNameMl": "കാളിയമൽ ಕೆ",
     "aadhaarName": "காளியம்மாள்",
     "aadhaarNameEn": "Kaliammal",
+    "aadhaarNameTe": "కాళియమ్మాల్",
+    "aadhaarNameKn": "ಕಾಳಿಯಮ್ಮಾಳ್",
+    "aadhaarNameMl": "കാളിയമ്മാൾ",
     "phone": "98765 43210",
     "members": 4,
     "category": "PHH",
     "categoryDesc": "Priority Household (PHH)",
     "categoryDescTa": "முன்னுரிமை குடும்ப அட்டை (PHH)",
+    "categoryDescTe": "ప్రాధాన్యతా కుటుంబం (PHH)",
+    "categoryDescKn": "ಆದ್ಯತಾ ಕುಟುಂಬ (PHH)",
+    "categoryDescMl": "മുൻഗണനാ కుటుంబం (PHH)",
+    "categoryDescHi": "प्राथमिकता परिवार (PHH)",
+    "categoryDescMr": "प्राधान्य कुटुंब (PHH)",
     "entitlementNorm": "5 kg/member (20 kg quota: 15 kg Rice, 5 kg Wheat)",
     "entitledRice": 15,
     "entitledWheat": 5,
@@ -156,6 +209,10 @@
     "entitledDal": 1,
     "village": "திருவல்லிக்கேணி, சென்னை",
     "villageEn": "Triplicane, Chennai",
+    "villageTe": "ట్రిప్లికేన్, చెన్నై",
+    "villageKn": "ಟ್ರಿಪ್ಲಿಕೇನ್, ಚೆನ್ನೈ",
+    "villageMl": "ട്രിപ്ലിക്കേൻ, ചെന്നൈ",
+    "villageHi": "ट्रिप्लिकेन, चेन्नई",
     "state": "Tamil Nadu",
     "fpsCode": "TN-CHE-02A",
     "avatarInitial": "கா"
@@ -166,17 +223,29 @@
       "title": {
         "ta": "ஆதார் அடையாளம் இணைக்கப்படவில்லை",
         "hi": "पहचान लिंक नहीं है",
-        "en": "Identity not linked"
+        "en": "Identity not linked",
+        "te": "ఆధార్ గుర్తింపు లింక్ కాలేదు",
+        "kn": "ಆಧಾರ್ ಗುರುತು ಲಿಂಕ್ ಆಗಿಲ್ಲ",
+        "ml": "തിരിച്ചറിയൽ രേഖ ലിങ്ക് ചെയ്തിട്ടില്ല",
+        "mr": "आधार ओळख लिंक नाही"
       },
       "detail": {
         "ta": "ரேஷன் அட்டையுடன் ஆதார் அடையாள விவரங்கள் இணைக்கப்படவில்லை.",
         "hi": "राशन कार्ड में पहचान की जानकारी जुड़ी नहीं है।",
-        "en": "Your identity details are not linked to this ration card."
+        "en": "Your identity details are not linked to this ration card.",
+        "te": "ఈ రేషన్ కార్డుతో మీ ఆధార్ గుర్తింపు వివరాలు అనుసంధానించబడలేదు.",
+        "kn": "ನಿಮ್ಮ ಪಡಿತರ ಚೀಟಿಯೊಂದಿಗೆ ಆಧಾರ್ ಗುರುತಿನ ವಿವರಗಳು ಲಿಂಕ್ ಆಗಿಲ್ಲ.",
+        "ml": "ഈ റേഷൻ കാർഡുമായി നിങ്ങളുടെ ആധാർ വിവരങ്ങൾ ലിങ്ക് ചെയ്തിട്ടില്ല.",
+        "mr": "या रेशन कार्डशी आपले आधार तपशील जोडलेले नाहीत."
       },
       "action": {
         "ta": "இப்போதே இணைக்கவும்",
         "hi": "अभी लिंक करें",
-        "en": "Link it now"
+        "en": "Link it now",
+        "te": "ఇప్పుడే లింక్ చేయండి",
+        "kn": "ಈಗಲೇ ಲಿಂಕ್ ಮಾಡಿ",
+        "ml": "ഇപ്പോൾ ലിങ്ക് ചെയ്യുക",
+        "mr": "आत्ताच लिंक करा"
       }
     },
     "stock": {
@@ -184,17 +253,29 @@
       "title": {
         "ta": "ரேஷன் கடையில் இருப்பு இல்லை",
         "hi": "दुकान में अनाज नहीं है",
-        "en": "Shop is out of stock"
+        "en": "Shop is out of stock",
+        "te": "షాపులో సరుకులు అయిపోయాయి",
+        "kn": "ಅಂಗಡಿಯಲ್ಲಿ ದಾಸ್ತಾನು ಖಾಲಿಯಾಗಿದೆ",
+        "ml": "കടയിൽ സ്റ്റോക്ക് തീർന്നു",
+        "mr": "दुकानात धान्य उपलब्ध नाही"
       },
       "detail": {
         "ta": "இன்று உங்கள் நியாய விலைக் கடையில் கோதுமை இருப்பு இல்லை.",
         "hi": "आज आपकी दुकान में गेहूँ उपलब्ध नहीं है।",
-        "en": "Wheat is unavailable at your shop today."
+        "en": "Wheat is unavailable at your shop today.",
+        "te": "నేడు మీ రేషన్ షాపులో గోధుమల నిల్వ అందుబాటులో లేదు.",
+        "kn": "ಇಂದು ನಿಮ್ಮ ನ್ಯಾಯಬೆಲೆ ಅಂಗಡಿಯಲ್ಲಿ ಗೋಧಿ ಲಭ್ಯವಿಲ್ಲ.",
+        "ml": "ഇന്ന് നിങ്ങളുടെ റേഷൻ കടയിൽ ഗോതമ്പ് ലഭ്യമല്ല.",
+        "mr": "आज आपल्या दुकानात गहू शिल्लक नाही."
       },
       "action": {
         "ta": "அருகிலுள்ள கடையைப் பார்க்க",
         "hi": "पास की दुकान देखें",
-        "en": "See nearby shops"
+        "en": "See nearby shops",
+        "te": "సమీప షాపులు చూడండి",
+        "kn": "ಹತ್ತಿರದ ಅಂಗಡಿಗಳನ್ನು ನೋಡಿ",
+        "ml": "സമീപത്തെ കടകൾ കാണുക",
+        "mr": "जवळची दुकाने पहा"
       }
     },
     "mismatch": {
@@ -202,17 +283,29 @@
       "title": {
         "ta": "பெயரில் முரண்பாடு உள்ளது",
         "hi": "नाम में अंतर है",
-        "en": "Name does not match"
+        "en": "Name does not match",
+        "te": "పేరులో తేడా ఉంది",
+        "kn": "ಹೆಸರಿನಲ್ಲಿ ವ್ಯತ್ಯಾಸವಿದೆ",
+        "ml": "പേരിൽ വ്യത്യാസമുണ്ട്",
+        "mr": "नावात तफावत आहे"
       },
       "detail": {
         "ta": "ரேஷன் அட்டை மற்றும் ஆதார் ஆவணத்தில் பெயர் எழுத்துப்பிழை உள்ளது.",
         "hi": "कार्ड और पहचान दस्तावेज़ में नाम अलग है।",
-        "en": "The name differs between your card and identity record."
+        "en": "The name differs between your card and identity record.",
+        "te": "మీ రేషన్ కార్డు మరియు ఆధార్ గుర్తింపు పత్రంలో పేరు తేడాగా ఉంది.",
+        "kn": "ಪಡಿತರ ಚೀಟಿ ಮತ್ತು ಆಧಾರ್ ದಾಖಲೆಯಲ್ಲಿ ಹೆಸರಿನ ಕಾಗುಣಿತ ವ್ಯತ್ಯಾಸವಿದೆ.",
+        "ml": "റേഷൻ കാർഡിലെയും ആധാർ രേഖയിലെയും പേരിൽ അക്ഷരത്തെറ്റുണ്ട്.",
+        "mr": "रेशन कार्ड आणि आधार ओळखपत्रातील नावात तफावत आढळली आहे."
       },
       "action": {
         "ta": "பெயரைத் திருத்தவும்",
         "hi": "नाम सुधारें",
-        "en": "Correct name"
+        "en": "Correct name",
+        "te": "పేరు సవరించండి",
+        "kn": "ಹೆಸರು ತಿದ್ದುಪಡಿ ಮಾಡಿ",
+        "ml": "പേര് തിരുത്തുക",
+        "mr": "नाव दुरुस्त करा"
       }
     },
     "inactive": {
@@ -220,17 +313,29 @@
       "title": {
         "ta": "அட்டை தற்காலிகமாக முடக்கப்பட்டுள்ளது",
         "hi": "कार्ड सक्रिय नहीं है",
-        "en": "Card is marked inactive"
+        "en": "Card is marked inactive",
+        "te": "కార్డు నిలిపివేయబడింది",
+        "kn": "ಕಾರ್ಡ್ ನಿಷ್ಕ್ರಿಯಗೊಂಡಿದೆ",
+        "ml": "കാർഡ് നിർജ്ജീവമാക്കിയിരിക്കുന്നു",
+        "mr": "कार्ड तात्पुरते स्थगित आहे"
       },
       "detail": {
         "ta": "உங்கள் ரேஷன் அட்டை கள ஆய்விற்காக நிறுத்தி வைக்கப்பட்டுள்ளது.",
         "hi": "आपका कार्ड जाँच के लिए रोका गया है।",
-        "en": "Your card is paused for review."
+        "en": "Your card is paused for review.",
+        "te": "క్షేత్రస్థాయి పరిశీలన కోసం మీ కార్డు తాత్కాలికంగా నిలిపివేయబడింది.",
+        "kn": "ಸ್ಥಳ ಪರಿಶೀಲನೆಗಾಗಿ ನಿಮ್ಮ ಪಡಿತರ ಕಾರ್ಡ್ ತಡೆಹಿಡಿಯಲಾಗಿದೆ.",
+        "ml": "ഫീൽഡ് പരിശോധനയ്ക്കായി നിങ്ങളുടെ കാർഡ് നിർത്തിവെച്ചിരിക്കുന്നു.",
+        "mr": "तपासणीसाठी आपले रेशन कार्ड तात्पुरते स्थगित करण्यात आले आहे."
       },
       "action": {
         "ta": "மறுஆய்வு கோரிக்கை அனுப்ப",
         "hi": "कार्ड फिर चालू करें",
-        "en": "Reactivate card"
+        "en": "Reactivate card",
+        "te": "కార్డు పునరుద్ధరణ కోరండి",
+        "kn": "ಮರುಸಕ್ರಿಯಗೊಳಿಸಲು ಕೋರಿ",
+        "ml": "പുനഃസ്ഥാപിക്കാൻ അപേക്ഷിക്കുക",
+        "mr": "पुनरावलोकन विनंती पाठवा"
       }
     }
   },
@@ -548,7 +653,15 @@
       "receivedBreakdown": "0 kg (Disbursement blocked)",
       "shortfall": "20 kg full quota undelivered",
       "fpsCode": "TN-CHE-02A",
-      "receiptId": "HOLD-2026-08A"
+      "receiptId": "HOLD-2026-08A",
+      "monthTe": "ఆగస్టు",
+      "monthKn": "ಆಗಸ್ಟ್",
+      "monthMl": "ആഗസ്റ്റ്",
+      "monthMr": "ऑगस्ट",
+      "noteTe": "రిజిస్ట్రీలో పేరు సరిపోలకపోవడం వల్ల నిలిపివేయబడింది",
+      "noteKn": "ರಿಜಿಸ್ಟ್ರಿಯಲ್ಲಿ ಹೆಸರು ಹೊಂದಾಣಿಕೆಯಾಗದ ಕಾರಣ ಸ್ಥಗಿತಗೊಳಿಸಲಾಗಿದೆ",
+      "noteMl": "രജിസ്ട്രിയിലെ പേര് പൊരുത്തക്കേട് കാരണം തടഞ്ഞുവെച്ചു",
+      "noteMr": "नोंदवहीत नावातील तफावतीमुळे थांबवले"
     },
     {
       "month": "ஜூலை",
@@ -564,7 +677,15 @@
       "receivedBreakdown": "0 kg",
       "shortfall": "20 kg full quota blocked",
       "fpsCode": "TN-CHE-02A",
-      "receiptId": "HOLD-2026-07B"
+      "receiptId": "HOLD-2026-07B",
+      "monthTe": "జూలై",
+      "monthKn": "ಜುಲೈ",
+      "monthMl": "ജൂലൈ",
+      "monthMr": "जुलै",
+      "noteTe": "ఆధార్ బయోమెట్రిక్ ప్రమాణీకరణ అవసరం",
+      "noteKn": "ಆಧಾರ್ ಬಯೋಮೆಟ್ರಿಕ್ ದೃಢೀಕರಣ ಅಗತ್ಯವಿದೆ",
+      "noteMl": "ആധാർ ബയോമെട്രിക് പ്രാമാണീകരണം ആവശ്യമാണ്",
+      "noteMr": "आधार बायोमेट्रिक प्रमाणीकरण आवश्यक"
     },
     {
       "month": "ஜூன்",
@@ -580,7 +701,15 @@
       "receivedBreakdown": "15 kg Boiled Rice only",
       "shortfall": "5 kg Wheat shortfall at depot",
       "fpsCode": "TN-CHE-02A",
-      "receiptId": "REC-2026-06C"
+      "receiptId": "REC-2026-06C",
+      "monthTe": "జూన్",
+      "monthKn": "ಜೂನ್",
+      "monthMl": "ജൂൺ",
+      "monthMr": "जून",
+      "noteTe": "గోధుమల నిల్వ లేదు — బియ్యం మాత్రమే పంపిణీ",
+      "noteKn": "ಗೋಧಿ ಲಭ್ಯವಿಲ್ಲ — ಅಕ್ಕಿ ಮಾತ್ರ ವಿತರಿಸಲಾಗಿದೆ",
+      "noteMl": "ഗോതമ്പ് ലഭ്യമല്ല — അരി മാത്രം നൽകി",
+      "noteMr": "गहू अनुपलब्ध — फक्त तांदूळ वाटप"
     },
     {
       "month": "மே",
@@ -596,7 +725,15 @@
       "receivedBreakdown": "15 kg Boiled Rice, 5 kg Wheat, 1 kg Sugar",
       "shortfall": "None (100% fulfilled)",
       "fpsCode": "TN-CHE-02A",
-      "receiptId": "REC-2026-05D"
+      "receiptId": "REC-2026-05D",
+      "monthTe": "మే",
+      "monthKn": "ಮೇ",
+      "monthMl": "മേയ്",
+      "monthMr": "मे",
+      "noteTe": "పూర్తి కోటా లభించింది",
+      "noteKn": "ಪೂರ್ಣ ಕೋಟಾ ಲಭಿಸಿದೆ",
+      "noteMl": "മുഴുവൻ ക്വാട്ടയും ലഭിച്ചു",
+      "noteMr": "पूर्ण कोटा प्राप्त झाला"
     },
     {
       "month": "ஏப்ரல்",
@@ -612,7 +749,15 @@
       "receivedBreakdown": "15 kg Boiled Rice, 5 kg Wheat",
       "shortfall": "None (100% fulfilled)",
       "fpsCode": "TN-CHE-02A",
-      "receiptId": "REC-2026-04E"
+      "receiptId": "REC-2026-04E",
+      "monthTe": "ఏప్రిల్",
+      "monthKn": "ಏಪ್ರಿಲ್",
+      "monthMl": "ഏപ്രിൽ",
+      "monthMr": "एप्रिल",
+      "noteTe": "పూర్తి కోటా లభించింది",
+      "noteKn": "ಪೂರ್ಣ ಕೋಟಾ ಲಭಿಸಿದೆ",
+      "noteMl": "മുഴുവൻ ക്വാട്ടയും ലഭിച്ചു",
+      "noteMr": "पूर्ण कोटा प्राप्त झाला"
     },
     {
       "month": "மார்ச்",
@@ -628,7 +773,15 @@
       "receivedBreakdown": "15 kg Boiled Rice, 5 kg Wheat",
       "shortfall": "None (100% fulfilled)",
       "fpsCode": "TN-CHE-02A",
-      "receiptId": "REC-2026-03F"
+      "receiptId": "REC-2026-03F",
+      "monthTe": "మార్చి",
+      "monthKn": "ಮಾರ್ಚ್",
+      "monthMl": "മാർച്ച്",
+      "monthMr": "मार्च",
+      "noteTe": "పూర్తి కోటా లభించింది",
+      "noteKn": "ಪೂರ್ಣ ಕೋಟಾ ಲಭಿಸಿದೆ",
+      "noteMl": "മുഴുവൻ ക്വാട്ടയും ലഭിച്ചു",
+      "noteMr": "पूर्ण कोटा प्राप्त झाला"
     }
   ],
   "grievances": [

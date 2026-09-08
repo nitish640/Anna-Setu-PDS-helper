@@ -22,7 +22,7 @@ const languages = [
   { code: 'en', label: 'English', enLabel: 'English', mark: 'A', speechLang: 'en-IN' },
   { code: 'te', label: 'తెలుగు', enLabel: 'Telugu', mark: 'అ', speechLang: 'te-IN' },
   { code: 'kn', label: 'ಕನ್ನಡ', enLabel: 'Kannada', mark: 'ಅ', speechLang: 'kn-IN' },
-  { code: 'ml', label: 'മലയാളം', enLabel: 'Malayalam', mark: 'அ', speechLang: 'ml-IN' },
+  { code: 'ml', label: 'മലയാളം', enLabel: 'Malayalam', mark: 'അ', speechLang: 'ml-IN' },
   { code: 'mr', label: 'मराठी', enLabel: 'Marathi', mark: 'अ', speechLang: 'mr-IN' }
 ]
 
@@ -114,7 +114,25 @@ const text = {
     monthlyQuotaTitle: 'AUGUST 2026 ENTITLEMENT',
     quotaReceivedDesc: 'Full monthly ration disbursed successfully',
     allocatedReceived: 'Allocated & Received',
-    listenToEntitlement: 'Listen to Entitlement'
+    listenToEntitlement: 'Listen to Entitlement',
+    quota35kg: '35 kg Quota',
+    quota20kg: '20 kg Quota',
+    voucherSubtext: 'AePDS Authenticated Voucher #TXN-2026',
+    statutoryNormDesc: '5 kg / member statutory quota',
+    rectificationTitle: 'Ration Ledger Rectification',
+    grievanceRegistered: 'Grievance Registered',
+    inReviewStatus: 'In Review · TSO Review',
+    pendingStatus: 'Pending Review',
+    dispatchedStatus: 'Dispatched · Buffer Depot',
+    queuedStatus: 'Queued for Dispatch',
+    finalStep: 'Final Step',
+    offlineSyncSuccess: 'Offline grievances synchronized successfully!',
+    entitledShort: 'Entitled',
+    receivedShort: 'Received',
+    shortfallBadge: 'Shortfall',
+    kgUnit: 'kg',
+    statusColumn: 'Status',
+    arrivalSlotLabel: 'Arrival Time Slot'
   },
   ta: {
     app: 'அன்ன சேது', greeting: 'வணக்கம்', tagline: 'சரியான ரேஷன் தகவல், சரியான நேரத்தில்',
@@ -203,7 +221,25 @@ const text = {
     monthlyQuotaTitle: 'ஆகஸ்ட் 2026 ஒதுக்கீடு',
     quotaReceivedDesc: 'மாத ஒதுக்கீடு வெற்றிகரமாக வழங்கப்பட்டது',
     allocatedReceived: 'ஒதுக்கப்பட்டு பெறப்பட்டது',
-    listenToEntitlement: 'ஒதுக்கீட்டை கேட்கவும்'
+    listenToEntitlement: 'ஒதுக்கீட்டை கேட்கவும்',
+    quota35kg: '35 கிலோ ஒதுக்கீடு',
+    quota20kg: '20 கிலோ ஒதுக்கீடு',
+    voucherSubtext: 'அங்கீகரிக்கப்பட்ட டிஜிட்டல் ரசீது #TXN-2026',
+    statutoryNormDesc: '5 கிலோ / உறுப்பினர் சட்டப்பூர்வ ஒதுக்கீடு',
+    rectificationTitle: 'ரேஷன் பதிவேடு பெயர் திருத்தம்',
+    grievanceRegistered: 'புகார் பதிவு செய்யப்பட்டது',
+    inReviewStatus: 'ஆய்வில் உள்ளது · வட்ட வழங்கல் அலுவலர்',
+    pendingStatus: 'நிலுவையில் உள்ளது',
+    dispatchedStatus: 'அனுப்பப்பட்டது · கூடுதல் இருப்பு மையம்',
+    queuedStatus: 'அனுப்ப வரிசையில் உள்ளது',
+    finalStep: 'இறுதி தீர்வு நிலை',
+    offlineSyncSuccess: 'ஆஃப்லைன் புகார்கள் வெற்றிகரமாக ஒத்திசைக்கப்பட்டன!',
+    entitledShort: 'ஒதுக்கீடு',
+    receivedShort: 'பெற்றது',
+    shortfallBadge: 'பற்றாக்குறை',
+    kgUnit: 'கிலோ',
+    statusColumn: 'நிலை',
+    arrivalSlotLabel: 'வருகை நேரம்'
   },
   hi: {
     app: 'अन्न सेतु', greeting: 'नमस्ते', tagline: 'राशन की सही जानकारी, सही समय पर',
@@ -292,7 +328,25 @@ const text = {
     monthlyQuotaTitle: 'अगस्त 2026 आवंटन',
     quotaReceivedDesc: 'मासिक राशन सफलतापूर्वक प्राप्त हुआ',
     allocatedReceived: 'आवंटित व प्राप्त',
-    listenToEntitlement: 'आवंटन सुनें'
+    listenToEntitlement: 'आवंटन सुनें',
+    quota35kg: '35 किग्रा कोटा',
+    quota20kg: '20 किग्रा कोटा',
+    voucherSubtext: 'AePDS प्रमाणित डिजिटल वाउचर #TXN-2026',
+    statutoryNormDesc: '5 किग्रा / सदस्य वैधानिक कोटा',
+    rectificationTitle: 'राशन कार्ड नाम सुधार',
+    grievanceRegistered: 'शिकायत दर्ज की गई',
+    inReviewStatus: 'समीक्षाधीन · आपूर्ति अधिकारी',
+    pendingStatus: 'लंबित',
+    dispatchedStatus: 'भेजा गया · बफर डिपो',
+    queuedStatus: 'भेजने के लिए कतारबद्ध',
+    finalStep: 'अंतिम समाधान चरण',
+    offlineSyncSuccess: 'ऑफ़लाइन शिकायतें सफलतापूर्वक सिंक हो गईं!',
+    entitledShort: 'हकदारी',
+    receivedShort: 'प्राप्त',
+    shortfallBadge: 'कमी',
+    kgUnit: 'किग्रा',
+    statusColumn: 'स्थिति',
+    arrivalSlotLabel: 'आगमन समय स्लॉट'
   },
   mr: {
     app: 'अन्न सेतु', greeting: 'नमस्ते', tagline: 'रेशनची अचूक माहिती, योग्य वेळी',
@@ -381,7 +435,25 @@ const text = {
     monthlyQuotaTitle: 'ऑगस्ट 2026 वाटप',
     quotaReceivedDesc: 'मासिक रेशन यशस्वीरित्या प्राप्त झाले',
     allocatedReceived: 'वाटप व प्राप्त',
-    listenToEntitlement: 'वाटप ऐका'
+    listenToEntitlement: 'वाटप ऐका',
+    quota35kg: '35 किलो कोटा',
+    quota20kg: '20 किलो कोटा',
+    voucherSubtext: 'AePDS प्रमाणित डिजिटल पावती #TXN-2026',
+    statutoryNormDesc: '5 किलो / व्यक्ती वैधानिक कोटा',
+    rectificationTitle: 'रेशन कार्ड नाव दुरुस्ती',
+    grievanceRegistered: 'तक्रार नोंदवली गेली',
+    inReviewStatus: 'तपासणी सुरू · पुरवठा अधिकारी',
+    pendingStatus: 'प्रलंबित',
+    dispatchedStatus: 'पाठवले · बफर डेपो',
+    queuedStatus: 'पाठवण्यासाठी रांगेत',
+    finalStep: 'अंतिम टप्पा',
+    offlineSyncSuccess: 'ऑफलाइन तक्रारी यशस्वीरित्या सिंक झाल्या!',
+    entitledShort: 'पात्रता',
+    receivedShort: 'मिळाले',
+    shortfallBadge: 'तुटवडा',
+    kgUnit: 'किलो',
+    statusColumn: 'स्थिती',
+    arrivalSlotLabel: 'येण्याची वेळ'
   },
   te: {
     app: 'అన్న సేతు', greeting: 'నమస్కారం', tagline: 'సరైన రేషన్ సమాచారం, సరైన సమయంలో',
@@ -470,7 +542,25 @@ const text = {
     monthlyQuotaTitle: 'ఆగస్టు 2026 కోటా',
     quotaReceivedDesc: 'నెలవారీ కోటా విజయవంతంగా అందింది',
     allocatedReceived: 'కేటాయించి పొందినవి',
-    listenToEntitlement: 'కోటా వివరాలు వినండి'
+    listenToEntitlement: 'కోటా వివరాలు వినండి',
+    quota35kg: '35 కేజీల కోటా',
+    quota20kg: '20 కేజీల కోటా',
+    voucherSubtext: 'AePDS ధృవీకరించిన డిజిటల్ రసీదు #TXN-2026',
+    statutoryNormDesc: '5 కేజీలు / సభ్యునికి చట్టపరమైన కోటా',
+    rectificationTitle: 'రేషన్ కార్డు పేరు సవరణ',
+    grievanceRegistered: 'ఫిర్యాదు నమోదైంది',
+    inReviewStatus: 'పరిశీలనలో ఉంది · సరఫరా అధికారి',
+    pendingStatus: 'పెండింగ్‌లో ఉంది',
+    dispatchedStatus: 'పంపిణీ చేయబడింది · బఫర్ డిపో',
+    queuedStatus: 'పంపిణీ వరుసలో ఉంది',
+    finalStep: 'తుది పరిష్కార దశ',
+    offlineSyncSuccess: 'ఆఫ్‌లైన్ ఫిర్యాదులు విజయవంతంగా సమర్పించబడ్డాయి!',
+    entitledShort: 'అర్హత',
+    receivedShort: 'లభించినది',
+    shortfallBadge: 'కొరత',
+    kgUnit: 'కేజీలు',
+    statusColumn: 'స్థితి',
+    arrivalSlotLabel: 'రాక సమయ స్లాట్'
   },
   kn: {
     app: 'ಅನ್ನ ಸೇತು', greeting: 'ನಮಸ್ಕಾರ', tagline: 'ಸರಿಯಾದ ಪಡಿತರ ಮಾಹಿತಿ, ಸರಿಯಾದ ಸಮಯದಲ್ಲಿ',
@@ -559,7 +649,25 @@ const text = {
     monthlyQuotaTitle: 'ಆಗಸ್ಟ್ 2026 ಕೋಟಾ',
     quotaReceivedDesc: 'ಮಾಸಿಕ ಪಡಿತರ ಯಶಸ್ವಿಯಾಗಿ ಸಿಕ್ಕಿದೆ',
     allocatedReceived: 'ಹಂಚಿಕೆ ಮತ್ತು ಪಡೆಯಲಾಗಿದೆ',
-    listenToEntitlement: 'ಕೋಟಾ ವಿವರ ಆಲಿಸಿ'
+    listenToEntitlement: 'ಕೋಟಾ ವಿವರ ಆಲಿಸಿ',
+    quota35kg: '35 ಕೆಜಿ ಕೋಟಾ',
+    quota20kg: '20 ಕೆಜಿ ಕೋಟಾ',
+    voucherSubtext: 'AePDS ದೃಢೀಕರಿಸಿದ ಡಿಜಿಟಲ್ ರಶೀದಿ #TXN-2026',
+    statutoryNormDesc: '5 ಕೆಜಿ / ಸದಸ್ಯರಿಗೆ ಶಾಸನಬದ್ಧ ಕೋಟಾ',
+    rectificationTitle: 'ಪಡಿತರ ಚೀಟಿ ಹೆಸರು ತಿದ್ದುಪಡಿ',
+    grievanceRegistered: 'ದೂರು ದಾಖಲಾಗಿದೆ',
+    inReviewStatus: 'ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ · ಸರಬರಾಜು ಅಧಿಕಾರಿ',
+    pendingStatus: 'ಬಾಕಿ ಉಳಿದಿದೆ',
+    dispatchedStatus: 'ರವಾನಿಸಲಾಗಿದೆ · ಬಫರ್ ಡಿಪೋ',
+    queuedStatus: 'ರವಾನೆಗೆ ಸಾಲಿನಲ್ಲಿದೆ',
+    finalStep: 'ಅಂತಿಮ ಹಂತ',
+    offlineSyncSuccess: 'ಆಫ್‌ಲೈನ್ ದೂರುಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸಿಂಕ್ ಮಾಡಲಾಗಿದೆ!',
+    entitledShort: 'ಅರ್ಹತೆ',
+    receivedShort: 'ಸ್ವೀಕರಿಸಿದ್ದು',
+    shortfallBadge: 'ಕೊರತೆ',
+    kgUnit: 'ಕೆಜಿ',
+    statusColumn: 'ಸ್ಥಿತಿ',
+    arrivalSlotLabel: 'ಭೇಟಿ ಸಮಯ ಸ್ಲಾಟ್'
   },
   ml: {
     app: 'അന്ന സേതു', greeting: 'നമസ്കാരം', tagline: 'കൃത്യമായ റേഷൻ വിവരങ്ങൾ, കൃത്യസമയത്ത്',
@@ -648,7 +756,25 @@ const text = {
     monthlyQuotaTitle: 'ഓഗസ്റ്റ് 2026 വിഹിതം',
     quotaReceivedDesc: 'പ്രതിമാസ വിഹിതം വിജയകരമായി ലഭിച്ചു',
     allocatedReceived: 'അനുവദിച്ചതും ലഭിച്ചതും',
-    listenToEntitlement: 'വിഹിത വിവരങ്ങൾ കേൾക്കുക'
+    listenToEntitlement: 'വിഹിത വിവരങ്ങൾ കേൾക്കുക',
+    quota35kg: '35 കിലോഗ്രാം വിഹിതം',
+    quota20kg: '20 കിലോഗ്രാം വിഹിതം',
+    voucherSubtext: 'AePDS സാക്ഷ്യപ്പെടുത്തിയ ഡിജിറ്റൽ രസീത് #TXN-2026',
+    statutoryNormDesc: '5 കിലോഗ്രാം / അംഗത്തിന് നിയമാനുസൃത വിഹിതം',
+    rectificationTitle: 'റേഷൻ കാർഡ് പേര് തിരുത്തൽ',
+    grievanceRegistered: 'പരാതി രേഖപ്പെടുത്തി',
+    inReviewStatus: 'പരിശോധനയിലാണ് · സപ്ലൈ ഓഫീസർ',
+    pendingStatus: 'തീർപ്പുകൽപ്പിച്ചിട്ടില്ല',
+    dispatchedStatus: 'അയച്ചു · ബഫർ ഡിപ്പോ',
+    queuedStatus: 'അയക്കുന്നതിനുള്ള നിരയിൽ',
+    finalStep: 'അവസാന ഘട്ടം',
+    offlineSyncSuccess: 'ഓഫ്‌ലൈൻ പരാതികൾ വിജയകരമായി സമർപ്പിച്ചു!',
+    entitledShort: 'അർഹത',
+    receivedShort: 'ലഭിച്ചത്',
+    shortfallBadge: 'കുറവ്',
+    kgUnit: 'കിലോഗ്രാം',
+    statusColumn: 'നില',
+    arrivalSlotLabel: 'സന്ദർശന സമയ സ്ലോട്ട്'
   }
 }
 
@@ -662,45 +788,293 @@ const nextStatus = { denied: 'partial', partial: 'received', received: 'denied' 
 const nextReason = { mismatch: 'aadhaar', aadhaar: 'stock', stock: 'inactive', inactive: 'mismatch' }
 
 /* Helper Localization Utilities */
+const monthMap = {
+  August: { en: 'August', ta: 'ஆகஸ்ட்', hi: 'अगस्त', mr: 'ऑगस्ट', te: 'ఆగస్టు', kn: 'ಆಗಸ್ಟ್', ml: 'ഓഗസ്റ്റ്' },
+  July: { en: 'July', ta: 'ஜூலை', hi: 'जुलाई', mr: 'जुलै', te: 'జూలై', kn: 'ಜುಲೈ', ml: 'ജൂലൈ' },
+  June: { en: 'June', ta: 'ஜூன்', hi: 'जून', mr: 'जून', te: 'జూన్', kn: 'ಜೂನ್', ml: 'ജൂൺ' },
+  May: { en: 'May', ta: 'மே', hi: 'मई', mr: 'मे', te: 'మే', kn: 'ಮೇ', ml: 'മേയ്' },
+  April: { en: 'April', ta: 'ஏப்ரல்', hi: 'अप्रैल', mr: 'एप्रिल', te: 'ఏప్రిల్', kn: 'ಏಪ್ರಿಲ್', ml: 'ഏപ്രിൽ' },
+  March: { en: 'March', ta: 'மார்ச்', hi: 'मार्च', mr: 'मार्च', te: 'మార్చి', kn: 'ಮಾರ್ಚ್', ml: 'മാർച്ച്' }
+}
+
+const noteMap = {
+  mismatch: {
+    en: 'Paused due to name mismatch',
+    ta: 'பெயர் முரண்பாடு காரணமாக ரேஷன் நிறுத்தப்பட்டது',
+    hi: 'नाम में अंतर के कारण रुका',
+    mr: 'नावात तफावत असल्याने स्थगित',
+    te: 'పేరు వ్యత్యాసం వల్ల రేషన్ నిలిపివేయబడింది',
+    kn: 'ಹೆಸರು ಹೊಂದಾಣಿಕೆಯಾಗದ ಕಾರಣ ಸ್ಥಗಿತಗೊಂಡಿದೆ',
+    ml: 'പേര് പൊരുത്തക്കേട് കാരണം റേഷൻ തടസ്സപ്പെട്ടു'
+  },
+  aadhaar: {
+    en: 'Identity not linked',
+    ta: 'ஆதார் அடையாளம் இணைக்கப்படவில்லை',
+    hi: 'आधार लिंक नहीं',
+    mr: 'आधार लिंक नाही',
+    te: 'ఆధార్ గుర్తింపు లింక్ కాలేదు',
+    kn: 'ಆಧಾರ್ ಗುರುತು ಲಿಂಕ್ ಆಗಿಲ್ಲ',
+    ml: 'ആധാർ ലിങ്ക് ചെയ്തിട്ടില്ല'
+  },
+  shortfall: {
+    en: 'Wheat unavailable — only rice received',
+    ta: 'கோதுமை இருப்பு தீர்ந்ததால் அரிசி மட்டும்',
+    hi: 'गेहूं अनुपलब्ध — केवल चावल मिला',
+    mr: 'गहू उपलब्ध नाही — फक्त तांदूळ मिळाले',
+    te: 'గోధుమల కొరత — బియ్యం మాత్రమే అందింది',
+    kn: 'ಗೋಧಿ ಲಭ್ಯವಿಲ್ಲ — ಅಕ್ಕಿ ಮಾತ್ರ ಸ್ವೀಕರಿಸಲಾಗಿದೆ',
+    ml: 'ഗോതമ്പ് ലഭ്യമല്ല — അരി മാത്രം ലഭിച്ചു'
+  },
+  success: {
+    en: 'Full quota disbursed',
+    ta: 'முழு ஒதுக்கீடு வழங்கப்பட்டது',
+    hi: 'पूरा कोटा वितरित',
+    mr: 'पूर्ण कोटा वितरित',
+    te: 'పూర్తి కోటా పంపిణీ చేయబడింది',
+    kn: 'ಪೂರ್ಣ ಕೋಟಾ ವಿತರಿಸಲಾಗಿದೆ',
+    ml: 'പൂർണ്ണ വിഹിതം വിതരണം ചെയ്തു'
+  }
+}
+
+const stateNames = {
+  tn: { en: 'Tamil Nadu', ta: 'தமிழ்நாடு', te: 'తమిళనాడు', kn: 'ತಮಿಳುನಾಡು', ml: 'തമിഴ്നാട്', hi: 'तमिलनाडु', mr: 'तमिळनाडू' },
+  mh: { en: 'Maharashtra', ta: 'மகாராஷ்டிரா', te: 'మహారాష్ట్ర', kn: 'ಮಹಾರಾಷ್ಟ್ರ', ml: 'മഹാരാഷ്ട്ര', hi: 'महाराष्ट्र', mr: 'महाराष्ट्र' },
+  ap: { en: 'Andhra Pradesh', ta: 'ஆந்திரப் பிரதேசம்', te: 'ఆంధ్రప్రదేశ్', kn: 'ಆಂಧ್ರಪ್ರದೇಶ', ml: 'ആന്ധ്രാಪ್ರദേശ്', hi: 'आंध्र प्रदेश', mr: 'आंध्र प्रदेश' },
+  ka: { en: 'Karnataka', ta: 'கர்நாடகா', te: 'కర్ణాటక', kn: 'ಕರ್ನಾಟಕ', ml: 'ಕರ್ನಾಟಕ', hi: 'कर्नाटक', mr: 'कर्नाटक' },
+  kl: { en: 'Kerala', ta: 'கேரளா', te: 'కేరళ', kn: 'ಕೇರಳ', ml: 'കേരളം', hi: 'केरल', mr: 'केरळ' },
+  ts: { en: 'Telangana', ta: 'தெலுங்கானா', te: 'తెలంగాణ', kn: 'ತೆಲಂಗಾಣ', ml: 'തെലങ്കാന', hi: 'तेलंगाना', mr: 'तेलंगणा' },
+  up: { en: 'Uttar Pradesh', ta: 'உத்தரப் பிரதேசம்', te: 'ఉత్తరప్రదేశ్', kn: 'ಉತ್ತರ ಪ್ರದೇಶ', ml: 'ഉത്തർപ്രദേശ്', hi: 'उत्तर प्रदेश', mr: 'उत्तर प्रदेश' }
+}
+
+const statePortalNames = {
+  mh: {
+    en: 'Maharashtra AePDS',
+    mr: 'महाराष्ट्र AePDS',
+    hi: 'महाराष्ट्र AePDS',
+    ta: 'மகாராஷ்டிரா AePDS',
+    te: 'మహారాష్ట్ర AePDS',
+    kn: 'ಮಹಾರಾಷ್ಟ್ರ AePDS',
+    ml: 'മഹാരാഷ്ട്ര AePDS'
+  },
+  tn: {
+    en: 'Tamil Nadu TNPDS',
+    ta: 'தமிழ்நாடு TNPDS',
+    hi: 'तमिलनाडु TNPDS',
+    mr: 'तमिळनाडू TNPDS',
+    te: 'తమిళనాడు TNPDS',
+    kn: 'ತಮಿಳುನಾಡು TNPDS',
+    ml: 'തമിഴ്നാട് TNPDS'
+  }
+}
+
+
+const guideQA = {
+  welcome: {
+    en: 'Hello! I am your Anna Setu app assistant. I can guide you on how to check your quota, book time slots, and track grievance resolutions in this app. How can I help?',
+    ta: 'வணக்கம்! நான் அன்ன சேது செயலி உதவி வழிகாட்டி. இந்த செயலியை நீங்கள் எப்படி பயன்படுத்துவது என்று விளக்க முடியும். என்ன தகவல் தேவை?',
+    hi: 'नमस्ते! मैं अन्न सेतु ऐप गाइड हूँ। मैं इस ऐप में कोटा देखने, समय स्लॉट बुक करने और शिकायत ट्रैक करने में सहायता कर सकता हूँ।',
+    mr: 'नमस्कार! मी अन्न सेतू ॲप मार्गदर्शक आहे. या ॲपमध्ये कोटा तपासणे, वेळ स्लॉट बुक करणे आणि तक्रार निवारण ट्रॅक करण्यात मी मदत करू शकतो.',
+    te: 'నమస్కారం! నేను మీ అన్న సేతు సహాయకుడిని. ఈ యాప్‌లో కోటా తనిఖీ, సమయ స్లాట్ బుకింగ్ మరియు సమస్యల పరిష్కారం ట్రాక్ చేయడంలో మీకు సహాయపడగలను.',
+    kn: 'ನಮಸ್ಕಾರ! ನಾನು ನಿಮ್ಮ ಅನ್ನ ಸೇತು ಅಪ್ಲಿಕೇಶನ್ ಮಾರ್ಗದರ್ಶಿ. ಈ ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿ ಕೋಟಾ ಪರಿಶೀಲಿಸುವುದು, ಸಮಯ ಸ್ಲಾಟ್ ಬುಕ್ ಮಾಡುವುದು ಮತ್ತು ದೂರು ಪರಿಹಾರವನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು ನಾನು ಸಹಾಯ ಮಾಡಬಲ್ಲೆ.',
+    ml: 'നമസ്കാരം! ഞാൻ നിങ്ങളുടെ അന്ന സേതു ആപ്പ് സഹായിയാണ്. ഈ ആപ്പിൽ റേഷൻ ക്വാട്ട പരിശോധിക്കാനും സമയ സ്ലോട്ട് ബുക്ക് ചെയ്യാനും പരാതികൾ ട്രാക്ക് ചെയ്യാനും സഹായിക്കാം.'
+  },
+  questions: [
+    {
+      q: {
+        en: 'How to book a time slot token?',
+        ta: 'டோக்கன் எப்படி முன்பதிவு செய்வது?',
+        hi: 'समय स्लॉट टोकन कैसे बुक करें?',
+        mr: 'वेळ स्लॉट टोकन कसे बुक करावे?',
+        te: 'సమయ స్లాట్ టోకెన్ ఎలా బుక్ చేసుకోవాలి?',
+        kn: 'ಸಮಯ ಸ್ಲಾಟ್ ಟೋಕನ್ ಬುಕ್ ಮಾಡುವುದು ಹೇಗೆ?',
+        ml: 'സമയ സ്ലോട്ട് ടോക്കൺ എങ്ങനെ ബുക്ക് ചെയ്യാം?'
+      },
+      a: {
+        en: 'Go to the Shops tab, select your Fair Price Shop, tap "Book Time Slot", pick your arrival hour, and confirm to get a digital priority token pass to skip the counter line.',
+        ta: 'நியாய கடைகள் (Shops) பகுதிக்கு சென்று, உங்கள் கடையின் கீழ் உள்ள "நேரம் முன்பதிவு" பட்டனை தட்டி விரும்பிய நேரத்தை தேர்வுசெய்து டோக்கன் பெறலாம்.',
+        hi: 'दुकानें (Shops) टैब में जाएं, अपनी राशन दुकान चुनें, "समय स्लॉट बुक करें" दबाएं, और लाइन से बचने के लिए डिजिटल टोकन प्राप्त करें।',
+        mr: 'दुकान टॅबवर जा, तुमचे रास्त भाव दुकान निवडा, "वेळ स्लॉट बुक करा" टॅप करा आणि रांग टाळण्यासाठी डिजिटल टोकन मिळवा.',
+        te: 'షాప్స్ (Shops) ట్యాబ్‌కి వెళ్లి, మీ చౌకధరల దుకాణాన్ని ఎంచుకోండి, "సమయ స్లాట్ బుక్ చేయండి" నొక్కి, క్యూ నివారించడానికి డిజిటల్ టోకెన్ పొందండి.',
+        kn: 'ಅಂಗಡಿಗಳು (Shops) ಟ್ಯಾಬ್‌ಗೆ ಹೋಗಿ, ನಿಮ್ಮ ನ್ಯಾಯಬೆಲೆ ಅಂಗಡಿಯನ್ನು ಆರಿಸಿ, "ಸಮಯ ಸ್ಲಾಟ್ ಬುಕ್ ಮಾಡಿ" ಕ್ಲಿಕ್ ಮಾಡಿ ಡಿಜಿಟಲ್ ಟೋಕನ್ ಪಡೆಯಿರಿ.',
+        ml: 'ഷോപ്പുകൾ (Shops) ടാബിൽ പോയി നിങ്ങളുടെ റേഷൻ കട തിരഞ്ഞെടുക്കുക, "സമയം ബുക്ക് ചെയ്യുക" ക്ലിക്ക് ചെയ്ത് ക്യൂ ഒഴിവാക്കാൻ ഡിജിറ്റൽ ടೋക്കൺ നേടുക.'
+      }
+    },
+    {
+      q: {
+        en: 'What to do if grain is out of stock?',
+        ta: 'ரேஷன் கிடைக்கவில்லை என்றால் என்ன செய்வது?',
+        hi: 'अनाज उपलब्ध न होने पर क्या करें?',
+        mr: 'धान्य उपलब्ध नसल्यास काय करावे?',
+        te: 'ధాన్యాల స్టాక్ లేకపోతే ఏమి చేయాలి?',
+        kn: 'ಧಾನ್ಯದ ದಾಸ್ತಾನು ಇಲ್ಲದಿದ್ದರೆ ಏನು ಮಾಡಬೇಕು?',
+        ml: 'ധാന്യങ്ങൾ സ്റ്റോക്കില്ലെങ്കിൽ എന്ത് ചെയ്യണം?'
+      },
+      a: {
+        en: 'You can raise a grievance from Home or History. Under Section 19 of NFSA 2013, supply officers are legally required to resolve FPS stock deficits within 7 working days.',
+        ta: 'முகப்பில் அல்லது வரலாற்றில் "புகார் தயாராக உள்ளது" என்பதை தட்டி புகார் பதிவு செய்யலாம். NFSA சட்டப்படி 7 நாட்களில் அதிகாரிகள் தீர்வு காண்பார்கள்.',
+        hi: 'होम या इतिहास से शिकायत दर्ज करें। NFSA 2013 की धारा 19 के तहत आपूर्ति अधिकारी 7 दिनों के भीतर समाधान करने के लिए बाध्य हैं।',
+        mr: 'होम किंवा इतिहास पर्यायातून तक्रार नोंदवा. NFSA कायद्यानुसार 7 दिवसांत अधिकारी समस्येचे निवारण करतील.',
+        te: 'హోమ్ లేదా హిస్టరీ నుండి ఫిర్యాదు చేయవచ్చు. NFSA చట్టం ప్రకారం 7 పనిదినాల్లో అధికారులు సమస్యను పరిష్కరించాల్సి ఉంటుంది.',
+        kn: 'ಮುಖಪುಟ ಅಥವಾ ಇತಿಹಾಸದಿಂದ ದೂರು ಸಲ್ಲಿಸಿ. NFSA ಕಾಯ್ದೆಯಡಿ ಸರಬರಾಜು ಅಧಿಕಾರಿಗಳು 7 ದಿನಗಳಲ್ಲಿ ಪರಿಹರಿಸಲು ಬದ್ಧರಾಗಿದ್ದಾರೆ.',
+        ml: 'ഹോം അല്ലെങ്കിൽ ഹിസ്റ്ററിയിൽ നിന്ന് പരാതി നൽകുക. NFSA നിയമപ്രകാരം 7 പ്രവൃത്തിദിനങ്ങൾക്കകം ഉദ്യോഗസ്ഥർ പരിഹാരം കാണും.'
+      }
+    },
+    {
+      q: {
+        en: 'Does offline mode work?',
+        ta: 'இணையம் இல்லாமல் பயன்படுத்த முடியுமா?',
+        hi: 'क्या ऑफ़लाइन मोड काम करता है?',
+        mr: 'ऑफलाइन मोड काम करतो का?',
+        te: 'ఆఫ్‌లైన్ మోడ్ పని చేస్తుందా?',
+        kn: 'ಆಫ್‌ಲೈನ್ ಮೋಡ್ ಕೆಲಸ ಮಾಡುತ್ತದೆಯೇ?',
+        ml: 'ഓഫ്‌ലൈൻ മോഡ് പ്രവർത്തിക്കുമോ?'
+      },
+      a: {
+        en: 'Yes! Your ration card records and shop data are safely cached on your phone. If you file a grievance offline, it is stored locally and will automatically submit once internet is restored.',
+        ta: 'ஆம்! உங்கள் அட்டை விவரங்கள் உங்கள் போனில் பாதுகாப்பாக இருக்கும். இணையம் வந்ததும் தானாக சமர்ப்பிக்கப்படும்.',
+        hi: 'हाँ! आपके राशन कार्ड का विवरण आपके फोन में सुरक्षित है। ऑफ़लाइन दर्ज की गई शिकायत इंटरनेट आने पर स्वतः जमा हो जाएगी।',
+        mr: 'होय! तुमचे रेशन कार्ड तपशील फोनवर सुरक्षित आहेत. इंटरनेट सुरू झाल्यावर ऑफलाइन तक्रार आपोआप सबमिट होईल.',
+        te: 'అవును! మీ రేషన్ కార్డ్ వివరాలు మీ ఫోన్‌లో భద్రంగా ఉంటాయి. ఇంటర్నెట్ రాగానే ఆఫ్‌లైన్ ఫిర్యాదు ఆటోమేటిక్‌గా సమర్పించబడుతుంది.',
+        kn: 'ಹೌದು! ನಿಮ್ಮ ರೇಷನ್ ಕಾರ್ಡ್ ವಿವರಗಳು ಫೋನ್‌ನಲ್ಲಿ ಸುರಕ್ಷಿತವಾಗಿವೆ. ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕ ಬಂದ ತಕ್ಷಣ ಆಫ್‌ಲೈನ್ ದೂರು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸಲ್ಲಿಕೆಯಾಗುತ್ತದೆ.',
+        ml: 'അതെ! നിങ്ങളുടെ റേഷൻ കാർഡ് വിവരങ്ങൾ ഫോണിൽ സുരക്ഷിതമാണ്. ഇന്റർനെറ്റ് ലഭിക്കുമ്പോൾ ഓഫ്‌ലൈൻ പരാതികൾ സ്വയം സമർപ്പിക്കപ്പെടും.'
+      }
+    },
+    {
+      q: {
+        en: 'My card was cancelled, can you fix it?',
+        ta: 'என் கார்டு ரத்து செய்யப்பட்டுவிட்டது, தீர்வு என்ன?',
+        hi: 'मेरा कार्ड रद्द हो गया है, क्या समाधान है?',
+        mr: 'माझे कार्ड रद्द झाले आहे, काय करावे?',
+        te: 'నా కార్డ్ రద్దు చేయబడింది, దీనికి పరిష్కారం ఏమిటి?',
+        kn: 'ನನ್ನ ಕಾರ್ಡ್ ರದ್ದುಗೊಂಡಿದೆ, ಇದಕ್ಕೆ ಪರಿಹಾರವೇನು?',
+        ml: 'എന്റെ കാർഡ് റദ്ദാക്കി, എന്താണ് പരിഹാരം?'
+      },
+      a: {
+        en: 'Anna Setu is an informational citizen assistant only and cannot make legal or official administrative rulings. For card cancellations or appeals, please call the National Food Security Helpline at 1967 (Toll-free) or visit your Taluk Supply Office.',
+        ta: 'அன்ன சேது ஒரு உதவி செயலி மட்டுமே. அட்டை ரத்து அல்லது சட்ட தகராறுகளுக்கு 1967 என்ற இலவச உதவி எண்ணை அழைக்கவும் அல்லது தாலுகா அலுவலகத்தை அணுகவும்.',
+        hi: 'अन्न सेतु केवल एक सहायक ऐप है। कार्ड रद्द होने या कानूनी मामलों के लिए टोल-फ्री 1967 पर कॉल करें या तहसील आपूर्ति कार्यालय जाएं।',
+        mr: 'अन्न सेतू हे केवळ माहिती सहाय्यक ॲप आहे. कार्ड रद्द किंवा कायदेशीर बाबींसाठी 1967 या विनामूल्य क्रमांकावर संपर्क साधा.',
+        te: 'అన్న సేతు కేవలం సమాచార సహాయ యాప్ మాత్రమే. కార్డ్ రద్దు లేదా వివాదాల కోసం టోల్-ఫ్రీ 1967 నంబర్‌ను సంప్రదించండి లేదా తాలూకా కార్యాలయాన్ని సంప్రదించండి.',
+        kn: 'ಅನ್ನ ಸೇತು ಕೇವಲ ಮಾಹಿತಿ ನೀಡುವ ಅಪ್ಲಿಕೇಶನ್ ಆಗಿದೆ. ಕಾರ್ಡ್ ರದ್ದತಿಗಾಗಿ ಟೋಲ್-ಫ್ರೀ 1967 ಗೆ ಕರೆ ಮಾಡಿ ಅಥವಾ ತಾಲೂಕು ಸರಬರಾಜು ಕಚೇರಿಗೆ ಭೇಟಿ ನೀಡಿ.',
+        ml: 'അന്ന സേതു ഒരു സഹായ ആപ്പ് മാത്രമാണ്. കാർഡ് റദ്ദാക്കൽ അല്ലെങ്കിൽ നിയമപ്രശ്നങ്ങൾക്കായി ടോൾ-ഫ്രീ 1967 നമ്പറിലോ താലൂക്ക് സപ്ലൈ ഓഫീസിലോ ബന്ധപ്പെടുക.'
+      }
+    }
+  ],
+  legalDisclaimer: {
+    en: 'Anna Setu cannot provide legal advice or alter official administrative card decisions. For official appeals, please contact the National Food Security Helpline at 1967.',
+    ta: 'அன்ன சேது செயலி அட்டை ரத்து அல்லது சட்ட விவகாரங்களை நேரடியாக தீர்க்க முடியாது. அதிகாரப்பூர்வ விசாரணைக்கு தயவுசெய்து 1967 என்ற இலவச உதவி எண்ணை அழைக்கவும்.',
+    hi: 'अन्न सेतु कानूनी सलाह या आधिकारिक निर्णय बदलने में असमर्थ है। आधिकारिक अपील के लिए कृपया राष्ट्रीय खाद्य सुरक्षा हेल्पलाइन 1967 पर संपर्क करें।',
+    mr: 'अन्न सेतू कायदेशीर सल्ला देऊ शकत नाही. अधिकृत अपीलसाठी कृपया राष्ट्रीय अन्न सुरक्षा हेल्पलाइन 1967 वर संपर्क साधा.',
+    te: 'అన్న సేతు చట్టపరమైన సలహాలు ఇవ్వలేదు లేదా అధికారిక నిర్ణయాలను మార్చలేదు. అధికారిక అప్పీల్ కోసం దయచేసి జాతీయ ఆహార భద్రత హెల్ప్‌లైన్ 1967 ను సంప్రదించండి.',
+    kn: 'ಅನ್ನ ಸೇತು ಕಾನೂನು ಸಲಹೆ ನೀಡಲು ಸಾಧ್ಯವಿಲ್ಲ. ಅಧಿಕೃತ ಮೇಲ್ಮನವಿಗಾಗಿ ದಯವಿಟ್ಟು ರಾಷ್ಟ್ರೀಯ ಆಹಾರ ಭದ್ರತಾ ಸಹಾಯವಾಣಿ 1967 ಗೆ ಸಂಪರ್ಕಿಸಿ.',
+    ml: 'അന്ന സേതുവിന് നിയമോപദേശം നൽകാനോ ഭരണപരമായ തീരുമാനങ്ങൾ മാറ്റാനോ കഴിയില്ല. ഔദ്യോഗിക അപ്പീലിനായി ദയവായി ദേശീയ ഭക്ഷ്യ സുരക്ഷാ ഹെൽപ്പ്‌ലൈൻ 1967-ൽ ബന്ധപ്പെടുക.'
+  },
+  defaultReply: {
+    en: 'Anna Setu helps you check daily grain stock, reserve queue-free tokens, and track grievance resolution. For unresolved personal issues, call 1967.',
+    ta: 'இந்த செயலியில் நீங்கள் ரேஷன் இருப்பு பார்க்கலாம், டோக்கன் முன்பதிவு செய்யலாம். சந்தேகம் இருந்தால் 1967 எண்ணை அழைக்கலாம்.',
+    hi: 'अन्न सेतु आपको राशन स्टॉक देखने, टोकन बुक करने और शिकायत ट्रैक करने में मदद करता है। अधिक सहायता के लिए 1967 पर कॉल करें।',
+    mr: 'अन्न सेतू तुम्हाला रेशन स्टॉक तपासणे, टोकन बुक करणे आणि तक्रार ट्रॅक करण्यात मदत करते. अधिक माहितीसाठी 1967 वर कॉल करा.',
+    te: 'ఈ యాప్‌లో మీరు రేషన్ స్టాక్ చూడవచ్చు, టోకెన్ బుక్ చేయవచ్చు మరియు సమస్యలను ట్రాక్ చేయవచ్చు. ఇతర సహాయం కోసం 1967 కు కాల్ చేయండి.',
+    kn: 'ಈ ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿ ನೀವು ಪಡಿತರ ದಾಸ್ತಾನು ನೋಡಬಹುದು, ಟೋಕನ್ ಬುಕ್ ಮಾಡಬಹುದು ಮತ್ತು ದೂರು ಟ್ರ್ಯಾಕ್ ಮಾಡಬಹುದು. ಹೆಚ್ಚಿನ ಸಹಾಯಕ್ಕಾಗಿ 1967 ಗೆ ಕರೆ ಮಾಡಿ.',
+    ml: 'ഈ ആപ്പിൽ നിങ്ങൾക്ക് റേഷൻ സ്റ്റോക്ക് പരിശോധിക്കാം, ടോക്കൺ ബുക്ക് ചെയ്യാം, പരാതികൾ ട്രാക്ക് ചെയ്യാം. കൂടുതൽ സഹായത്തിനായി 1967-ൽ വിളിക്കുക.'
+  }
+}
+
+const govReceiptNames = {
+  mh: {
+    en: { state: 'Govt of Maharashtra', dept: 'Dept of Food, Civil Supplies & Consumer Protection' },
+    mr: { state: 'महाराष्ट्र शासन', dept: 'अन्न, नागरी पुरवठा व ग्राहक संरक्षण विभाग' },
+    hi: { state: 'महाराष्ट्र सरकार', dept: 'खाद्य एवं नागरिक आपूर्ति विभाग' },
+    ta: { state: 'மகாராஷ்டிரா அரசு', dept: 'உணவு மற்றும் நுகர்வோர் பாதுகாப்புத் துறை' },
+    te: { state: 'మహారాష్ట్ర ప్రభుత్వం', dept: 'పౌర సరఫరాలు మరియు వినియోగదారుల రక్షణ శాఖ' },
+    kn: { state: 'ಮಹಾರಾಷ್ಟ್ರ ಸರ್ಕಾರ', dept: 'ಆಹಾರ ಮತ್ತು ನಾಗರಿಕ ಸರಬರಾಜು ಇಲಾಖೆ' },
+    ml: { state: 'മഹാരാഷ്ട്ര സർക്കാർ', dept: 'സിവിൽ സപ്ലൈസ് വകുപ്പ്' }
+  },
+  tn: {
+    en: { state: 'Govt of Tamil Nadu', dept: 'Civil Supplies and Consumer Protection Dept' },
+    ta: { state: 'தமிழ்நாடு அரசு', dept: 'உணவு மற்றும் நுகர்வோர் பாதுகாப்புத் துறை' },
+    hi: { state: 'तमिलनाडु सरकार', dept: 'खाद्य एवं नागरिक आपूर्ति विभाग' },
+    mr: { state: 'तमिळनाडू शासन', dept: 'अन्न व नागरी पुरवठा विभाग' },
+    te: { state: 'తమిళనాడు ప్రభుత్వం', dept: 'పౌర సరఫరాలు మరియు వినియోగదారుల రక్షణ శాఖ' },
+    kn: { state: 'ತಮಿಳುನಾಡು ಸರ್ಕಾರ', dept: 'ಆಹಾರ ಮತ್ತು ನಾಗರಿಕ ಸರಬರಾಜು ಇಲಾಖೆ' },
+    ml: { state: 'തമിഴ്നാട് സർക്കാർ', dept: 'സിവിൽ സപ്ലൈസ് വകുപ്പ്' }
+  }
+}
+
 function getLocalizedName(card, lang) {
   if (!card) return ''
-  if (lang === 'en') return card.nameEn || card.name
-  if (lang === 'hi') return card.nameHi || card.name
-  if (lang === 'mr') return card.nameMr || card.nameHi || card.name
-  return card.name || card.nameEn
+  if (lang === 'en') return card.nameEn || 'Beneficiary'
+  if (lang === 'te') return card.nameTe || card.nameEn || 'లబ్ధిదారు'
+  if (lang === 'kn') return card.nameKn || card.nameEn || 'ಫಲಾನುಭವಿ'
+  if (lang === 'ml') return card.nameMl || card.nameEn || 'ഗുണഭോക്താവ്'
+  if (lang === 'hi') return card.nameHi || card.nameEn || 'लाभार्थी'
+  if (lang === 'mr') return card.nameMr || card.nameHi || card.nameEn || 'लाभार्थी'
+  if (lang === 'ta') return card.nameTa || card.name || card.nameEn
+  return card.nameEn || 'Beneficiary'
 }
 
 function getLocalizedVillage(card, lang) {
   if (!card) return ''
-  if (lang === 'en') return card.villageEn || card.village
-  return card.village || card.villageEn
+  if (lang === 'en') return card.villageEn || ''
+  if (lang === 'te') return card.villageTe || card.villageEn || ''
+  if (lang === 'kn') return card.villageKn || card.villageEn || ''
+  if (lang === 'ml') return card.villageMl || card.villageEn || ''
+  if (lang === 'hi') return card.villageHi || card.villageEn || ''
+  if (lang === 'mr') return card.villageMr || card.villageHi || card.villageEn || ''
+  if (lang === 'ta') return card.villageTa || card.village || card.villageEn
+  return card.villageEn || ''
 }
 
 function getLocalizedCategory(card, lang) {
   if (!card) return ''
-  if (lang === 'en') {
-    return card.categoryDesc || (card.category === 'AAY' ? 'Antyodaya Anna Yojana (AAY)' : 'Priority Household (PHH)')
-  }
-  if (lang === 'mr') return card.categoryDescMr || card.categoryDesc
-  if (lang === 'hi') return card.categoryDescHi || card.categoryDesc
+  if (lang === 'en') return card.categoryDesc || (card.category === 'AAY' ? 'Antyodaya Anna Yojana (AAY)' : 'Priority Household (PHH)')
+  if (lang === 'te') return card.categoryDescTe || (card.category === 'AAY' ? 'అంత్యోదయ అన్న యోజన (AAY)' : 'ప్రాధాన్యతా కుటుంబం (PHH)')
+  if (lang === 'kn') return card.categoryDescKn || (card.category === 'AAY' ? 'ಅಂತ್ಯೋದಯ ಅನ್ನ ಯೋಜನೆ (AAY)' : 'ಆದ್ಯತಾ ಕುಟುಂಬ (PHH)')
+  if (lang === 'ml') return card.categoryDescMl || (card.category === 'AAY' ? 'അന്ത്യോദയ അന്ന യോജന (AAY)' : 'മുൻഗണനാ കുടുംബം (PHH)')
+  if (lang === 'hi') return card.categoryDescHi || (card.category === 'AAY' ? 'अंत्योदय अन्न योजना (AAY)' : 'प्राथमिकता परिवार (PHH)')
+  if (lang === 'mr') return card.categoryDescMr || (card.category === 'AAY' ? 'अंत्योदय अन्न योजना (AAY)' : 'प्राधान्य कुटुंब (PHH)')
   if (lang === 'ta') return card.categoryDescTa || card.categoryDesc
   return card.categoryDesc || card.category
 }
 
 function getLocalizedMonth(item, lang) {
   if (!item) return ''
-  if (lang === 'en') return item.monthEn || item.month
-  if (lang === 'hi') return item.monthHi || item.month
-  if (lang === 'mr') return item.monthMr || item.monthHi || item.month
-  return item.month
+  const enKey = item.monthEn || (item.month === 'ஆகஸ்ட்' ? 'August' : item.month === 'ஜூலை' ? 'July' : item.month === 'ஜூன்' ? 'June' : item.month === 'மே' ? 'May' : item.month === 'ஏப்ரல்' ? 'April' : item.month === 'மார்ச்' ? 'March' : item.month)
+  if (monthMap[enKey] && monthMap[enKey][lang]) {
+    return monthMap[enKey][lang]
+  }
+  if (lang === 'en') return item.monthEn || 'Month'
+  if (lang === 'te') return item.monthTe || item.monthEn || 'నెల'
+  if (lang === 'kn') return item.monthKn || item.monthEn || 'ತಿಂಗಳು'
+  if (lang === 'ml') return item.monthMl || item.monthEn || 'മാസം'
+  if (lang === 'hi') return item.monthHi || item.monthEn || 'माह'
+  if (lang === 'mr') return item.monthMr || item.monthHi || item.monthEn || 'महिना'
+  if (lang === 'ta') return item.month || item.monthEn
+  return item.monthEn || item.month
 }
 
 function getLocalizedNote(item, lang) {
   if (!item) return ''
-  if (lang === 'en') return item.noteEn || item.note
-  if (lang === 'hi') return item.noteHi || item.note
-  if (lang === 'mr') return item.noteMr || item.noteHi || item.note
-  return item.note
+  if (item.state === 'denied') {
+    if (item.receiptId?.includes('HOLD-2026-08') || (item.noteEn && item.noteEn.toLowerCase().includes('mismatch'))) {
+      return noteMap.mismatch[lang] || item.noteEn || 'Paused'
+    }
+    return noteMap.aadhaar[lang] || item.noteEn || 'Biometric verification required'
+  }
+  if (item.state === 'partial') {
+    return noteMap.shortfall[lang] || item.noteEn || 'Partial quota'
+  }
+  if (item.state === 'received') {
+    return noteMap.success[lang] || item.noteEn || 'Full quota received'
+  }
+  if (lang === 'en') return item.noteEn || 'Recorded'
+  if (lang === 'te') return item.noteTe || item.noteEn || 'నమోదైంది'
+  if (lang === 'kn') return item.noteKn || item.noteEn || 'ದಾಖಲಾಗಿದೆ'
+  if (lang === 'ml') return item.noteMl || item.noteEn || 'രേഖപ്പെടുത്തി'
+  if (lang === 'hi') return item.noteHi || item.noteEn || 'दर्ज'
+  if (lang === 'mr') return item.noteMr || item.noteHi || item.noteEn || 'नोंद झाली'
+  if (lang === 'ta') return item.note || item.noteEn
+  return item.noteEn || item.note
 }
 
 function getShopHeading(shop, lang) {
@@ -710,15 +1084,45 @@ function getShopHeading(shop, lang) {
       secondary: null
     }
   }
-  if (lang === 'hi') {
+  if (lang === 'ta') {
     return {
-      primary: shop.nameHi || shop.name,
+      primary: shop.name,
       secondary: shop.nameEn || null
     }
   }
+  if (lang === 'mr') {
+    return {
+      primary: shop.state_id === 'mh' ? shop.name : (shop.nameEn || shop.name),
+      secondary: shop.nameEn || null
+    }
+  }
+  if (lang === 'hi') {
+    return {
+      primary: shop.nameHi || shop.nameEn || shop.name,
+      secondary: shop.nameEn || null
+    }
+  }
+  if (lang === 'te') {
+    return {
+      primary: shop.nameTe || shop.nameEn || 'చౌకధరల దుకాణం',
+      secondary: null
+    }
+  }
+  if (lang === 'kn') {
+    return {
+      primary: shop.nameKn || shop.nameEn || 'ನ್ಯಾಯಬೆಲೆ ಅಂಗಡಿ',
+      secondary: null
+    }
+  }
+  if (lang === 'ml') {
+    return {
+      primary: shop.nameMl || shop.nameEn || 'റേഷൻ കട',
+      secondary: null
+    }
+  }
   return {
-    primary: shop.name,
-    secondary: shop.nameEn || null
+    primary: shop.nameEn || shop.name,
+    secondary: null
   }
 }
 
@@ -900,7 +1304,7 @@ function Icon({ name, size = 22 }) {
 /* Beautiful Citizen Profile Avatar */
 function CitizenAvatar({ card, isHelper, size = 62 }) {
   const [imgError, setImgError] = useState(false)
-  const initial = isHelper ? 'ரா' : card.avatarInitial || 'கா'
+  const initial = isHelper ? 'R' : (card?.nameEn?.[0] || 'C')
 
   return (
     <div className="citizen-avatar-wrap" style={{ width: size, height: size }} title={card.name}>
@@ -1167,6 +1571,10 @@ function App() {
               state: 'received',
               note: 'சிக்கல் தீர்க்கப்பட்டது',
               noteHi: 'शिकायत हल हुई',
+              noteMr: 'तक्रार निवारण झाले',
+              noteTe: 'సమస్య పరిష్కరించబడింది',
+              noteKn: 'ಸಮಸ್ಯೆ ಬಗೆಹರಿದಿದೆ',
+              noteMl: 'പ്രശ്നം പരിഹരിച്ചു',
               noteEn: 'Issue resolved'
             }
           : row
@@ -1267,7 +1675,7 @@ function App() {
       {queuedBanner && (
         <div className="offline-synced-banner page-transition">
           <Icon name="check" size={16} />
-          <span>{lang === 'en' ? 'Offline grievances synchronized successfully!' : 'புகார்கள் சமர்ப்பிக்கப்பட்டன / Offline grievances synced'}</span>
+          <span>{t.offlineSyncSuccess}</span>
         </div>
       )}
 
@@ -1462,8 +1870,8 @@ function StateSelect({ t, lang, setLang, states, currentState, onSelect, onCance
         </h3>
         <div className="state-card-grid">
           {activeStatesList.map((st) => {
-            const mainName = isEn ? st.nameEn : st.name
-            const subName = isEn ? null : st.nameEn
+            const mainName = stateNames[st.id]?.[lang] || (isEn ? st.nameEn : st.name)
+            const subName = isEn ? null : (st.nameEn !== mainName ? st.nameEn : null)
             return (
               <button
                 key={st.id}
@@ -1498,8 +1906,8 @@ function StateSelect({ t, lang, setLang, states, currentState, onSelect, onCance
         </h3>
         <div className="state-card-grid coming-soon-grid">
           {comingSoonStates.map((st) => {
-            const mainName = isEn ? st.nameEn : st.name
-            const subName = isEn ? null : st.nameEn
+            const mainName = stateNames[st.id]?.[lang] || (isEn ? st.nameEn : st.name)
+            const subName = isEn ? null : (st.nameEn !== mainName ? st.nameEn : null)
             return (
               <div key={st.id} className="state-select-card disabled-state-card">
                 <div className="state-card-top">
@@ -1901,8 +2309,17 @@ function HomePage({
     lookup(helperNumber, true)
   }
 
+  const helperNames = {
+    en: 'Radha Devi (Neighbor)',
+    ta: 'ராதா அம்மா (அண்டை வீட்டார்)',
+    hi: 'राधा देवी (पड़ोसी)',
+    mr: 'राधा देवी (शेजारी)',
+    te: 'రాధా దేవి (పొరుగువారు)',
+    kn: 'ರಾಧಾ ದೇವಿ (ನೆರೆಹೊರೆಯವರು)',
+    ml: 'രാധാ ദേവി (അയൽവാസി)'
+  }
   const userName = helper
-    ? (lang === 'en' ? 'Radha Devi (Neighbor)' : lang === 'ta' ? 'ராதா அம்மா' : 'राधा जी')
+    ? (helperNames[lang] || helperNames.en)
     : getLocalizedName(card, lang)
 
   const userLocation = getLocalizedVillage(card, lang)
@@ -1923,12 +2340,16 @@ function HomePage({
       return
     }
 
-    const speechText =
-      lang === 'en'
-        ? `Hello ${userName}. Status for August 2026: Full quota received. Your entitlement includes ${card.entitledWheat || 20} kilograms wheat, ${card.entitledRice || 15} kilograms rice, 1 kilogram sugar, and 1 kilogram toor dal.`
-        : lang === 'ta'
-        ? `வணக்கம் ${userName}. இந்த மாத ரேஷன் நிலை: முழு ரேஷன் கிடைத்தது. ஆகஸ்ட் 2026 ஒதுக்கீடு.`
-        : `नमस्ते ${userName}। इस महीने का राशन प्राप्त हुआ। अगस्त 2026 का पूरा कोटा।`
+    const speechMap = {
+      en: `Hello ${userName}. Status for August 2026: Full quota received. Your entitlement includes ${card.entitledWheat || 20} kilograms wheat, ${card.entitledRice || 15} kilograms rice, 1 kilogram sugar, and 1 kilogram toor dal.`,
+      ta: `வணக்கம் ${userName}. இந்த மாத ரேஷன் நிலை: முழு ரேஷன் கிடைத்தது. ஆகஸ்ட் 2026 ஒதுக்கீடு.`,
+      hi: `नमस्ते ${userName}। इस महीने का राशन प्राप्त हुआ। अगस्त 2026 का पूरा कोटा।`,
+      mr: `नमस्कार ${userName}। या महिन्याचे रेशन प्राप्त झाले. ऑगस्ट 2026 चा पूर्ण कोटा.`,
+      te: `నమస్కారం ${userName}. ఈ నెల రేషన్ స్థితి: పూర్తి రేషన్ అందింది. ఆగస్టు 2026 కోటా.`,
+      kn: `ನಮಸ್ಕಾರ ${userName}. ಈ ತಿಂಗಳ ಪಡಿತರ ಸ್ಥಿತಿ: ಪೂರ್ಣ ಪಡಿತರ ಲಭಿಸಿದೆ. ಆಗಸ್ಟ್ 2026 ಕೋಟಾ.`,
+      ml: `നമസ്കാരം ${userName}. ഈ മാസത്തെ റേഷൻ നില: മുഴുവൻ റേഷനും ലഭിച്ചു. ആഗസ്റ്റ് 2026 ക്വാട്ട.`
+    }
+    const speechText = speechMap[lang] || speechMap.en
 
     const utterance = new SpeechSynthesisUtterance(speechText)
     utterance.lang = currentLangObj.speechLang || 'en-IN'
@@ -1948,7 +2369,7 @@ function HomePage({
         <div className="citizen-pass-top-bar">
           <span className="citizen-portal-tag">
             <Icon name="building" size={13} />
-            <b>{selectedState === 'mh' ? (isEn ? 'Maharashtra AePDS' : 'महाराष्ट्र AePDS') : (isEn ? 'Tamil Nadu TNPDS' : 'தமிழ்நாடு TNPDS')}</b>
+            <b>{statePortalNames[selectedState]?.[lang] || statePortalNames[selectedState]?.en || (selectedState === 'mh' ? 'Maharashtra AePDS' : 'Tamil Nadu TNPDS')}</b>
           </span>
           <span className="citizen-verified-badge">
             <Icon name="shield" size={12} />
@@ -1969,7 +2390,7 @@ function HomePage({
                 </button>
               </span>
               <span className="meta-category-pill">
-                <b>{card.category}</b> · {card.category === 'AAY' ? (isEn ? '35 kg Quota' : '35 கிலோ') : (isEn ? '20 kg Quota' : '20 கிலோ')}
+                <b>{card.category}</b> · {card.category === 'AAY' ? t.quota35kg : t.quota20kg}
               </span>
             </div>
             <p className="citizen-location-text">
@@ -2097,7 +2518,7 @@ function HomePage({
             <Icon name="receipt" size={18} />
             <div className="cta-btn-text">
               <b>{t.viewReceipt || 'View Digital Receipt'}</b>
-              <small>{isEn ? 'AePDS Authenticated Voucher #TXN-2026' : 'அங்கீகரிக்கப்பட்ட டிஜிட்டல் ரசீது'}</small>
+              <small>{t.voucherSubtext}</small>
             </div>
           </button>
         </div>
@@ -2231,7 +2652,7 @@ function ShopList({ t, lang, shops, card, selectedState }) {
       shopNameEn: headings.secondary,
       shopCode: bookingShop.code,
       slot: selectedSlot,
-      date: isEn ? 'Today' : lang === 'ta' ? 'இன்று' : 'आज',
+      date: t.today || 'Today',
       queueAhead: Math.floor(2 + Math.random() * 4),
       cardNo: card.number
     })
@@ -2306,13 +2727,13 @@ function ShopList({ t, lang, shops, card, selectedState }) {
             </div>
             <div className="token-meta-grid">
               <div>
-                <small>{isEn ? 'Fair Price Shop' : 'கடை / दुकान'}</small>
+                <small>{t.receiptShop || 'Fair Price Shop'}</small>
                 <b>{tokenPass.shopName}</b>
                 {tokenPass.shopNameEn && <span className="token-en-sub">{tokenPass.shopNameEn}</span>}
                 <code className="token-fps-code">{tokenPass.shopCode}</code>
               </div>
               <div>
-                <small>{isEn ? 'Arrival Time Slot' : 'நேரம் / वेळ'}</small>
+                <small>{t.arrivalSlotLabel || t.selectSlot || 'Arrival Time Slot'}</small>
                 <b className="token-time">{tokenPass.slot}</b>
               </div>
             </div>
@@ -2521,14 +2942,16 @@ function History({ t, lang, records, card, onSelectRecord }) {
                   <b>{getLocalizedMonth(item, lang)} 2026</b>
                   {hasShortfall && (
                     <span className="shortfall-badge">
-                      {item.shortfall ? `${item.shortfall} kg Shortfall` : 'Issue'}
+                      {(item.entitledKg !== undefined && item.receivedKg !== undefined && item.entitledKg > item.receivedKg)
+                        ? `${item.entitledKg - item.receivedKg} ${t.kgUnit || 'kg'} ${t.shortfallBadge || 'Shortfall'}`
+                        : (t.shortfallBadge || 'Shortfall')}
                     </span>
                   )}
                 </div>
                 <p>{getLocalizedNote(item, lang)}</p>
-                {item.entitledKg && (
+                {item.entitledKg !== undefined && (
                   <small className="history-kg-sub">
-                    Entitled: {item.entitledKg} kg · Received: {item.receivedKg} kg
+                    {t.entitledShort || 'Entitled'}: {item.entitledKg} {t.kgUnit || 'kg'} · {t.receivedShort || 'Received'}: {item.receivedKg} {t.kgUnit || 'kg'}
                   </small>
                 )}
               </div>
@@ -2572,7 +2995,7 @@ function HistoryDetailModal({ t, lang, item, card, onClose, onRaiseGrievance }) 
           <Icon name="shield" size={16} />
           <div>
             <b>{t.categoryNorms}: {card.category}</b>
-            <p>{card.entitlementNorm || (isEn ? '5 kg / member statutory quota' : '5 கிலோ / உறுப்பினர் கோட்டா')}</p>
+            <p>{t.statutoryNormDesc}</p>
           </div>
         </div>
 
@@ -2584,7 +3007,7 @@ function HistoryDetailModal({ t, lang, item, card, onClose, onRaiseGrievance }) 
                 <th>{t.receiptCommodity}</th>
                 <th>{t.receiptEntitled}</th>
                 <th>{t.receiptIssued}</th>
-                <th>Status</th>
+                <th>{t.statusColumn || 'Status'}</th>
               </tr>
             </thead>
             <tbody>
@@ -2600,7 +3023,7 @@ function HistoryDetailModal({ t, lang, item, card, onClose, onRaiseGrievance }) 
                 <td>{item.receivedBreakdown?.wheat ?? 0} kg</td>
                 <td>
                   {(item.receivedBreakdown?.wheat ?? 0) < (item.entitledBreakdown?.wheat || card.entitledWheat || 5) ? (
-                    <span className="breakdown-tag red">Shortfall</span>
+                    <span className="breakdown-tag red">{t.shortfallBadge || 'Shortfall'}</span>
                   ) : (
                     <span className="breakdown-tag ok">OK</span>
                   )}
@@ -2622,7 +3045,7 @@ function HistoryDetailModal({ t, lang, item, card, onClose, onRaiseGrievance }) 
             <span className="alert-icon">⚠️</span>
             <div>
               <b>{t.shortfallAlert}</b>
-              <p>{getLocalizedNote(item, lang) || (isEn ? 'Grain dispatch delayed at Fair Price Shop' : item.note)}</p>
+              <p>{getLocalizedNote(item, lang)}</p>
             </div>
           </div>
         )}
@@ -2655,13 +3078,9 @@ function ReceiptModal({ t, lang, card, selectedState, onClose }) {
   const isMh = selectedState === 'mh'
   const isEn = lang === 'en'
 
-  const deptState = isMh
-    ? (isEn ? 'Govt of Maharashtra' : 'महाराष्ट्र शासन')
-    : (isEn ? 'Govt of Tamil Nadu' : 'தமிழ்நாடு அரசு')
-
-  const deptName = isMh
-    ? (isEn ? 'Dept of Food, Civil Supplies & Consumer Protection' : 'अन्न, नागरी पुरवठा व ग्राहक संरक्षण विभाग')
-    : (isEn ? 'Civil Supplies and Consumer Protection Dept' : 'உணவு மற்றும் நுகர்வோர் பாதுகாப்புத் துறை')
+  const stateInfo = govReceiptNames[selectedState]?.[lang] || govReceiptNames[selectedState]?.en || govReceiptNames.tn.en
+  const deptState = stateInfo.state
+  const deptName = stateInfo.dept
 
   const stampLabel = isEn ? '✓ ISSUED' : (t.issuedStamp || '✓ ISSUED')
   const beneficiaryName = getLocalizedName(card, lang)
@@ -2798,41 +3217,15 @@ function AppGuideModal({ t, lang, onClose }) {
   const [messages, setMessages] = useState([
     {
       sender: 'assistant',
-      text: lang === 'en'
-        ? 'Hello! I am your Anna Setu app assistant. I can guide you on how to check your quota, book time slots, and track grievance resolutions in this app. How can I help?'
-        : lang === 'ta'
-        ? 'வணக்கம்! நான் அன்ன சேது செயலி உதவி வழிகாட்டி. இந்த செயலியை நீங்கள் எப்படி பயன்படுத்துவது என்று விளக்க முடியும். என்ன தகவல் தேவை?'
-        : 'नमस्ते! मैं अन्न सेतु ऐप गाइड हूँ। मैं इस ऐप को उपयोग करने की जानकारी दे सकता हूँ। आप क्या जानना चाहते हैं?'
+      text: guideQA.welcome[lang] || guideQA.welcome.en
     }
   ])
   const [query, setQuery] = useState('')
 
-  const suggestedQuestions = [
-    {
-      q: lang === 'en' ? 'How to book a time slot token?' : 'டோக்கன் எப்படி முன்பதிவு செய்வது?',
-      a: lang === 'en'
-        ? 'Go to the Shops tab, select your Fair Price Shop, tap "Book Time Slot", pick your arrival hour, and confirm to get a digital priority token pass to skip the counter line.'
-        : 'நியாய கடைகள் (Shops) பகுதிக்கு சென்று, உங்கள் கடையின் கீழ் உள்ள "நேரம் முன்பதிவு" பட்டனை தட்டி விரும்பிய நேரத்தை தேர்வுசெய்து டோக்கன் பெறலாம்.'
-    },
-    {
-      q: lang === 'en' ? 'What to do if grain is out of stock?' : 'ரேஷன் கிடைக்கவில்லை என்றால் என்ன செய்வது?',
-      a: lang === 'en'
-        ? 'You can raise a grievance from Home or History. Under Section 19 of NFSA 2013, supply officers are legally required to resolve FPS stock deficits within 7 working days.'
-        : 'முகப்பில் அல்லது வரலாற்றில் "புகார் தயாராக உள்ளது" என்பதை தட்டி புகார் பதிவு செய்யலாம். NFSA சட்டப்படி 7 நாட்களில் அதிகாரிகள் தீர்வு காண்பார்கள்.'
-    },
-    {
-      q: lang === 'en' ? 'Does offline mode work?' : 'இணையம் இல்லாமல் பயன்படுத்த முடியுமா?',
-      a: lang === 'en'
-        ? 'Yes! Your ration card records and shop data are safely cached on your phone. If you file a grievance offline, it is stored locally and will automatically submit once internet is restored.'
-        : 'ஆம்! உங்கள் அட்டை விவரங்கள் உங்கள் போனில் பாதுகாப்பாக இருக்கும். இணையம் வந்ததும் தானாக சமர்ப்பிக்கப்படும்.'
-    },
-    {
-      q: lang === 'en' ? 'My card was cancelled, can you fix it?' : 'என் கார்டு ரத்து செய்யப்பட்டுவிட்டது, தீர்வு என்ன?',
-      a: lang === 'en'
-        ? 'Anna Setu is an informational citizen assistant only and cannot make legal or official administrative rulings. For card cancellations or appeals, please call the National Food Security Helpline at 1967 (Toll-free) or visit your Taluk Supply Office.'
-        : 'அன்ன சேது ஒரு உதவி செயலி மட்டுமே. அட்டை ரத்து அல்லது சட்ட தகராறுகளுக்கு 1967 என்ற இலவச உதவி எண்ணை அழைக்கவும்.'
-    }
-  ]
+  const suggestedQuestions = guideQA.questions.map((item) => ({
+    q: item.q[lang] || item.q.en,
+    a: item.a[lang] || item.a.en
+  }))
 
   const sendQuery = (textToSend) => {
     const qText = textToSend || query
@@ -2845,21 +3238,16 @@ function AppGuideModal({ t, lang, onClose }) {
     const lower = qText.toLowerCase()
     const isLegalOrPersonal =
       lower.includes('cancel') || lower.includes('dispute') || lower.includes('court') ||
-      lower.includes('bribe') || lower.includes('lawyer') || lower.includes('appeal') || lower.includes('ரத்து')
+      lower.includes('bribe') || lower.includes('lawyer') || lower.includes('appeal') ||
+      lower.includes('ரத்து') || lower.includes('రద్దు') || lower.includes('ರದ್ದು')
 
     setTimeout(() => {
       let reply = ''
       if (isLegalOrPersonal) {
-        reply = lang === 'en'
-          ? 'Anna Setu cannot provide legal advice or alter official administrative card decisions. For official appeals, please contact the National Food Security Helpline at 1967.'
-          : 'அன்ன சேது செயலி அட்டை ரத்து அல்லது சட்ட விவகாரங்களை நேரடியாக தீர்க்க முடியாது. அதிகாரப்பூர்வ விசாரணைக்கு தயவுசெய்து 1967 என்ற இலவச உதவி எண்ணை அழைக்கவும்.'
+        reply = guideQA.legalDisclaimer[lang] || guideQA.legalDisclaimer.en
       } else {
-        const found = suggestedQuestions.find((s) => s.q.toLowerCase().includes(qText.toLowerCase().slice(0, 10)))
-        reply = found
-          ? found.a
-          : lang === 'en'
-          ? 'Anna Setu helps you check daily grain stock, reserve queue-free tokens, and track grievance resolution. For unresolved personal issues, call 1967.'
-          : 'இந்த செயலியில் நீங்கள் ரேஷன் இருப்பு பார்க்கலாம், டோக்கன் முன்பதிவு செய்யலாம். சந்தேகம் இருந்தால் 1967 எண்ணை அழைக்கலாம்.'
+        const found = suggestedQuestions.find((s) => s.q.toLowerCase().includes(qText.toLowerCase().slice(0, 8)))
+        reply = found ? found.a : (guideQA.defaultReply[lang] || guideQA.defaultReply.en)
       }
 
       setMessages([...newMsgs, { sender: 'assistant', text: reply }])
@@ -2996,8 +3384,28 @@ function Help({ t, offline, setOffline }) {
    =================================================================== */
 function Correction({ t, lang, card, finishResolution, resolved, goHome }) {
   const isEn = lang === 'en'
-  const legalName = isEn ? (card.aadhaarNameEn || card.nameEn || 'Kaliammal') : (card.aadhaarName || 'காளியம்மாள்')
-  const recordedTypo = isEn ? (card.recordedNameEn || 'Kaliamal K') : (card.recordedName || 'காளியம்மாள் கே')
+  const getLegalName = () => {
+    if (lang === 'te') return card.aadhaarNameTe || card.aadhaarNameEn || card.nameTe || card.nameEn || 'కాళియమ్మల్'
+    if (lang === 'kn') return card.aadhaarNameKn || card.aadhaarNameEn || card.nameKn || card.nameEn || 'ಕಾಳಿಯಮ್ಮಲ್'
+    if (lang === 'ml') return card.aadhaarNameMl || card.aadhaarNameEn || card.nameMl || card.nameEn || 'കാളിയമ്മാൾ'
+    if (lang === 'hi') return card.aadhaarNameHi || card.aadhaarNameEn || card.nameHi || card.nameEn || 'कालियम्माल'
+    if (lang === 'mr') return card.aadhaarNameMr || card.aadhaarNameEn || card.nameMr || card.nameEn || 'कालियाम्मल'
+    if (lang === 'ta') return card.aadhaarNameTa || card.aadhaarName || card.name || 'காளியம்மாள்'
+    return card.aadhaarNameEn || card.nameEn || 'Kaliammal'
+  }
+
+  const getRecordedTypo = () => {
+    if (lang === 'te') return card.recordedNameTe || card.recordedNameEn || 'కాళియమల్ కె'
+    if (lang === 'kn') return card.recordedNameKn || card.recordedNameEn || 'ಕಾಳಿಯಮಲ್ ಕೆ'
+    if (lang === 'ml') return card.recordedNameMl || card.recordedNameEn || 'കാളിയമൽ കെ'
+    if (lang === 'hi') return card.recordedNameHi || card.recordedNameEn || 'कालियामल के'
+    if (lang === 'mr') return card.recordedNameMr || card.recordedNameEn || 'कालियामल के'
+    if (lang === 'ta') return card.recordedNameTa || card.recordedName || 'காளியம்மாள் கே'
+    return card.recordedNameEn || 'Kaliamal K'
+  }
+
+  const legalName = getLegalName()
+  const recordedTypo = getRecordedTypo()
 
   const [name, setName] = useState(legalName)
   const [error, setError] = useState('')
@@ -3021,7 +3429,7 @@ function Correction({ t, lang, card, finishResolution, resolved, goHome }) {
       <div className="correction-ledger-card">
         <div className="ledger-header">
           <Icon name="shield" size={17} />
-          <b>{isEn ? 'Ration Ledger Rectification' : 'ரேஷன் பதிவேடு பெயர் திருத்தம்'}</b>
+          <b>{t.rectificationTitle}</b>
         </div>
 
         <div className="ledger-entry error-entry">
@@ -3192,10 +3600,10 @@ function Grievance({ t, lang, card, reason, fastForwarded, finishResolution, res
   if (resolved) return <Success t={t} goHome={goHome} />
 
   const stages = [
-    { title: isEn ? 'Grievance Registered' : 'புகார் பதிவு செய்யப்பட்டது', time: '10:42 AM · System', done: stage >= 1 },
-    { title: t.officerReview || (isEn ? 'Taluk Supply Officer Review' : 'வட்ட வழங்கல் அலுவலர் ஆய்வு'), time: stage >= 2 ? (isEn ? 'In Review · TSO Mylapore' : 'ஆய்வில் உள்ளது') : 'Pending', done: stage >= 2, active: stage === 2 },
-    { title: t.stockDispatch || (isEn ? 'FPS Stock Dispatched' : 'கடைக்கு கூடுதல் ஒதுக்கீடு'), time: stage >= 3 ? (isEn ? 'Dispatched · Buffer Depot' : 'அனுப்பப்பட்டது') : 'Queued', done: stage >= 3, active: stage === 3 },
-    { title: t.resolution || (isEn ? 'Resolved & Quota Released' : 'தீர்வு காணப்பட்டது'), time: 'Final Step', done: stage >= 4 }
+    { title: t.grievanceRegistered, time: '10:42 AM · System', done: stage >= 1 },
+    { title: t.officerReview, time: stage >= 2 ? t.inReviewStatus : t.pendingStatus, done: stage >= 2, active: stage === 2 },
+    { title: t.stockDispatch, time: stage >= 3 ? t.dispatchedStatus : t.queuedStatus, done: stage >= 3, active: stage === 3 },
+    { title: t.resolution, time: t.finalStep, done: stage >= 4 }
   ]
 
   return (
