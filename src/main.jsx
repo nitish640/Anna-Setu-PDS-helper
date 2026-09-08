@@ -160,6 +160,16 @@ const text = {
     ageYears: 'yrs',
     verifiedPill: 'Verified',
     actionRequiredPill: 'Action Required',
+    myGrievanceTickets: 'My Grievance Tickets',
+    trackLiveTicketsSub: 'Ticket #AS-2026-4182 · In Review by Supply Officer',
+    activeStatus: 'Active',
+    resolvedStatus: 'Resolved',
+    viewStatus: 'Track',
+    raiseNewTicket: '+ Raise New Grievance',
+    ticketHistory: 'Official Action History',
+    slaStatutory: 'Guaranteed 7-day resolution under NFSA Section 19',
+    openLiveTracker: 'Open Live Tracker',
+    shareTicketWa: 'Share WhatsApp Update',
   },
   ta: {
     app: 'அன்ன சேது', greeting: 'வணக்கம்', tagline: 'சரியான ரேஷன் தகவல், சரியான நேரத்தில்',
@@ -294,6 +304,16 @@ const text = {
     ageYears: 'வயது',
     verifiedPill: 'சரிபார்க்கப்பட்டது',
     actionRequiredPill: 'நடவடிக்கை தேவை',
+    myGrievanceTickets: 'என் புகார் டிக்கெட்டுகள்',
+    trackLiveTicketsSub: 'டிக்கெட் #AS-2026-4182 · வட்ட அலுவலர் ஆய்வு நடக்கிறது',
+    activeStatus: 'செயலில்',
+    resolvedStatus: 'தீர்க்கப்பட்டது',
+    viewStatus: 'கண்காணி',
+    raiseNewTicket: '+ புதிய புகார் பதிவு செய்க',
+    ticketHistory: 'அலுவலர் ஆய்வுக் குறிப்புகள்',
+    slaStatutory: 'NFSA சட்டப்படி 7 நாட்களில் தீர்வு உத்தரவாதம்',
+    openLiveTracker: 'நேரலை டிராக்கர்',
+    shareTicketWa: 'வாட்ஸ்அப்பில் பகிரவும்',
   },
   hi: {
     app: 'अन्न सेतु', greeting: 'नमस्ते', tagline: 'राशन की सही जानकारी, सही समय पर',
@@ -428,6 +448,16 @@ const text = {
     ageYears: 'वर्ष',
     verifiedPill: 'सत्यापित',
     actionRequiredPill: 'कार्रवाई आवश्यक',
+    myGrievanceTickets: 'मेरी शिकायत टिकट',
+    trackLiveTicketsSub: 'टिकट #AS-2026-4182 · आपूर्ति अधिकारी समीक्षा जारी',
+    activeStatus: 'सक्रिय',
+    resolvedStatus: 'हल किया गया',
+    viewStatus: 'ट्रैक करें',
+    raiseNewTicket: '+ नई शिकायत दर्ज करें',
+    ticketHistory: 'आधिकारिक कार्रवाई इतिहास',
+    slaStatutory: 'NFSA धारा 19 के तहत 7 दिनों में समाधान गारंटी',
+    openLiveTracker: 'लाइव ट्रैकर खोलें',
+    shareTicketWa: 'व्हाट्सएप पर साझा करें',
   },
   mr: {
     app: 'अन्न सेतु', greeting: 'नमस्ते', tagline: 'रेशनची अचूक माहिती, योग्य वेळी',
@@ -562,6 +592,16 @@ const text = {
     ageYears: 'वर्षे',
     verifiedPill: 'पडताळणी झाली',
     actionRequiredPill: 'कार्रवाई आवश्यक',
+    myGrievanceTickets: 'माझ्या तक्रार तिकिटे',
+    trackLiveTicketsSub: 'तिकीट #AS-2026-4182 · पुरवठा अधिकारी तपासणी सुरू',
+    activeStatus: 'सक्रिय',
+    resolvedStatus: 'निवारण झाले',
+    viewStatus: 'ट्रॅक करा',
+    raiseNewTicket: '+ नवीन तक्रार नोंदवा',
+    ticketHistory: 'अधिकृत कारवाई इतिहास',
+    slaStatutory: 'NFSA कलम 19 अंतर्गत 7 दिवसांत निवारण हमी',
+    openLiveTracker: 'लाइव्ह ट्रॅकर उघडा',
+    shareTicketWa: 'व्हॉट्सॲपवर शेअर करा',
   },
   te: {
     app: 'అన్న సేతు', greeting: 'నమస్కారం', tagline: 'సరైన రేషన్ సమాచారం, సరైన సమయంలో',
@@ -696,6 +736,16 @@ const text = {
     ageYears: 'సంవత్సరాలు',
     verifiedPill: 'ధృవీకరించబడింది',
     actionRequiredPill: 'చర్య అవసరం',
+    myGrievanceTickets: 'నా ఫిర్యాదు టిక్కెట్లు',
+    trackLiveTicketsSub: 'టికెట్ #AS-2026-4182 · సరఫరా అధికారి పరిశీలన జరుగుతోంది',
+    activeStatus: 'యాక్టివ్',
+    resolvedStatus: 'పరిష్కరించబడింది',
+    viewStatus: 'ట్రాక్ చేయండి',
+    raiseNewTicket: '+ కొత్త ఫిర్యాదు చేయండి',
+    ticketHistory: 'అధికారిక చర్యల చరిత్ర',
+    slaStatutory: 'NFSA సెక్షన్ 19 ప్రకారం 7 రోజుల్లో పరిష్కార హామీ',
+    openLiveTracker: 'లైవ్ ట్రాకర్ తెరవండి',
+    shareTicketWa: 'వాట్సాప్‌లో పంపండి',
   },
   kn: {
     app: 'ಅನ್ನ ಸೇತು', greeting: 'ನಮಸ್ಕಾರ', tagline: 'ಸರಿಯಾದ ಪಡಿತರ ಮಾಹಿತಿ, ಸರಿಯಾದ ಸಮಯದಲ್ಲಿ',
@@ -830,6 +880,16 @@ const text = {
     ageYears: 'ವರ್ಷ',
     verifiedPill: 'ದೃಢೀಕರಿಸಲಾಗಿದೆ',
     actionRequiredPill: 'ಕ್ರಮ ಅಗತ್ಯವಿದೆ',
+    myGrievanceTickets: 'ನನ್ನ ದೂರು ಟಿಕೆಟ್‌ಗಳು',
+    trackLiveTicketsSub: 'ಟಿಕೆಟ್ #AS-2026-4182 · ಸರಬರಾಜು ಅಧಿಕಾರಿ ಪರಿಶೀಲನೆ ಪ್ರಗತಿಯಲ್ಲಿದೆ',
+    activeStatus: 'ಸಕ್ರಿಯ',
+    resolvedStatus: 'ಬಗೆಹರಿದಿದೆ',
+    viewStatus: 'ಟ್ರ್ಯಾಕ್ ಮಾಡಿ',
+    raiseNewTicket: '+ ಹೊಸ ದೂರು ಸಲ್ಲಿಸಿ',
+    ticketHistory: 'ಅಧಿಕೃತ ಕ್ರಮ ಇತಿಹಾಸ',
+    slaStatutory: 'NFSA ಕಲಂ 19 ರ ಅಡಿಯಲ್ಲಿ 7 ದಿನಗಳಲ್ಲಿ ಪರಿಹಾರ ಖಾತರಿ',
+    openLiveTracker: 'ಲೈವ್ ಟ್ರ್ಯಾಕರ್ ತೆರೆಯಿರಿ',
+    shareTicketWa: 'ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ',
   },
   ml: {
     app: 'അന്ന സേതു', greeting: 'നമസ്കാരം', tagline: 'കൃത്യമായ റേഷൻ വിവരങ്ങൾ, കൃത്യസമയത്ത്',
@@ -964,6 +1024,16 @@ const text = {
     ageYears: 'വയസ്സ്',
     verifiedPill: 'പരിശോധിച്ചു',
     actionRequiredPill: 'നടപടി ആവശ്യമാണ്',
+    myGrievanceTickets: 'എന്റെ പരാതി ടിക്കറ്റുകൾ',
+    trackLiveTicketsSub: 'ടിക്കറ്റ് #AS-2026-4182 · സപ്ലൈ ഓഫീസർ പരിശോധന പുരോഗമിക്കുന്നു',
+    activeStatus: 'സജീവം',
+    resolvedStatus: 'പരിഹരിച്ചു',
+    viewStatus: 'ട്രാക്ക് ചെയ്യുക',
+    raiseNewTicket: '+ പുതിയ പരാതി നൽകുക',
+    ticketHistory: 'ഔദ്യോഗിക നടപടിക്രമം',
+    slaStatutory: 'NFSA സെക്ഷൻ 19 പ്രകാരം 7 ദിവസത്തിനകം പരിഹാര ഉറപ്പ്',
+    openLiveTracker: 'ലൈവ് ട്രാക്കർ തുറക്കുക',
+    shareTicketWa: 'വാട്‌സ്ആപ്പിൽ പങ്കിടുക',
   }
 }
 
@@ -1658,6 +1728,7 @@ function App() {
   const [showAssistant, setShowAssistant] = useState(false)
   const [showFamilyModal, setShowFamilyModal] = useState(false)
   const [showPriceModal, setShowPriceModal] = useState(false)
+  const [showTicketsModal, setShowTicketsModal] = useState(false)
   const [offlineQueuedGrievances, setOfflineQueuedGrievances] = useState(() => {
     try {
       return JSON.parse(localStorage.getItem('anna_offline_queue') || '[]')
@@ -1897,6 +1968,7 @@ function App() {
           onOpenReceipt={() => setShowReceipt(true)}
           onOpenFamily={() => setShowFamilyModal(true)}
           onOpenPriceCalc={() => setShowPriceModal(true)}
+          onOpenTickets={() => setShowTicketsModal(true)}
           fastForward={() => {
             setFastForwarded(true)
             setPage('grievance')
@@ -1994,6 +2066,29 @@ function App() {
           onClose={() => setSelectedHistoryItem(null)}
           onRaiseGrievance={() => {
             setSelectedHistoryItem(null)
+            setReason('stock')
+            setFastForwarded(true)
+            setPage('grievance')
+          }}
+        />
+      )}
+
+      {/* Grievance Tickets Tracker Modal (PhonePe Style) */}
+      {showTicketsModal && (
+        <GrievanceTicketsModal
+          t={t}
+          lang={lang}
+          card={currentCard}
+          grievances={initialGrievances}
+          onClose={() => setShowTicketsModal(false)}
+          onOpenLiveTracker={(ticket) => {
+            setShowTicketsModal(false)
+            setReason('mismatch')
+            setFastForwarded(true)
+            setPage('grievance')
+          }}
+          onRaiseNew={() => {
+            setShowTicketsModal(false)
             setReason('stock')
             setFastForwarded(true)
             setPage('grievance')
@@ -2514,6 +2609,7 @@ function HomePage({
   onOpenReceipt,
   onOpenFamily,
   onOpenPriceCalc,
+  onOpenTickets,
   fastForward,
   fastForwarded
 }) {
@@ -2673,6 +2769,34 @@ function HomePage({
               <span>{userLocation} · FPS: <code>{card.fpsCode || (selectedState === 'mh' ? 'MH-PUN-05' : 'TN-CHE-02A')}</code></span>
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* PhonePe-Style Grievance Tickets Quick Tracker Bar */}
+      <div 
+        className="phonepe-ticket-bar page-transition" 
+        onClick={() => onOpenTickets && onOpenTickets()} 
+        role="button" 
+        tabIndex={0} 
+        title={t.myGrievanceTickets}
+        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onOpenTickets && onOpenTickets() }}
+      >
+        <div className="ticket-bar-left">
+          <div className="ticket-bar-icon-wrap">
+            <span className="phonepe-ticket-icon">🎫</span>
+            <span className="pulsing-live-dot" />
+          </div>
+          <div className="ticket-bar-text">
+            <div className="ticket-bar-title-row">
+              <b>{t.myGrievanceTickets}</b>
+              <span className="active-count-tag">1 {t.activeStatus}</span>
+            </div>
+            <p>{t.trackLiveTicketsSub}</p>
+          </div>
+        </div>
+        <div className="ticket-bar-right">
+          <span className="track-link-text">{t.viewStatus}</span>
+          <Icon name="arrow" size={15} />
         </div>
       </div>
 
@@ -3736,6 +3860,163 @@ function PriceCalculatorModal({ t, lang, card, selectedState, onClose, onReportO
           <button className="button secondary" onClick={() => window.print()}>
             <Icon name="printer" size={16} />
             <span>Print / Save</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+
+/* ===================================================================
+   Grievance Tickets Tracker Modal (PhonePe Style)
+   =================================================================== */
+function GrievanceTicketsModal({ t, lang, card, grievances = [], onClose, onOpenLiveTracker, onRaiseNew }) {
+  const [expandedTicketId, setExpandedTicketId] = useState(grievances[0]?.id || null)
+
+  const activeTickets = grievances.filter((item) => item.status === 'active' || item.status === 'In Review')
+  const resolvedTickets = grievances.filter((item) => item.status === 'resolved' || item.status === 'Resolved')
+
+  const getCategory = (ticket) => {
+    if (lang === 'te') return ticket.categoryTe || ticket.categoryEn
+    if (lang === 'kn') return ticket.categoryKn || ticket.categoryEn
+    if (lang === 'ml') return ticket.categoryMl || ticket.categoryEn
+    if (lang === 'hi') return ticket.categoryHi || ticket.categoryEn
+    if (lang === 'mr') return ticket.categoryMr || ticket.categoryEn
+    if (lang === 'ta') return ticket.categoryTa || ticket.category || ticket.categoryEn
+    return ticket.categoryEn || ticket.category
+  }
+
+  const shareTicket = (ticket) => {
+    const cardNum = card?.number || 'PDS Citizen'
+    const text = encodeURIComponent(
+      `Anna Setu Grievance Update: Ticket #${ticket.id} for Ration Card ${cardNum} is ${ticket.status}. Resolution guaranteed under NFSA Section 19 within 7 days.`
+    )
+    window.open(`https://wa.me/?text=${text}`, '_blank')
+  }
+
+  return (
+    <div className="modal-backdrop" onClick={onClose}>
+      <div className="tickets-modal page-transition" onClick={(e) => e.stopPropagation()}>
+        <div className="modal-top">
+          <div className="tickets-modal-title">
+            <span className="tickets-modal-icon">🎫</span>
+            <div>
+              <h2>{t.myGrievanceTickets}</h2>
+              <small>{card?.number || ''} · {card?.category || ''} {t.cardSaved}</small>
+            </div>
+          </div>
+          <button className="modal-close-btn" onClick={onClose} aria-label="Close">
+            <Icon name="close" size={18} />
+          </button>
+        </div>
+
+        {/* Top Summary Bar */}
+        <div className="tickets-summary-bar">
+          <div className="summary-pill active">
+            <span className="pulsing-live-dot" />
+            <span>{activeTickets.length} {t.activeStatus}</span>
+          </div>
+          <div className="summary-pill resolved">
+            <span>✓ {resolvedTickets.length} {t.resolvedStatus}</span>
+          </div>
+          <div className="sla-tag-pill">
+            <Icon name="shield" size={12} />
+            <span>NFSA 7-Day SLA</span>
+          </div>
+        </div>
+
+        {/* Tickets List */}
+        <div className="tickets-roster-list">
+          {grievances.map((item) => {
+            const isActive = item.status === 'active' || item.status === 'In Review'
+            const isExpanded = expandedTicketId === item.id
+            return (
+              <div key={item.id} className={"ticket-item-card " + (isActive ? 'active-ticket' : 'resolved-ticket')}>
+                <div className="ticket-item-head" onClick={() => setExpandedTicketId(isExpanded ? null : item.id)}>
+                  <div className="ticket-head-left">
+                    <code className="ticket-code-chip">{item.id}</code>
+                    <span className={"ticket-status-pill " + (isActive ? 'active' : 'resolved')}>
+                      {isActive ? t.activeStatus : t.resolvedStatus}
+                    </span>
+                  </div>
+                  <span className="ticket-date-label">{item.date}</span>
+                </div>
+
+                <div className="ticket-category-line">
+                  <b>{getCategory(item)}</b>
+                </div>
+
+                {/* Stepper Progress Bar for Active Ticket */}
+                {isActive && (
+                  <div className="ticket-mini-stepper">
+                    <div className="mini-step done">
+                      <span className="step-circle">✓</span>
+                      <small>{t.grievanceRegistered}</small>
+                    </div>
+                    <div className="step-connector done" />
+                    <div className="mini-step current">
+                      <span className="step-circle">2</span>
+                      <small>{t.officerReview}</small>
+                    </div>
+                    <div className="step-connector" />
+                    <div className="mini-step">
+                      <span className="step-circle">3</span>
+                      <small>{t.stockDispatch}</small>
+                    </div>
+                    <div className="step-connector" />
+                    <div className="mini-step">
+                      <span className="step-circle">4</span>
+                      <small>{t.resolution}</small>
+                    </div>
+                  </div>
+                )}
+
+                {/* Expandable Officer Resolution Logs */}
+                {isExpanded && item.logs && item.logs.length > 0 && (
+                  <div className="ticket-logs-section">
+                    <small className="logs-title">{t.ticketHistory}:</small>
+                    <div className="ticket-log-timeline">
+                      {item.logs.map((log, lIdx) => (
+                        <div key={lIdx} className="ticket-log-entry">
+                          <div className="log-marker" />
+                          <div className="log-content">
+                            <div className="log-head">
+                              <b>{log.status}</b>
+                              <span>{log.date}</span>
+                            </div>
+                            <p>{log.note}</p>
+                            <small className="log-officer">Officer: {log.officer}</small>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Ticket Actions */}
+                <div className="ticket-action-buttons">
+                  {isActive && (
+                    <button className="button primary mini-btn" onClick={() => onOpenLiveTracker(item)}>
+                      <Icon name="bolt" size={14} />
+                      <span>{t.openLiveTracker}</span>
+                    </button>
+                  )}
+                  <button className="button secondary mini-btn" onClick={() => shareTicket(item)}>
+                    <Icon name="share" size={14} />
+                    <span>{t.shareTicketWa}</span>
+                  </button>
+                </div>
+              </div>
+            )
+          })}
+        </div>
+
+        {/* Modal Bottom CTA */}
+        <div className="tickets-modal-footer">
+          <button className="button primary full-width-btn" onClick={onRaiseNew}>
+            <Icon name="message" size={17} />
+            <span>{t.raiseNewTicket}</span>
           </button>
         </div>
       </div>

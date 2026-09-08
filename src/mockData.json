@@ -1012,26 +1012,56 @@
   ],
   "grievances": [
     {
-      "id": "AS-2608-4182",
-      "category": "பெயர் முரண்பாடு (Name Mismatch)",
+      "id": "AS-2026-4182",
+      "category": "பெயர் முரண்பாடு திருத்தம்",
       "categoryEn": "Name Mismatch Rectification",
+      "categoryTe": "పేరు సరిపోలకపోవడం సవరణ",
+      "categoryKn": "ಹೆಸರು ಹೊಂದಾಣಿಕೆಯಾಗದ ತಿದ್ದುಪಡಿ",
+      "categoryMl": "പേര് പൊരുത്തക്കേട് തിരുത്തൽ",
+      "categoryHi": "नाम बेमेल सुधार",
+      "categoryMr": "नाव तफावत दुरुस्ती",
       "date": "24 Aug 2026",
-      "status": "In Review",
+      "status": "active",
       "statusStage": 2,
       "slaDays": 7,
       "cardNo": "TN-02-G-849201",
+      "officer": "Taluk Supply Officer (Triplicane / Pune)",
       "logs": [
         {
           "status": "Submitted",
           "date": "24 Aug 2026, 10:42 AM",
           "officer": "Digital Citizen Portal",
-          "note": "Grievance ticket generated and registered into Taluk ledger."
+          "note": "Grievance ticket generated and registered into Taluk supply ledger."
         },
         {
-          "status": "Under Review",
+          "status": "In Review",
           "date": "25 Aug 2026, 02:15 PM",
-          "officer": "Taluk Supply Officer (Triplicane)",
+          "officer": "Taluk Supply Officer",
           "note": "Aadhaar e-KYC record fetched. Typo mismatch verified for correction."
+        }
+      ]
+    },
+    {
+      "id": "AS-2026-6324",
+      "category": "கோதுமை இருப்பு பற்றாக்குறை",
+      "categoryEn": "Grain Stock Shortfall",
+      "categoryTe": "ధాన్యాల నిల్వ కొరత",
+      "categoryKn": "ಧಾನ್ಯ ದಾಸ್ತಾನು ಕೊರತೆ",
+      "categoryMl": "ധാന്യ സ്റ്റോക്ക് കുറവ്",
+      "categoryHi": "अनाज स्टॉक कमी",
+      "categoryMr": "धान्य साठा तुटवडा",
+      "date": "15 Jun 2026",
+      "status": "resolved",
+      "statusStage": 4,
+      "slaDays": 7,
+      "cardNo": "TN-02-G-849201",
+      "officer": "Buffer Depot Logistics Team",
+      "logs": [
+        {
+          "status": "Resolved",
+          "date": "17 Jun 2026, 11:30 AM",
+          "officer": "Supply Officer Mylapore",
+          "note": "5 kg buffer grain dispatched and delivered to beneficiary at FPS counter."
         }
       ]
     }

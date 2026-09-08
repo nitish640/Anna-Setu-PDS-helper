@@ -3622,3 +3622,391 @@ input:focus{border-color:var(--ink);box-shadow:0 0 0 3px var(--turmeric-tint)}
   background: var(--stamp-red);
   color: #fff;
 }
+
+
+/* ===================================================================
+   PhonePe-Style Grievance Tickets Quick Tracker Bar & Modal
+   =================================================================== */
+.phonepe-ticket-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, rgba(254, 249, 195, 0.55) 0%, rgba(255, 255, 255, 0.95) 100%);
+  border: 1.5px solid rgba(217, 119, 6, 0.35);
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin: 12px 0 16px 0;
+  cursor: pointer;
+  transition: all 0.22s ease-in-out;
+  box-shadow: 0 3px 10px rgba(217, 119, 6, 0.08);
+}
+.phonepe-ticket-bar:hover {
+  transform: translateY(-2px);
+  border-color: var(--turmeric);
+  box-shadow: 0 6px 16px rgba(217, 119, 6, 0.16);
+}
+.ticket-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.ticket-bar-icon-wrap {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(245, 158, 11, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.25rem;
+}
+.pulsing-live-dot {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 9px;
+  height: 9px;
+  background-color: #16a34a;
+  border-radius: 50%;
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.7);
+  animation: pulse-dot 1.8s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+@keyframes pulse-dot {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(22, 163, 74, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(22, 163, 74, 0);
+  }
+}
+.ticket-bar-text {
+  min-width: 0;
+}
+.ticket-bar-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ticket-bar-title-row b {
+  font-size: 0.92rem;
+  color: var(--ink);
+  font-weight: 700;
+}
+.active-count-tag {
+  background: rgba(22, 163, 74, 0.12);
+  color: #15803d;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 999px;
+  border: 1px solid rgba(22, 163, 74, 0.3);
+}
+.ticket-bar-text p {
+  margin: 2px 0 0 0;
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 240px;
+}
+.ticket-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--turmeric);
+  font-weight: 700;
+  font-size: 0.82rem;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+.track-link-text {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Grievance Tickets Modal */
+.tickets-modal {
+  background: var(--bg-card);
+  border-radius: 16px;
+  border: 1.5px solid var(--rule-soft);
+  max-width: 520px;
+  width: 92%;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.25);
+  overflow: hidden;
+}
+.tickets-modal-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.tickets-modal-icon {
+  font-size: 1.6rem;
+}
+.tickets-modal-title h2 {
+  font-size: 1.15rem;
+  margin: 0;
+  font-family: var(--font-display);
+}
+.tickets-modal-title small {
+  color: var(--ink-soft);
+  font-size: 0.76rem;
+}
+.tickets-summary-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: var(--bg-canvas);
+  border-bottom: 1px solid var(--rule-soft);
+  flex-wrap: wrap;
+}
+.summary-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 600;
+}
+.summary-pill.active {
+  background: rgba(22, 163, 74, 0.12);
+  color: #15803d;
+  border: 1px solid rgba(22, 163, 74, 0.25);
+  position: relative;
+  padding-left: 18px;
+}
+.summary-pill.active .pulsing-live-dot {
+  position: static;
+  display: inline-block;
+  margin-left: -8px;
+}
+.summary-pill.resolved {
+  background: rgba(100, 116, 139, 0.12);
+  color: var(--ink-soft);
+  border: 1px solid var(--rule-soft);
+}
+.sla-tag-pill {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.7rem;
+  color: var(--turmeric);
+  font-weight: 600;
+}
+.tickets-roster-list {
+  padding: 16px 18px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.ticket-item-card {
+  border-radius: 12px;
+  padding: 14px;
+  border: 1.5px solid var(--rule-soft);
+  background: var(--bg-card);
+  transition: all 0.2s ease;
+}
+.ticket-item-card.active-ticket {
+  border-color: rgba(217, 119, 6, 0.4);
+  background: linear-gradient(180deg, rgba(254, 249, 195, 0.15) 0%, var(--bg-card) 100%);
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.06);
+}
+.ticket-item-card.resolved-ticket {
+  opacity: 0.88;
+}
+.ticket-item-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.ticket-head-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ticket-code-chip {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.8rem;
+  font-weight: 700;
+  background: rgba(15, 23, 42, 0.08);
+  padding: 2px 7px;
+  border-radius: 6px;
+  color: var(--ink);
+}
+.ticket-status-pill {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+.ticket-status-pill.active {
+  background: #dcfce7;
+  color: #15803d;
+}
+.ticket-status-pill.resolved {
+  background: #f1f5f9;
+  color: #64748b;
+}
+.ticket-date-label {
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+}
+.ticket-category-line {
+  margin: 10px 0 8px 0;
+  font-size: 0.94rem;
+  color: var(--ink);
+}
+.ticket-mini-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 14px 0 10px 0;
+  padding: 10px 8px;
+  background: var(--bg-canvas);
+  border-radius: 8px;
+}
+.mini-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+  flex: 1;
+}
+.mini-step .step-circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: var(--rule-soft);
+  color: var(--ink-soft);
+}
+.mini-step.done .step-circle {
+  background: #16a34a;
+  color: #fff;
+}
+.mini-step.current .step-circle {
+  background: var(--turmeric);
+  color: #fff;
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.25);
+}
+.mini-step small {
+  font-size: 0.62rem;
+  color: var(--ink-soft);
+  max-width: 60px;
+  line-height: 1.15;
+}
+.mini-step.current small {
+  font-weight: 700;
+  color: var(--ink);
+}
+.step-connector {
+  flex: 0 0 16px;
+  height: 2px;
+  background: var(--rule-soft);
+  margin-top: -16px;
+}
+.step-connector.done {
+  background: #16a34a;
+}
+.ticket-logs-section {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--rule-soft);
+}
+.logs-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+.ticket-log-timeline {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 8px;
+  border-left: 2px solid var(--rule-soft);
+}
+.ticket-log-entry {
+  position: relative;
+  padding-left: 10px;
+}
+.ticket-log-entry .log-marker {
+  position: absolute;
+  left: -13px;
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--turmeric);
+}
+.log-content .log-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.74rem;
+  color: var(--ink);
+}
+.log-content p {
+  margin: 3px 0 2px 0;
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+  line-height: 1.3;
+}
+.log-officer {
+  font-size: 0.68rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+.ticket-action-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+.ticket-action-buttons .mini-btn {
+  padding: 6px 12px;
+  font-size: 0.76rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+}
+.tickets-modal-footer {
+  padding: 12px 18px;
+  border-top: 1px solid var(--rule-soft);
+  background: var(--bg-card);
+}
+.full-width-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 16px;
+  font-size: 0.88rem;
+}
