@@ -2423,6 +2423,9 @@ function Lookup({ t, lang, setLang, selectedState, isLoading, lookup, initialCar
         <label htmlFor="card-number">{t.cardNo}</label>
         <input
           id="card-number"
+          type="text"
+          autoComplete="off"
+          spellCheck={false}
           value={number}
           onChange={(e) => setNumber(e.target.value)}
           placeholder={stateObj.sampleCard || 'TN-02-G-849201'}
@@ -2643,6 +2646,8 @@ function PhoneVerify({ t, lang, setLang, selectedState, card, pendingCard, onBac
           <div className="form-group">
             <label>{t.phoneLabel}</label>
             <input
+              type="tel"
+              autoComplete="off"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               inputMode="numeric"
@@ -2660,6 +2665,8 @@ function PhoneVerify({ t, lang, setLang, selectedState, card, pendingCard, onBac
                 <input
                   key={i}
                   ref={inputRefs[i]}
+                  type="text"
+                  autoComplete="off"
                   className={'otp-box ' + (digits[i] ? 'has-val' : '')}
                   value={digits[i]}
                   onChange={(e) => handleDigitChange(i, e.target.value)}
@@ -2957,6 +2964,8 @@ function HomePage({
         <div className="helper-lookup-drawer page-transition">
           <label>{t.helperCard}</label>
           <input
+            type="text"
+            autoComplete="off"
             value={helperNumber}
             onChange={(e) => setHelperNumber(e.target.value)}
             placeholder={selectedState === 'mh' ? 'MH-12-0418-2675' : 'TN-02-G-849201'}
@@ -4252,6 +4261,8 @@ function AppGuideModal({ t, lang, onClose }) {
         {/* Input Bar */}
         <div className="ai-input-bar">
           <input
+            type="text"
+            autoComplete="off"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && sendQuery()}
@@ -4413,6 +4424,8 @@ function Correction({ t, lang, card, finishResolution, resolved, goHome }) {
           </div>
           <input
             className="correct-name-input"
+            type="text"
+            autoComplete="off"
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Enter full legal name"
@@ -4465,14 +4478,16 @@ function OtpFlow({ t, card, finishResolution, resolved, goHome }) {
         <span className={step > 2 ? 'filled' : ''}>3</span>
       </div>
       <h2>{title}</h2>
-      {step === 1 && <input defaultValue={card.phone || '98765 43210'} readOnly />}
+      {step === 1 && <input type="text" autoComplete="off" defaultValue={card.phone || '98765 43210'} readOnly />}
       {step === 2 && (
         <input
           className="otp-input"
+          type="text"
+          autoComplete="off"
           value={otp}
           onChange={(e) => setOtp(e.target.value.replace(/\D/g, '').slice(0, 4))}
           inputMode="numeric"
-          placeholder="• • • •"
+          placeholder="1 2 3 4"
           maxLength={4}
         />
       )}
