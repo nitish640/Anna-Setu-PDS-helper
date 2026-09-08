@@ -2182,29 +2182,6 @@ function StateSelect({ t, lang, setLang, states, currentState, onSelect, onCance
         <span className="grain">🏛️</span>
       </div>
 
-      {/* Quick Visual Language Selector Pills */}
-      <div className="state-lang-selector-section">
-        <div className="state-lang-pills-row">
-          {languages.map((l) => {
-            const isSelected = lang === l.code
-            return (
-              <button
-                key={l.code}
-                type="button"
-                className={'state-lang-pill-chip ' + (isSelected ? 'active' : '')}
-                onClick={() => setLang(l.code)}
-                title={l.enLabel}
-                aria-pressed={isSelected}
-              >
-                <span className="pill-mark">{l.mark}</span>
-                <span className="pill-native">{l.label}</span>
-                <span className="pill-en">({l.enLabel})</span>
-              </button>
-            )
-          })}
-        </div>
-      </div>
-
       <h1 className="state-select-title">{t.selectState}</h1>
       <p className="lookup-tagline">{t.selectStateSub}</p>
 
