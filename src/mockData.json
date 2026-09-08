@@ -1,8 +1,88 @@
 {
   "_mock_data_notice": "MOCK DATA — no real PDS, Aadhaar, or government system is accessed. All names, cards, shops, statuses, and tracking numbers are fictional demo data.",
+  "states": [
+    {
+      "id": "tn",
+      "name": "தமிழ்நாடு",
+      "nameEn": "Tamil Nadu",
+      "portal": "TNPDS (Tamil Nadu Public Distribution System)",
+      "active": true,
+      "shopCount": 5,
+      "cardPrefix": "TN-",
+      "sampleCard": "TN-02-G-849201",
+      "registryNote": "Shop names & commodities shown as officially registered with TNPDS."
+    },
+    {
+      "id": "mh",
+      "name": "महाराष्ट्र",
+      "nameEn": "Maharashtra",
+      "portal": "MahaFood AePDS (Food & Civil Supplies Dept)",
+      "active": true,
+      "shopCount": 5,
+      "cardPrefix": "MH-",
+      "sampleCard": "MH-12-0418-2675",
+      "registryNote": "Shop names & commodities shown as officially registered with MahaFood AePDS."
+    },
+    {
+      "id": "ap",
+      "name": "ఆంధ్రప్రదేశ్",
+      "nameEn": "Andhra Pradesh",
+      "portal": "AP ePDS Portal",
+      "active": false,
+      "shopCount": 0,
+      "cardPrefix": "WAP",
+      "sampleCard": "WAP-03-4819-2041",
+      "status": "Coming soon / త్వరలో"
+    },
+    {
+      "id": "ka",
+      "name": "ಕರ್ನಾಟಕ",
+      "nameEn": "Karnataka",
+      "portal": "Ahara Karnataka PDS",
+      "active": false,
+      "shopCount": 0,
+      "cardPrefix": "KA-",
+      "sampleCard": "KA-04-9182-4190",
+      "status": "Coming soon / ಶೀಘ್ರದಲ್ಲೇ"
+    },
+    {
+      "id": "kl",
+      "name": "കേരളം",
+      "nameEn": "Kerala",
+      "portal": "Civil Supplies Kerala",
+      "active": false,
+      "shopCount": 0,
+      "cardPrefix": "KL-",
+      "sampleCard": "KL-07-2841-9120",
+      "status": "Coming soon / ഉടൻ ലഭ്യമാകും"
+    },
+    {
+      "id": "ts",
+      "name": "తెలంగాణ",
+      "nameEn": "Telangana",
+      "portal": "Telangana EPDS",
+      "active": false,
+      "shopCount": 0,
+      "cardPrefix": "TG-",
+      "sampleCard": "TG-09-5192-3019",
+      "status": "Coming soon / త్వరలో"
+    },
+    {
+      "id": "up",
+      "name": "उत्तर प्रदेश",
+      "nameEn": "Uttar Pradesh",
+      "portal": "FCS Uttar Pradesh",
+      "active": false,
+      "shopCount": 0,
+      "cardPrefix": "UP-",
+      "sampleCard": "UP-32-0192-8419",
+      "status": "Coming soon / जल्द आ रहा है"
+    }
+  ],
   "cards": {
     "tn": {
       "number": "TN-02-G-849201",
+      "state_id": "tn",
       "name": "காளியம்மாள்",
       "nameEn": "Kaliammal",
       "nameHi": "कालियम्माळ",
@@ -10,6 +90,13 @@
       "aadhaarName": "காளியம்மாள் (Kaliammal)",
       "phone": "98765 43210",
       "members": 4,
+      "category": "PHH",
+      "categoryDesc": "Priority Household (PHH) / முன்னுரிமை குடும்ப அட்டை",
+      "entitlementNorm": "5 kg/member (20 kg quota: 15 kg Rice, 5 kg Wheat)",
+      "entitledRice": 15,
+      "entitledWheat": 5,
+      "entitledSugar": 1,
+      "entitledDal": 1,
       "village": "திருவல்லிக்கேணி, சென்னை (Triplicane, Chennai)",
       "state": "Tamil Nadu",
       "fpsCode": "TN-CHE-02A",
@@ -17,6 +104,7 @@
     },
     "mh": {
       "number": "MH-12-0418-2675",
+      "state_id": "mh",
       "name": "सुनीता देवी",
       "nameEn": "Sunita Devi",
       "nameTa": "சுனிதா தேவி",
@@ -24,6 +112,13 @@
       "aadhaarName": "सुनीता देवी (Sunita Devi)",
       "phone": "98765 43210",
       "members": 4,
+      "category": "AAY",
+      "categoryDesc": "Antyodaya Anna Yojana (AAY) / अंत्योदय अन्न योजना",
+      "entitlementNorm": "Flat 35 kg/family (20 kg Wheat, 15 kg Rice, 1 kg Sugar)",
+      "entitledRice": 15,
+      "entitledWheat": 20,
+      "entitledSugar": 1,
+      "entitledDal": 1,
       "village": "आनंद नगर, पुणे (Anand Nagar, Pune)",
       "state": "Maharashtra",
       "fpsCode": "MH-PUN-05",
@@ -32,6 +127,7 @@
   },
   "card": {
     "number": "TN-02-G-849201",
+    "state_id": "tn",
     "name": "காளியம்மாள்",
     "nameEn": "Kaliammal",
     "nameHi": "कालियम्माळ",
@@ -39,6 +135,13 @@
     "aadhaarName": "காளியம்மாள் (Kaliammal)",
     "phone": "98765 43210",
     "members": 4,
+    "category": "PHH",
+    "categoryDesc": "Priority Household (PHH) / முன்னுரிமை குடும்ப அட்டை",
+    "entitlementNorm": "5 kg/member (20 kg quota: 15 kg Rice, 5 kg Wheat)",
+    "entitledRice": 15,
+    "entitledWheat": 5,
+    "entitledSugar": 1,
+    "entitledDal": 1,
     "village": "திருவல்லிக்கேணி, சென்னை (Triplicane, Chennai)",
     "state": "Tamil Nadu",
     "fpsCode": "TN-CHE-02A",
@@ -124,6 +227,7 @@
       "nameEn": "TUCS Fair Price Shop (Triplicane)",
       "nameHi": "टीयूसीएस उचित मूल्य दुकान (ट्रिपलिकेन)",
       "code": "TN-CHE-02A",
+      "state_id": "tn",
       "distance": "0.4 km",
       "district": "Chennai",
       "transit": "🚶 4 mins walk",
@@ -154,6 +258,7 @@
       "nameEn": "Anna Nagar Co-op Fair Price Shop",
       "nameHi": "अन्ना नगर सहकारी उचित मूल्य दुकान",
       "code": "TN-CHE-14B",
+      "state_id": "tn",
       "distance": "1.2 km",
       "district": "Chennai",
       "transit": "🚌 8 mins (Bus 24C)",
@@ -184,6 +289,7 @@
       "nameEn": "Simmakkal Women SHG Ration Shop",
       "nameHi": "सिम्मक्कल महिला स्वयं सहायता समूह राशन दुकान",
       "code": "TN-MDU-08C",
+      "state_id": "tn",
       "distance": "1.8 km",
       "district": "Madurai",
       "transit": "🚶 18 mins walk",
@@ -212,6 +318,7 @@
       "nameEn": "Singanallur Co-op Fair Price Shop",
       "nameHi": "सिंगनल्लूर सहकारी उचित मूल्य दुकान",
       "code": "TN-CBE-21D",
+      "state_id": "tn",
       "distance": "2.4 km",
       "district": "Coimbatore",
       "transit": "🚌 12 mins (Bus 10)",
@@ -240,6 +347,7 @@
       "nameEn": "Salem Central Co-op Store Depot",
       "nameHi": "सेलम सेंट्रल को-ऑप स्टोर डिपो",
       "code": "TN-SLM-05E",
+      "state_id": "tn",
       "distance": "3.1 km",
       "district": "Salem",
       "transit": "🚌 15 mins (Bus 7)",
@@ -262,6 +370,154 @@
         "09:30 AM - 10:30 AM",
         "11:00 AM - 12:00 PM"
       ]
+    },
+    {
+      "name": "पुणे शहर मध्यवर्ती ग्राहक सहकारी संस्था (आनंद नगर)",
+      "nameEn": "Pune Central Co-op Society (Anand Nagar)",
+      "nameHi": "पुणे शहर मध्यवर्ती ग्राहक सहकारी संस्था",
+      "code": "MH-PUN-05",
+      "state_id": "mh",
+      "distance": "0.5 km",
+      "district": "Pune",
+      "transit": "🚶 6 mins walk via Sinhagad Rd",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ration+Shop+Anand+Nagar+Pune",
+      "rice": true,
+      "wheat": true,
+      "sugar": true,
+      "dal": true,
+      "open": true,
+      "hours": "8:00 AM - 12:30 PM, 3:30 PM - 7:00 PM",
+      "currentWait": "5 mins (2 in queue)",
+      "stockDetails": {
+        "wheat": "920 kg",
+        "rice": "640 kg",
+        "sugar": "180 kg",
+        "dal": "110 kg"
+      },
+      "slots": [
+        "08:30 AM - 09:30 AM",
+        "10:00 AM - 11:00 AM",
+        "11:30 AM - 12:30 PM",
+        "04:00 PM - 05:00 PM",
+        "05:30 PM - 06:30 PM"
+      ]
+    },
+    {
+      "name": "शिवाजीनगर सार्वजनिक वितरण प्रणाली रास्त भाव दुकान",
+      "nameEn": "Shivajinagar PDS Fair Price Shop",
+      "nameHi": "शिवाजीनगर सार्वजनिक वितरण प्रणाली दुकान",
+      "code": "MH-PUN-12",
+      "state_id": "mh",
+      "distance": "1.4 km",
+      "district": "Pune",
+      "transit": "🚌 10 mins (Bus 11)",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=PDS+Ration+Shop+Shivajinagar+Pune",
+      "rice": true,
+      "wheat": true,
+      "sugar": false,
+      "dal": true,
+      "open": true,
+      "hours": "8:30 AM - 1:00 PM, 4:00 PM - 6:30 PM",
+      "currentWait": "8 mins (4 in queue)",
+      "stockDetails": {
+        "wheat": "580 kg",
+        "rice": "410 kg",
+        "sugar": "0 kg (Out)",
+        "dal": "90 kg"
+      },
+      "slots": [
+        "09:00 AM - 10:00 AM",
+        "10:30 AM - 11:30 AM",
+        "11:30 AM - 12:30 PM",
+        "04:30 PM - 05:30 PM"
+      ]
+    },
+    {
+      "name": "वरळी कामगार सहकारी ग्राहक संस्था (मुंबई)",
+      "nameEn": "Worli Kamgar Co-op Store (Mumbai)",
+      "nameHi": "वरली कामगार सहकारी ग्राहक संस्था (मुंबई)",
+      "code": "MH-MUM-03",
+      "state_id": "mh",
+      "distance": "2.1 km",
+      "district": "Mumbai City",
+      "transit": "🚶 20 mins walk via BDD Chawls",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fair+Price+Shop+Worli+Mumbai",
+      "rice": true,
+      "wheat": false,
+      "sugar": true,
+      "dal": false,
+      "open": true,
+      "hours": "9:00 AM - 1:00 PM, 4:00 PM - 7:30 PM",
+      "currentWait": "15 mins (7 in queue)",
+      "stockDetails": {
+        "wheat": "0 kg (Out)",
+        "rice": "750 kg",
+        "sugar": "220 kg",
+        "dal": "0 kg (Out)"
+      },
+      "slots": [
+        "09:30 AM - 10:30 AM",
+        "11:00 AM - 12:00 PM",
+        "04:30 PM - 05:30 PM",
+        "06:00 PM - 07:00 PM"
+      ]
+    },
+    {
+      "name": "नागपूर शहर पूर्व विभाग रास्त भाव केंद्र",
+      "nameEn": "Nagpur East Zone Fair Price Centre",
+      "nameHi": "नागपुर शहर पूर्व विभाग उचित मूल्य केंद्र",
+      "code": "MH-NGP-08",
+      "state_id": "mh",
+      "distance": "2.8 km",
+      "district": "Nagpur",
+      "transit": "🚌 14 mins (Bus 28)",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ration+Depot+Lakadganj+Nagpur",
+      "rice": true,
+      "wheat": true,
+      "sugar": true,
+      "dal": true,
+      "open": false,
+      "hours": "दुपारी 3:30 वाजता उघडेल (Opens 3:30 PM)",
+      "currentWait": "Closed (Opens 3:30 PM)",
+      "stockDetails": {
+        "wheat": "640 kg",
+        "rice": "520 kg",
+        "sugar": "140 kg",
+        "dal": "80 kg"
+      },
+      "slots": [
+        "03:30 PM - 04:30 PM",
+        "05:00 PM - 06:00 PM"
+      ]
+    },
+    {
+      "name": "नाशिक पंचवटी ग्राहक सहकारी सोसायटी",
+      "nameEn": "Nashik Panchavati Consumer Co-op",
+      "nameHi": "नाशिक पंचवटी ग्राहक सहकारी सोसायटी",
+      "code": "MH-NSK-14",
+      "state_id": "mh",
+      "distance": "3.5 km",
+      "district": "Nashik",
+      "transit": "🚌 18 mins (Bus 5)",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Panchavati+Cooperative+Ration+Store+Nashik",
+      "rice": true,
+      "wheat": true,
+      "sugar": true,
+      "dal": true,
+      "open": true,
+      "hours": "8:30 AM - 12:30 PM",
+      "currentWait": "6 mins (3 in queue)",
+      "stockDetails": {
+        "wheat": "810 kg",
+        "rice": "490 kg",
+        "sugar": "175 kg",
+        "dal": "120 kg"
+      },
+      "slots": [
+        "08:30 AM - 09:30 AM",
+        "10:00 AM - 11:00 AM",
+        "11:30 AM - 12:30 PM"
+      ]
     }
   ],
   "history": [
@@ -270,54 +526,122 @@
       "monthHi": "अगस्त",
       "monthEn": "August",
       "state": "denied",
-      "note": "பெயர் முரண்பாடு",
-      "noteHi": "नाम में अंतर",
-      "noteEn": "Name mismatch"
+      "note": "பெயர் முரண்பாடு காரணமாக ரேஷன் நிறுத்தம்",
+      "noteHi": "नाम में अंतर के कारण रुका",
+      "noteEn": "Paused due to name mismatch",
+      "entitledKg": 20,
+      "receivedKg": 0,
+      "entitledBreakdown": "15 kg Boiled Rice, 5 kg Wheat",
+      "receivedBreakdown": "0 kg (Disbursement blocked)",
+      "shortfall": "20 kg full quota undelivered",
+      "fpsCode": "TN-CHE-02A",
+      "receiptId": "HOLD-2026-08A"
     },
     {
       "month": "ஜூலை",
       "monthHi": "जुलाई",
       "monthEn": "July",
       "state": "denied",
-      "note": "ஆதார் இணைக்கப்படவில்லை",
+      "note": "ஆதார் பயோமெட்ரிக் சரிபார்ப்பு தேவை",
       "noteHi": "पहचान लिंक नहीं",
-      "noteEn": "Identity not linked"
+      "noteEn": "Identity not linked",
+      "entitledKg": 20,
+      "receivedKg": 0,
+      "entitledBreakdown": "15 kg Boiled Rice, 5 kg Wheat",
+      "receivedBreakdown": "0 kg",
+      "shortfall": "20 kg full quota blocked",
+      "fpsCode": "TN-CHE-02A",
+      "receiptId": "HOLD-2026-07B"
     },
     {
       "month": "ஜூன்",
       "monthHi": "जून",
       "monthEn": "June",
       "state": "partial",
-      "note": "கோதுமை கிடைக்கவில்லை",
-      "noteHi": "गेहूँ नहीं मिला",
-      "noteEn": "Wheat unavailable"
+      "note": "கோதுமை இருப்பு தீர்ந்ததால் அரிசி மட்டும்",
+      "noteHi": "गेहूँ अनुपलब्ध — केवल चावल मिला",
+      "noteEn": "Wheat unavailable — only rice received",
+      "entitledKg": 20,
+      "receivedKg": 15,
+      "entitledBreakdown": "15 kg Boiled Rice, 5 kg Wheat",
+      "receivedBreakdown": "15 kg Boiled Rice only",
+      "shortfall": "5 kg Wheat shortfall at depot",
+      "fpsCode": "TN-CHE-02A",
+      "receiptId": "REC-2026-06C"
     },
     {
       "month": "மே",
       "monthHi": "मई",
       "monthEn": "May",
       "state": "received",
-      "note": "முழு ரேஷன் வழங்கப்பட்டது",
-      "noteHi": "पूरा राशन मिला",
-      "noteEn": "Full ration received"
+      "note": "முழு ரேஷன் முழுமையாக வழங்கப்பட்டது",
+      "noteHi": "पूरा कोटा प्राप्त हुआ",
+      "noteEn": "Full quota received",
+      "entitledKg": 20,
+      "receivedKg": 20,
+      "entitledBreakdown": "15 kg Boiled Rice, 5 kg Wheat",
+      "receivedBreakdown": "15 kg Boiled Rice, 5 kg Wheat, 1 kg Sugar",
+      "shortfall": "None (100% fulfilled)",
+      "fpsCode": "TN-CHE-02A",
+      "receiptId": "REC-2026-05D"
     },
     {
       "month": "ஏப்ரல்",
       "monthHi": "अप्रैल",
       "monthEn": "April",
       "state": "received",
-      "note": "முழு ரேஷன் வழங்கப்பட்டது",
-      "noteHi": "पूरा राशन मिला",
-      "noteEn": "Full ration received"
+      "note": "முழு ரேஷன் முழுமையாக வழங்கப்பட்டது",
+      "noteHi": "पूरा कोटा प्राप्त हुआ",
+      "noteEn": "Full quota received",
+      "entitledKg": 20,
+      "receivedKg": 20,
+      "entitledBreakdown": "15 kg Boiled Rice, 5 kg Wheat",
+      "receivedBreakdown": "15 kg Boiled Rice, 5 kg Wheat",
+      "shortfall": "None (100% fulfilled)",
+      "fpsCode": "TN-CHE-02A",
+      "receiptId": "REC-2026-04E"
     },
     {
       "month": "மார்ச்",
       "monthHi": "मार्च",
       "monthEn": "March",
       "state": "received",
-      "note": "முழு ரேஷன் வழங்கப்பட்டது",
-      "noteHi": "पूरा राशन मिला",
-      "noteEn": "Full ration received"
+      "note": "முழு ரேஷன் முழுமையாக வழங்கப்பட்டது",
+      "noteHi": "पूरा कोटा प्राप्त हुआ",
+      "noteEn": "Full quota received",
+      "entitledKg": 20,
+      "receivedKg": 20,
+      "entitledBreakdown": "15 kg Boiled Rice, 5 kg Wheat",
+      "receivedBreakdown": "15 kg Boiled Rice, 5 kg Wheat",
+      "shortfall": "None (100% fulfilled)",
+      "fpsCode": "TN-CHE-02A",
+      "receiptId": "REC-2026-03F"
+    }
+  ],
+  "grievances": [
+    {
+      "id": "AS-2608-4182",
+      "category": "பெயர் முரண்பாடு (Name Mismatch)",
+      "categoryEn": "Name Mismatch Rectification",
+      "date": "24 Aug 2026",
+      "status": "In Review",
+      "statusStage": 2,
+      "slaDays": 7,
+      "cardNo": "TN-02-G-849201",
+      "logs": [
+        {
+          "status": "Submitted",
+          "date": "24 Aug 2026, 10:42 AM",
+          "officer": "Digital Citizen Portal",
+          "note": "Grievance ticket generated and registered into Taluk ledger."
+        },
+        {
+          "status": "Under Review",
+          "date": "25 Aug 2026, 02:15 PM",
+          "officer": "Taluk Supply Officer (Triplicane)",
+          "note": "Aadhaar e-KYC record fetched. Typo mismatch verified for correction."
+        }
+      ]
     }
   ]
 }
