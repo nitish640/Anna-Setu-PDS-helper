@@ -4031,3 +4031,82 @@ input:focus{border-color:var(--ink);box-shadow:0 0 0 3px var(--turmeric-tint)}
   font-size: 0.9rem;
   font-weight: 700;
 }
+
+
+/* ===================================================================
+   State Selection Screen Quick Language Selector & Cancel Button
+   =================================================================== */
+.state-lang-selector-section {
+  max-width: 520px;
+  width: 100%;
+  margin: 6px auto 14px auto;
+  padding: 0 16px;
+}
+.state-lang-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.state-lang-pill-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--paper-card);
+  border: 1.5px solid var(--rule);
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: var(--ink);
+  transition: all 0.18s ease;
+  box-shadow: 0 1px 3px rgba(30, 42, 60, 0.05);
+}
+.state-lang-pill-chip:hover {
+  border-color: var(--turmeric);
+  background: var(--turmeric-tint);
+  transform: translateY(-1px);
+}
+.state-lang-pill-chip.active {
+  border-color: var(--turmeric);
+  background: var(--turmeric-tint);
+  color: var(--ink);
+  font-weight: 700;
+  box-shadow: 0 0 0 2px rgba(216, 154, 30, 0.25);
+}
+.pill-mark {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--turmeric-deep);
+  font-size: 0.9rem;
+}
+.pill-native {
+  font-weight: 600;
+}
+.pill-en {
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+}
+.state-lang-pill-chip.active .pill-en {
+  color: var(--ink);
+  font-weight: 600;
+}
+.topbar-cancel-btn {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: var(--paper);
+  border: 1px solid var(--rule-soft);
+  cursor: pointer;
+  margin-left: 6px;
+  font-weight: 600;
+  transition: all 0.18s ease;
+}
+.topbar-cancel-btn:hover {
+  background: var(--turmeric-tint);
+  color: var(--ink);
+  border-color: var(--turmeric);
+}

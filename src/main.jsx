@@ -1592,7 +1592,7 @@ function CitizenAvatar({ card, isHelper, size = 62 }) {
   )
 }
 
-function Brand({ t, lang, setLang, selectedState, onChangeState, onOpenAssistant }) {
+function Brand({ t, lang, setLang, selectedState, onChangeState, onOpenAssistant, onCancel }) {
   const [dropdownOpen, setDropdownOpen] = useState(false)
   const dropdownRef = useRef(null)
 
@@ -1618,7 +1618,7 @@ function Brand({ t, lang, setLang, selectedState, onChangeState, onOpenAssistant
 
       <div className="topbar-controls">
         {/* State Indicator Pill */}
-        {selectedState && (
+        {selectedState && onChangeState && (
           <button
             type="button"
             className="state-badge-btn"
@@ -1632,15 +1632,24 @@ function Brand({ t, lang, setLang, selectedState, onChangeState, onOpenAssistant
         )}
 
         {/* AI Guide Button */}
-        <button
-          type="button"
-          className="ai-guide-btn"
-          onClick={onOpenAssistant}
-          title={t.askAssistant}
-          aria-label={t.askAssistant}
-        >
-          <Icon name="sparkles" size={15} />
-        </button>
+        {onOpenAssistant && (
+          <button
+            type="button"
+            className="ai-guide-btn"
+            onClick={onOpenAssistant}
+            title={t.askAssistant}
+            aria-label={t.askAssistant}
+          >
+            <Icon name="sparkles" size={15} />
+          </button>
+        )}
+
+        {/* Optional Cancel/Close Button */}
+        {onCancel && (
+          <button className="text-button topbar-cancel-btn" onClick={onCancel} title={t.close || 'Close'}>
+            ✕ {t.close || 'Close'}
+          </button>
+        )}
 
         {/* Scrollable Language Dropdown */}
         <div className="lang-dropdown-wrapper" ref={dropdownRef}>
@@ -2159,20 +2168,41 @@ function StateSelect({ t, lang, setLang, states, currentState, onSelect, onCance
 
   return (
     <main className="app-shell lookup min-h-screen antialiased">
-      <header className="topbar">
-        <div className="brand">
-          <span className="brand-mark">🏛</span>
-          <span>{t.app}</span>
-        </div>
-        {onCancel && (
-          <button className="text-button" onClick={onCancel}>
-            ✕ {t.close || 'Close'}
-          </button>
-        )}
-      </header>
+      <Brand
+        t={t}
+        lang={lang}
+        setLang={setLang}
+        selectedState={currentState}
+        onChangeState={null}
+        onOpenAssistant={null}
+        onCancel={onCancel}
+      />
 
       <div className="lookup-hero" aria-hidden="true">
         <span className="grain">🏛️</span>
+      </div>
+
+      {/* Quick Visual Language Selector Pills */}
+      <div className="state-lang-selector-section">
+        <div className="state-lang-pills-row">
+          {languages.map((l) => {
+            const isSelected = lang === l.code
+            return (
+              <button
+                key={l.code}
+                type="button"
+                className={'state-lang-pill-chip ' + (isSelected ? 'active' : '')}
+                onClick={() => setLang(l.code)}
+                title={l.enLabel}
+                aria-pressed={isSelected}
+              >
+                <span className="pill-mark">{l.mark}</span>
+                <span className="pill-native">{l.label}</span>
+                <span className="pill-en">({l.enLabel})</span>
+              </button>
+            )
+          })}
+        </div>
       </div>
 
       <h1 className="state-select-title">{t.selectState}</h1>
