@@ -2079,7 +2079,8 @@ function App() {
           t={t}
           lang={lang}
           card={currentCard}
-          grievances={initialGrievances}
+          selectedState={selectedState}
+          grievances={initialGrievances.filter((g) => (selectedState === 'mh' || (currentCard?.number && currentCard.number.startsWith('MH')) ? g.state_id === 'mh' : g.state_id === 'tn'))}
           onClose={() => setShowTicketsModal(false)}
           onOpenLiveTracker={(ticket) => {
             setShowTicketsModal(false)
@@ -2615,6 +2616,13 @@ function HomePage({
 }) {
   const meta = statusMeta[status]
   const why = reasons[reason] || reasons.stock
+
+  const isMh = selectedState === 'mh' || (card?.number && card.number.startsWith('MH'))
+  const stateTickets = initialGrievances.filter((g) => (isMh ? g.state_id === 'mh' : g.state_id === 'tn'))
+  const activeTicket = stateTickets.find((g) => g.status === 'active' || g.status === 'In Review') || stateTickets[0]
+  const ticketId = activeTicket?.id || (isMh ? 'AS-2026-5819' : 'AS-2026-4182')
+  const ticketPrefix = lang === 'ta' ? 'டிக்கெட்' : lang === 'hi' ? 'टिकट' : lang === 'mr' ? 'तिकीट' : lang === 'te' ? 'టికెట్' : lang === 'kn' ? 'ಟಿಕೆಟ್' : lang === 'ml' ? 'ടിക്കറ്റ്' : 'Ticket'
+  const ticketSubtitle = `${ticketPrefix} #${ticketId} · ${t.officerReview || 'In Review by Supply Officer'}`
   const [helperNumber, setHelperNumber] = useState('')
   const [helperError, setHelperError] = useState('')
   const [isPlayingAudio, setIsPlayingAudio] = useState(false)
@@ -2791,7 +2799,7 @@ function HomePage({
               <b>{t.myGrievanceTickets}</b>
               <span className="active-count-tag">1 {t.activeStatus}</span>
             </div>
-            <p>{t.trackLiveTicketsSub}</p>
+            <p>{ticketSubtitle}</p>
           </div>
         </div>
         <div className="ticket-bar-right">
