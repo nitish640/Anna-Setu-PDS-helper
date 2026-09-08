@@ -1895,6 +1895,8 @@ function App() {
           goFix={goFix}
           navigate={navigate}
           onOpenReceipt={() => setShowReceipt(true)}
+          onOpenFamily={() => setShowFamilyModal(true)}
+          onOpenPriceCalc={() => setShowPriceModal(true)}
           fastForward={() => {
             setFastForwarded(true)
             setPage('grievance')
@@ -2510,6 +2512,8 @@ function HomePage({
   goFix,
   navigate,
   onOpenReceipt,
+  onOpenFamily,
+  onOpenPriceCalc,
   fastForward,
   fastForwarded
 }) {
@@ -2658,9 +2662,9 @@ function HomePage({
               <span className="meta-category-pill">
                 <b>{card.category}</b> · {card.category === 'AAY' ? t.quota35kg : t.quota20kg}
               </span>
-              <button type="button" className="family-roster-chip" onClick={onOpenFamily} title="View Family Members">
+              <button type="button" className="family-roster-chip" onClick={() => onOpenFamily && onOpenFamily()} title="View Family Members">
                 <Icon name="users" size={12} />
-                <span>{(card.familyMembers?.length || 4)} {t.familyMembersChip} · e-KYC</span>
+                <span>{(card?.familyMembers?.length || 4)} {t.familyMembersChip} · e-KYC</span>
                 <Icon name="arrow" size={11} />
               </button>
             </div>
@@ -2796,7 +2800,7 @@ function HomePage({
       )}
 
       {/* Statutory Price & Zero-Overcharge Calculator Card */}
-      <div className="statutory-bill-card page-transition" onClick={onOpenPriceCalc} role="button" tabIndex={0}>
+      <div className="statutory-bill-card page-transition" onClick={() => onOpenPriceCalc && onOpenPriceCalc()} role="button" tabIndex={0}>
         <div className="bill-card-left">
           <div className="bill-title-row">
             <span className="bill-scale-icon">⚖️</span>
@@ -4246,7 +4250,50 @@ function Success({ t, goHome }) {
   )
 }
 
-createRoot(document.getElementById('root')).render(<App />)
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { hasError: false }
+  }
+  static getDerivedStateFromError() {
+    return { hasError: true }
+  }
+  componentDidCatch(error, info) {
+    console.error('Anna Setu caught error:', error, info)
+  }
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div style={{ padding: 24, textAlign: 'center', fontFamily: 'sans-serif', color: '#1E2A3C', maxWidth: 460, margin: '60px auto' }}>
+          <h2>Anna Setu</h2>
+          <p>The session was refreshed. Please tap below to continue.</p>
+          <button
+            style={{ padding: '10px 20px', background: '#D89A1E', color: '#1E2A3C', border: 'none', borderRadius: 8, fontWeight: 700, cursor: 'pointer', margin: 6 }}
+            onClick={() => window.location.reload()}
+          >
+            Reload App
+          </button>
+          <button
+            style={{ padding: '10px 20px', background: '#FBF7EC', color: '#1E2A3C', border: '1.5px solid #CDBB94', borderRadius: 8, fontWeight: 700, cursor: 'pointer', margin: 6 }}
+            onClick={() => {
+              localStorage.clear()
+              window.location.reload()
+            }}
+          >
+            Reset Demo
+          </button>
+        </div>
+      )
+    }
+    return this.props.children
+  }
+}
+
+createRoot(document.getElementById('root')).render(
+  <ErrorBoundary>
+    <App />
+  </ErrorBoundary>
+)
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () =>
